@@ -39,6 +39,13 @@ The backend dev script (`packages/backend/scripts/convex-dev.mjs`) requires eith
 
 In non-interactive Cloud Agent environments without `CONVEX_DEPLOY_KEY`, the backend script gracefully skips and exits 0. The Next.js apps still start and serve pages.
 
+**Important**: `CONVEX_DEPLOY_KEY` enables `convex deploy` (push schema/functions) but `convex dev` still requires interactive login. To deploy schema changes in CI/non-interactive mode, use:
+```bash
+cd packages/backend && bunx convex deploy --cmd "echo done"
+```
+
+The Convex URL for this project is stored in `apps/app/.env` and `apps/web/.env` as `NEXT_PUBLIC_CONVEX_URL`. It can be derived from a successful `convex deploy` output.
+
 ### Gotchas
 
 - The `apps/app` uses `@t3-oss/env-nextjs` for env validation. If `NEXT_PUBLIC_CONVEX_URL` is missing, the dev server will fail to start. Set `SKIP_ENV_VALIDATION=true` as a workaround if needed.
