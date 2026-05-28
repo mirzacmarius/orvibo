@@ -1,9 +1,12 @@
+import { redirectLegacyOrviboPath } from "@/lib/orvibo/routes";
 import { NextResponse, type NextRequest } from "next/server";
 
 const LOCALE = "en";
 
 function isPublicFile(pathname: string) {
-  return pathname.includes(".") || pathname.startsWith("/favicon");
+  if (pathname.startsWith("/favicon")) return true;
+  if (!pathname.includes(".")) return false;
+  return !pathname.toLowerCase().endsWith(".html");
 }
 
 export function middleware(request: NextRequest) {
@@ -15,6 +18,13 @@ export function middleware(request: NextRequest) {
     isPublicFile(pathname)
   ) {
     return NextResponse.next();
+  }
+
+  const legacyPath = redirectLegacyOrviboPath(pathname);
+  if (legacyPath && legacyPath !== pathname) {
+    const url = request.nextUrl.clone();
+    url.pathname = legacyPath;
+    return NextResponse.redirect(url, 308);
   }
 
   if (pathname === "/") {

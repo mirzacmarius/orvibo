@@ -1,4 +1,5 @@
 import { assetUrl } from "@/lib/orvibo/assetUrl";
+import { orviboRoutes } from "@/lib/orvibo/routes";
 import Link from "next/link";
 import { resolveExternalUrl } from "@/lib/orvibo/resolveExternalUrl";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
@@ -10,10 +11,7 @@ export function OrviboFooter({
   base: string;
   dict: Dictionary;
 }) {
-  function toEnPath(cnPath: string) {
-    return `${base}${cnPath.replace(/^\/cn/, "")}`;
-  }
-
+  const routes = orviboRoutes(base);
   const f = dict.footer;
 
   return (
@@ -47,16 +45,16 @@ export function OrviboFooter({
               <ul>
                 <li className="first_li">{f.recommendedProducts}</li>
                 <li>
-                  <Link href={toEnPath("/cn/product/mixpad_x.html")}>{f.mixpadX}</Link>
+                  <Link href={routes.product("mixpad_x")}>{f.mixpadX}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/product/mixpad_elf.html")}>{f.mixpadElf}</Link>
+                  <Link href={routes.product("mixpad_elf")}>{f.mixpadElf}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/product/s.html")}>{f.soproS}</Link>
+                  <Link href={routes.product("s")}>{f.soproS}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/product/q.html")}>{f.soproQ}</Link>
+                  <Link href={routes.product("q")}>{f.soproQ}</Link>
                 </li>
               </ul>
             </div>
@@ -64,16 +62,16 @@ export function OrviboFooter({
               <ul>
                 <li className="first_li">{f.aboutUs}</li>
                 <li>
-                  <Link href={toEnPath("/cn/about/about_us.html")}>{dict.nav.company}</Link>
+                  <Link href={routes.about("about_us")}>{dict.nav.company}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/about/culture.html")}>{dict.nav.culture}</Link>
+                  <Link href={routes.about("culture")}>{dict.nav.culture}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/about/join_us.html")}>{dict.nav.careers}</Link>
+                  <Link href={routes.about("join_us")}>{dict.nav.careers}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/about/contact.html")}>{dict.nav.contact}</Link>
+                  <Link href={routes.about("contact")}>{dict.nav.contact}</Link>
                 </li>
               </ul>
             </div>
@@ -81,12 +79,10 @@ export function OrviboFooter({
               <ul>
                 <li className="first_li">{f.business}</li>
                 <li>
-                  <Link href={toEnPath("/cn/cooperation.html")}>{dict.nav.dealer}</Link>
+                  <Link href={routes.cooperation}>{dict.nav.dealer}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/cooperation/estateCooperation.html")}>
-                    {dict.nav.estate}
-                  </Link>
+                  <Link href={routes.estateCooperation}>{dict.nav.estate}</Link>
                 </li>
               </ul>
             </div>
@@ -94,12 +90,10 @@ export function OrviboFooter({
               <ul>
                 <li className="first_li">{f.support}</li>
                 <li>
-                  <Link href={toEnPath("/cn/services/customization.html")}>
-                    {f.customization}
-                  </Link>
+                  <Link href={routes.service("customization")}>{f.customization}</Link>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/services/case.html")}>{f.cases}</Link>
+                  <Link href={routes.service("case")}>{f.cases}</Link>
                 </li>
                 <li>
                   <a href="https://www.zhijiayi.com" target="_blank" rel="noreferrer">
@@ -107,7 +101,7 @@ export function OrviboFooter({
                   </a>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/app.html")}>{f.orviboHome}</Link>
+                  <Link href={routes.app}>{f.orviboHome}</Link>
                 </li>
               </ul>
             </div>
@@ -133,7 +127,7 @@ export function OrviboFooter({
                   </a>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/orviboStore.html")}>{f.offlineStore}</Link>
+                  <Link href={routes.store}>{f.offlineStore}</Link>
                 </li>
               </ul>
             </div>
@@ -146,7 +140,7 @@ export function OrviboFooter({
                   </a>
                 </li>
                 <li>
-                  <Link href={toEnPath("/cn/conference2023.html")}>{f.conference}</Link>
+                  <Link href={routes.exploreConference}>{f.conference}</Link>
                 </li>
               </ul>
             </div>

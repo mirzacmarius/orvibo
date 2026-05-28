@@ -10,6 +10,7 @@ import { OrviboFooter } from "@/components/orvibo/OrviboFooter";
 import { OrviboScrollTop } from "@/components/orvibo/OrviboScrollTop";
 import { OrviboCaretRight } from "@/components/orvibo/icons";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
+import { orviboRoutes } from "@/lib/orvibo/routes";
 
 export default async function Page({
   params,
@@ -21,6 +22,7 @@ export default async function Page({
 
   const dict = await getDictionary(locale);
   const base = `/${locale}`;
+  const routes = orviboRoutes(base);
   const media = (path: string) => assetUrl(path);
 
   return (
@@ -36,7 +38,7 @@ export default async function Page({
             title="MixStation"
           />
           <div className="video__mask">
-            <Link href={`${base}/product/mixstation.html`} className="video__more">
+            <Link href={`${routes.product("mixstation")}`} className="video__more">
               <span className="more__text">{dict.common.learnMore}</span>
             </Link>
             <OrviboWatchTrigger
@@ -94,10 +96,10 @@ export default async function Page({
         <section className="sec sec2">
           <div className="title">{dict.highlights.switch}</div>
           <div className="sec2__subtitle">{dict.highlights.switchTagline}</div>
-          <Link href={`${base}/product/gaosi.html`} className="new_btn black">
+          <Link href={`${routes.product("gaosi")}`} className="new_btn black">
             <span>{dict.common.learnMore}</span>
           </Link>
-          <Link href={`${base}/product/gaosi.html`} className="sec2__video">
+          <Link href={`${routes.product("gaosi")}`} className="sec2__video">
             <div
               className="bg__video"
               style={{
@@ -114,7 +116,7 @@ export default async function Page({
         <section className="sec sec02">
           <div className="title">{dict.highlights.mixPad}</div>
           <div className="subtitle">{dict.highlights.mixPadTagline}</div>
-          <Link href={`${base}/product/mixpad_7_ultra.html`} className="new_btn black">
+          <Link href={`${routes.product("mixpad_7_ultra")}`} className="new_btn black">
             <span>{dict.common.learnMore}</span>
           </Link>
           <OrviboVerticalSwiper
@@ -134,10 +136,10 @@ export default async function Page({
         <section className="sec sec2">
           <div className="title">{dict.highlights.lighting}</div>
           <div className="sec2__subtitle">{dict.highlights.lightingTagline}</div>
-          <Link href={`${base}/product/cangqiong.html`} className="new_btn black">
+          <Link href={`${routes.product("cangqiong")}`} className="new_btn black">
             <span>{dict.common.learnMore}</span>
           </Link>
-          <Link href={`${base}/product/cangqiong.html`} className="sec2__video">
+          <Link href={`${routes.product("cangqiong")}`} className="sec2__video">
             <div
               className="bg__video"
               style={{
@@ -152,11 +154,11 @@ export default async function Page({
         </section>
 
         <div className="sec4">
-          <Link href={`${base}/product/productList.html`} className="link__title">
+          <Link href={`${routes.productList}`} className="link__title">
             {dict.productGrid.title}
           </Link>
           <div className="sec4__list">
-            <Link href={`${base}/product/curtain_3d.html`} className="sec4__item mr38">
+            <Link href={`${routes.product("curtain_3d")}`} className="sec4__item mr38">
               <div className="img__wrap" style={{ width: "10.55rem", height: "5.26rem" }}>
                 <div
                   className="item__img"
@@ -172,7 +174,7 @@ export default async function Page({
               </div>
               <div className="item__title">{dict.productGrid.curtain3d}</div>
             </Link>
-            <Link href={`${base}/product/s5.html`} className="sec4__item">
+            <Link href={`${routes.product("s5")}`} className="sec4__item">
               <div className="img__wrap" style={{ width: "5.07rem", height: "5.26rem" }}>
                 <div
                   className="item__img"
@@ -189,7 +191,7 @@ export default async function Page({
               </div>
               <div className="item__title">{dict.productGrid.spotlightS5}</div>
             </Link>
-            <Link href={`${base}/product/daofeng.html`} className="sec4__item mr38 mt90">
+            <Link href={`${routes.product("daofeng")}`} className="sec4__item mr38 mt90">
               <div className="img__wrap" style={{ width: "5.07rem", height: "3.78rem" }}>
                 <div
                   className="item__img"
@@ -205,7 +207,7 @@ export default async function Page({
               </div>
               <div className="item__title">{dict.productGrid.daofeng}</div>
             </Link>
-            <Link href={`${base}/product/v5.html`} className="sec4__item mr38 mt90">
+            <Link href={`${routes.product("v5")}`} className="sec4__item mr38 mt90">
               <div className="img__wrap" style={{ width: "5.07rem", height: "3.78rem" }}>
                 <div
                   className="item__img"
@@ -222,7 +224,7 @@ export default async function Page({
               </div>
               <div className="item__title">{dict.productGrid.lockV5}</div>
             </Link>
-            <Link href={`${base}/product/light.html`} className="sec4__item mt90">
+            <Link href={`${routes.product("light")}`} className="sec4__item mt90">
               <div className="img__wrap">
                 <div
                   className="item__img"
