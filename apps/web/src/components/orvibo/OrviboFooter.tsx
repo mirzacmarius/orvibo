@@ -168,7 +168,9 @@ export function OrviboFooter({
                 href="https://weibo.com/p/1006062919542664/home?from=page_100606&mod=TAB&is_all=1"
                 target="_blank"
                 rel="noreferrer"
-              />
+              >
+                <span className="sr-only">Sina Weibo</span>
+              </a>
               <span className="service">
                 <span className="img" />
                 <span>{f.onlineService}</span>

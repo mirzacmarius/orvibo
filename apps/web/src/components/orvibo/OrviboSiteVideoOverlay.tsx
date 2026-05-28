@@ -39,6 +39,7 @@ export function OrviboSiteVideoOverlay({ open, src, onClose }: Props) {
         style={{ display: "block" }}
         role="presentation"
         onClick={onClose}
+        onKeyDown={onClose}
       />
       <div className="video_modal" style={{ display: "block" }}>
         <video

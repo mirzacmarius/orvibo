@@ -884,6 +884,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
         aria-hidden
         onMouseEnter={closeMenu}
         onClick={closeMenu}
+        onKeyDown={closeMenu}
       />
     </header>
   );
