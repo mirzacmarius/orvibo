@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.082" height="20" viewBox="0 0 16.082 20">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="矩形_111" data-name="矩形 111" class="cls-1" width="16.082" height="20"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="矩形_110" data-name="矩形 110" class="cls-1" width="16.082" height="20.001"/>
+    </clipPath>
+  </defs>
+  <g id="组_236" data-name="组 236" transform="translate(913.25 -141.171)">
+    <g id="组_232" data-name="组 232" transform="translate(-913.25 141.171)">
+      <g id="组_231" data-name="组 231" class="cls-2">
+        <g id="组_230" data-name="组 230" transform="translate(0 -0.001)">
+          <g id="组_229" data-name="组 229" class="cls-3">
+            <path id="路径_135" data-name="路径 135" class="cls-4" d="M-912.543,149.734l7.147-7.148,7.148,7.148" transform="translate(913.437 -140.798)"/>
+            <line id="直线_21" data-name="直线 21" class="cls-4" y2="18.213" transform="translate(8.041 1.787)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

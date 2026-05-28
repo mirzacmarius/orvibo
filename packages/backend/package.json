@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "convex dev --tail-logs",
+    "dev": "node ./scripts/convex-dev.mjs",
+    "dev:convex": "convex dev --tail-logs",
     "setup": "convex dev --once && convex env set VALIDATE_ENV=true",
     "seed": "convex dev --once && convex run init"
   },

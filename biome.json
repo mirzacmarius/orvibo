@@ -4,7 +4,13 @@
     "enabled": true
   },
   "linter": {
-    "ignore": ["node_modules", ".next", "packages/tsconfig"],
+    "ignore": [
+      "node_modules",
+      ".next",
+      "packages/tsconfig",
+      "apps/web/public",
+      "apps/web/convex/_generated"
+    ],
     "enabled": true,
     "rules": {
       "recommended": true,

@@ -1,0 +1,23 @@
+import type { SVGProps } from "react";
+
+export function IconPlayerWhite(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      {...props}
+    >
+      <g transform="translate(-96 -96)">
+        <path d="M104,96a8,8,0,1,0,8,8A8.009,8.009,0,0,0,104,96Zm0,14.769A6.769,6.769,0,1,1,110.769,104,6.777,6.777,0,0,1,104,110.769Z" fill="currentColor" />
+        <path
+          d="M416.778,318.945a.459.459,0,0,0-.51-.044.537.537,0,0,0-.268.472V325a.537.537,0,0,0,.268.472.459.459,0,0,0,.51-.044l3.576-2.814a.556.556,0,0,0,0-.858Z"
+          transform="translate(-313.556 -218.188)"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  );
+}
+

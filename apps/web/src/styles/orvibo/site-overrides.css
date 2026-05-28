@@ -1,0 +1,307 @@
+/* Neutralize v1/Tailwind body defaults inside the Orvibo marketing shell */
+.orvibo-site {
+  --orvibo-header-height: 130px;
+  color: #111;
+  background-color: #f0f2f5;
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.orvibo-site a {
+  color: inherit;
+}
+
+/* Source uses rem layout with min-width:1280px on body — relax on marketing pages */
+body:has(.orvibo-site) {
+  min-width: 0;
+}
+
+/* Header: logo centered above nav (matches orvibo.com/cn) */
+.orvibo-site #header.header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  background: #000;
+}
+
+.orvibo-site #header .logo {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.orvibo-site #header .logo a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.orvibo-site #header .logo img {
+  display: block;
+  width: auto;
+  height: 29px;
+  max-width: min(150px, calc(100vw - 32px));
+}
+
+.orvibo-site #header .menu {
+  width: 100%;
+  max-width: 1760px;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 8vw, 144px);
+  box-sizing: border-box;
+}
+
+.orvibo-site #header .menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.orvibo-site #header .menu > ul > li {
+  flex-shrink: 0;
+}
+
+/* Narrow viewports: scroll main nav, tighten spacing */
+@media (max-width: 1360px) {
+  .orvibo-site #header .menu {
+    padding: 0 24px;
+  }
+
+  .orvibo-site #header .menu > ul > li {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .orvibo-site #header .menu {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+  }
+
+  .orvibo-site #header .menu > ul {
+    justify-content: flex-start;
+    width: max-content;
+    min-width: 100%;
+  }
+
+  .orvibo-site #header .menu > ul > li {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .orvibo-site {
+    --orvibo-header-height: 106px;
+  }
+
+  .orvibo-site #header .logo {
+    height: 56px;
+  }
+
+  .orvibo-site #header .logo img {
+    height: 24px;
+    max-width: min(150px, calc(100vw - 24px));
+  }
+
+  .orvibo-site #header .menu {
+    padding: 0 12px;
+  }
+
+  .orvibo-site #header .menu > ul > li {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* Mega-menu + mask track header height */
+.orvibo-site #header .pc-nav-submenus-popup,
+.orvibo-site #header .pc-nav-submenus-popups {
+  top: var(--orvibo-header-height);
+}
+
+.orvibo-site #oc-mask {
+  top: var(--orvibo-header-height);
+}
+
+/* Mega-menu: bridge gap between nav row and dropdown panel */
+.orvibo-site #header .has-submenu.opened .pc-nav-submenus-popup::before,
+.orvibo-site #header .has-submenu.opened .pc-nav-submenus-popups::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(-1 * var(--orvibo-header-height));
+  height: var(--orvibo-header-height);
+}
+
+/* Product panels: visible without legacy jQuery fadeInUp */
+.productWrapper ul.productul.show > li,
+.productWrapper .swiperContainer.show li {
+  opacity: 1;
+  transform: none;
+}
+
+/* Dim overlay closes menu when pointer moves to page content */
+#oc-mask {
+  pointer-events: auto;
+  cursor: default;
+}
+
+/* Product mega-menu category tabs: horizontal scroll when labels overflow */
+#header .pc-nav-submenus-popup ul.submenu {
+  width: 100%;
+  max-width: min(1200px, calc(100vw - 48px));
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  text-align: left;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+#header .pc-nav-submenus-popup ul.submenu > li {
+  display: block;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+#header .pc-nav-submenus-popup ul.submenu::-webkit-scrollbar {
+  height: 4px;
+}
+
+#header .pc-nav-submenus-popup ul.submenu::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* MixPad sec02: Swiper 12 uses .swiper-vertical; legacy CSS used .swiper-container-vertical */
+.sec02 .orvibo-vertical-swiper.swiper,
+.sec02 .orvibo-vertical-swiper.swiper-container {
+  width: 16rem;
+  max-width: calc(100% - 32px);
+  height: 8.08rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.sec02 .orvibo-vertical-swiper.swiper-vertical > .swiper-wrapper {
+  flex-direction: column;
+  height: 100%;
+}
+
+.sec02 .orvibo-vertical-swiper .swiper-slide {
+  flex-shrink: 0;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.sec02 .orvibo-vertical-swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* sec6 cards: SVG chevron replaces broken iconfont glyph */
+.sec6 .card .act .sec6-chevron {
+  display: inline-block;
+  vertical-align: -0.05em;
+  margin-left: 0.06rem;
+  flex-shrink: 0;
+}
+
+/* Video center: legacy CSS hid thumbnails with z-index:-1 behind the card */
+.sec7 .videos .video .bg {
+  background-color: #e8e8e8;
+}
+
+.sec7 .videos .video .bg img {
+  z-index: 0;
+  object-fit: cover;
+}
+
+.sec7 .videos .video .bg::before,
+.sec7 .videos .video .bg::after {
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Page content: full width on narrow screens */
+.orvibo-site .orvibo-home,
+.orvibo-site .conference__conent,
+.orvibo-site .video__container,
+.orvibo-site .video__container .product__video {
+  width: 100%;
+  max-width: 100%;
+}
+
+.orvibo-site .video__container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .orvibo-site .sec.w {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .orvibo-site .sec6 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .orvibo-site .sec4__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orvibo-site .sec4__item,
+  .orvibo-site .sec4__item .img__wrap {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}

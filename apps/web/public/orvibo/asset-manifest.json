@@ -1,0 +1,607 @@
+[
+  {
+    "sourceUrl": "https://website-vod.orvibo.com/8f4239b1vodgzp1251222210/3a80b318387702293679134921/0lwcQ5V5mQEA.mp4",
+    "publicPath": "/8f4239b1vodgzp1251222210/3a80b318387702293679134921/0lwcQ5V5mQEA.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-vod.orvibo.com/8f4239b1vodgzp1251222210/e0a1ec6a5285890810435126378/jSP056nNeWMA.mp4",
+    "publicPath": "/8f4239b1vodgzp1251222210/e0a1ec6a5285890810435126378/jSP056nNeWMA.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/bower_components/jquery/dist/jquery.min.js",
+    "publicPath": "/guanwang_second/front/bower_components/jquery/dist/jquery.min.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_cover/s-bbffe438bb.png",
+    "publicPath": "/guanwang_second/front/common/images/product_cover/s-bbffe438bb.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_index/sec1_6-2c22974275.png",
+    "publicPath": "/guanwang_second/front/common/images/product_index/sec1_6-2c22974275.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_index/sec1_7-6dbd00544a.png",
+    "publicPath": "/guanwang_second/front/common/images/product_index/sec1_7-6dbd00544a.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_index/sec1_8-eea36ad831.png",
+    "publicPath": "/guanwang_second/front/common/images/product_index/sec1_8-eea36ad831.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_index/sec1_elf-58a058f655.png",
+    "publicPath": "/guanwang_second/front/common/images/product_index/sec1_elf-58a058f655.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_index/sec2_4_2x-81c7aaafd3.png",
+    "publicPath": "/guanwang_second/front/common/images/product_index/sec2_4_2x-81c7aaafd3.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/base-d3ba1b8e2c.css",
+    "publicPath": "/guanwang_second/front/css/base-d3ba1b8e2c.css",
+    "kind": "css"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/global_ch-ac52a3605b.css",
+    "publicPath": "/guanwang_second/front/css/global_ch-ac52a3605b.css",
+    "kind": "css"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/index_2020-7f85cdb244.css",
+    "publicPath": "/guanwang_second/front/css/index_2020-7f85cdb244.css",
+    "kind": "css"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/swiper-bb2bb34927.min.css",
+    "publicPath": "/guanwang_second/front/css/swiper-bb2bb34927.min.css",
+    "kind": "css"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2019/index/video/icon_play-525abb68fd.png",
+    "publicPath": "/guanwang_second/front/images/2019/index/video/icon_play-525abb68fd.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/footer/arrowUp-28992f3e82.svg",
+    "publicPath": "/guanwang_second/front/images/2020/footer/arrowUp-28992f3e82.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/footer/cooperation-8ab11e3c28.svg",
+    "publicPath": "/guanwang_second/front/images/2020/footer/cooperation-8ab11e3c28.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/footer/getTop-39af3f63e1.png",
+    "publicPath": "/guanwang_second/front/images/2020/footer/getTop-39af3f63e1.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/footer/icon_service-db9e83a8e2.svg",
+    "publicPath": "/guanwang_second/front/images/2020/footer/icon_service-db9e83a8e2.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/index/newYear-ae9c5a5fb4.jpg",
+    "publicPath": "/guanwang_second/front/images/2020/index/newYear-ae9c5a5fb4.jpg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/index/sec02_1-34b9929249.jpg",
+    "publicPath": "/guanwang_second/front/images/2020/index/sec02_1-34b9929249.jpg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/index/sec02_2-ca97560daa.jpg",
+    "publicPath": "/guanwang_second/front/images/2020/index/sec02_2-ca97560daa.jpg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/index/sec11-f917a1b680.png",
+    "publicPath": "/guanwang_second/front/images/2020/index/sec11-f917a1b680.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/index/sec9-c6d18686cc.jpg",
+    "publicPath": "/guanwang_second/front/images/2020/index/sec9-c6d18686cc.jpg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/index/video_mixstation-507ffdc772.png",
+    "publicPath": "/guanwang_second/front/images/2020/index/video_mixstation-507ffdc772.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/index/video_product-4de220e270.png",
+    "publicPath": "/guanwang_second/front/images/2020/index/video_product-4de220e270.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/index/video_quanwu-eafb6b7634.png",
+    "publicPath": "/guanwang_second/front/images/2020/index/video_quanwu-eafb6b7634.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/index/video_s5-9f7375ca96.png",
+    "publicPath": "/guanwang_second/front/images/2020/index/video_s5-9f7375ca96.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/arrow_active-7def17bfeb.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/arrow_active-7def17bfeb.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/arrow-0dcfec1ffd.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/arrow-0dcfec1ffd.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/close-3fb1ba2b6d.svg",
+    "publicPath": "/guanwang_second/front/images/2020/nav/close-3fb1ba2b6d.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/erweima-7fb33adad2.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/erweima-7fb33adad2.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/logo-38c948b4cf.svg",
+    "publicPath": "/guanwang_second/front/images/2020/nav/logo-38c948b4cf.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/online_service_active-4780add6bf.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/online_service_active-4780add6bf.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/online_service-c8e92ccade.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/online_service-c8e92ccade.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/product_2_2-6eb5086d1d.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_2_2-6eb5086d1d.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_2_3-deb19fb861.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_2_3-deb19fb861.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_2_4-0080946f53.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_2_4-0080946f53.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_3_1-3fb329a65d.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_3_1-3fb329a65d.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/product_3_2-0bef4989a6.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_3_2-0bef4989a6.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_4_1-4595af592e.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_4_1-4595af592e.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_4_3-74c325ecf5.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_4_3-74c325ecf5.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_4_4-2fda3d3f23.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_4_4-2fda3d3f23.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_10-d7d8253317.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_10-d7d8253317.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_2-a123782e2e.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_2-a123782e2e.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_3-2885f56684.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_3-2885f56684.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_4-7ac0661d60.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_4-7ac0661d60.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_5-3a6e8b2d44.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_5-3a6e8b2d44.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_6-f321225cc2.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_6-f321225cc2.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_5_9-6b33e0c065.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_5_9-6b33e0c065.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_6-94094f7d1c.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_6-94094f7d1c.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_8_1-50825d0ada.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_8_1-50825d0ada.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/product_8_2-87aae68057.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/product_8_2-87aae68057.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/sina_active-1f709de2d6.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/sina_active-1f709de2d6.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/sina-e423a62d18.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/sina-e423a62d18.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/wechat_active-3c9babf010.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/wechat_active-3c9babf010.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/2020/nav/wechat_erweima-2d0be50489.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/wechat_erweima-2d0be50489.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2020/nav/wechat-23cfd86318.png",
+    "publicPath": "/guanwang_second/front/images/2020/nav/wechat-23cfd86318.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/homeai4/icon_home_logo-7a0f0510b9.svg",
+    "publicPath": "/guanwang_second/front/images/homeai4/icon_home_logo-7a0f0510b9.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/channel/close-7b8dfc7a04.png",
+    "publicPath": "/guanwang_second/front/images/new/channel/close-7b8dfc7a04.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/close-b9a6b619d7.svg",
+    "publicPath": "/guanwang_second/front/images/new/close-b9a6b619d7.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/conference_2023/pic1.png",
+    "publicPath": "/guanwang_second/front/images/new/conference_2023/pic1.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/conference_2023/pic2.png",
+    "publicPath": "/guanwang_second/front/images/new/conference_2023/pic2.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/conference_2023/pic3.png",
+    "publicPath": "/guanwang_second/front/images/new/conference_2023/pic3.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/conference_2023/pic4.png",
+    "publicPath": "/guanwang_second/front/images/new/conference_2023/pic4.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/dialog_close-2f70a032e0.png",
+    "publicPath": "/guanwang_second/front/images/new/dialog_close-2f70a032e0.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/icon5-eb788d7d0e.png",
+    "publicPath": "/guanwang_second/front/images/new/icon5-eb788d7d0e.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/index/icons/icon_player_black-c9d38ed9f9.svg",
+    "publicPath": "/guanwang_second/front/images/new/index/icons/icon_player_black-c9d38ed9f9.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/index/icons/icon_player_white-fa3607df4b.svg",
+    "publicPath": "/guanwang_second/front/images/new/index/icons/icon_player_white-fa3607df4b.svg",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/new/products/curtain_3d/product-bb5952f1a2.png",
+    "publicPath": "/guanwang_second/front/images/new/products/curtain_3d/product-bb5952f1a2.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/new/products/curtain_motor/product-6e9fd2c7f0.png",
+    "publicPath": "/guanwang_second/front/images/new/products/curtain_motor/product-6e9fd2c7f0.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/new/products/daofeng/product-d3bdd5f26b.png",
+    "publicPath": "/guanwang_second/front/images/new/products/daofeng/product-d3bdd5f26b.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/new/products/db28/product-888e543722.png",
+    "publicPath": "/guanwang_second/front/images/new/products/db28/product-888e543722.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/vedio_t1_close-e909f77947.png",
+    "publicPath": "/guanwang_second/front/images/new/vedio_t1_close-e909f77947.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/new/zixun-8acf43c5a9.png",
+    "publicPath": "/guanwang_second/front/images/new/zixun-8acf43c5a9.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/artisbox_play/product-0a99af25fd.png",
+    "publicPath": "/guanwang_second/front/images/products/artisbox_play/product-0a99af25fd.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png",
+    "publicPath": "/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/cangqiong/pro-350f4a394c.png",
+    "publicPath": "/guanwang_second/front/images/products/cangqiong/pro-350f4a394c.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/mixpad_7/product-08ab3fcd26.png",
+    "publicPath": "/guanwang_second/front/images/products/mixpad_7/product-08ab3fcd26.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/mixpad_m2/product-3b84ba6f48.png",
+    "publicPath": "/guanwang_second/front/images/products/mixpad_m2/product-3b84ba6f48.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/mixpad_mirror/product-39c79a515d.png",
+    "publicPath": "/guanwang_second/front/images/products/mixpad_mirror/product-39c79a515d.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/products/mixpad_p20/product-6aa81128b4.png",
+    "publicPath": "/guanwang_second/front/images/products/mixpad_p20/product-6aa81128b4.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/robot_r2/product-92305e1a8b.png",
+    "publicPath": "/guanwang_second/front/images/products/robot_r2/product-92305e1a8b.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/s3/pro-14adbb42ea.png",
+    "publicPath": "/guanwang_second/front/images/products/s3/pro-14adbb42ea.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/images/products/s5/pro-7d582e11c3.png",
+    "publicPath": "/guanwang_second/front/images/products/s5/pro-7d582e11c3.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/common_ch-2615e9792f.js",
+    "publicPath": "/guanwang_second/front/js/common_ch-2615e9792f.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/jquery-26d73018f3.lazyload.min.js",
+    "publicPath": "/guanwang_second/front/js/jquery-26d73018f3.lazyload.min.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/newprm-5f2170c39d.js",
+    "publicPath": "/guanwang_second/front/js/newprm-5f2170c39d.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/swiper-38aab80e2e.min.js",
+    "publicPath": "/guanwang_second/front/js/swiper-38aab80e2e.min.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/utils-2abbeea81e.js",
+    "publicPath": "/guanwang_second/front/js/utils-2abbeea81e.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/home/sopro-b8d4b6986b.png",
+    "publicPath": "/guanwang_second/front/mobile/images/home/sopro-b8d4b6986b.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/icons/120-df51b6a86d.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/icons/120-df51b6a86d.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/icons/128-2df2bd62b7.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/icons/128-2df2bd62b7.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/icons/152-da7edbe418.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/icons/152-da7edbe418.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/icons/167-110969ea00.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/icons/167-110969ea00.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/icons/180-6497e927e4.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/icons/180-6497e927e4.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/icons/192-2051c8f01c.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/icons/192-2051c8f01c.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/bahe/product-df2604a0b2.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/bahe/product-df2604a0b2.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/defy/product-acd38b85b3.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/defy/product-acd38b85b3.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/light/product-f57bbf70ce.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/light/product-f57bbf70ce.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/mixpad_7ultra/product-e0c57d88e5.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/mixpad_7ultra/product-e0c57d88e5.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/mixstation/pro-8787fbfaf5.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/mixstation/pro-8787fbfaf5.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/q/banner-9c4dc740ac.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/q/banner-9c4dc740ac.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/new/product/q3/pro-eb613a2e26.png",
+    "publicPath": "/guanwang_second/front/mobile/images/new/product/q3/pro-eb613a2e26.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/products/gaosi/pro-70e28780f4.png",
+    "publicPath": "/guanwang_second/front/mobile/images/products/gaosi/pro-70e28780f4.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/guanwang_second/front/mobile/images/products/speaker/product-ddc84bdd52.png",
+    "publicPath": "/guanwang_second/front/mobile/images/products/speaker/product-ddc84bdd52.png",
+    "kind": "image"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5-SOPRO.mp4",
+    "publicPath": "/media/%E5%AE%98%E7%BD%91-%E9%A6%96%E9%A1%B5-SOPRO.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/conference2023_2.mp4",
+    "publicPath": "/media/conference2023_2.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/mixstation_1.mp4",
+    "publicPath": "/media/mixstation_1.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/mixStation.mp4",
+    "publicPath": "/media/mixStation.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_2022_quanwu.mp4",
+    "publicPath": "/media/orvibo_2022_quanwu.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_homeai4_all_banner2.mp4",
+    "publicPath": "/media/orvibo_homeai4_all_banner2.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_homeai4_all.mp4",
+    "publicPath": "/media/orvibo_homeai4_all.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_quanzhai_bg.mp4",
+    "publicPath": "/media/orvibo_quanzhai_bg.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_store_all.mp4",
+    "publicPath": "/media/orvibo_store_all.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_store_pc.mp4",
+    "publicPath": "/media/orvibo_store_pc.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "https://website-static.orvibo.com/media/orvibo_tvc_matter.mp4",
+    "publicPath": "/media/orvibo_tvc_matter.mp4",
+    "kind": "video"
+  },
+  {
+    "sourceUrl": "http://res.wx.qq.com/open/js/jweixin-1.0.0.js",
+    "publicPath": "/open/js/jweixin-1.0.0.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/orvibo/guanwang_second/front/js/html5shiv-b9933e9a8c.js",
+    "publicPath": "/orvibo/guanwang_second/front/js/html5shiv-b9933e9a8c.js",
+    "kind": "js"
+  },
+  {
+    "sourceUrl": "https://www.orvibo.com/orvibo/guanwang_second/front/js/jquery-1.9-3a88a30287.1.min.js",
+    "publicPath": "/orvibo/guanwang_second/front/js/jquery-1.9-3a88a30287.1.min.js",
+    "kind": "js"
+  }
+]

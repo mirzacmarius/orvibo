@@ -17,7 +17,7 @@ export function Header() {
     <header className="absolute top-0 w-full flex items-center justify-between p-4 z-10">
       <span className="hidden md:block text-sm font-medium">convex-v1.run</span>
 
-      <Link href="/">
+      <Link href="/en">
         <Image
           src="/logo.png"
           alt="V1 logo"

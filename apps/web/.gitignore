@@ -1,0 +1,8 @@
+.env.local
+
+# Videos over GitHub's 100MB limit — download locally: bun run orvibo:sync-assets
+public/orvibo/videos/mixStation.mp4
+public/orvibo/videos/orvibo_store_all.mp4
+public/orvibo/videos/orvibo_2022_quanwu.mp4
+public/orvibo/videos/orvibo_tvc_matter.mp4
+public/8f4239b1vodgzp1251222210/

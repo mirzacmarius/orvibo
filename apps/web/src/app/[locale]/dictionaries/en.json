@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "ORVIBO | Integrated HVAC, Smart Lighting & Whole-Home Intelligence",
+    "description": "ORVIBO smart home — integrated HVAC, smart lighting, switches, and whole-home automation."
+  },
+  "common": {
+    "watchVideo": "Watch video",
+    "learnMore": "Learn more",
+    "visitStore": "Visit a store",
+    "playVideo": "Play video",
+    "english": "English",
+    "chinese": "中文"
+  },
+  "nav": {
+    "home": "Home",
+    "wholeHome": "Smarthome",
+    "products": "Products",
+    "business": "Business",
+    "explore": "Explore+",
+    "about": "About us",
+    "dealer": "Dealer program",
+    "estate": "Real estate projects",
+    "company": "Company profile",
+    "culture": "Culture",
+    "careers": "Careers",
+    "contact": "Contact us",
+    "categories": {
+      "0": "Integrated HVAC",
+      "1": "Smart panels",
+      "2": "Smart switches",
+      "3": "Smart locks",
+      "4": "Smart lighting",
+      "5": "Smart curtains",
+      "6": "Security sensors",
+      "7": "Smart community",
+      "8": "Ecosystem & appliances",
+      "9": "Appliance control"
+    }
+  },
+  "navProducts": {
+    "mixstation": "ORVIBO Integrated HVAC",
+    "mixpad7Ultra": "MixPad 7 Ultra Smart Panel",
+    "mixpad7": "MixPad 7 Smart Panel",
+    "mixpadX": "MixPad X Smart Panel",
+    "mixpadM2": "MixPad M2 Smart Panel",
+    "mixpadSFlagship": "MixPad S Smart Panel (Flagship)",
+    "gaosi": "Gauss Smart Switch",
+    "defy": "Defy Smart Switch (Gen 1)",
+    "bach": "Bach Smart Switch",
+    "mixpadElf": "MixPad Elf Switch (Gateway)",
+    "mixSwitch": "MixSwitch Voice Switch",
+    "lockV5": "Smart Lock V5",
+    "lockS2": "Smart Lock S2",
+    "lockT1c": "Smart Lock T1C",
+    "lightQ3": "Eye-care Downlight Q3",
+    "lightS3": "Anti-glare Downlight S3",
+    "lightS5": "Smart Spotlight S5",
+    "lightBauhaus": "Bauhaus Decorative Ambient Light",
+    "cangqiong": "Cangqiong Pro Natural Light",
+    "daofeng": "Blade Ultra-thin Magnetic Track Light",
+    "soproS": "SOPRO Lighting S Series",
+    "soproQ": "SOPRO Lighting Q Series",
+    "downlight": "Stepless Color-temp Light",
+    "curtain3d": "3D Light & Shadow Smart Curtain",
+    "motorDb28": "DB28 Ultra-quiet Curtain Motor",
+    "curtainMotor": "Elf Ultra-quiet Curtain Motor",
+    "curtainSmart": "Super Smart Curtain Controller",
+    "curtainChocolate": "Chocolate Curtain (Wireless)",
+    "curtainZigbee": "Ultra-quiet Curtain (ZigBee)",
+    "cameraS1": "S1 2K Smart Camera",
+    "cameraYuntai": "Smart Camera (Pan-tilt)",
+    "doorSensor": "Door & Window Sensor",
+    "bodySensor": "Motion Sensor",
+    "tempHumSensor": "Temperature & Humidity Sensor",
+    "coAlarm": "CO Alarm",
+    "sos": "Emergency Button",
+    "smokeAlarm": "Smoke Alarm",
+    "gasSensor": "Combustible Gas Sensor",
+    "waterAlarm": "Water Leak Sensor",
+    "mixpadPlus": "AI Video Intercom System",
+    "mixpadMirror": "MixPad Mirror Smart Bathroom Mirror",
+    "robotR2": "R2 Robot Vacuum & Mop",
+    "artisbox": "ArtisBox Play HiFi Speaker",
+    "xiaofang": "Xiaofang Smart Remote",
+    "s30c": "S30c Smart Plug"
+  },
+  "hero": {
+    "headline": "ORVIBO Smart Home",
+    "subheadline": "Integrated HVAC | Smart lighting | Smart switches",
+    "tagline": "AI defines the life you aspire to"
+  },
+  "highlights": {
+    "switch": "Gauss Smart Switch",
+    "switchTagline": "Five-way interaction, flagship control",
+    "mixPad": "MixPad 7 Ultra Smart Panel",
+    "mixPadTagline": "Intelligence and design in balance",
+    "lighting": "Cangqiong Pro Natural Light",
+    "lightingTagline": "Redefining living-room aesthetics"
+  },
+  "productGrid": {
+    "title": "Products",
+    "curtain3d": "3D Light & Shadow Smart Curtain",
+    "spotlightS5": "Smart Spotlight S5",
+    "daofeng": "Blade Ultra-thin Magnetic Track Light",
+    "lockV5": "Smart Lock V5",
+    "bauhausLight": "Bauhaus Decorative Ambient Light"
+  },
+  "store": {
+    "title": "ORVIBO Smart Home Experience Store",
+    "body": "Book a visit to our experience center and discover quality living shaped by technology and design."
+  },
+  "cards": {
+    "partnership": {
+      "title": "Partnership",
+      "desc": "Share the trillion-yuan IoT era with us"
+    },
+    "custom": {
+      "title": "Custom solutions",
+      "desc": "Get a tailored smart-home plan quickly"
+    },
+    "cases": {
+      "title": "Featured projects",
+      "desc": "Trusted by more than 3.5 million homes worldwide"
+    }
+  },
+  "videos": {
+    "sectionTitle": "Video center",
+    "items": {
+      "mixstation": "ORVIBO Integrated HVAC",
+      "tvc": "ORVIBO brand film",
+      "sopro": "SOPRO lighting film",
+      "s5": "Smart Spotlight S5",
+      "wholeHome": "ORVIBO whole-home smart film"
+    }
+  },
+  "footer": {
+    "applyRealEstate": "Apply for real estate partnership",
+    "applyDealer": "Apply for dealer partnership",
+    "recommendedProducts": "Featured products",
+    "aboutUs": "About us",
+    "business": "Business",
+    "support": "Support",
+    "channels": "Where to buy",
+    "news": "News",
+    "contactUs": "Contact us",
+    "phone": "400-060-6050 ( 09:00 ~ 20:00 )",
+    "onlineService": "Online support",
+    "mixpadX": "MixPad X Smart Panel",
+    "mixpadElf": "MixPad Elf Switch (Gateway)",
+    "soproS": "SOPRO Lighting S Series",
+    "soproQ": "SOPRO Lighting Q Series",
+    "customization": "Custom solutions",
+    "cases": "Featured projects",
+    "zhijiayi": "Zhijiayi",
+    "orviboHome": "ORVIBO Home app",
+    "tmall": "Tmall flagship store",
+    "jd": "JD flagship store",
+    "offlineStore": "Offline stores",
+    "press": "News",
+    "conference": "Product launches",
+    "copyright": "Copyright © 2014–2023 Shenzhen ORVIBO Technology Co., Ltd. All rights reserved.",
+    "privacy": "Privacy policy",
+    "investmentNotice": "Investment involves risk; partnership requires due diligence."
+  }
+}
