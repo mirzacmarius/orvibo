@@ -1,6 +1,10 @@
 /** Homepage-critical assets that must resolve on R2 in production. */
 const SAMPLE_PATHS = [
   "/guanwang_second/front/images/2020/nav/logo-38c948b4cf.svg",
+  "/guanwang_second/front/images/new/products/mixstation/logo_home-1a3457a96c.png",
+  "/guanwang_second/front/images/homeai4/icon_home_logo-7a0f0510b9.svg",
+  "/guanwang_second/front/images/new/products/mixstation/sec1-7a1373cc0f.png",
+  "/guanwang_second/front/images/new/products/mixstation/MixStation-12a33eaf83.png",
   "/orvibo/videos/mixstation_1.mp4",
   "/orvibo/videos/mixStation.mp4",
   "/orvibo/videos/orvibo_quanzhai_bg.mp4",

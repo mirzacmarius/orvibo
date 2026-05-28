@@ -23,7 +23,21 @@ export function middleware(request: NextRequest) {
   const legacyPath = redirectLegacyOrviboPath(pathname);
   if (legacyPath && legacyPath !== pathname) {
     const url = request.nextUrl.clone();
-    url.pathname = legacyPath;
+    const hashIndex = legacyPath.indexOf("#");
+    if (hashIndex >= 0) {
+      url.pathname = legacyPath.slice(0, hashIndex);
+      url.hash = legacyPath.slice(hashIndex + 1);
+    } else {
+      url.pathname = legacyPath;
+    }
+    return NextResponse.redirect(url, 308);
+  }
+
+  const specTabMatch = pathname.match(new RegExp(`^/${LOCALE}/product/([^/]+)/spec$`));
+  if (specTabMatch) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${LOCALE}/product/${specTabMatch[1]}`;
+    url.hash = "specifications";
     return NextResponse.redirect(url, 308);
   }
 

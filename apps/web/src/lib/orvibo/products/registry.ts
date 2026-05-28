@@ -1,0 +1,40 @@
+import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
+import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
+import type { ProductDefinition } from "./types";
+
+const definitions: ProductDefinition[] = [
+  {
+    slug: "mixstation",
+    title: "ORVIBO Integrated HVAC",
+    rootClass: "mixstation",
+    tabs: [{ id: "overview", label: "Overview", sectionId: "overview" }],
+    navClassName: "pZindex",
+    View: MixstationOverview,
+  },
+  {
+    slug: "mixpad_7",
+    title: "MixPad 7 Control Panel",
+    rootClass: "mixpad__7",
+    tabs: [
+      { id: "overview", label: "Overview", sectionId: "overview" },
+      {
+        id: "specifications",
+        label: "Specifications",
+        sectionId: "specifications",
+      },
+    ],
+    View: Mixpad7Overview,
+  },
+];
+
+const bySlug = new Map(definitions.map((product) => [product.slug, product]));
+
+export function getProductDefinition(
+  slug: string,
+): ProductDefinition | undefined {
+  return bySlug.get(slug);
+}
+
+export function listProductSlugs(): string[] {
+  return [...bySlug.keys()];
+}
