@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 
 type Props = {
   className?: string;
@@ -69,12 +70,12 @@ export function MarketingVideo({
       playsInline
       loop
       preload="metadata"
-      poster={poster}
+      poster={poster ? assetUrl(poster) : undefined}
       aria-label={title}
       onCanPlay={() => setCanPlay(true)}
       onError={() => setFailed(true)}
     >
-      <source src={src} type="video/mp4" />
+      <source src={assetUrl(src)} type="video/mp4" />
     </video>
   );
 

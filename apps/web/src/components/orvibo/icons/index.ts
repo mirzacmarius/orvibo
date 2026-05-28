@@ -1,3 +1,9 @@
-export { IconPlayerBlack } from "./IconPlayerBlack";
-export { IconPlayerWhite } from "./IconPlayerWhite";
-
+export {
+  OrviboArrowUp,
+  OrviboCaretRight,
+  OrviboClose,
+  OrviboPlay,
+  OrviboPlayCircle,
+  OrviboPlayCircleLarge,
+  OrviboPlaySmall,
+} from "./orvibo-icons";

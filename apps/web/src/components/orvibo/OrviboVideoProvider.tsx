@@ -8,6 +8,8 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { OrviboPlayCircle } from "@/components/orvibo/icons";
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 import { OrviboSiteVideoOverlay } from "./OrviboSiteVideoOverlay";
 
 interface OrviboVideoContextValue {
@@ -20,7 +22,7 @@ const OrviboVideoContext = createContext<OrviboVideoContextValue | null>(null);
 export function OrviboVideoProvider({ children }: { children: ReactNode }) {
   const [src, setSrc] = useState<string | null>(null);
 
-  const openVideo = useCallback((next: string) => setSrc(next), []);
+  const openVideo = useCallback((next: string) => setSrc(assetUrl(next)), []);
   const closeVideo = useCallback(() => setSrc(null), []);
 
   const value = useMemo(
@@ -47,18 +49,26 @@ export function OrviboWatchTrigger({
   className,
   id,
   children,
+  showPlayIcon = true,
+  playOnDark = false,
 }: {
   videoSrc: string;
   className?: string;
   id?: string;
   children: ReactNode;
+  /** Renders Phosphor play-circle beside label (replaces CSS ::after sprites). */
+  showPlayIcon?: boolean;
+  /** White play icon on dark video overlays (mixstation, homeai4). */
+  playOnDark?: boolean;
 }) {
   const { openVideo } = useOrviboVideo();
 
   return (
     <div
       id={id}
-      className={className}
+      className={[className, showPlayIcon ? "orvibo-watch-trigger" : undefined]
+        .filter(Boolean)
+        .join(" ")}
       role="button"
       tabIndex={0}
       onClick={(e) => {
@@ -72,7 +82,14 @@ export function OrviboWatchTrigger({
         }
       }}
     >
-      {children}
+      <span className="orvibo-watch-trigger__label">{children}</span>
+      {showPlayIcon ? (
+        <OrviboPlayCircle
+          onDark={playOnDark}
+          className="orvibo-watch-trigger__play"
+          size={16}
+        />
+      ) : null}
     </div>
   );
 }

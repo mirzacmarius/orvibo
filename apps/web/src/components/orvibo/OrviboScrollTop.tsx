@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { OrviboArrowUp } from "@/components/orvibo/icons";
 
 export function OrviboScrollTop() {
   const [visible, setVisible] = useState(false);
@@ -30,10 +31,7 @@ export function OrviboScrollTop() {
           }
         }}
       >
-        <img
-          src="/guanwang_second/front/images/2020/footer/arrowUp-28992f3e82.svg"
-          alt=""
-        />
+        <OrviboArrowUp className="orvibo-scroll-top__icon" />
       </div>
     </div>
   );

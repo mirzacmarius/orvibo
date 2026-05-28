@@ -3,6 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 
 interface Slide {
   src: string;
@@ -25,7 +26,7 @@ export function OrviboVerticalSwiper({ slides }: { slides: Slide[] }) {
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.src} className="swiper-slide">
-          <img src={slide.src} alt={slide.alt} loading="eager" />
+          <img src={assetUrl(slide.src)} alt={slide.alt} loading="eager" />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -1,5 +1,6 @@
 "use client";
 
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
 import { OrviboProductSwiper } from "@/components/orvibo/OrviboProductSwiper";
@@ -102,7 +103,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
       <div className="logo">
         <a href={base}>
           <img
-            src="/guanwang_second/front/images/2020/nav/logo-38c948b4cf.svg"
+            src={assetUrl("/guanwang_second/front/images/2020/nav/logo-38c948b4cf.svg")}
             alt="ORVIBO"
             title="ORVIBO"
             width={150}
@@ -212,7 +213,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixstation.html`} className="img">
                       <img
                         style={{ width: 168 }}
-                        src="/guanwang_second/front/mobile/images/new/product/mixstation/pro-8787fbfaf5.png"
+                        src={assetUrl("/guanwang_second/front/mobile/images/new/product/mixstation/pro-8787fbfaf5.png")}
                         alt=""
                       />
                     </a>
@@ -227,7 +228,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_7_ultra.html`} className="img">
                       <img
                         style={{ width: 168, height: 168 }}
-                        src="/guanwang_second/front/mobile/images/new/product/mixpad_7ultra/product-e0c57d88e5.png"
+                        src={assetUrl("/guanwang_second/front/mobile/images/new/product/mixpad_7ultra/product-e0c57d88e5.png")}
                         alt=""
                       />
                     </a>
@@ -239,7 +240,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_7.html`} className="img">
                       <img
                         style={{ width: 168, height: 168 }}
-                        src="/guanwang_second/front/images/products/mixpad_7/product-08ab3fcd26.png"
+                        src={assetUrl("/guanwang_second/front/images/products/mixpad_7/product-08ab3fcd26.png")}
                         alt=""
                       />
                     </a>
@@ -251,7 +252,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_x.html`} className="img">
                       <img
                         style={{ width: 143, height: 68 }}
-                        src="/guanwang_second/front/common/images/product_index/sec1_8-eea36ad831.png"
+                        src={assetUrl("/guanwang_second/front/common/images/product_index/sec1_8-eea36ad831.png")}
                         alt=""
                       />
                     </a>
@@ -263,7 +264,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_m2.html`} className="img">
                       <img
                         style={{ width: 168, height: 168 }}
-                        src="/guanwang_second/front/images/products/mixpad_m2/product-3b84ba6f48.png"
+                        src={assetUrl("/guanwang_second/front/images/products/mixpad_m2/product-3b84ba6f48.png")}
                         alt=""
                       />
                     </a>
@@ -275,7 +276,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_s_flagship.html`} className="img">
                       <img
                         style={{ width: 74, height: 146 }}
-                        src="/guanwang_second/front/common/images/product_index/sec1_7-6dbd00544a.png"
+                        src={assetUrl("/guanwang_second/front/common/images/product_index/sec1_7-6dbd00544a.png")}
                         alt=""
                       />
                     </a>
@@ -293,7 +294,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/gaosi.html`} className="img">
                       <img
                         style={{ width: 168 }}
-                        src="/guanwang_second/front/mobile/images/products/gaosi/pro-70e28780f4.png"
+                        src={assetUrl("/guanwang_second/front/mobile/images/products/gaosi/pro-70e28780f4.png")}
                         alt=""
                       />
                     </a>
@@ -305,7 +306,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/defy.html`} className="img">
                       <img
                         style={{ width: 168, height: 168 }}
-                        src="/guanwang_second/front/mobile/images/new/product/defy/product-acd38b85b3.png"
+                        src={assetUrl("/guanwang_second/front/mobile/images/new/product/defy/product-acd38b85b3.png")}
                         alt=""
                       />
                     </a>
@@ -317,7 +318,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/bach.html`} className="img">
                       <img
                         style={{ width: 168, height: 168 }}
-                        src="/guanwang_second/front/mobile/images/new/product/bahe/product-df2604a0b2.png"
+                        src={assetUrl("/guanwang_second/front/mobile/images/new/product/bahe/product-df2604a0b2.png")}
                         alt=""
                       />
                     </a>
@@ -329,7 +330,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_elf.html`} className="img">
                       <img
                         style={{ width: 106, height: 108 }}
-                        src="/guanwang_second/front/common/images/product_index/sec1_elf-58a058f655.png"
+                        src={assetUrl("/guanwang_second/front/common/images/product_index/sec1_elf-58a058f655.png")}
                         alt=""
                       />
                     </a>
@@ -341,7 +342,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_switch.html`} className="img">
                       <img
                         style={{ width: 145, height: 52 }}
-                        src="/guanwang_second/front/common/images/product_index/sec1_6-2c22974275.png"
+                        src={assetUrl("/guanwang_second/front/common/images/product_index/sec1_6-2c22974275.png")}
                         alt=""
                       />
                     </a>
@@ -356,7 +357,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/v5.html`} className="img">
                       <img
                         style={{ height: 142 }}
-                        src="/guanwang_second/front/images/2020/nav/product_2_4-0080946f53.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_2_4-0080946f53.png")}
                         alt=""
                       />
                     </a>
@@ -368,7 +369,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_s2.html`} className="img">
                       <img
                         style={{ width: 146, height: 123 }}
-                        src="/guanwang_second/front/common/images/product_index/sec2_4_2x-81c7aaafd3.png"
+                        src={assetUrl("/guanwang_second/front/common/images/product_index/sec2_4_2x-81c7aaafd3.png")}
                         alt=""
                       />
                     </a>
@@ -380,7 +381,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/t1c/index.html`} className="img">
                       <img
                         style={{ width: 144, height: 123 }}
-                        src="/guanwang_second/front/images/2020/nav/product_2_3-deb19fb861.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_2_3-deb19fb861.png")}
                         alt=""
                       />
                     </a>
@@ -394,7 +395,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                       <li>
                         <a href={`${base}/product/q3.html`} className="img">
                           <img
-                            src="/guanwang_second/front/mobile/images/new/product/q3/pro-eb613a2e26.png"
+                            src={assetUrl("/guanwang_second/front/mobile/images/new/product/q3/pro-eb613a2e26.png")}
                             alt=""
                             style={{ width: 130, height: 130 }}
                           />
@@ -406,7 +407,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                       <li>
                         <a href={`${base}/product/s3.html`} className="img">
                           <img
-                            src="/guanwang_second/front/images/products/s3/pro-14adbb42ea.png"
+                            src={assetUrl("/guanwang_second/front/images/products/s3/pro-14adbb42ea.png")}
                             alt=""
                             style={{ width: 130, height: 130 }}
                           />
@@ -418,7 +419,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                       <li>
                         <a href={`${base}/product/s5.html`} className="img">
                           <img
-                            src="/guanwang_second/front/images/products/s5/pro-7d582e11c3.png"
+                            src={assetUrl("/guanwang_second/front/images/products/s5/pro-7d582e11c3.png")}
                             alt=""
                             style={{ width: 130, height: 130 }}
                           />
@@ -430,7 +431,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                       <li>
                         <a href={`${base}/product/light.html`} className="img">
                           <img
-                            src="/guanwang_second/front/mobile/images/new/product/light/product-f57bbf70ce.png"
+                            src={assetUrl("/guanwang_second/front/mobile/images/new/product/light/product-f57bbf70ce.png")}
                             alt=""
                             style={{ width: 130, height: 130 }}
                           />
@@ -443,7 +444,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/cangqiong.html`} className="img">
                           <img
                             style={{ width: 130, height: 130 }}
-                            src="/guanwang_second/front/images/products/cangqiong/pro-350f4a394c.png"
+                            src={assetUrl("/guanwang_second/front/images/products/cangqiong/pro-350f4a394c.png")}
                             alt=""
                           />
                         </a>
@@ -455,7 +456,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/daofeng.html`} className="img">
                           <img
                             style={{ width: 130, height: 110, marginTop: 11 }}
-                            src="/guanwang_second/front/images/new/products/daofeng/product-d3bdd5f26b.png"
+                            src={assetUrl("/guanwang_second/front/images/new/products/daofeng/product-d3bdd5f26b.png")}
                             alt=""
                           />
                         </a>
@@ -467,7 +468,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/s.html`} className="img">
                           <img
                             style={{ width: 130, height: 110, marginTop: 30 }}
-                            src="/guanwang_second/front/common/images/product_cover/s-bbffe438bb.png"
+                            src={assetUrl("/guanwang_second/front/common/images/product_cover/s-bbffe438bb.png")}
                             alt=""
                           />
                         </a>
@@ -479,7 +480,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/q.html`} className="img">
                           <img
                             style={{ width: 130, height: 130, marginTop: 0 }}
-                            src="/guanwang_second/front/mobile/images/new/product/q/banner-9c4dc740ac.png"
+                            src={assetUrl("/guanwang_second/front/mobile/images/new/product/q/banner-9c4dc740ac.png")}
                             alt=""
                           />
                         </a>
@@ -491,7 +492,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/downlight.html`} className="img">
                           <img
                             style={{ width: 133, height: 85 }}
-                            src="/guanwang_second/front/images/2020/nav/product_3_1-3fb329a65d.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_3_1-3fb329a65d.png")}
                             alt=""
                           />
                         </a>
@@ -506,7 +507,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/curtain_3d.html`} className="img">
                       <img
                         style={{ width: 180, height: 180 }}
-                        src="/guanwang_second/front/images/new/products/curtain_3d/product-bb5952f1a2.png"
+                        src={assetUrl("/guanwang_second/front/images/new/products/curtain_3d/product-bb5952f1a2.png")}
                         alt=""
                       />
                     </a>
@@ -518,7 +519,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/motor_db28.html`} className="img">
                       <img
                         style={{ width: 180, height: 180 }}
-                        src="/guanwang_second/front/images/new/products/db28/product-888e543722.png"
+                        src={assetUrl("/guanwang_second/front/images/new/products/db28/product-888e543722.png")}
                         alt=""
                       />
                     </a>
@@ -530,7 +531,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/curtain_motor.html`} className="img">
                       <img
                         style={{ width: 180, height: 180 }}
-                        src="/guanwang_second/front/images/new/products/curtain_motor/product-6e9fd2c7f0.png"
+                        src={assetUrl("/guanwang_second/front/images/new/products/curtain_motor/product-6e9fd2c7f0.png")}
                         alt=""
                       />
                     </a>
@@ -542,7 +543,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/chuangliansmart.html`} className="img">
                       <img
                         style={{ width: 180, height: 86 }}
-                        src="/guanwang_second/front/images/2020/nav/product_4_4-2fda3d3f23.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_4_4-2fda3d3f23.png")}
                         alt=""
                       />
                     </a>
@@ -554,7 +555,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/chuanglian.html`} className="img">
                       <img
                         style={{ width: 169, height: 101 }}
-                        src="/guanwang_second/front/images/2020/nav/product_4_1-4595af592e.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_4_1-4595af592e.png")}
                         alt=""
                       />
                     </a>
@@ -566,7 +567,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/chuanglian2.html`} className="img">
                       <img
                         style={{ width: 175, height: 102 }}
-                        src="/guanwang_second/front/images/2020/nav/product_4_3-74c325ecf5.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_4_3-74c325ecf5.png")}
                         alt=""
                       />
                     </a>
@@ -581,7 +582,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/camera_4.html`} className="img">
                           <img
                             style={{ width: 126, height: 126 }}
-                            src="/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png"
+                            src={assetUrl("/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png")}
                             alt=""
                           />
                         </a>
@@ -593,7 +594,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/yuntai.html`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src="/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png"
+                            src={assetUrl("/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png")}
                             alt=""
                           />
                         </a>
@@ -605,7 +606,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/doorsensor.html`} className="img">
                           <img
                             style={{ width: 114, height: 114 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_3-2885f56684.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_3-2885f56684.png")}
                             alt=""
                           />
                         </a>
@@ -617,7 +618,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/bodysensor.html`} className="img">
                           <img
                             style={{ width: 126, height: 113 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_4-7ac0661d60.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_4-7ac0661d60.png")}
                             alt=""
                           />
                         </a>
@@ -629,7 +630,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/temp_hum_sensor.html`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_5-3a6e8b2d44.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_5-3a6e8b2d44.png")}
                             alt=""
                           />
                         </a>
@@ -644,7 +645,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/co_alarm.html`} className="img">
                           <img
                             style={{ width: 90, height: 80 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png")}
                             alt=""
                           />
                         </a>
@@ -656,7 +657,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/sos.html`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png")}
                             alt=""
                           />
                         </a>
@@ -671,7 +672,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         >
                           <img
                             style={{ width: 96, height: 96 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png")}
                             alt=""
                           />
                         </a>
@@ -686,7 +687,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/gas_sensor.html`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png")}
                             alt=""
                           />
                         </a>
@@ -698,7 +699,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${base}/product/water_alarm.html`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src="/guanwang_second/front/images/2020/nav/product_5_10-d7d8253317.png"
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_10-d7d8253317.png")}
                             alt=""
                           />
                         </a>
@@ -713,7 +714,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_plus.html`} className="img">
                       <img
                         style={{ width: 130, height: 118 }}
-                        src="/guanwang_second/front/images/2020/nav/product_6-94094f7d1c.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_6-94094f7d1c.png")}
                         alt=""
                       />
                     </a>
@@ -728,7 +729,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/mixpad_mirror.html`} className="img">
                       <img
                         style={{ width: 132, height: 132 }}
-                        src="/guanwang_second/front/images/products/mixpad_mirror/product-39c79a515d.png"
+                        src={assetUrl("/guanwang_second/front/images/products/mixpad_mirror/product-39c79a515d.png")}
                         alt=""
                       />
                     </a>
@@ -740,7 +741,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/robot_r2.html`} className="img">
                       <img
                         style={{ width: 132, height: 132 }}
-                        src="/guanwang_second/front/images/products/robot_r2/product-92305e1a8b.png"
+                        src={assetUrl("/guanwang_second/front/images/products/robot_r2/product-92305e1a8b.png")}
                         alt=""
                       />
                     </a>
@@ -752,7 +753,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/artisbox_play.html`} className="img">
                       <img
                         style={{ width: 132, height: 132 }}
-                        src="/guanwang_second/front/images/products/artisbox_play/product-0a99af25fd.png"
+                        src={assetUrl("/guanwang_second/front/images/products/artisbox_play/product-0a99af25fd.png")}
                         alt=""
                       />
                     </a>
@@ -767,7 +768,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/xiaofang.html`} className="img">
                       <img
                         style={{ width: 78, height: 77 }}
-                        src="/guanwang_second/front/images/2020/nav/product_8_1-50825d0ada.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_8_1-50825d0ada.png")}
                         alt=""
                       />
                     </a>
@@ -779,7 +780,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                     <a href={`${base}/product/s30c.html`} className="img">
                       <img
                         style={{ width: 73, height: 91 }}
-                        src="/guanwang_second/front/images/2020/nav/product_8_2-87aae68057.png"
+                        src={assetUrl("/guanwang_second/front/images/2020/nav/product_8_2-87aae68057.png")}
                         alt=""
                       />
                     </a>

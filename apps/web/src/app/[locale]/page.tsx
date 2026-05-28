@@ -8,7 +8,8 @@ import { OrviboHeader } from "@/components/orvibo/OrviboHeader";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { OrviboFooter } from "@/components/orvibo/OrviboFooter";
 import { OrviboScrollTop } from "@/components/orvibo/OrviboScrollTop";
-import { IconChevronRight } from "@/components/orvibo/icons/IconChevronRight";
+import { OrviboCaretRight } from "@/components/orvibo/icons";
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 
 export default async function Page({
   params,
@@ -20,6 +21,7 @@ export default async function Page({
 
   const dict = await getDictionary(locale);
   const base = `/${locale}`;
+  const media = (path: string) => assetUrl(path);
 
   return (
     <div className="orvibo-home min-h-screen min-w-0 bg-[#f0f2f5] text-[#111]">
@@ -41,6 +43,7 @@ export default async function Page({
               videoSrc="/orvibo/videos/mixStation.mp4"
               className="video__watch"
               id="mixstation-video"
+              playOnDark
             >
               {dict.common.watchVideo}
             </OrviboWatchTrigger>
@@ -81,6 +84,7 @@ export default async function Page({
               videoSrc="/orvibo/videos/orvibo_homeai4_all.mp4"
               className="video__watch"
               id="homeai-video"
+              playOnDark
             >
               {dict.common.watchVideo}
             </OrviboWatchTrigger>
@@ -99,7 +103,7 @@ export default async function Page({
               style={{
                 height: "8.08rem",
                 backgroundImage:
-                  "url(/guanwang_second/front/images/products/gaosi/1600--808-dd596dd4a5.jpg)",
+                  `url(${media("/guanwang_second/front/images/products/gaosi/1600--808-dd596dd4a5.jpg)")})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -139,7 +143,7 @@ export default async function Page({
               style={{
                 height: "8.08rem",
                 backgroundImage:
-                  "url(/guanwang_second/front/images/2020/index/sec3-e67092a725.png)",
+                  `url(${media("/guanwang_second/front/images/2020/index/sec3-e67092a725.png)")})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -158,7 +162,7 @@ export default async function Page({
                   className="item__img"
                   style={{
                     backgroundImage:
-                      "url(/guanwang_second/front/images/2020/index/pic-8c18754e44.png)",
+                      `url(${media("/guanwang_second/front/images/2020/index/pic-8c18754e44.png)")})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     width: "100%",
@@ -174,7 +178,7 @@ export default async function Page({
                   className="item__img"
                   style={{
                     backgroundImage:
-                      "url(/guanwang_second/front/images/products/s5/pro-7d582e11c3.png)",
+                      `url(${media("/guanwang_second/front/images/products/s5/pro-7d582e11c3.png)")})`,
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
@@ -191,7 +195,7 @@ export default async function Page({
                   className="item__img"
                   style={{
                     backgroundImage:
-                      "url(/guanwang_second/front/images/2020/index/daofeng-2ef460b3b8.png)",
+                      `url(${media("/guanwang_second/front/images/2020/index/daofeng-2ef460b3b8.png)")})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     width: "100%",
@@ -207,7 +211,7 @@ export default async function Page({
                   className="item__img"
                   style={{
                     backgroundImage:
-                      "url(/guanwang_second/front/images/2020/nav/product_2_4-0080946f53.png)",
+                      `url(${media("/guanwang_second/front/images/2020/nav/product_2_4-0080946f53.png)")})`,
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
@@ -224,7 +228,7 @@ export default async function Page({
                   className="item__img"
                   style={{
                     backgroundImage:
-                      "url(/guanwang_second/front/mobile/images/new/product/light/product-f57bbf70ce.png)",
+                      `url(${media("/guanwang_second/front/mobile/images/new/product/light/product-f57bbf70ce.png)")})`,
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "center",
@@ -256,6 +260,7 @@ export default async function Page({
               videoSrc="/orvibo/videos/orvibo_store_all.mp4"
               className="new_btn white resizable wide"
               id="sec5-video"
+              showPlayIcon={false}
             >
               <span>{dict.common.playVideo}</span>
             </OrviboWatchTrigger>
@@ -268,14 +273,14 @@ export default async function Page({
             className="card bg"
             style={{
               backgroundImage:
-                "url(/guanwang_second/front/images/2020/index/sec6_1-89269b671e.jpg)",
+                `url(${media("/guanwang_second/front/images/2020/index/sec6_1-89269b671e.jpg)")})`,
             }}
           >
             <div className="title">{dict.cards.partnership.title}</div>
             <div className="desc">{dict.cards.partnership.desc}</div>
             <span className="act">
               {dict.common.learnMore}
-              <IconChevronRight className="sec6-chevron" />
+              <OrviboCaretRight className="sec6-chevron" />
             </span>
           </Link>
           <Link
@@ -283,14 +288,14 @@ export default async function Page({
             className="card bg"
             style={{
               backgroundImage:
-                "url(/guanwang_second/front/images/2020/index/sec6_2-574c2a4402.jpg)",
+                `url(${media("/guanwang_second/front/images/2020/index/sec6_2-574c2a4402.jpg)")})`,
             }}
           >
             <div className="title">{dict.cards.custom.title}</div>
             <div className="desc">{dict.cards.custom.desc}</div>
             <span className="act">
               {dict.common.learnMore}
-              <IconChevronRight className="sec6-chevron" />
+              <OrviboCaretRight className="sec6-chevron" />
             </span>
           </Link>
           <Link
@@ -298,14 +303,14 @@ export default async function Page({
             className="card bg"
             style={{
               backgroundImage:
-                "url(/guanwang_second/front/images/2020/index/sec6_3-f265c5b27d.jpg)",
+                `url(${media("/guanwang_second/front/images/2020/index/sec6_3-f265c5b27d.jpg)")})`,
             }}
           >
             <div className="title">{dict.cards.cases.title}</div>
             <div className="desc">{dict.cards.cases.desc}</div>
             <span className="act">
               {dict.common.learnMore}
-              <IconChevronRight className="sec6-chevron" />
+              <OrviboCaretRight className="sec6-chevron" />
             </span>
           </Link>
         </section>

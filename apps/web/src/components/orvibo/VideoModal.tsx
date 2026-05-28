@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useId, useRef } from "react";
+import { OrviboClose } from "@/components/orvibo/icons";
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 
 type Props = {
   open: boolean;
@@ -40,8 +42,10 @@ export function VideoModal({ open, onClose, src, title }: Props) {
           <button
             type="button"
             onClick={onClose}
-            className="absolute -top-10 right-0 text-white/80 hover:text-white text-sm"
+            className="absolute -top-10 right-0 flex items-center gap-2 text-white/80 hover:text-white text-sm"
+            aria-label="Close"
           >
+            <OrviboClose size={20} />
             Close
           </button>
           <div className="sr-only" id={titleId}>
@@ -53,7 +57,7 @@ export function VideoModal({ open, onClose, src, title }: Props) {
             playsInline
             className="w-full rounded-md bg-black"
           >
-            <source src={src} type="video/mp4" />
+            <source src={assetUrl(src)} type="video/mp4" />
             <track kind="captions" />
           </video>
         </div>

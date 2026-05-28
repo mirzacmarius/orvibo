@@ -239,12 +239,79 @@ body:has(.orvibo-site) {
   object-fit: cover;
 }
 
-/* sec6 cards: SVG chevron replaces broken iconfont glyph */
+/* sec6 cards: Phosphor caret replaces legacy iconfont .icon-youjiantou */
 .sec6 .card .act .sec6-chevron {
   display: inline-block;
   vertical-align: -0.05em;
   margin-left: 0.06rem;
   flex-shrink: 0;
+}
+
+.orvibo-video-close {
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+}
+
+.orvibo-video-close__icon {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.orvibo-scroll-top__icon {
+  margin-top: 21px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Watch-video CTA: Phosphor play-circle replaces icon_player_* ::after sprites */
+.orvibo-site .video__watch::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+.orvibo-watch-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.06rem;
+}
+
+.orvibo-watch-trigger__label {
+  display: inline;
+}
+
+.orvibo-watch-trigger__play {
+  flex-shrink: 0;
+  margin-top: 0.01rem;
+}
+
+.orvibo-site .video__container.mixstation .orvibo-watch-trigger__play,
+.orvibo-site .video__container.homeai4 .orvibo-watch-trigger__play {
+  color: #fff;
+}
+
+/* sec7 gallery: Phosphor play on hover replaces icon_play.png ::after */
+.orvibo-site .sec7 .videos .video .bg::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+.orvibo-video-card__play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 0.8rem;
+  height: 0.8rem;
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+}
+
+.orvibo-site .sec7 .videos .video .bg:hover .orvibo-video-card__play-icon {
+  opacity: 1;
 }
 
 /* Video center: legacy CSS hid thumbnails with z-index:-1 behind the card */

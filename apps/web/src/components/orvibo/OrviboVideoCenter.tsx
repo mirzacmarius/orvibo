@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { OrviboPlayCircleLarge } from "@/components/orvibo/icons";
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 import { VideoModal } from "./VideoModal";
 
 type VideoItem = {
@@ -42,7 +44,8 @@ export function OrviboVideoCenter({
               }}
             >
               <div className="bg">
-                <img src={v.thumbSrc} alt="" />
+                <img src={assetUrl(v.thumbSrc)} alt="" />
+                <OrviboPlayCircleLarge />
               </div>
               <div className="title">{v.title}</div>
             </div>
@@ -63,7 +66,8 @@ export function OrviboVideoCenter({
               }}
             >
               <div className="bg">
-                <img src={v.thumbSrc} alt="" />
+                <img src={assetUrl(v.thumbSrc)} alt="" />
+                <OrviboPlayCircleLarge />
               </div>
               <div className="title">{v.title}</div>
             </div>

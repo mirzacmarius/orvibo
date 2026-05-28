@@ -1,0 +1,10 @@
+# Cloudflare R2 bucket for Orvibo marketing images and videos.
+# Create: wrangler r2 bucket create orvibo-assets
+# Upload: bun run orvibo:upload-r2 (from apps/web, with R2_* env vars set)
+name = "orvibo-assets"
+compatibility_date = "2024-08-01"
+
+[[r2_buckets]]
+binding = "ORVIBO_ASSETS"
+bucket_name = "orvibo-assets"
+preview_bucket_name = "orvibo-assets-preview"

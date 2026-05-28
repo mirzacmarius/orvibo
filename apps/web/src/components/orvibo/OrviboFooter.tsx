@@ -1,3 +1,4 @@
+import { assetUrl } from "@/lib/orvibo/assetUrl";
 import Link from "next/link";
 import { resolveExternalUrl } from "@/lib/orvibo/resolveExternalUrl";
 import type { Dictionary } from "@/app/[locale]/dictionaries";
@@ -20,7 +21,7 @@ export function OrviboFooter({
       <div className="online-service">
         <span className="online">
           <img
-            src="/guanwang_second/front/images/2020/footer/icon_service-db9e83a8e2.svg"
+            src={assetUrl("/guanwang_second/front/images/2020/footer/icon_service-db9e83a8e2.svg")}
             alt=""
           />
         </span>
@@ -33,7 +34,7 @@ export function OrviboFooter({
         </div>
         <div className="con">
           <img
-            src="/guanwang_second/front/images/2020/footer/cooperation-8ab11e3c28.svg"
+            src={assetUrl("/guanwang_second/front/images/2020/footer/cooperation-8ab11e3c28.svg")}
             alt=""
           />
         </div>
@@ -163,7 +164,7 @@ export function OrviboFooter({
               <div className="wechat">
                 <div className="wechat_erweima">
                   <img
-                    src="/guanwang_second/front/images/2020/nav/wechat_erweima-2d0be50489.png"
+                    src={assetUrl("/guanwang_second/front/images/2020/nav/wechat_erweima-2d0be50489.png")}
                     alt=""
                   />
                 </div>
