@@ -21,7 +21,13 @@
     "lint": "turbo lint && bun lint:repo",
     "lint:repo": "bunx sherif@latest",
     "lint:repo:fix": "bunx sherif@latest --fix",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "orvibo:sync-assets": "bun run --cwd apps/web orvibo:sync-assets",
+    "orvibo:upload-r2": "bun run --cwd apps/web orvibo:upload-r2",
+    "orvibo:upload-r2:dry": "bun run --cwd apps/web orvibo:upload-r2:dry",
+    "orvibo:r2-preflight": "bun run --cwd apps/web orvibo:r2-preflight",
+    "orvibo:verify-r2": "bun run --cwd apps/web orvibo:verify-r2",
+    "orvibo:check-links": "bun run --cwd apps/web orvibo:check-links"
   },
   "devDependencies": {
     "@auth/core": "0.37.0",
