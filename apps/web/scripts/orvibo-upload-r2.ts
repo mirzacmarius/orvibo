@@ -57,7 +57,7 @@ async function main() {
   const prefixes = ["guanwang_second", "orvibo", "8f4239b1vodgzp1251222210"];
 
   let uploaded = 0;
-  let skipped = 0;
+  const skipped = 0;
   let failed = 0;
 
   for (const prefix of prefixes) {
