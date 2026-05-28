@@ -29,6 +29,10 @@ const nextConfig = {
         source: "/8f4239b1vodgzp1251222210/:path*",
         destination: `${assetsOrigin}/8f4239b1vodgzp1251222210/:path*`,
       },
+      {
+        source: "/open/:path*",
+        destination: `${assetsOrigin}/open/:path*`,
+      },
     ];
   },
 };

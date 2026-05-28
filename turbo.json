@@ -14,7 +14,9 @@
         "OPENPANEL_SECRET_KEY",
         "SENTRY_AUTH_TOKEN",
         "SENTRY_ORG",
-        "SENTRY_PROJECT"
+        "SENTRY_PROJECT",
+        "NEXT_PUBLIC_ORVIBO_ASSETS_URL",
+        "ORVIBO_ASSETS_ORIGIN"
       ],
       "inputs": ["$TURBO_DEFAULT$", ".env"],
       "dependsOn": ["^build"],

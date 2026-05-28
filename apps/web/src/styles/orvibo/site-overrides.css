@@ -289,6 +289,18 @@ body:has(.orvibo-site) {
   color: #fff;
 }
 
+.orvibo-site .mixstation .block {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.orvibo-site .homeai4 .homeai__logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* sec7 gallery: Phosphor play on hover replaces icon_play.png ::after */
 .orvibo-site .sec7 .videos .video .bg::after {
   content: none !important;
@@ -328,6 +340,18 @@ body:has(.orvibo-site) {
 .sec7 .videos .video .bg::after {
   z-index: 1;
   pointer-events: none;
+}
+
+/* Center fixed-width rem sections on homepage only (not product `.sec3` / `.sec4`) */
+.orvibo-site .orvibo-home .sec2 .sec2__video,
+.orvibo-site .orvibo-home .sec3,
+.orvibo-site .orvibo-home .sec4,
+.orvibo-site .orvibo-home .sec5,
+.orvibo-site .orvibo-home .sec.w.sec6 {
+  max-width: min(16rem, calc(100% - 32px));
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 /* Page content: full width on narrow screens */

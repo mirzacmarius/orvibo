@@ -596,7 +596,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${routes.product("yuntai")}`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src={assetUrl("/guanwang_second/front/images/products/camera/camera-6e53cb8e1f.png")}
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_2-a123782e2e.png")}
                             alt=""
                           />
                         </a>
@@ -647,7 +647,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${routes.product("co_alarm")}`} className="img">
                           <img
                             style={{ width: 90, height: 80 }}
-                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_7-7c956652d4.png")}
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_6-f321225cc2.png")}
                             alt=""
                           />
                         </a>
@@ -689,7 +689,7 @@ export function OrviboHeader({ base, nav, products }: OrviboHeaderProps) {
                         <a href={`${routes.product("gas_sensor")}`} className="img">
                           <img
                             style={{ width: 96, height: 96 }}
-                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_8-126bad2de3.png")}
+                            src={assetUrl("/guanwang_second/front/images/2020/nav/product_5_9-6b33e0c065.png")}
                             alt=""
                           />
                         </a>

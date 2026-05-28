@@ -13,6 +13,9 @@
     "orvibo:check-links": "bun scripts/check-orvibo-links.ts",
     "orvibo:sync-assets": "bun scripts/orvibo-sync-assets.ts",
     "orvibo:upload-r2": "bun scripts/orvibo-upload-r2.ts",
+    "orvibo:upload-r2:dry": "bun scripts/orvibo-upload-r2.ts --dry-run",
+    "orvibo:r2-preflight": "bun scripts/orvibo-r2-preflight.ts",
+    "orvibo:verify-r2": "bun scripts/orvibo-verify-r2.ts",
     "orvibo:strip-iconfont": "bun scripts/orvibo-strip-iconfont.ts"
   },
   "dependencies": {

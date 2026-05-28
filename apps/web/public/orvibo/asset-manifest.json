@@ -10,11 +10,6 @@
     "kind": "video"
   },
   {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/bower_components/jquery/dist/jquery.min.js",
-    "publicPath": "/guanwang_second/front/bower_components/jquery/dist/jquery.min.js",
-    "kind": "js"
-  },
-  {
     "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_cover/s-bbffe438bb.png",
     "publicPath": "/guanwang_second/front/common/images/product_cover/s-bbffe438bb.png",
     "kind": "image"
@@ -43,26 +38,6 @@
     "sourceUrl": "https://static.orvibo.com/guanwang_second/front/common/images/product_index/sec2_4_2x-81c7aaafd3.png",
     "publicPath": "/guanwang_second/front/common/images/product_index/sec2_4_2x-81c7aaafd3.png",
     "kind": "image"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/base-d3ba1b8e2c.css",
-    "publicPath": "/guanwang_second/front/css/base-d3ba1b8e2c.css",
-    "kind": "css"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/global_ch-ac52a3605b.css",
-    "publicPath": "/guanwang_second/front/css/global_ch-ac52a3605b.css",
-    "kind": "css"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/index_2020-7f85cdb244.css",
-    "publicPath": "/guanwang_second/front/css/index_2020-7f85cdb244.css",
-    "kind": "css"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/css/swiper-bb2bb34927.min.css",
-    "publicPath": "/guanwang_second/front/css/swiper-bb2bb34927.min.css",
-    "kind": "css"
   },
   {
     "sourceUrl": "https://www.orvibo.com/guanwang_second/front/images/2019/index/video/icon_play-525abb68fd.png",
@@ -430,31 +405,6 @@
     "kind": "image"
   },
   {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/common_ch-2615e9792f.js",
-    "publicPath": "/guanwang_second/front/js/common_ch-2615e9792f.js",
-    "kind": "js"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/jquery-26d73018f3.lazyload.min.js",
-    "publicPath": "/guanwang_second/front/js/jquery-26d73018f3.lazyload.min.js",
-    "kind": "js"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/newprm-5f2170c39d.js",
-    "publicPath": "/guanwang_second/front/js/newprm-5f2170c39d.js",
-    "kind": "js"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/swiper-38aab80e2e.min.js",
-    "publicPath": "/guanwang_second/front/js/swiper-38aab80e2e.min.js",
-    "kind": "js"
-  },
-  {
-    "sourceUrl": "https://static.orvibo.com/guanwang_second/front/js/utils-2abbeea81e.js",
-    "publicPath": "/guanwang_second/front/js/utils-2abbeea81e.js",
-    "kind": "js"
-  },
-  {
     "sourceUrl": "https://static.orvibo.com/guanwang_second/front/mobile/images/home/sopro-b8d4b6986b.png",
     "publicPath": "/guanwang_second/front/mobile/images/home/sopro-b8d4b6986b.png",
     "kind": "image"
@@ -588,20 +538,5 @@
     "sourceUrl": "https://website-static.orvibo.com/media/orvibo_tvc_matter.mp4",
     "publicPath": "/media/orvibo_tvc_matter.mp4",
     "kind": "video"
-  },
-  {
-    "sourceUrl": "http://res.wx.qq.com/open/js/jweixin-1.0.0.js",
-    "publicPath": "/open/js/jweixin-1.0.0.js",
-    "kind": "js"
-  },
-  {
-    "sourceUrl": "https://www.orvibo.com/orvibo/guanwang_second/front/js/html5shiv-b9933e9a8c.js",
-    "publicPath": "/orvibo/guanwang_second/front/js/html5shiv-b9933e9a8c.js",
-    "kind": "js"
-  },
-  {
-    "sourceUrl": "https://www.orvibo.com/orvibo/guanwang_second/front/js/jquery-1.9-3a88a30287.1.min.js",
-    "publicPath": "/orvibo/guanwang_second/front/js/jquery-1.9-3a88a30287.1.min.js",
-    "kind": "js"
   }
 ]

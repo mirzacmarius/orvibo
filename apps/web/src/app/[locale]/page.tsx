@@ -38,6 +38,14 @@ export default async function Page({
             title="MixStation"
           />
           <div className="video__mask">
+            <div
+              className="block"
+              style={{
+                backgroundImage: `url(${media("/guanwang_second/front/images/new/products/mixstation/logo_home-1a3457a96c.png")})`,
+              }}
+              role="img"
+              aria-label="MixStation"
+            />
             <Link href={`${routes.product("mixstation")}`} className="video__more">
               <span className="more__text">{dict.common.learnMore}</span>
             </Link>
@@ -78,7 +86,14 @@ export default async function Page({
           />
           <div className="video__mask">
             <div className="video__title">{dict.hero.tagline}</div>
-            <div className="homeai__logo" />
+            <div
+              className="homeai__logo"
+              style={{
+                backgroundImage: `url(${media("/guanwang_second/front/images/homeai4/icon_home_logo-7a0f0510b9.svg")})`,
+              }}
+              role="img"
+              aria-label="HomeAI"
+            />
             <Link href={`${base}`} className="video__more">
               <span className="more__text">{dict.common.learnMore}</span>
             </Link>
