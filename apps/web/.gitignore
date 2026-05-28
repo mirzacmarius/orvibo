@@ -1,6 +1,15 @@
 .env.local
 .env
 
+# Accidental nested sync output (use apps/web/public/ only)
+/apps/
+
+# Orphan Convex codegen from wrong working directory
+/convex/
+
+# Duplicate video dump from sync (canonical paths: public/orvibo/videos/)
+/public/media/
+
 # Videos over GitHub's 100MB limit — download locally: bun run orvibo:sync-assets
 # After sync, upload to R2: bun run orvibo:upload-r2
 public/orvibo/videos/mixStation.mp4
