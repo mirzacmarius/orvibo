@@ -1,7 +1,7 @@
 import { readdir, stat } from "node:fs/promises";
 import path from "node:path";
 
-const PREFIXES = ["guanwang_second", "orvibo", "8f4239b1vodgzp1251222210", "open"];
+const PREFIXES = ["guanwang_second", "orvibo", "8f4239b1vodgzp1251222210"];
 
 async function walkFiles(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true });

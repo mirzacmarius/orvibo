@@ -1,3 +1,4 @@
+import { shouldSyncFromLiveSite } from "../src/lib/orvibo/publicAssetFilter";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -157,9 +158,8 @@ async function main() {
     const publicPath = urlToPublicPath(abs);
     if (!publicPath) continue;
 
-    // Skip HTML pages; keep assets only.
     const kind = classify(abs);
-    if (kind === "other") continue;
+    if (!shouldSyncFromLiveSite(kind)) continue;
 
     assets.push({ sourceUrl: abs, publicPath, kind });
   }

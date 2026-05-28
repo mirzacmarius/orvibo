@@ -1,6 +1,10 @@
 .env.local
 .env
 
+# Legacy CN site scripts (React app uses npm swiper + components, not jQuery)
+public/guanwang_second/front/js/
+public/guanwang_second/front/bower_components/
+
 # Accidental nested sync output (use apps/web/public/ only)
 /apps/
 

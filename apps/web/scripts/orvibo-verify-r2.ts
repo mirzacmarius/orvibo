@@ -2,7 +2,6 @@ const SAMPLE_PATHS = [
   "/guanwang_second/front/images/2020/nav/logo-38c948b4cf.svg",
   "/orvibo/videos/mixstation_1.mp4",
   "/orvibo/videos/conference2023_2.mp4",
-  "/open/js/jweixin-1.0.0.js",
 ];
 
 async function main() {

@@ -1,3 +1,4 @@
+import { shouldHostOnCdn } from "../src/lib/orvibo/publicAssetFilter";
 import { readFile, readdir, stat } from "node:fs/promises";
 import path from "node:path";
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
@@ -6,7 +7,6 @@ const UPLOAD_PREFIXES = [
   "guanwang_second",
   "orvibo",
   "8f4239b1vodgzp1251222210",
-  "open",
 ] as const;
 
 const CONTENT_TYPES: Record<string, string> = {
@@ -79,6 +79,7 @@ async function collectUploadJobs(publicRoot: string) {
     const files = await walkFiles(dir);
     for (const filePath of files) {
       const key = path.relative(publicRoot, filePath).split(path.sep).join("/");
+      if (!shouldHostOnCdn(`/${key}`)) continue;
       const { size } = await stat(filePath);
       jobs.push({ filePath, key, size });
     }
