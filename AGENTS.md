@@ -39,12 +39,18 @@ The backend dev script (`packages/backend/scripts/convex-dev.mjs`) requires eith
 
 In non-interactive Cloud Agent environments without `CONVEX_DEPLOY_KEY`, the backend script gracefully skips and exits 0. The Next.js apps still start and serve pages.
 
-**Important**: `CONVEX_DEPLOY_KEY` enables `convex deploy` (push schema/functions) but `convex dev` still requires interactive login. To deploy schema changes in CI/non-interactive mode, use:
+**Important**: With `CONVEX_DEPLOY_KEY` in `packages/backend/.env.local`, `convex-dev.mjs` runs `convex dev` without a TTY. For one-off schema pushes only, use:
 ```bash
 cd packages/backend && bunx convex deploy --cmd "echo done"
 ```
 
 The Convex URL for this project is stored in `apps/app/.env` and `apps/web/.env` as `NEXT_PUBLIC_CONVEX_URL`. It can be derived from a successful `convex deploy` output.
+
+### Cloud VM toolchain
+
+- If `bun` is not on `PATH`, install the pinned version: `curl -fsSL https://bun.sh/install | bash -s "bun-v1.1.26"`, then `export PATH="$HOME/.bun/bin:$PATH"` (also added to `~/.bashrc` by the installer).
+- When Cursor injects `NEXT_PUBLIC_CONVEX_URL` / `CONVEX_DEPLOY_KEY`, write them into `apps/app/.env`, `apps/web/.env`, and `packages/backend/.env.local` before starting dev servers (these files are gitignored).
+- Use tmux for long-running `bun dev` (ports **3000** app, **3001** web, **3003** email preview).
 
 ### Gotchas
 
