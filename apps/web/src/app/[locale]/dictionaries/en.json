@@ -11,6 +11,14 @@
     "english": "English",
     "chinese": "中文"
   },
+  "shell": {
+    "comingSoon": {
+      "title": "Coming soon",
+      "description": "This page is queued for the Tailwind migration.",
+      "body": "The route is already wired into the new site shell so the shared chrome can be validated before the full page clone lands."
+    },
+    "unbuiltProduct": "This product page is not built yet. Each product uses its own React layout registered in the product catalog."
+  },
   "nav": {
     "home": "Home",
     "wholeHome": "Smarthome",
@@ -161,5 +169,270 @@
     "copyright": "Copyright © 2014–2023 Shenzhen ORVIBO Technology Co., Ltd. All rights reserved.",
     "privacy": "Privacy policy",
     "investmentNotice": "Investment involves risk; partnership requires due diligence."
+  },
+  "pages": {
+    "product": {
+      "meta": {
+        "title": "Products",
+        "description": "Explore ORVIBO smart panels, lighting, HVAC, security, and whole-home automation products."
+      },
+      "title": "Products",
+      "lead": "Product catalog page — full clone coming in ORV-17."
+    },
+    "cooperation": {
+      "meta": {
+        "title": "Dealer program",
+        "description": "Partner with ORVIBO — dealer incentives, training, and smart-home retail support."
+      },
+      "title": "Dealer program",
+      "lead": "Seize the smart-home opportunity with ORVIBO's dealer and distributor program.",
+      "sections": {
+        "opportunity": "Capture the smart-home growth wave",
+        "homeEconomy": "Home economy rises — elevate the at-home experience",
+        "brand": "Premium whole-home smart brand",
+        "design": "Technology and aesthetics — award-winning product design",
+        "investors": "Strategic investment from Evergrande, Midea Real Estate & Red Star Macalline",
+        "realEstate": "Proven smart real-estate delivery capability",
+        "families": "Premium whole-home intelligence for quality households worldwide",
+        "partners": "Top real-estate and hospitality partners nationwide",
+        "stores": "Mature offline retail operations",
+        "policy": "Comprehensive franchise policy for whole-home intelligence",
+        "subsidy": "Strong subsidies to support new stores",
+        "traffic": "Targeted traffic to drive in-store conversion",
+        "training": "Expert trainers — one-to-one coaching",
+        "zhijiayi": "Zhijiayi — one-stop smart-home marketing platform",
+        "cta": "Become a dealer / distributor"
+      }
+    },
+    "estate": {
+      "meta": {
+        "title": "Real estate projects",
+        "description": "ORVIBO whole-home smart solutions for residential and commercial real-estate developments."
+      },
+      "title": "Real estate projects",
+      "lead": "Deliver premium whole-home intelligence for landmark developments."
+    },
+    "store": {
+      "meta": {
+        "title": "Offline stores",
+        "description": "Find ORVIBO smart home experience stores and book a visit near you."
+      },
+      "title": "Offline stores",
+      "lead": "Visit an ORVIBO experience store to explore whole-home smart living."
+    },
+    "app": {
+      "meta": {
+        "title": "ORVIBO Home app",
+        "description": "Download the ORVIBO Home app to control devices, scenes, and whole-home automation."
+      },
+      "title": "ORVIBO Home app",
+      "lead": "Control your whole-home smart system from your phone."
+    },
+    "exploreConference": {
+      "meta": {
+        "title": "Product launches",
+        "description": "Watch ORVIBO product launch events and keynote videos."
+      },
+      "title": "Product launches",
+      "lead": "Explore launch events and films from ORVIBO."
+    },
+    "about": {
+      "about_us": {
+        "meta": {
+          "title": "Company profile",
+          "description": "ORVIBO leads whole-home smart living with HomeAI OS, MixPad panels, lighting, security, and integrated HVAC."
+        },
+        "title": "Company profile",
+        "lead": "ORVIBO is a global leader in core smart-home categories.",
+        "hero": "ORVIBO is globally leading in the core categories of the smart home industry",
+        "homeAi": "ORVIBO secure and stable HomeAI OS supports Matter & GPT, whole-house energy management, and infinite OTA upgrades.",
+        "mixpad": "MixPad — the world's first multi-function smart voice switch, nine innovations in four years",
+        "lighting": "Smart lighting — precise dimming across 8 categories and 300+ best-selling fixtures",
+        "lock": "Smart door locks — award-winning design and six convenient unlocking methods",
+        "curtain": "Smart shading — accurate control with ultra-long-range coverage and quick retrofit",
+        "security": "Smart security — cameras, sensors, and emergency products for whole-home protection",
+        "mixstation": "MixStation — integrated central HVAC, hot water, and heating in one energy-saving system",
+        "scale": "ORVIBO has served over 4.5 million households worldwide",
+        "realEstate": "Preferred smart-home brand for real-estate developers and operators",
+        "carriers": "Strategic partner to China's major telecom smart-home platforms",
+        "stores": "More than 1,600 smart home stores in 100+ countries and regions",
+        "design": "World-class product design — winner of major international design awards",
+        "philosophy": "We combine technology and aesthetics to bring delightful intelligent living to the world."
+      },
+      "culture": {
+        "meta": {
+          "title": "Culture",
+          "description": "ORVIBO culture — accelerating the global tech-residential process with technology and aesthetics."
+        },
+        "title": "Culture",
+        "lead": "Accelerating the global tech-residential process with technology and aesthetics.",
+        "mission": "ORVIBO is a global leading whole-house smart home solution provider since 2011.",
+        "exploration": "Continuous exploration — we stay close to users and exceed expectations.",
+        "strivers": "Success comes from strivers — we pursue excellence, not mediocrity."
+      },
+      "join_us": {
+        "meta": {
+          "title": "Careers",
+          "description": "Join ORVIBO — build the future of whole-home intelligence."
+        },
+        "title": "Careers",
+        "lead": "Join us to shape the next era of smart living."
+      },
+      "contact": {
+        "meta": {
+          "title": "Contact us",
+          "description": "Contact ORVIBO for partnerships, support, and business inquiries."
+        },
+        "title": "Contact us",
+        "lead": "Reach our team for partnerships, projects, and customer support.",
+        "cta": "Become a Partner/Distributor"
+      }
+    },
+    "services": {
+      "customization": {
+        "meta": {
+          "title": "Custom solutions",
+          "description": "ORVIBO custom smart-home design — consultation, planning, installation, and after-sales service."
+        },
+        "title": "Custom solutions",
+        "lead": "End-to-end smart-home customization for homes, hotels, and commercial spaces."
+      },
+      "case": {
+        "meta": {
+          "title": "Featured projects",
+          "description": "ORVIBO reference projects — smart homes, hotels, real estate, and offices."
+        },
+        "title": "Featured projects",
+        "lead": "Selected case studies across smart home, hospitality, real estate, and workspace."
+      }
+    }
+  },
+  "products": {
+    "mixstation": {
+      "title": "ORVIBO Integrated HVAC",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {
+        "value": {
+          "title": "One system, multiple modes — save energy and effort"
+        },
+        "savings": {
+          "title": "Lower running costs"
+        },
+        "comfort": {
+          "title": "Greater comfort"
+        },
+        "compact": {
+          "title": "45% smaller footprint*",
+          "description": "Villa-grade comfort for medium and compact homes"
+        },
+        "power": {
+          "title": "Stronger performance"
+        },
+        "smart": {
+          "title": "Powered by MixPad smart panel"
+        },
+        "design": {
+          "title": "Award-winning design"
+        },
+        "airpro": {
+          "title": "AirPro indoor units — quiet, efficient comfort"
+        },
+        "sustainability": {
+          "title": "Sustainable by design"
+        },
+        "warranty": {
+          "title": "Up to 10-year warranty*"
+        }
+      }
+    },
+    "mixpad_7": {
+      "title": "MixPad 7 Control Panel",
+      "tabs": {
+        "overview": "Overview",
+        "specifications": "Specifications"
+      },
+      "sections": {
+        "hero": {
+          "title": "Big & Delicate",
+          "description": "MixPad 7 Smart Panel"
+        },
+        "screen": {
+          "title": "Outstanding in every way",
+          "description": "7-Inch Beautiful Picture Screen"
+        },
+        "border": {
+          "title": "Special Golden Border"
+        },
+        "remote": {
+          "title": "Remote Control",
+          "description": "Support 4-loop light control, built-in infrared remote control, easy to deal with all infrared home appliances control at home."
+        },
+        "gateway": {
+          "title": "AImighty Gateway",
+          "description": "Support Zigbee, WiFi, Bluetooth, Ethernet\nThe strongest compatibility in the smart home industry, and will soon fully support Matter."
+        },
+        "intercom": {
+          "title": "High-End Video Intercom"
+        },
+        "album": {
+          "title": "Super Smart",
+          "description": "Photo AIbum"
+        },
+        "audio": {
+          "title": "Hi-Fi Wall Stereo\nSuper Thin Sound",
+          "description": "Premium acoustics with licensed streaming libraries, listen without limits."
+        },
+        "partner": {
+          "title": "One more thing",
+          "description": "A perfect partner"
+        }
+      },
+      "specifications": {
+        "title": "Specifications",
+        "rows": {
+          "brand": { "label": "Brand", "value": "ORVIBO" },
+          "model": { "label": "Model", "value": "V80X" },
+          "category": { "label": "Category", "value": "MixPad" },
+          "processor": {
+            "label": "Processor",
+            "value": "Quad-core 64-bit Cortex-A55, 1.8 GHz"
+          },
+          "memory": { "label": "Memory", "value": "2 GB + 8 GB" },
+          "os": { "label": "OS", "value": "Home AI OS" },
+          "display": {
+            "label": "Display",
+            "value": "7\" IPS touchscreen, 1024 × 600"
+          },
+          "microphone": { "label": "Microphone", "value": "Dual-microphone array" },
+          "connectivity": {
+            "label": "Connectivity",
+            "value": "Wi-Fi / Bluetooth / Zigbee 3.0"
+          },
+          "voltage": {
+            "label": "Input voltage",
+            "value": "AC 100–240 V, 50/60 Hz (live + neutral)"
+          },
+          "loads": {
+            "label": "Load types",
+            "value": "Incandescent, LED, CFL, and similar"
+          },
+          "environment": {
+            "label": "Environment",
+            "value": "0–45 °C, ≤ 90% RH"
+          },
+          "ambient": {
+            "label": "Ambient light sensor",
+            "value": "Supported"
+          },
+          "ir": { "label": "IR control", "value": "Supported" },
+          "dimensions": {
+            "label": "Dimensions",
+            "value": "177.2 × 111 × 11.2 mm"
+          }
+        }
+      }
+    }
   }
 }

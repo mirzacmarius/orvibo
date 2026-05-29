@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
-import { isLocale } from "../../dictionaries";
-
-const SERVICE_TITLES: Record<string, string> = {
-  customization: "Custom solutions",
-  case: "Featured projects",
-};
+import {
+  formatPageTitle,
+  getDictionary,
+  getServicePageCopy,
+  isLocale,
+} from "../../dictionaries";
 
 export async function generateMetadata({
   params,
@@ -15,8 +15,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
-  const title = SERVICE_TITLES[slug] ?? slug;
-  return { title: `${title} | ORVIBO` };
+  const dict = await getDictionary(locale);
+  const copy = getServicePageCopy(dict, slug);
+  if (!copy) return {};
+  return {
+    title: formatPageTitle(copy.meta.title),
+    description: copy.meta.description,
+  };
 }
 
 export default async function ServicePage({
@@ -27,13 +32,9 @@ export default async function ServicePage({
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
 
-  const title = SERVICE_TITLES[slug] ?? slug;
+  const dict = await getDictionary(locale);
+  const copy = getServicePageCopy(dict, slug);
+  if (!copy) notFound();
 
-  return (
-    <OrviboPageShell
-      locale={locale}
-      title={title}
-      description="Support page — full clone coming in ORV-26."
-    />
-  );
+  return <OrviboPageShell locale={locale} copy={copy} />;
 }

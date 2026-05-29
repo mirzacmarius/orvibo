@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
-import { isLocale } from "../dictionaries";
+import {
+  formatPageTitle,
+  getDictionary,
+  getPageCopy,
+  isLocale,
+} from "../dictionaries";
 
 export async function generateMetadata({
   params,
@@ -10,7 +15,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: "Offline stores | ORVIBO" };
+  const dict = await getDictionary(locale);
+  const copy = getPageCopy(dict, "store");
+  return {
+    title: formatPageTitle(copy.meta.title),
+    description: copy.meta.description,
+  };
 }
 
 export default async function StorePage({
@@ -21,11 +31,7 @@ export default async function StorePage({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  return (
-    <OrviboPageShell
-      locale={locale}
-      title="Offline stores"
-      description="Store locator page — full clone coming soon."
-    />
-  );
+  const dict = await getDictionary(locale);
+
+  return <OrviboPageShell locale={locale} copy={getPageCopy(dict, "store")} />;
 }

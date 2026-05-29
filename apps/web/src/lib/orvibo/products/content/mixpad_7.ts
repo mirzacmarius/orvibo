@@ -1,3 +1,5 @@
+import type { ProductCopy } from "@/app/[locale]/dictionaries";
+
 export const mixpad7ImageBase = "/guanwang_second/front/images/products/mixpad_7";
 
 export const mixpad7Videos = {
@@ -13,20 +15,10 @@ export interface Mixpad7SpecRow {
   value: string;
 }
 
-export const mixpad7Specifications: Mixpad7SpecRow[] = [
-  { label: "Brand", value: "ORVIBO" },
-  { label: "Model", value: "V80X" },
-  { label: "Category", value: "MixPad" },
-  { label: "Processor", value: "Quad-core 64-bit Cortex-A55, 1.8 GHz" },
-  { label: "Memory", value: "2 GB + 8 GB" },
-  { label: "OS", value: "Home AI OS" },
-  { label: "Display", value: '7" IPS touchscreen, 1024 × 600' },
-  { label: "Microphone", value: "Dual-microphone array" },
-  { label: "Connectivity", value: "Wi-Fi / Bluetooth / Zigbee 3.0" },
-  { label: "Input voltage", value: "AC 100–240 V, 50/60 Hz (live + neutral)" },
-  { label: "Load types", value: "Incandescent, LED, CFL, and similar" },
-  { label: "Environment", value: "0–45 °C, ≤ 90% RH" },
-  { label: "Ambient light sensor", value: "Supported" },
-  { label: "IR control", value: "Supported" },
-  { label: "Dimensions", value: "177.2 × 111 × 11.2 mm" },
-];
+export function buildMixpad7Specifications(
+  copy: ProductCopy,
+): Mixpad7SpecRow[] {
+  const rows = copy.specifications?.rows;
+  if (!rows) return [];
+  return Object.values(rows);
+}

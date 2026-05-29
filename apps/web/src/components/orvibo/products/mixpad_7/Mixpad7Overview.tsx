@@ -7,11 +7,23 @@ import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import { ProductSpecificationsSection } from "@/components/orvibo/product/ProductSpecificationsSection";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
 import {
+  buildMixpad7Specifications,
   mixpad7ImageBase,
-  mixpad7Specifications,
   mixpad7Videos,
 } from "@/lib/orvibo/products/content/mixpad_7";
+import { getMixpad7Section } from "@/lib/orvibo/products/content/mixpad-sections";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+
+function multilineText(value: string): ReactNode {
+  const lines = value.split("\n");
+  if (lines.length === 1) return value;
+  return lines.map((line, index) => (
+    <span key={line}>
+      {index > 0 ? <br /> : null}
+      {line}
+    </span>
+  ));
+}
 
 const titleGradient =
   "linear-gradient(142deg, #88a6c5 0%, #dddfea 23%, #fff 38%, #fffdef 56%, #d2d2d2 75%, #d9f5ff 100%)";
@@ -122,13 +134,26 @@ function RevealImage({
   );
 }
 
-export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
+export function Mixpad7Overview({ copy }: ProductViewProps) {
+  const productTitle = copy.title;
+  const hero = getMixpad7Section(copy, "hero");
+  const screen = getMixpad7Section(copy, "screen");
+  const border = getMixpad7Section(copy, "border");
+  const remote = getMixpad7Section(copy, "remote");
+  const gateway = getMixpad7Section(copy, "gateway");
+  const intercom = getMixpad7Section(copy, "intercom");
+  const album = getMixpad7Section(copy, "album");
+  const audio = getMixpad7Section(copy, "audio");
+  const partner = getMixpad7Section(copy, "partner");
+  const specRows = buildMixpad7Specifications(copy);
+  const specTitle = copy.specifications?.title ?? "Specifications";
+
   return (
     <div id="overview" className="w-full bg-black">
       <VideoPlate
         className="h-[10rem]"
         src={mixpad7Videos.hero}
-        title="MixPad 7"
+        title={productTitle}
       />
 
       <section className="relative mt-[-10rem] h-[10rem] overflow-hidden bg-transparent">
@@ -163,10 +188,10 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
           </div>
           <InfoBlock
             className="relative z-10 overflow-hidden"
-            description="MixPad 7 Smart Panel"
+            description={hero.description}
             descriptionClassName="mt-[0.66rem] text-[0.46rem] leading-[0.6rem] tracking-[0.06rem]"
             reveal={false}
-            title="Big & Delicate"
+            title={hero.title}
             titleClassName="text-[1.1rem] leading-[1.12rem] tracking-[0.05rem]"
           />
         </div>
@@ -175,25 +200,25 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       <VideoPlate
         className="min-h-[9rem]"
         src={mixpad7Videos.sec2}
-        title="MixPad 7"
+        title={productTitle}
       />
       <section className="relative mt-[-9rem] h-[9rem]">
         <ProductParallaxTitleMask
-          title="Outstanding in every way"
-          description="7-Inch Beautiful Picture Screen"
+          title={screen.title}
+          description={screen.description ?? ""}
         />
       </section>
 
       <VideoPlate
         className="min-h-[9rem]"
         src={mixpad7Videos.sec3}
-        title="MixPad 7"
+        title={productTitle}
       />
       <section className="relative mt-[-9rem] h-[9rem]">
         <InfoBlock
           className="absolute top-[6.2rem] left-[0.92rem] overflow-hidden"
           reveal={false}
-          title="Special Golden Border"
+          title={border.title}
           titleClassName="text-left"
         />
       </section>
@@ -204,8 +229,8 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       >
         <InfoBlock
           className="mx-auto w-full overflow-hidden"
-          description="Support 4-loop light control, built-in infrared remote control, easy to deal with all infrared home appliances control at home."
-          title="Remote Control"
+          description={remote.description}
+          title={remote.title}
         />
       </section>
 
@@ -215,16 +240,9 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       >
         <InfoBlock
           className="absolute top-[2.14rem] left-[1.62rem] overflow-hidden"
-          description={
-            <>
-              Support Zigbee, WiFi, Bluetooth, Ethernet
-              <br />
-              The strongest compatibility in the smart home industry, and will
-              soon fully support Matter.
-            </>
-          }
+          description={multilineText(gateway.description ?? "")}
           descriptionClassName="text-left"
-          title="AImighty Gateway"
+          title={gateway.title}
           titleClassName="text-left"
         />
         <div
@@ -236,7 +254,7 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       <section className="relative bg-[#05080b] pb-[1.98rem]">
         <InfoBlock
           className="absolute top-[1.2rem] left-1/2 z-10 -translate-x-1/2 overflow-hidden"
-          title="High-End Video Intercom"
+          title={intercom.title}
         />
         <div className="mx-auto flex w-[16.03rem] flex-col gap-[0.3rem] pt-[4.15rem]">
           <div className="flex w-full justify-between">
@@ -268,8 +286,8 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       >
         <InfoBlock
           className="absolute top-[1.36rem] left-0 z-50 w-full overflow-hidden"
-          description="Photo AIbum"
-          title="Super Smart"
+          description={album.description}
+          title={album.title}
           titleStyle={{
             backgroundImage:
               "linear-gradient(150deg, #abd5ff 0%, #dddfea 23%, #fbe8f0 38%, #fffdef 56%, #fbe8f0 75%, #b9ecff 100%)",
@@ -297,7 +315,7 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
               bare
               className="mt-[0.12rem] ml-[0.2rem] block w-[90%]"
               src={mixpad7Videos.sec7}
-              title="MixPad 7"
+              title={productTitle}
             />
             <div
               className="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -310,26 +328,14 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       <VideoPlate
         className="min-h-[9rem]"
         src={mixpad7Videos.sec8}
-        title="MixPad 7 audio"
+        title={`${productTitle} audio`}
       />
       <section className="relative mt-[-9rem] h-[9rem]">
         <InfoBlock
           className="absolute top-[3.52rem] left-[1.63rem] overflow-hidden"
-          description={
-            <>
-              Premium acoustics with licensed streaming libraries,
-              <br />
-              listen without limits.
-            </>
-          }
+          description={multilineText(audio.description ?? "")}
           descriptionClassName="mt-[0.4rem] text-left text-[#ffdfb7]"
-          title={
-            <>
-              Hi-Fi Wall Stereo
-              <br />
-              Super Thin Sound
-            </>
-          }
+          title={multilineText(audio.title)}
           titleClassName="text-left"
           titleStyle={{
             backgroundImage: "linear-gradient(166deg, #fff 0%, #ffd49f 100%)",
@@ -347,8 +353,8 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
       >
         <InfoBlock
           className="absolute top-[3.14rem] left-1/2 -translate-x-1/2 overflow-hidden"
-          description="A perfect partner"
-          title="One more thing"
+          description={partner.description}
+          title={partner.title}
           titleStyle={{
             backgroundImage:
               "linear-gradient(193deg, #f9e8d8 0%, #ba9471 100%)",
@@ -356,7 +362,7 @@ export function Mixpad7Overview({ locale: _locale }: ProductViewProps) {
         />
       </section>
 
-      <ProductSpecificationsSection rows={mixpad7Specifications} />
+      <ProductSpecificationsSection rows={specRows} title={specTitle} />
     </div>
   );
 }

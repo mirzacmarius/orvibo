@@ -1,0 +1,182 @@
+[
+  {
+    "scope": "page",
+    "key": "product",
+    "source": "global-en",
+    "url": "https://global.orvibo.com/en/product/productList.html",
+    "status": 200,
+    "title": "ORVIBO Smart Home System | Smart Central Control Panels: Smart Lighting System,Smart Curtain System,Home Security System, Smart HVAC System,Energy Mnagement System,Entertainment System",
+    "description": "ORVIBO Smart Home System includes Home Security System,Smart Lighting System, Smart Curtain System,Entertainment System,Smart HVAC System,Energy Management System.",
+    "headings": []
+  },
+  {
+    "scope": "page",
+    "key": "cooperation",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/cooperation/cooperation.html",
+    "status": 200,
+    "title": "经销代理 | 欧瑞博全宅智能",
+    "description": "欧瑞博智能家居加盟提供搭建营销平台、渠道渗透支持、品牌提升政策以及提供360&deg;的售后服务、技术支持、商务培训、解决方案，助力合作伙伴打造过硬团队，迅速应对变化的市场需求",
+    "headings": [
+      "瞄准机遇，智能家居行业正在抢占价值风口",
+      "宅经济兴起 宅体验升级",
+      "轻奢级全宅智能家居领导品牌",
+      "科技美学 屡获殊荣的产品设计",
+      "恒大集团&美的置业&红星美凯龙战略投资品牌",
+      "强大成熟的智慧地产项目落地能力",
+      "轻奢级全宅智能家居，全球品质家庭优选",
+      "全国百强地产及酒店行业合作伙伴",
+      "成熟完善的线下门店运营模式",
+      "全方位加盟政策 鼎力打造全宅智能品牌",
+      "强势补贴政策，鼎力扶持开店",
+      "精准引流，到店成交"
+    ]
+  },
+  {
+    "scope": "page",
+    "key": "estate",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/cooperation/estateCooperation.html",
+    "status": 200,
+    "title": "地产项目 | 欧瑞博全宅智能",
+    "description": "欧瑞博智能家居加盟提供搭建营销平台、渠道渗透支持、品牌提升政策以及提供360&deg;的售后服务、技术支持、商务培训、解决方案，助力合作伙伴打造过硬团队，迅速应对变化的市场需求",
+    "headings": [
+      "欧瑞博智慧地产合伙人",
+      "多家百强地产集团智能家居独家战略采购供应商",
+      "超 20 亿地产独家战采订单",
+      "欧瑞博已批量落地 350 个智慧地产项目",
+      "传统智慧地产的问题",
+      "新一代 AI 智慧地产解决方案",
+      "打造地产样板间的墙面艺术品",
+      "秒杀传统可视对讲",
+      "更多配套产品体系",
+      "行业前沿的 AIoT 及云计算核心技术加持",
+      "快速的落地支持能力省心省力",
+      "免费支持样板间"
+    ]
+  },
+  {
+    "scope": "page",
+    "key": "store",
+    "source": "missing",
+    "url": "https://www.orvibo.com/cn/store/orviboStore.html",
+    "status": 404,
+    "title": "ORVIBO- Your Smart Home",
+    "description": "Orvibo is an promising smart home technology company, provides smart home  products, smart systems and solutions for smart home, smart community, smart office and smart hotel.",
+    "headings": [
+      "Opps..."
+    ]
+  },
+  {
+    "scope": "page",
+    "key": "app",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/app.html",
+    "status": 200,
+    "title": "智家365下载——智慧生活每一天|欧瑞博旗下全屋智能家居控制系统APP",
+    "description": "智家365下载，欧瑞博智能家居软件下载，欧瑞博智能家居安卓客户端下载，欧瑞博智能家居ios苹果端下载。",
+    "headings": []
+  },
+  {
+    "scope": "page",
+    "key": "exploreConference",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/conference2023.html",
+    "status": 200,
+    "title": "欧瑞博智能家居2022新品发布会",
+    "description": "科技美学，创新盛宴，欧瑞博全屋智能战略新品发布会科技美学，创新盛宴，欧瑞博全屋智能战略新品发布会",
+    "headings": []
+  },
+  {
+    "scope": "about",
+    "key": "about_us",
+    "source": "global-en",
+    "url": "https://global.orvibo.com/en/about/about_us.html",
+    "status": 200,
+    "title": "ORVIBO-Globally Leading in the Whole-house Smart Home with Smart Control Panel, Smart Switch, Home AI OS.",
+    "description": "ORVIBO is globally leading in the core categories of the smart home industry, including smart control panel, smart switch, smart lighting, smart switch, smart door lock, smart curtain, smart security, and supports Matter.",
+    "headings": []
+  },
+  {
+    "scope": "about",
+    "key": "culture",
+    "source": "global-en",
+    "url": "https://global.orvibo.com/en/about/culture.html",
+    "status": 200,
+    "title": "ORVIBO-Accelerating the Global Tech-residential Process with Technology and Aesthetics",
+    "description": "ORVIBO is a global leading whole-house smart home solution provider, innovatively developing a diverse range of industry-influential whole-home products,bringing users a smart and aesthetic life experience.",
+    "headings": []
+  },
+  {
+    "scope": "about",
+    "key": "join_us",
+    "source": "global-en",
+    "url": "https://global.orvibo.com/en/about/join_us.html",
+    "status": 200,
+    "title": "Join Us - ORVIBO",
+    "description": "ORVIBO Smart Home",
+    "headings": [
+      "加入我们",
+      "让每一位为理想奋斗的你也可以体面、快乐地生活"
+    ]
+  },
+  {
+    "scope": "about",
+    "key": "contact",
+    "source": "global-en",
+    "url": "https://global.orvibo.com/en/about/contact.html",
+    "status": 200,
+    "title": "Contact Us - ORVIBO",
+    "description": "ORVIBO Smart Home",
+    "headings": [
+      "Shenzhen ORVIBO Technology Co., Ltd."
+    ]
+  },
+  {
+    "scope": "service",
+    "key": "customization",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/services/customization.html",
+    "status": 200,
+    "title": "智能定制服务-欧瑞博智能家居服务流程",
+    "description": "专业的欧瑞博服务团队结合用户的实际需求与布局，为用户提供专属的产品应用方案与设计。",
+    "headings": [
+      "智能定制服务",
+      "01. 提交服务申请",
+      "02. 量身定制方案",
+      "03. 参观线下体验店",
+      "04. 免费配送，上门安装",
+      "05. 智能售后服务"
+    ]
+  },
+  {
+    "scope": "service",
+    "key": "case",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/services/case.html",
+    "status": 200,
+    "title": "欧瑞博精选案例-智能家居体验中心,智慧酒店,智慧地产,智慧办公",
+    "description": "欧瑞博已为花样年&middot;趣园、万科蓝山、XY酒店、创智谷、新国都工业园、碧桂园凤凰城、东方明珠城、中驰公馆提供智能解决方案",
+    "headings": []
+  },
+  {
+    "scope": "product",
+    "key": "mixstation",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/product/mixstation.html",
+    "status": 200,
+    "title": "欧瑞博集成空调——节能中央空调系统，一机供冷供暖供热水",
+    "description": "欧瑞博集成空调，热水中央空调系统带生活热水、全屋供暖、全屋智能的下一代新能源中央空调，是在热泵空调技术下，极具性价比的产品",
+    "headings": []
+  },
+  {
+    "scope": "product",
+    "key": "mixpad_7",
+    "source": "cn-only",
+    "url": "https://www.orvibo.com/cn/product/mixpad_7.html",
+    "status": 200,
+    "title": "欧瑞博MixPad 7智能开关|最新一代超级智能面板,智能场景面板,全屋智能家居",
+    "description": "欧瑞博Mixpad 7是欧瑞博研发的最新的超级智能面板，整个了各个智能单品功能，将其整合到MixPad 7,一个MixPad 7就是全宅智能",
+    "headings": []
+  }
+]

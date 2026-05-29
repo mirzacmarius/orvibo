@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
-import { isLocale } from "../dictionaries";
+import {
+  formatPageTitle,
+  getDictionary,
+  getPageCopy,
+  isLocale,
+} from "../dictionaries";
 
 export async function generateMetadata({
   params,
@@ -10,7 +15,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: "Dealer program | ORVIBO" };
+  const dict = await getDictionary(locale);
+  const copy = getPageCopy(dict, "cooperation");
+  return {
+    title: formatPageTitle(copy.meta.title),
+    description: copy.meta.description,
+  };
 }
 
 export default async function CooperationPage({
@@ -21,11 +31,9 @@ export default async function CooperationPage({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
+  const dict = await getDictionary(locale);
+
   return (
-    <OrviboPageShell
-      locale={locale}
-      title="Dealer program"
-      description="Dealer cooperation page — full clone coming in ORV-24."
-    />
+    <OrviboPageShell locale={locale} copy={getPageCopy(dict, "cooperation")} />
   );
 }

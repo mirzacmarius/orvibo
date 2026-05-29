@@ -53,3 +53,4 @@ The Convex URL for this project is stored in `apps/app/.env` and `apps/web/.env`
 - Pre-existing lint errors exist in `apps/web` (Orvibo components — a11y warnings). These are not regressions.
 - The `@v1/web` package has `@convex-dev/polar` at a different alpha version (`0.2.0-alpha.3`) than `@v1/app` (`0.2.0-alpha.5`). This is intentional in the repo.
 - Bun is the required package manager (specified in `packageManager` field). Do not use npm/yarn/pnpm.
+- Inner-page English copy lives in `apps/web/src/app/[locale]/dictionaries/en.json`. Use `getPageCopy`, `getAboutPageCopy`, `getServicePageCopy`, and `getProductCopy` from `dictionaries.ts`. Run `bun run orvibo:extract-i18n` to refresh the CN/global source report at `dictionaries/i18n-extract-report.json`.

@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
-import { isLocale } from "../dictionaries";
+import {
+  formatPageTitle,
+  getDictionary,
+  getPageCopy,
+  isLocale,
+} from "../dictionaries";
 
 export async function generateMetadata({
   params,
@@ -10,7 +15,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: "ORVIBO Home app | ORVIBO" };
+  const dict = await getDictionary(locale);
+  const copy = getPageCopy(dict, "app");
+  return {
+    title: formatPageTitle(copy.meta.title),
+    description: copy.meta.description,
+  };
 }
 
 export default async function AppDownloadPage({
@@ -21,11 +31,7 @@ export default async function AppDownloadPage({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  return (
-    <OrviboPageShell
-      locale={locale}
-      title="ORVIBO Home app"
-      description="App download page — full clone coming in ORV-26."
-    />
-  );
+  const dict = await getDictionary(locale);
+
+  return <OrviboPageShell locale={locale} copy={getPageCopy(dict, "app")} />;
 }

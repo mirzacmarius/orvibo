@@ -1,5 +1,9 @@
 import type { ComponentType } from "react";
-import type { Locale } from "@/app/[locale]/dictionaries";
+import type {
+  Dictionary,
+  Locale,
+  ProductCopy,
+} from "@/app/[locale]/dictionaries";
 
 /**
  * Product detail pages are not one shared template.
@@ -31,4 +35,6 @@ export interface ProductDefinition {
 export interface ProductViewProps {
   locale: Locale;
   base: string;
+  copy: ProductCopy;
+  common: Dictionary["common"];
 }
