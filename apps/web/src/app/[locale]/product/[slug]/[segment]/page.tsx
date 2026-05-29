@@ -39,7 +39,9 @@ export async function generateMetadata({
   const product = getProductDefinition(slug);
   const title = product?.title ?? titleFromSlug(slug);
   const tab = product?.tabs.find((item) => item.segment === segment);
-  return { title: `${title} — ${tab?.label ?? titleFromSlug(segment)} | ORVIBO` };
+  return {
+    title: `${title} — ${tab?.label ?? titleFromSlug(segment)} | ORVIBO`,
+  };
 }
 
 export default async function ProductSegmentPage({
@@ -66,7 +68,11 @@ export default async function ProductSegmentPage({
   const base = `/${locale}`;
 
   return (
-    <ProductPageShell locale={locale} product={product} navClassName={product.navClassName}>
+    <ProductPageShell
+      locale={locale}
+      product={product}
+      navClassName={product.navClassName}
+    >
       <SegmentView locale={locale} base={base} />
     </ProductPageShell>
   );

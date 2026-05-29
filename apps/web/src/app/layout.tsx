@@ -12,10 +12,9 @@ const DepartureMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://convex-v1.run"),
-  title: "Create v1",
-  description:
-    "A free, open-source starter kit for your next project, built with insights from Midday.",
+  metadataBase: new URL("https://www.orvibo.com"),
+  title: "ORVIBO",
+  description: "ORVIBO whole-home smart living and product experience.",
 };
 
 export default function RootLayout({

@@ -1,8 +1,4 @@
-import "../../styles/orvibo/global_ch.css";
-import "../../styles/orvibo/base.css";
-import "../../styles/orvibo/swiper.css";
-import "../../styles/orvibo/index_2020.css";
-import "../../styles/orvibo/site-overrides.css";
+import "../../styles/orvibo.css";
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -40,4 +36,3 @@ export default async function LocaleLayout({
     </div>
   );
 }
-

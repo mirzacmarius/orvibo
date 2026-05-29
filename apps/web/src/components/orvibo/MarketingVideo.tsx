@@ -9,7 +9,7 @@ type Props = {
   poster?: string;
   title?: string;
   autoPlayWhenVisible?: boolean;
-  /** When true, omit the layout wrapper so Orvibo `.video__container` CSS applies directly to `<video>`. */
+  /** When true, omit the layout wrapper so section components can size the video directly. */
   bare?: boolean;
 };
 
@@ -86,7 +86,10 @@ export function MarketingVideo({
       {video}
 
       {!canPlay && !failed ? (
-        <div className="absolute inset-0 bg-black/20 animate-pulse" aria-hidden />
+        <div
+          className="absolute inset-0 bg-black/20 animate-pulse"
+          aria-hidden
+        />
       ) : null}
 
       {failed ? (
@@ -97,4 +100,3 @@ export function MarketingVideo({
     </div>
   );
 }
-

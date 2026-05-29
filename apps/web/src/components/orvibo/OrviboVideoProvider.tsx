@@ -8,6 +8,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { cn } from "@v1/ui/utils";
 import { OrviboPlayCircle } from "@/components/orvibo/icons";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
 import { OrviboSiteVideoOverlay } from "./OrviboSiteVideoOverlay";
@@ -33,14 +34,19 @@ export function OrviboVideoProvider({ children }: { children: ReactNode }) {
   return (
     <OrviboVideoContext.Provider value={value}>
       {children}
-      <OrviboSiteVideoOverlay open={Boolean(src)} src={src} onClose={closeVideo} />
+      <OrviboSiteVideoOverlay
+        open={Boolean(src)}
+        src={src}
+        onClose={closeVideo}
+      />
     </OrviboVideoContext.Provider>
   );
 }
 
 export function useOrviboVideo() {
   const ctx = useContext(OrviboVideoContext);
-  if (!ctx) throw new Error("useOrviboVideo must be used within OrviboVideoProvider");
+  if (!ctx)
+    throw new Error("useOrviboVideo must be used within OrviboVideoProvider");
   return ctx;
 }
 
@@ -66,9 +72,10 @@ export function OrviboWatchTrigger({
   return (
     <div
       id={id}
-      className={[className, showPlayIcon ? "orvibo-watch-trigger" : undefined]
-        .filter(Boolean)
-        .join(" ")}
+      className={cn(
+        showPlayIcon && "inline-flex items-center gap-[0.06rem]",
+        className,
+      )}
       role="button"
       tabIndex={0}
       onClick={(e) => {
@@ -82,11 +89,11 @@ export function OrviboWatchTrigger({
         }
       }}
     >
-      <span className="orvibo-watch-trigger__label">{children}</span>
+      <span>{children}</span>
       {showPlayIcon ? (
         <OrviboPlayCircle
           onDark={playOnDark}
-          className="orvibo-watch-trigger__play"
+          className="mt-[0.01rem] shrink-0"
           size={16}
         />
       ) : null}

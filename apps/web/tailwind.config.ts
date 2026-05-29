@@ -9,6 +9,20 @@ export default {
       animation: {
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
+        "mixpad-marquee": "mixpad-marquee 24s linear infinite",
+      },
+      colors: {
+        orvibo: {
+          bg: "#f0f2f5",
+          fg: "#111111",
+          link: "#0d7fef",
+          "link-hover": "#359ffc",
+          "link-active": "#005ec9",
+          header: "#000000",
+        },
+      },
+      fontFamily: {
+        orvibo: ["PingFang SC", "Helvetica", "Microsoft YaHei", "sans-serif"],
       },
       keyframes: {
         marquee: {
@@ -19,6 +33,16 @@ export default {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0%)" },
         },
+        "mixpad-marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      maxWidth: {
+        orvibo: "1760px",
+      },
+      spacing: {
+        "orvibo-header": "130px",
       },
     },
   },
