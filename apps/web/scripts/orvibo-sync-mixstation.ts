@@ -6,7 +6,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import {
   mixstationHero,
-  mixstationSections,
+  mixstationSectionImagePaths,
 } from "../src/lib/orvibo/products/content/mixstation";
 
 type Asset = {
@@ -23,7 +23,7 @@ function collectPaths(): string[] {
   const paths = new Set<string>([
     mixstationHero.imagePath,
     mixstationHero.logoPath,
-    ...mixstationSections.map((section) => section.imagePath),
+    ...mixstationSectionImagePaths,
   ]);
   return [...paths].sort();
 }

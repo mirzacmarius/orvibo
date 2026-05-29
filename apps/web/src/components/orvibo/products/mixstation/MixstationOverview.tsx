@@ -4,8 +4,8 @@ import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductBackgroundSection } from "@/components/orvibo/product/ProductBackgroundSection";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import {
+  buildMixstationSections,
   mixstationHero,
-  mixstationSections,
 } from "@/lib/orvibo/products/content/mixstation";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
@@ -148,7 +148,9 @@ function MixstationTextSection({
   );
 }
 
-export function MixstationOverview({ locale: _locale }: ProductViewProps) {
+export function MixstationOverview({ copy, common }: ProductViewProps) {
+  const mixstationSections = buildMixstationSections(copy);
+
   return (
     <div id="overview" className="w-full bg-black">
       <ProductBackgroundSection
@@ -171,7 +173,7 @@ export function MixstationOverview({ locale: _locale }: ProductViewProps) {
             id="mixstation-product-video"
             playOnDark
           >
-            Watch video
+            {common.watchVideo}
           </OrviboWatchTrigger>
         </div>
       </ProductBackgroundSection>

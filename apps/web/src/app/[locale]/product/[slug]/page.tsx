@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
-import { isLocale } from "../../dictionaries";
+import {
+  formatPageTitle,
+  getDictionary,
+  getProductCopy,
+  isLocale,
+} from "../../dictionaries";
 import { getProductDefinition } from "@/lib/orvibo/products/registry";
+import { resolveProductDefinition } from "@/lib/orvibo/products/resolve-product-copy";
 
 function titleFromSlug(slug: string) {
   return slug.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -26,9 +32,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
+  const dict = await getDictionary(locale);
   const product = getProductDefinition(slug);
-  const title = product?.title ?? titleFromSlug(slug);
-  return { title: `${title} | ORVIBO` };
+  const copy = getProductCopy(dict, slug);
+  const title = copy?.title ?? product?.title ?? titleFromSlug(slug);
+  return { title: formatPageTitle(title) };
 }
 
 export default async function ProductDetailPage({
@@ -39,17 +47,30 @@ export default async function ProductDetailPage({
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
 
-  const product = getProductDefinition(slug);
-  if (!product) {
+  const dict = await getDictionary(locale);
+  const definition = getProductDefinition(slug);
+
+  if (!definition) {
+    const fallbackTitle = titleFromSlug(slug);
     return (
       <OrviboPageShell
         locale={locale}
-        title={titleFromSlug(slug)}
-        description="This product page is not built yet. Each product uses its own React layout registered in the product catalog."
+        copy={{
+          meta: {
+            title: fallbackTitle,
+            description: dict.shell.unbuiltProduct,
+          },
+          title: fallbackTitle,
+          lead: dict.shell.unbuiltProduct,
+        }}
       />
     );
   }
 
+  const resolved = resolveProductDefinition(definition, dict, slug);
+  if (!resolved) notFound();
+
+  const { product, copy } = resolved;
   const base = `/${locale}`;
   const View = product.View;
 
@@ -59,7 +80,7 @@ export default async function ProductDetailPage({
       product={product}
       navClassName={product.navClassName}
     >
-      <View locale={locale} base={base} />
+      <View locale={locale} base={base} copy={copy} common={dict.common} />
     </ProductPageShell>
   );
 }

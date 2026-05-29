@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
-import { isLocale } from "../../dictionaries";
+import {
+  formatPageTitle,
+  getDictionary,
+  getPageCopy,
+  isLocale,
+} from "../../dictionaries";
 
 export async function generateMetadata({
   params,
@@ -10,7 +15,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  return { title: "Product launches | ORVIBO" };
+  const dict = await getDictionary(locale);
+  const copy = getPageCopy(dict, "exploreConference");
+  return {
+    title: formatPageTitle(copy.meta.title),
+    description: copy.meta.description,
+  };
 }
 
 export default async function ConferencePage({
@@ -21,11 +31,12 @@ export default async function ConferencePage({
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
+  const dict = await getDictionary(locale);
+
   return (
     <OrviboPageShell
       locale={locale}
-      title="Product launches"
-      description="Explore / video hub — full clone coming in ORV-27."
+      copy={getPageCopy(dict, "exploreConference")}
     />
   );
 }

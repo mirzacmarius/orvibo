@@ -1,13 +1,45 @@
 import "server-only";
 
+import type {
+  AboutSlug,
+  PageKey,
+  ProductSlug,
+  ServiceSlug,
+} from "./dictionaries/routes";
+import {
+  isAboutSlug,
+  isProductSlug,
+  isServiceSlug,
+} from "./dictionaries/routes";
+
 export type Locale = "en";
 
-const dictionaries = {
-  en: () =>
-    import("./dictionaries/en.json").then(
-      (module) => module.default as Dictionary,
-    ),
-} satisfies Record<Locale, () => Promise<Dictionary>>;
+export interface PageMetaCopy {
+  title: string;
+  description: string;
+}
+
+export interface PageCopy {
+  meta: PageMetaCopy;
+  title: string;
+  lead: string;
+  sections?: Record<string, string>;
+}
+
+export interface ProductSectionCopy {
+  title: string;
+  description?: string;
+}
+
+export interface ProductCopy {
+  title: string;
+  tabs: Record<string, string>;
+  sections: Record<string, ProductSectionCopy>;
+  specifications?: {
+    title: string;
+    rows: Record<string, { label: string; value: string }>;
+  };
+}
 
 export type Dictionary = {
   meta: { title: string; description: string };
@@ -18,6 +50,10 @@ export type Dictionary = {
     playVideo: string;
     english: string;
     chinese: string;
+  };
+  shell: {
+    comingSoon: { title: string; description: string; body: string };
+    unbuiltProduct: string;
   };
   nav: {
     home: string;
@@ -97,12 +133,65 @@ export type Dictionary = {
     privacy: string;
     investmentNotice: string;
   };
+  pages: {
+    product: PageCopy;
+    cooperation: PageCopy;
+    estate: PageCopy;
+    store: PageCopy;
+    app: PageCopy;
+    exploreConference: PageCopy;
+    about: Record<AboutSlug, PageCopy>;
+    services: Record<ServiceSlug, PageCopy>;
+  };
+  products: Record<ProductSlug, ProductCopy>;
 };
+
+const dictionaries = {
+  en: () =>
+    import("./dictionaries/en.json").then(
+      (module) => module.default as Dictionary,
+    ),
+} satisfies Record<Locale, () => Promise<Dictionary>>;
 
 export function isLocale(value: string): value is Locale {
   return value === "en";
 }
 
-export async function getDictionary(locale: Locale) {
+export async function getDictionary(locale: Locale): Promise<Dictionary> {
   return dictionaries[locale]();
 }
+
+export function getPageCopy(dict: Dictionary, key: PageKey): PageCopy {
+  return dict.pages[key];
+}
+
+export function getAboutPageCopy(
+  dict: Dictionary,
+  slug: string,
+): PageCopy | undefined {
+  if (!isAboutSlug(slug)) return undefined;
+  return dict.pages.about[slug];
+}
+
+export function getServicePageCopy(
+  dict: Dictionary,
+  slug: string,
+): PageCopy | undefined {
+  if (!isServiceSlug(slug)) return undefined;
+  return dict.pages.services[slug];
+}
+
+export function getProductCopy(
+  dict: Dictionary,
+  slug: string,
+): ProductCopy | undefined {
+  if (!isProductSlug(slug)) return undefined;
+  return dict.products[slug];
+}
+
+/** `{pageTitle} | ORVIBO` for inner routes. */
+export function formatPageTitle(pageTitle: string): string {
+  return `${pageTitle} | ORVIBO`;
+}
+
+export type { AboutSlug, PageKey, ProductSlug, ServiceSlug };

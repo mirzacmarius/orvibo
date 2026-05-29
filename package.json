@@ -28,7 +28,8 @@
     "orvibo:upload-r2:dry": "bun run --cwd apps/web orvibo:upload-r2:dry",
     "orvibo:r2-preflight": "bun run --cwd apps/web orvibo:r2-preflight",
     "orvibo:verify-r2": "bun run --cwd apps/web orvibo:verify-r2",
-    "orvibo:check-links": "bun run --cwd apps/web orvibo:check-links"
+    "orvibo:check-links": "bun run --cwd apps/web orvibo:check-links",
+    "orvibo:extract-i18n": "bun run --cwd apps/web orvibo:extract-i18n"
   },
   "devDependencies": {
     "@auth/core": "0.37.0",

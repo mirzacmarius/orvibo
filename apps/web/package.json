@@ -18,7 +18,8 @@
     "orvibo:upload-r2:dry": "bun scripts/orvibo-upload-r2.ts --dry-run",
     "orvibo:r2-preflight": "bun scripts/orvibo-r2-preflight.ts",
     "orvibo:verify-r2": "bun scripts/orvibo-verify-r2.ts",
-    "orvibo:strip-iconfont": "bun scripts/orvibo-strip-iconfont.ts"
+    "orvibo:strip-iconfont": "bun scripts/orvibo-strip-iconfont.ts",
+    "orvibo:extract-i18n": "bun scripts/orvibo-extract-i18n.ts"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",

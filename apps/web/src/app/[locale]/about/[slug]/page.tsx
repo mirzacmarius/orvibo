@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
-import { isLocale } from "../../dictionaries";
-
-const ABOUT_TITLES: Record<string, string> = {
-  about_us: "Company profile",
-  culture: "Culture",
-  join_us: "Careers",
-  contact: "Contact us",
-};
+import {
+  formatPageTitle,
+  getAboutPageCopy,
+  getDictionary,
+  isLocale,
+} from "../../dictionaries";
 
 export async function generateMetadata({
   params,
@@ -17,8 +15,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = await params;
   if (!isLocale(locale)) return {};
-  const title = ABOUT_TITLES[slug] ?? slug;
-  return { title: `${title} | ORVIBO` };
+  const dict = await getDictionary(locale);
+  const copy = getAboutPageCopy(dict, slug);
+  if (!copy) return {};
+  return {
+    title: formatPageTitle(copy.meta.title),
+    description: copy.meta.description,
+  };
 }
 
 export default async function AboutPage({
@@ -29,13 +32,9 @@ export default async function AboutPage({
   const { locale, slug } = await params;
   if (!isLocale(locale)) notFound();
 
-  const title = ABOUT_TITLES[slug] ?? slug;
+  const dict = await getDictionary(locale);
+  const copy = getAboutPageCopy(dict, slug);
+  if (!copy) notFound();
 
-  return (
-    <OrviboPageShell
-      locale={locale}
-      title={title}
-      description="About page — full clone coming in ORV-25."
-    />
-  );
+  return <OrviboPageShell locale={locale} copy={copy} />;
 }
