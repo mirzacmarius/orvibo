@@ -1,6 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { cn } from "@v1/ui/utils";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 
 interface ProductRevealProps {
   children?: ReactNode;
@@ -37,7 +44,11 @@ export function ProductReveal({
   return (
     <div
       ref={ref}
-      className={`${className} fadeInUp${visible ? " show" : ""}`}
+      className={cn(
+        "translate-y-[0.4rem] opacity-0 transition-[opacity,transform] ease-out [transition-duration:600ms]",
+        visible && "translate-y-0 opacity-100",
+        className,
+      )}
       style={style}
     >
       {children}

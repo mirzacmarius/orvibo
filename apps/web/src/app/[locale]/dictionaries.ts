@@ -4,7 +4,9 @@ export type Locale = "en";
 
 const dictionaries = {
   en: () =>
-    import("./dictionaries/en.json").then((module) => module.default as Dictionary),
+    import("./dictionaries/en.json").then(
+      (module) => module.default as Dictionary,
+    ),
 } satisfies Record<Locale, () => Promise<Dictionary>>;
 
 export type Dictionary = {

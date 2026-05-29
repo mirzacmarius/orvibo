@@ -1,6 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+} from "@v1/ui/dialog";
 import { OrviboClose } from "@/components/orvibo/icons";
 
 type Props = {
@@ -17,42 +24,33 @@ export function OrviboSiteVideoOverlay({ open, src, onClose }: Props) {
     };
   }, [open]);
 
-  if (!open || !src) return null;
-
   return (
-    <>
-      <div
-        className="video__btn_close orvibo-video-close"
-        style={{ display: "flex" }}
-        role="button"
-        tabIndex={0}
-        onClick={onClose}
-        onKeyDown={(e) => {
-          if (e.key === "Enter" || e.key === " ") onClose();
-        }}
-        aria-label="Close video"
-      >
-        <OrviboClose className="orvibo-video-close__icon" />
-      </div>
-      <div
-        className="video_mask"
-        style={{ display: "block" }}
-        role="presentation"
-        onClick={onClose}
-        onKeyDown={onClose}
-      />
-      <div className="video_modal" style={{ display: "block" }}>
-        <video
-          src={src}
-          autoPlay
-          controls
-          playsInline
-          className="w-full h-full"
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+    <Dialog open={open} onOpenChange={(nextOpen) => !nextOpen && onClose()}>
+      <DialogContent className="fixed inset-0 left-0 top-0 z-[1000] grid h-screen w-screen max-w-none translate-x-0 translate-y-0 place-items-center border-0 bg-black/80 p-[24px] shadow-none data-[state=open]:slide-in-from-left-0 data-[state=open]:slide-in-from-top-0 [&>button:last-child]:hidden">
+        <DialogTitle className="sr-only">Video player</DialogTitle>
+        <DialogDescription className="sr-only">
+          ORVIBO product video playback.
+        </DialogDescription>
+        <DialogClose
+          className="absolute right-[24px] top-[24px] z-[1001] flex h-[36px] w-[36px] items-center justify-center text-white/80 opacity-70 transition-opacity hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orvibo-link"
+          aria-label="Close video"
         >
-          <track kind="captions" />
-        </video>
-      </div>
-    </>
+          <OrviboClose className="h-[24px] w-[24px]" />
+        </DialogClose>
+        <div className="h-full max-h-[80vh] w-full max-w-[1200px]">
+          {src ? (
+            <video
+              src={src}
+              autoPlay
+              controls
+              playsInline
+              className="h-full w-full bg-black object-contain"
+            >
+              <track kind="captions" />
+            </video>
+          ) : null}
+        </div>
+      </DialogContent>
+    </Dialog>
   );
 }
