@@ -23,6 +23,7 @@
     "lint:repo:fix": "bunx sherif@latest --fix",
     "typecheck": "turbo typecheck",
     "orvibo:sync-assets": "bun run --cwd apps/web orvibo:sync-assets",
+    "orvibo:sync-mixstation": "bun run --cwd apps/web orvibo:sync-mixstation",
     "orvibo:upload-r2": "bun run --cwd apps/web orvibo:upload-r2",
     "orvibo:upload-r2:dry": "bun run --cwd apps/web orvibo:upload-r2:dry",
     "orvibo:r2-preflight": "bun run --cwd apps/web orvibo:r2-preflight",

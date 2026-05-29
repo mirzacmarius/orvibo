@@ -21,6 +21,7 @@ Standard dev commands are defined in the root `package.json` and can be run with
 - `bun dev:web` — starts only the marketing site (port 3001)
 - `bun run lint` — runs Biome lint across all packages
 - `bun run typecheck` — runs TypeScript type checking across all packages
+- `bun run orvibo:sync-mixstation` — downloads MixStation product detail images into `apps/web/public/` and updates the asset manifest
 
 ### Environment files
 
