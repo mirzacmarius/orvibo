@@ -1,6 +1,7 @@
 import { cn } from "@v1/ui/utils";
 import type { CSSProperties } from "react";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
+import { ProductBackgroundSection } from "@/components/orvibo/product/ProductBackgroundSection";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import {
   mixstationHero,
@@ -112,11 +113,11 @@ function MixstationTextSection({
   if (!presentation) return null;
 
   return (
-    <section
+    <ProductBackgroundSection
+      assetPath={imagePath}
       id={id}
-      className="relative w-full bg-cover bg-center bg-no-repeat"
+      className="w-full"
       style={{
-        backgroundImage: `url(${assetUrl(imagePath)})`,
         height: `${presentation.height}rem`,
       }}
     >
@@ -143,18 +144,17 @@ function MixstationTextSection({
           ) : null}
         </ProductReveal>
       ) : null}
-    </section>
+    </ProductBackgroundSection>
   );
 }
 
 export function MixstationOverview({ locale: _locale }: ProductViewProps) {
   return (
     <div id="overview" className="w-full bg-black">
-      <section
-        className="relative h-[10.8rem] w-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${assetUrl(mixstationHero.imagePath)})`,
-        }}
+      <ProductBackgroundSection
+        assetPath={mixstationHero.imagePath}
+        className="h-[10.8rem] w-full"
+        eager
       >
         <div className="pt-[2.8rem] pl-[3.04rem]">
           <div
@@ -174,7 +174,7 @@ export function MixstationOverview({ locale: _locale }: ProductViewProps) {
             Watch video
           </OrviboWatchTrigger>
         </div>
-      </section>
+      </ProductBackgroundSection>
 
       {mixstationSections.map((section) => (
         <MixstationTextSection
