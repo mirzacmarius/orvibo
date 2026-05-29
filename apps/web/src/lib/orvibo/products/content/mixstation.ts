@@ -12,7 +12,7 @@ const base = "/guanwang_second/front/images/new/products/mixstation";
 export const mixstationHero = {
   imagePath: `${base}/sec1-7a1373cc0f.png`,
   logoPath: `${base}/MixStation-12a33eaf83.png`,
-  videoSrc: "/orvibo/videos/mixStation.mp4",
+  videoSrc: "/orvibo/videos/mixstation_1.mp4",
 };
 
 export const mixstationSections: MixstationSection[] = [
