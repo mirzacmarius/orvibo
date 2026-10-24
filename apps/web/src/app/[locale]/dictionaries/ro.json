@@ -76,7 +76,7 @@
     "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
     "soproS": "Iluminat SOPRO seria S",
     "soproQ": "Iluminat SOPRO seria Q",
-    "downlight": "Spot cu temperatură de culoare reglabilă continuu",
+    "downlight": "Lumină inteligentă reglabilă",
     "curtain3d": "Draperie inteligentă 3D Lumină și Umbră",
     "motorDb28": "Motor ultrasilențios pentru draperii DB28",
     "curtainMotor": "Motor ultrasilențios pentru draperii Elf",
@@ -453,7 +453,10 @@
             "label": "Ecran",
             "value": "Ecran tactil IPS de 7\", 1024 × 600"
           },
-          "microphone": { "label": "Microfon", "value": "Matrice cu două microfoane" },
+          "microphone": {
+            "label": "Microfon",
+            "value": "Matrice cu două microfoane"
+          },
           "connectivity": {
             "label": "Conectivitate",
             "value": "Wi-Fi / Bluetooth / Zigbee 3.0"
@@ -554,6 +557,14 @@
       "title": "Spot încastrat inteligent antiorbire S3",
       "tabs": {
         "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "downlight": {
+      "title": "Lumină inteligentă reglabilă",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
       },
       "sections": {}
     }

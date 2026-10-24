@@ -1,6 +1,8 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
+import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
+import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
@@ -126,6 +128,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "s3",
     tabs: [{ id: "overview", label: "Overview" }],
     View: S3Overview,
+  },
+  {
+    slug: "downlight",
+    title: "Smart Tunable Light",
+    rootClass: "downlight",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: DownlightOverview,
+    segmentViews: { spec: DownlightSpec },
   },
 ];
 

@@ -76,7 +76,7 @@
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
     "soproS": "SOPRO Lighting S Series",
     "soproQ": "SOPRO Lighting Q Series",
-    "downlight": "Stepless Color-temp Light",
+    "downlight": "Smart Tunable Light",
     "curtain3d": "3D Light & Shadow Smart Curtain",
     "motorDb28": "DB28 Ultra-quiet Curtain Motor",
     "curtainMotor": "Elf Ultra-quiet Curtain Motor",
@@ -453,7 +453,10 @@
             "label": "Display",
             "value": "7\" IPS touchscreen, 1024 × 600"
           },
-          "microphone": { "label": "Microphone", "value": "Dual-microphone array" },
+          "microphone": {
+            "label": "Microphone",
+            "value": "Dual-microphone array"
+          },
           "connectivity": {
             "label": "Connectivity",
             "value": "Wi-Fi / Bluetooth / Zigbee 3.0"
@@ -554,6 +557,14 @@
       "title": "Anti-glare Smart Downlight S3",
       "tabs": {
         "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "downlight": {
+      "title": "Smart Tunable Light",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
       },
       "sections": {}
     }
