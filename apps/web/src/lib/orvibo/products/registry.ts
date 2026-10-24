@@ -1,5 +1,6 @@
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
+import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
@@ -97,6 +98,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "defy",
     tabs: [{ id: "overview", label: "Overview" }],
     View: DefyOverview,
+  },
+  {
+    slug: "gaosi",
+    title: "Gauss Smart Switch",
+    rootClass: "gaosi",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: GaosiOverview,
   },
 ];
 

@@ -517,6 +517,13 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "gaosi": {
+      "title": "Întrerupător inteligent Gauss",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }

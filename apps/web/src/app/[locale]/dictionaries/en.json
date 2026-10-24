@@ -517,6 +517,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "gaosi": {
+      "title": "Gauss Smart Switch",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }
