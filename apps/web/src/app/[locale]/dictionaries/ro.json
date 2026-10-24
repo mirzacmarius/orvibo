@@ -382,11 +382,34 @@
         },
         "album": {
           "title": "Super inteligent",
-          "description": "Album foto"
+          "description": "Album foto",
+          "items": {
+            "weather": "Hei ORVIBO, cum e vremea azi?",
+            "grandpaName": "Bunicul",
+            "grandpa": "Stinge lumina în birou și aprinde-o în dormitor.",
+            "dadName": "Tata",
+            "dad": "Plec la 8, comandă-mi o mașină din timp.",
+            "dryingRack": "Hei ORVIBO, ridică uscătorul de rufe.",
+            "livingRoomAc": "Hei ORVIBO, pornește aerul condiționat din living la 20 de grade.",
+            "acOn": "Pornește aerul condiționat.",
+            "cleaning": "Hei ORVIBO, pornește curățenia în bucătărie.",
+            "momName": "Mama",
+            "mom": "Stinge toate luminile.",
+            "alarm": "Hei ORVIBO, pune-mi alarma mâine la 6:30.",
+            "daughterName": "Fiica",
+            "daughter": "Hei ORVIBO, stinge lumina și închide fereastra.",
+            "music": "Hei ORVIBO, pune ceva muzică relaxantă.",
+            "window": "Închide fereastra.",
+            "date": "Ce dată și ce zi e azi?"
+          }
         },
         "audio": {
           "title": "Sistem Hi-Fi de perete\nSunet amplu, profil subțire",
-          "description": "Acustică premium și biblioteci muzicale licențiate, pentru ascultare fără limite."
+          "description": "Acustică premium și biblioteci muzicale licențiate, pentru ascultare fără limite.",
+          "items": {
+            "hifi": "Calitate Hi-Fi\nsunet captivant",
+            "tws": "Se extinde cu boxe\nBluetooth TWS"
+          }
         },
         "partner": {
           "title": "Încă ceva",

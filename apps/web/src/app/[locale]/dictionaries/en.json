@@ -382,11 +382,34 @@
         },
         "album": {
           "title": "Super Smart",
-          "description": "Photo AIbum"
+          "description": "Photo AIbum",
+          "items": {
+            "weather": "Hey ORVIBO, what's the weather like today?",
+            "grandpaName": "Grandpa",
+            "grandpa": "Turn off the study light and turn on the bedroom light.",
+            "dadName": "Dad",
+            "dad": "I'm leaving at 8, book me a car in advance.",
+            "dryingRack": "Hey ORVIBO, raise the drying rack.",
+            "livingRoomAc": "Hey ORVIBO, turn on the living room AC and set it to 20 degrees.",
+            "acOn": "Turn on the AC.",
+            "cleaning": "Hey ORVIBO, start cleaning the kitchen.",
+            "momName": "Mom",
+            "mom": "Turn off all the lights.",
+            "alarm": "Hey ORVIBO, set an alarm for 6:30 tomorrow morning.",
+            "daughterName": "Daughter",
+            "daughter": "Hey ORVIBO, lights off and close the window.",
+            "music": "Hey ORVIBO, play some relaxing music.",
+            "window": "Close the window.",
+            "date": "What's the date and day today?"
+          }
         },
         "audio": {
           "title": "Hi-Fi Wall Stereo\nSuper Thin Sound",
-          "description": "Premium acoustics with licensed streaming libraries, listen without limits."
+          "description": "Premium acoustics with licensed streaming libraries, listen without limits.",
+          "items": {
+            "hifi": "Hi-Fi grade\nimmersive sound",
+            "tws": "Pairs with TWS\nBluetooth speakers"
+          }
         },
         "partner": {
           "title": "One more thing",

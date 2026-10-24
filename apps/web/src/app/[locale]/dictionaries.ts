@@ -28,6 +28,8 @@ export interface PageCopy {
 export interface ProductSectionCopy {
   title: string;
   description?: string;
+  /** Extra strings a section lays out itself (captions, list items, chat bubbles). */
+  items?: Record<string, string>;
 }
 
 export interface ProductCopy {
