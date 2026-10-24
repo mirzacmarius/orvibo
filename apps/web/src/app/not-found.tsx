@@ -3,13 +3,14 @@ import "../styles/orvibo.css";
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/orvibo/layout";
 import { Link } from "@/components/orvibo/ui/link";
+import { DEFAULT_LOCALE } from "@/lib/orvibo/i18n";
 import { orviboRoutes } from "@/lib/orvibo/routes";
 import { getDictionary } from "./[locale]/dictionaries";
 
-const LOCALE = "en";
+const LOCALE = DEFAULT_LOCALE;
 
 export const metadata: Metadata = {
-  title: "Page not found | ORVIBO",
+  title: "Pagina nu a fost găsită | ORVIBO",
 };
 
 export default async function NotFound() {

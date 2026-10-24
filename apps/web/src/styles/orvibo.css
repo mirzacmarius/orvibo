@@ -25,7 +25,8 @@
 .orvibo-site {
   --orvibo-header-height: 130px;
   --orvibo-rem-scale: 75px;
-  font-family: "PingFang SC", Helvetica, "Microsoft YaHei", sans-serif;
+  font-family: var(--font-inter), "PingFang SC", Helvetica, "Microsoft YaHei",
+    sans-serif;
   font-weight: 500;
   color: #111;
   background-color: #f0f2f5;

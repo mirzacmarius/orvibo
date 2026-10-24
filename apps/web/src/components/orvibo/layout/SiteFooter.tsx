@@ -5,6 +5,7 @@ import { orviboRoutes } from "@/lib/orvibo/routes";
 import { resolveExternalUrl } from "@/lib/orvibo/resolveExternalUrl";
 import { Container } from "../ui/container";
 import { Link } from "../ui/link";
+import { LocaleSwitcher } from "./LocaleSwitcher";
 
 interface SiteFooterProps {
   base: string;
@@ -204,7 +205,7 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
                 />
                 <span className="sr-only">Sina Weibo</span>
               </a>
-              <span className="group relative ml-[21px] block h-[40px] w-[123px] overflow-hidden rounded-[2px] border border-white/60 text-center text-[14px] leading-[40px] before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
+              <span className="group relative ml-[21px] block h-[40px] min-w-[123px] overflow-hidden whitespace-nowrap rounded-[2px] border border-white/60 px-[14px] text-center text-[14px] leading-[40px] before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
                 <span className="relative z-10 inline-block h-[16px] w-[19px] align-middle">
                   <img
                     alt=""
@@ -259,18 +260,7 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
               </a>{" "}
               <span className="ml-[0.7rem]">{f.investmentNotice}</span>
             </p>
-            <p className="flex shrink-0">
-              <span className="px-[17px] text-white/60">
-                {dict.common.chinese}
-              </span>
-              <span>|</span>
-              <a
-                className="pl-[16px] text-white/60 hover:text-white"
-                href="https://global.orvibo.com"
-              >
-                {dict.common.english}
-              </a>
-            </p>
+            <LocaleSwitcher label={dict.common.language} />
           </div>
           <Separator className="hidden bg-white/10" />
         </Container>

@@ -1,5 +1,6 @@
 import "server-only";
 
+import { type Locale, isLocale } from "@/lib/orvibo/i18n";
 import type {
   AboutSlug,
   PageKey,
@@ -11,8 +12,6 @@ import {
   isProductSlug,
   isServiceSlug,
 } from "./dictionaries/routes";
-
-export type Locale = "en";
 
 export interface PageMetaCopy {
   title: string;
@@ -48,8 +47,8 @@ export type Dictionary = {
     learnMore: string;
     visitStore: string;
     playVideo: string;
-    english: string;
-    chinese: string;
+    /** Label of the footer language switcher. */
+    language: string;
   };
   shell: {
     comingSoon: { title: string; description: string; body: string };
@@ -149,15 +148,15 @@ export type Dictionary = {
 };
 
 const dictionaries = {
+  ro: () =>
+    import("./dictionaries/ro.json").then(
+      (module) => module.default satisfies Dictionary,
+    ),
   en: () =>
     import("./dictionaries/en.json").then(
-      (module) => module.default as Dictionary,
+      (module) => module.default satisfies Dictionary,
     ),
 } satisfies Record<Locale, () => Promise<Dictionary>>;
-
-export function isLocale(value: string): value is Locale {
-  return value === "en";
-}
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {
   return dictionaries[locale]();
@@ -196,4 +195,5 @@ export function formatPageTitle(pageTitle: string): string {
   return `${pageTitle} | ORVIBO`;
 }
 
-export type { AboutSlug, PageKey, ProductSlug, ServiceSlug };
+export { isLocale };
+export type { AboutSlug, Locale, PageKey, ProductSlug, ServiceSlug };

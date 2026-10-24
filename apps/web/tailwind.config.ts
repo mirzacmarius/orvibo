@@ -20,7 +20,13 @@ export default {
         },
       },
       fontFamily: {
-        orvibo: ["PingFang SC", "Helvetica", "Microsoft YaHei", "sans-serif"],
+        orvibo: [
+          "var(--font-inter)",
+          "PingFang SC",
+          "Helvetica",
+          "Microsoft YaHei",
+          "sans-serif",
+        ],
       },
       keyframes: {
         "mixpad-marquee": {

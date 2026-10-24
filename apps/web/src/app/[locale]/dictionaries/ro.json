@@ -1,0 +1,442 @@
+{
+  "meta": {
+    "title": "ORVIBO | Climatizare integrată, iluminat inteligent și casă inteligentă completă",
+    "description": "Casa inteligentă ORVIBO: climatizare integrată, iluminat inteligent, întrerupătoare și automatizarea întregii locuințe."
+  },
+  "common": {
+    "watchVideo": "Vezi videoclipul",
+    "learnMore": "Află mai multe",
+    "visitStore": "Vizitează un magazin",
+    "playVideo": "Redă videoclipul",
+    "language": "Limba"
+  },
+  "shell": {
+    "comingSoon": {
+      "title": "În curând",
+      "description": "Încă pregătim această pagină.",
+      "body": "Până atunci, poți descoperi aceste produse:"
+    },
+    "unbuiltProduct": "Pagina completă a acestui produs este în pregătire.",
+    "backHome": "Înapoi la pagina principală",
+    "notFound": {
+      "title": "Pagina nu a fost găsită",
+      "description": "Pagina pe care o cauți nu există sau a fost mutată."
+    }
+  },
+  "nav": {
+    "home": "Acasă",
+    "wholeHome": "Casa inteligentă",
+    "products": "Produse",
+    "business": "Parteneriate",
+    "explore": "Explorează+",
+    "about": "Despre noi",
+    "dealer": "Program pentru distribuitori",
+    "estate": "Proiecte imobiliare",
+    "company": "Despre companie",
+    "culture": "Cultura noastră",
+    "careers": "Cariere",
+    "contact": "Contact",
+    "categories": {
+      "0": "Climatizare integrată",
+      "1": "Panouri inteligente",
+      "2": "Întrerupătoare inteligente",
+      "3": "Încuietori inteligente",
+      "4": "Iluminat inteligent",
+      "5": "Draperii inteligente",
+      "6": "Securitate și senzori",
+      "7": "Comunitate inteligentă",
+      "8": "Ecosistem și electrocasnice",
+      "9": "Controlul electrocasnicelor"
+    }
+  },
+  "navProducts": {
+    "mixstation": "Climatizare integrată ORVIBO",
+    "mixpad7Ultra": "Panou inteligent MixPad 7 Ultra",
+    "mixpad7": "Panou inteligent MixPad 7",
+    "mixpadX": "Panou inteligent MixPad X",
+    "mixpadM2": "Panou inteligent MixPad M2",
+    "mixpadSFlagship": "Panou inteligent MixPad S (Flagship)",
+    "gaosi": "Întrerupător inteligent Gauss",
+    "defy": "Întrerupător inteligent Defy (generația 1)",
+    "bach": "Întrerupător inteligent Bach",
+    "mixpadElf": "Întrerupător MixPad Elf (gateway)",
+    "mixSwitch": "Întrerupător cu comandă vocală MixSwitch",
+    "lockV5": "Încuietoare inteligentă V5",
+    "lockS2": "Încuietoare inteligentă S2",
+    "lockT1c": "Încuietoare inteligentă T1C",
+    "lightQ3": "Spot încastrat Q3 pentru confortul ochilor",
+    "lightS3": "Spot încastrat antiorbire S3",
+    "lightS5": "Spot inteligent S5",
+    "lightBauhaus": "Lampă decorativă ambientală Bauhaus",
+    "cangqiong": "Lumină naturală Cangqiong Pro",
+    "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
+    "soproS": "Iluminat SOPRO seria S",
+    "soproQ": "Iluminat SOPRO seria Q",
+    "downlight": "Spot cu temperatură de culoare reglabilă continuu",
+    "curtain3d": "Draperie inteligentă 3D Lumină și Umbră",
+    "motorDb28": "Motor ultrasilențios pentru draperii DB28",
+    "curtainMotor": "Motor ultrasilențios pentru draperii Elf",
+    "curtainSmart": "Controler inteligent pentru draperii",
+    "curtainChocolate": "Motor pentru draperii Chocolate (fără fir)",
+    "curtainZigbee": "Motor ultrasilențios pentru draperii (ZigBee)",
+    "cameraS1": "Cameră inteligentă S1 2K",
+    "cameraYuntai": "Cameră inteligentă rotativă",
+    "doorSensor": "Senzor pentru uși și ferestre",
+    "bodySensor": "Senzor de mișcare",
+    "tempHumSensor": "Senzor de temperatură și umiditate",
+    "coAlarm": "Detector de monoxid de carbon",
+    "sos": "Buton de urgență",
+    "smokeAlarm": "Detector de fum",
+    "gasSensor": "Detector de gaz combustibil",
+    "waterAlarm": "Senzor de inundație",
+    "mixpadPlus": "Sistem de interfon video cu AI",
+    "mixpadMirror": "Oglindă inteligentă de baie MixPad Mirror",
+    "robotR2": "Robot aspirator și mop R2",
+    "artisbox": "Boxă HiFi ArtisBox Play",
+    "xiaofang": "Telecomandă inteligentă Xiaofang",
+    "s30c": "Priză inteligentă S30c"
+  },
+  "hero": {
+    "headline": "Casa inteligentă ORVIBO",
+    "subheadline": "Climatizare integrată | Iluminat inteligent | Întrerupătoare inteligente",
+    "tagline": "Inteligența artificială dă formă vieții la care aspiri"
+  },
+  "highlights": {
+    "switch": "Întrerupător inteligent Gauss",
+    "switchTagline": "Cinci moduri de interacțiune, control de top",
+    "mixPad": "Panou inteligent MixPad 7 Ultra",
+    "mixPadTagline": "Inteligență și design în echilibru",
+    "lighting": "Lumină naturală Cangqiong Pro",
+    "lightingTagline": "O nouă estetică pentru living"
+  },
+  "productGrid": {
+    "title": "Produse",
+    "curtain3d": "Draperie inteligentă 3D Lumină și Umbră",
+    "spotlightS5": "Spot inteligent S5",
+    "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
+    "lockV5": "Încuietoare inteligentă V5",
+    "bauhausLight": "Lampă decorativă ambientală Bauhaus"
+  },
+  "store": {
+    "title": "Magazinul de experiență ORVIBO Smart Home",
+    "body": "Programează o vizită în centrul nostru de experiență și descoperă un stil de viață modelat de tehnologie și design."
+  },
+  "cards": {
+    "partnership": {
+      "title": "Parteneriate",
+      "desc": "Construiește alături de noi viitorul IoT"
+    },
+    "custom": {
+      "title": "Soluții personalizate",
+      "desc": "Primește rapid un proiect de casă inteligentă făcut pentru tine"
+    },
+    "cases": {
+      "title": "Proiecte reprezentative",
+      "desc": "Aleasă de peste 3,5 milioane de locuințe din întreaga lume"
+    }
+  },
+  "videos": {
+    "sectionTitle": "Centrul video",
+    "items": {
+      "mixstation": "Climatizare integrată ORVIBO",
+      "tvc": "Filmul de brand ORVIBO",
+      "sopro": "Filmul iluminatului SOPRO",
+      "s5": "Spot inteligent S5",
+      "wholeHome": "Casa inteligentă completă ORVIBO"
+    }
+  },
+  "footer": {
+    "applyRealEstate": "Solicită un parteneriat imobiliar",
+    "applyDealer": "Solicită un parteneriat de distribuție",
+    "recommendedProducts": "Produse recomandate",
+    "aboutUs": "Despre noi",
+    "business": "Parteneriate",
+    "support": "Asistență",
+    "channels": "De unde cumperi",
+    "news": "Noutăți",
+    "contactUs": "Contact",
+    "phone": "400-060-6050 ( 09:00 ~ 20:00 )",
+    "onlineService": "Asistență online",
+    "mixpadX": "Panou inteligent MixPad X",
+    "mixpadElf": "Întrerupător MixPad Elf (gateway)",
+    "soproS": "Iluminat SOPRO seria S",
+    "soproQ": "Iluminat SOPRO seria Q",
+    "customization": "Soluții personalizate",
+    "cases": "Proiecte reprezentative",
+    "zhijiayi": "Zhijiayi",
+    "orviboHome": "Aplicația ORVIBO Home",
+    "tmall": "Magazinul oficial Tmall",
+    "jd": "Magazinul oficial JD",
+    "offlineStore": "Magazine fizice",
+    "press": "Noutăți",
+    "conference": "Lansări de produse",
+    "copyright": "Copyright © 2014–2023 Shenzhen ORVIBO Technology Co., Ltd. Toate drepturile rezervate.",
+    "privacy": "Politica de confidențialitate",
+    "investmentNotice": "Investițiile implică riscuri; un parteneriat cere o analiză atentă."
+  },
+  "pages": {
+    "product": {
+      "meta": {
+        "title": "Produse",
+        "description": "Descoperă panourile inteligente ORVIBO, iluminatul, climatizarea, securitatea și automatizarea întregii locuințe."
+      },
+      "title": "Produse",
+      "lead": "Panouri inteligente, întrerupătoare, iluminat, draperii, securitate și automatizarea întregii locuințe, de la ORVIBO."
+    },
+    "cooperation": {
+      "meta": {
+        "title": "Program pentru distribuitori",
+        "description": "Devino partener ORVIBO: avantaje pentru distribuitori, instruire și sprijin pentru vânzarea de soluții smart home."
+      },
+      "title": "Program pentru distribuitori",
+      "lead": "Profită de creșterea pieței smart home prin programul ORVIBO pentru dealeri și distribuitori.",
+      "sections": {
+        "opportunity": "Prinde valul de creștere al caselor inteligente",
+        "homeEconomy": "Tot mai mult timp petrecut acasă cere o experiență mai bună acasă",
+        "brand": "Brand premium de casă inteligentă completă",
+        "design": "Tehnologie și estetică: design de produs premiat",
+        "investors": "Investiție strategică din partea Evergrande, Midea Real Estate și Red Star Macalline",
+        "realEstate": "Experiență dovedită în proiecte imobiliare inteligente",
+        "families": "Casă inteligentă premium pentru familii din întreaga lume",
+        "partners": "Parteneri de top din imobiliare și ospitalitate",
+        "stores": "Model matur de magazine fizice",
+        "policy": "Politică completă de franciză pentru casa inteligentă",
+        "subsidy": "Subvenții consistente pentru deschiderea de magazine",
+        "traffic": "Trafic țintit care aduce vânzări în magazin",
+        "training": "Formatori experți și îndrumare individuală",
+        "zhijiayi": "Zhijiayi: platformă completă de marketing smart home",
+        "cta": "Devino dealer / distribuitor"
+      }
+    },
+    "estate": {
+      "meta": {
+        "title": "Proiecte imobiliare",
+        "description": "Soluții ORVIBO de casă inteligentă completă pentru dezvoltări imobiliare rezidențiale și comerciale."
+      },
+      "title": "Proiecte imobiliare",
+      "lead": "Casă inteligentă premium pentru proiecte imobiliare de referință."
+    },
+    "store": {
+      "meta": {
+        "title": "Magazine fizice",
+        "description": "Găsește magazinele de experiență ORVIBO Smart Home și programează o vizită."
+      },
+      "title": "Magazine fizice",
+      "lead": "Vizitează un magazin de experiență ORVIBO și descoperă cum arată o casă complet inteligentă."
+    },
+    "app": {
+      "meta": {
+        "title": "Aplicația ORVIBO Home",
+        "description": "Descarcă aplicația ORVIBO Home pentru a controla dispozitivele, scenariile și automatizarea întregii locuințe."
+      },
+      "title": "Aplicația ORVIBO Home",
+      "lead": "Controlează de pe telefon întregul sistem inteligent al casei."
+    },
+    "exploreConference": {
+      "meta": {
+        "title": "Lansări de produse",
+        "description": "Urmărește evenimentele de lansare ORVIBO și prezentările de produs."
+      },
+      "title": "Lansări de produse",
+      "lead": "Descoperă evenimentele de lansare și filmele ORVIBO."
+    },
+    "about": {
+      "about_us": {
+        "meta": {
+          "title": "Despre companie",
+          "description": "ORVIBO face casa complet inteligentă cu sistemul HomeAI OS, panourile MixPad, iluminat, securitate și climatizare integrată."
+        },
+        "title": "Despre companie",
+        "lead": "ORVIBO este lider global în principalele categorii smart home.",
+        "hero": "ORVIBO este lider global în principalele categorii ale industriei smart home",
+        "homeAi": "Sistemul ORVIBO HomeAI OS, sigur și stabil, suportă Matter și GPT, gestionarea energiei în toată casa și actualizări OTA nelimitate.",
+        "mixpad": "MixPad: primul întrerupător inteligent multifuncțional cu comandă vocală din lume, nouă inovații în patru ani",
+        "lighting": "Iluminat inteligent: reglaj precis în 8 categorii și peste 300 de corpuri de iluminat apreciate",
+        "lock": "Încuietori inteligente: design premiat și șase moduri comode de deblocare",
+        "curtain": "Draperii inteligente: control precis, acoperire la distanță foarte mare și montaj rapid",
+        "security": "Securitate inteligentă: camere, senzori și dispozitive de urgență pentru protecția întregii case",
+        "mixstation": "MixStation: aer condiționat central, apă caldă și încălzire într-un singur sistem eficient",
+        "scale": "ORVIBO a ajuns în peste 4,5 milioane de locuințe din întreaga lume",
+        "realEstate": "Brandul smart home preferat de dezvoltatori și administratori imobiliari",
+        "carriers": "Partener strategic al marilor platforme smart home ale operatorilor de telecomunicații din China",
+        "stores": "Peste 1.600 de magazine smart home în peste 100 de țări și regiuni",
+        "design": "Design de produs de nivel mondial, premiat la marile competiții internaționale",
+        "philosophy": "Unim tehnologia și estetica pentru a aduce în lume o viață inteligentă plăcută."
+      },
+      "culture": {
+        "meta": {
+          "title": "Cultura noastră",
+          "description": "Cultura ORVIBO: accelerăm trecerea lumii la locuințe inteligente prin tehnologie și estetică."
+        },
+        "title": "Cultura noastră",
+        "lead": "Accelerăm trecerea lumii la locuințe inteligente prin tehnologie și estetică.",
+        "mission": "Din 2011, ORVIBO este un furnizor global de top de soluții pentru casa complet inteligentă.",
+        "exploration": "Explorare continuă: rămânem aproape de utilizatori și le depășim așteptările.",
+        "strivers": "Succesul vine din efort: urmărim excelența, nu mediocritatea."
+      },
+      "join_us": {
+        "meta": {
+          "title": "Cariere",
+          "description": "Alătură-te ORVIBO și construiește viitorul casei inteligente."
+        },
+        "title": "Cariere",
+        "lead": "Alătură-te nouă și construiește următoarea eră a vieții inteligente."
+      },
+      "contact": {
+        "meta": {
+          "title": "Contact",
+          "description": "Contactează ORVIBO pentru parteneriate, asistență și cereri comerciale."
+        },
+        "title": "Contact",
+        "lead": "Scrie-ne pentru parteneriate, proiecte și asistență.",
+        "cta": "Devino partener / distribuitor"
+      }
+    },
+    "services": {
+      "customization": {
+        "meta": {
+          "title": "Soluții personalizate",
+          "description": "Proiectare smart home personalizată ORVIBO: consultanță, planificare, instalare și service post-vânzare."
+        },
+        "title": "Soluții personalizate",
+        "lead": "Personalizare completă smart home pentru locuințe, hoteluri și spații comerciale."
+      },
+      "case": {
+        "meta": {
+          "title": "Proiecte reprezentative",
+          "description": "Proiecte de referință ORVIBO: locuințe inteligente, hoteluri, proiecte imobiliare și birouri."
+        },
+        "title": "Proiecte reprezentative",
+        "lead": "Studii de caz din locuințe, ospitalitate, imobiliare și birouri."
+      }
+    }
+  },
+  "products": {
+    "mixstation": {
+      "title": "Climatizare integrată ORVIBO",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {
+        "value": {
+          "title": "Un singur sistem, mai multe funcții: economisești energie și efort"
+        },
+        "savings": {
+          "title": "Costuri de funcționare mai mici"
+        },
+        "comfort": {
+          "title": "Mai mult confort"
+        },
+        "compact": {
+          "title": "Ocupă cu 45% mai puțin spațiu*",
+          "description": "Confort de vilă pentru locuințe medii și compacte"
+        },
+        "power": {
+          "title": "Performanță mai mare"
+        },
+        "smart": {
+          "title": "Controlat de panoul inteligent MixPad"
+        },
+        "design": {
+          "title": "Design premiat"
+        },
+        "airpro": {
+          "title": "Unități interioare AirPro: confort silențios și eficient"
+        },
+        "sustainability": {
+          "title": "Gândit pentru sustenabilitate"
+        },
+        "warranty": {
+          "title": "Garanție de până la 10 ani*"
+        }
+      }
+    },
+    "mixpad_7": {
+      "title": "Panou de control MixPad 7",
+      "tabs": {
+        "overview": "Prezentare",
+        "specifications": "Specificații"
+      },
+      "sections": {
+        "hero": {
+          "title": "Mare și rafinat",
+          "description": "Panoul inteligent MixPad 7"
+        },
+        "screen": {
+          "title": "Remarcabil din orice unghi",
+          "description": "Ecran de 7 inci cu imagine superbă"
+        },
+        "border": {
+          "title": "Ramă aurie specială"
+        },
+        "remote": {
+          "title": "Telecomandă universală",
+          "description": "Controlează 4 circuite de iluminat și are telecomandă în infraroșu integrată, pentru toate electrocasnicele cu infraroșu din casă."
+        },
+        "gateway": {
+          "title": "Gateway pentru orice",
+          "description": "Suportă Zigbee, Wi-Fi, Bluetooth și Ethernet\nCea mai largă compatibilitate din industria smart home, cu suport complet pentru Matter în curând."
+        },
+        "intercom": {
+          "title": "Interfon video premium"
+        },
+        "album": {
+          "title": "Super inteligent",
+          "description": "Album foto"
+        },
+        "audio": {
+          "title": "Sistem Hi-Fi de perete\nSunet amplu, profil subțire",
+          "description": "Acustică premium și biblioteci muzicale licențiate, pentru ascultare fără limite."
+        },
+        "partner": {
+          "title": "Încă ceva",
+          "description": "Partenerul perfect"
+        }
+      },
+      "specifications": {
+        "title": "Specificații",
+        "rows": {
+          "brand": { "label": "Marcă", "value": "ORVIBO" },
+          "model": { "label": "Model", "value": "V80X" },
+          "category": { "label": "Categorie", "value": "MixPad" },
+          "processor": {
+            "label": "Procesor",
+            "value": "Quad-core pe 64 de biți Cortex-A55, 1,8 GHz"
+          },
+          "memory": { "label": "Memorie", "value": "2 GB + 8 GB" },
+          "os": { "label": "Sistem de operare", "value": "Home AI OS" },
+          "display": {
+            "label": "Ecran",
+            "value": "Ecran tactil IPS de 7\", 1024 × 600"
+          },
+          "microphone": { "label": "Microfon", "value": "Matrice cu două microfoane" },
+          "connectivity": {
+            "label": "Conectivitate",
+            "value": "Wi-Fi / Bluetooth / Zigbee 3.0"
+          },
+          "voltage": {
+            "label": "Tensiune de alimentare",
+            "value": "AC 100–240 V, 50/60 Hz (fază + nul)"
+          },
+          "loads": {
+            "label": "Tipuri de sarcină",
+            "value": "Incandescente, LED, fluorescente compacte și similare"
+          },
+          "environment": {
+            "label": "Mediu de funcționare",
+            "value": "0–45 °C, umiditate ≤ 90%"
+          },
+          "ambient": {
+            "label": "Senzor de lumină ambientală",
+            "value": "Da"
+          },
+          "ir": { "label": "Control în infraroșu", "value": "Da" },
+          "dimensions": {
+            "label": "Dimensiuni",
+            "value": "177,2 × 111 × 11,2 mm"
+          }
+        }
+      }
+    }
+  }
+}

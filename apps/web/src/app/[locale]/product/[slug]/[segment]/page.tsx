@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { LOCALES } from "@/lib/orvibo/i18n";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
 import {
   formatPageTitle,
@@ -17,10 +18,9 @@ export async function generateStaticParams() {
   const { listProductSlugs, getProductDefinition } = await import(
     "@/lib/orvibo/products/registry"
   );
-  const locales = ["en"] as const;
   const params: { locale: string; slug: string; segment: string }[] = [];
 
-  for (const locale of locales) {
+  for (const locale of LOCALES) {
     for (const slug of listProductSlugs()) {
       const product = getProductDefinition(slug);
       if (!product?.segmentViews) continue;

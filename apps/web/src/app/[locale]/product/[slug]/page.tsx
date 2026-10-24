@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { LOCALES } from "@/lib/orvibo/i18n";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
 import {
@@ -18,7 +19,7 @@ import {
   getUpcomingProductLabelKey,
   listUpcomingProductSlugs,
 } from "@/lib/orvibo/products/upcoming";
-import { PLACEHOLDER_ROBOTS } from "@/lib/orvibo/site";
+import { localeAlternates, PLACEHOLDER_ROBOTS } from "@/lib/orvibo/site";
 
 function titleFromSlug(slug: string) {
   return slug.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -32,9 +33,8 @@ function upcomingProductTitle(dict: Dictionary, slug: string) {
 }
 
 export async function generateStaticParams() {
-  const locales = ["en"] as const;
   const slugs = [...listProductSlugs(), ...listUpcomingProductSlugs()];
-  return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+  return LOCALES.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
 }
 
 export async function generateMetadata({
@@ -49,7 +49,10 @@ export async function generateMetadata({
 
   if (product) {
     const copy = getProductCopy(dict, slug);
-    return { title: formatPageTitle(copy?.title ?? product.title) };
+    return {
+      title: formatPageTitle(copy?.title ?? product.title),
+      alternates: localeAlternates(locale, `/product/${slug}`),
+    };
   }
 
   const upcomingTitle = upcomingProductTitle(dict, slug);
