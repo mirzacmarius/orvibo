@@ -75,12 +75,12 @@ export function Mixpad7UltraOverview({
         <div className="relative h-[9.6rem]">
           <MarketingVideo
             bare
-            src="/media/MixPad-7Ultra1.mp4"
+            src="/orvibo/videos/MixPad-7Ultra1.mp4"
             className="w-full h-full aspect-[1920/1080]"
           />
           <div className="absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center bg-black/20">
             <OrviboWatchTrigger
-              videoSrc="/media/MixPad-7Ultra.mov"
+              videoSrc="/orvibo/videos/MixPad-7Ultra.mp4"
               showPlayIcon={false}
             >
               <span

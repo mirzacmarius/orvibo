@@ -348,7 +348,7 @@ export function MixpadM2Overview({ locale, text, common }: ProductViewProps) {
           <div className="mx-auto mt-[0.87rem] rounded-[0.25rem] w-[13.28rem] overflow-hidden">
             <MarketingVideo
               bare
-              src="/media/mixpad_m2_lighting.mp4"
+              src="/orvibo/videos/mixpad_m2_lighting.mp4"
               className="w-full aspect-[1920/898]"
             />
           </div>
@@ -409,7 +409,7 @@ export function MixpadM2Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
           <MarketingVideo
             bare
-            src="/media/mixpad_m2_multi.mp4"
+            src="/orvibo/videos/mixpad_m2_multi.mp4"
             className="w-full aspect-[1920/960]"
           />
           <div className="absolute left-[2.43rem] h-[50px] bottom-[0.25rem] whitespace-nowrap font-normal text-[18px] text-[#787878] leading-[40px]">
