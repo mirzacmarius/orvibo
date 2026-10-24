@@ -1,3 +1,4 @@
+import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
@@ -76,6 +77,17 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: MixpadElfOverview,
+    segmentViews: { spec: ProductSpecView },
+  },
+  {
+    slug: "bach",
+    title: "Bach Smart Switch",
+    rootClass: "bach",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: BachOverview,
     segmentViews: { spec: ProductSpecView },
   },
 ];

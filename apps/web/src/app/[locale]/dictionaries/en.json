@@ -502,6 +502,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "bach": {
+      "title": "Bach Smart Switch",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

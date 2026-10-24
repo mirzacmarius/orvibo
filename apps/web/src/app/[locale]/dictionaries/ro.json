@@ -502,6 +502,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "bach": {
+      "title": "Întrerupător inteligent Bach",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

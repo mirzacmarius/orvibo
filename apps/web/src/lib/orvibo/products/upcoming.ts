@@ -10,7 +10,6 @@
 const UPCOMING_PRODUCTS = new Map<string, string>([
   ["gaosi", "gaosi"],
   ["defy", "defy"],
-  ["bach", "bach"],
   ["mixpad_switch", "mixSwitch"],
   ["q3", "lightQ3"],
   ["s3", "lightS3"],
