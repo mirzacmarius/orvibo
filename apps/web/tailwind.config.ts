@@ -8,6 +8,8 @@ export default {
     extend: {
       animation: {
         "mixpad-marquee": "mixpad-marquee 24s linear infinite",
+        "bubble-ripple": "bubble-ripple 4s linear infinite",
+        "bubble-ripple-wide": "bubble-ripple-wide 4s linear infinite",
       },
       colors: {
         orvibo: {
@@ -32,6 +34,19 @@ export default {
         "mixpad-marquee": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        // Voice rings pulsing around a product (MixPad Elf).
+        "bubble-ripple": {
+          "0%": { transform: "scale(1)" },
+          "50%": { opacity: "0.5", transform: "scale(1.45)" },
+          "75%": { opacity: "0.3", transform: "scale(1.9)" },
+          "100%": { opacity: "0.2", transform: "scale(2)" },
+        },
+        "bubble-ripple-wide": {
+          "0%": { transform: "scale(1)" },
+          "50%": { opacity: "0.9", transform: "scale(1.6)" },
+          "75%": { opacity: "0.65", transform: "scale(3.2)" },
+          "100%": { opacity: "0.2", transform: "scale(6)" },
         },
       },
       maxWidth: {

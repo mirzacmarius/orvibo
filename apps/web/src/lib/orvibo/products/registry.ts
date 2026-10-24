@@ -1,5 +1,6 @@
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
+import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
 import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_flagship/MixpadSFlagshipOverview";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
@@ -64,6 +65,17 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: MixpadSFlagshipOverview,
+    segmentViews: { spec: ProductSpecView },
+  },
+  {
+    slug: "mixpad_elf",
+    title: "MixPad Elf Smart Switch (Gateway)",
+    rootClass: "elf",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: MixpadElfOverview,
     segmentViews: { spec: ProductSpecView },
   },
 ];

@@ -494,6 +494,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "mixpad_elf": {
+      "title": "Întrerupător inteligent MixPad Elf (gateway)",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

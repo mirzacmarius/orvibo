@@ -494,6 +494,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "mixpad_elf": {
+      "title": "MixPad Elf Smart Switch (Gateway)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }
