@@ -1,4 +1,5 @@
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
+import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixpadXSpec } from "@/components/orvibo/products/mixpad_x/MixpadXSpec";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
@@ -37,6 +38,13 @@ const definitions: ProductDefinition[] = [
     ],
     View: MixpadXOverview,
     segmentViews: { spec: MixpadXSpec },
+  },
+  {
+    slug: "mixpad_7_ultra",
+    title: "MixPad 10 Smart Panel",
+    rootClass: "mixpad7",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: Mixpad7UltraOverview,
   },
 ];
 

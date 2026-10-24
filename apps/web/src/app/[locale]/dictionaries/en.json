@@ -472,6 +472,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "mixpad_7_ultra": {
+      "title": "MixPad 10 Smart Panel",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

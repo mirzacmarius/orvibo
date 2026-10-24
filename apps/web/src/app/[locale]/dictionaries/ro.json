@@ -472,6 +472,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "mixpad_7_ultra": {
+      "title": "Panou inteligent MixPad 10",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }
