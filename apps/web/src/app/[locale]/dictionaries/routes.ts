@@ -38,6 +38,7 @@ export const PRODUCT_SLUGS = [
   "mixpad_switch",
   "s3",
   "downlight",
+  "cangqiong",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -192,5 +193,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "downlight",
     cn: "https://www.orvibo.com/cn/product/downlight.html",
+  },
+  {
+    scope: "product",
+    key: "cangqiong",
+    cn: "https://www.orvibo.com/cn/product/cangqiong.html",
   },
 ];

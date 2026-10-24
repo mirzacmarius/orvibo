@@ -1,5 +1,6 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
+import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
@@ -139,6 +140,13 @@ const definitions: ProductDefinition[] = [
     ],
     View: DownlightOverview,
     segmentViews: { spec: DownlightSpec },
+  },
+  {
+    slug: "cangqiong",
+    title: "Cangqiong Pro Natural Light",
+    rootClass: "cangqiong",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: CangqiongOverview,
   },
 ];
 

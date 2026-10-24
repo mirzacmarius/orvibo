@@ -567,6 +567,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "cangqiong": {
+      "title": "Cangqiong Pro Natural Light",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }
