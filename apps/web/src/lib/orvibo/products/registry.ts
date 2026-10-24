@@ -1,6 +1,7 @@
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
+import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_flagship/MixpadSFlagshipOverview";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
@@ -53,6 +54,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "mixpad_m2",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MixpadM2Overview,
+  },
+  {
+    slug: "mixpad_s_flagship",
+    title: "MixPad S Smart Panel (Flagship)",
+    rootClass: "mixpad_s_flagship",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: MixpadSFlagshipOverview,
+    segmentViews: { spec: ProductSpecView },
   },
 ];
 

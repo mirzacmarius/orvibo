@@ -486,6 +486,14 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "mixpad_s_flagship": {
+      "title": "MixPad S Smart Panel (Flagship)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

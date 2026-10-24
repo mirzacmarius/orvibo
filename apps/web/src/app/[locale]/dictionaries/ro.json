@@ -486,6 +486,14 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "mixpad_s_flagship": {
+      "title": "Panou inteligent MixPad S (Flagship)",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }
