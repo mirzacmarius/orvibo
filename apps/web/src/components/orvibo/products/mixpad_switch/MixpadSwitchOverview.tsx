@@ -57,7 +57,7 @@ export function MixpadSwitchOverview({
               width={69}
               height={69}
               unoptimized
-              className="align-middle w-[0.69rem] h-[0.69rem]"
+              className="inline align-middle w-[0.69rem] h-[0.69rem]"
             />
             <p className="mt-[0.3rem] text-[0.2rem] text-[#111111] max-w-[4rem]">
               {t("sec1.sec1")}
@@ -72,7 +72,7 @@ export function MixpadSwitchOverview({
               width={69}
               height={65}
               unoptimized
-              className="align-middle w-[0.69rem] h-[0.65rem]"
+              className="inline align-middle w-[0.69rem] h-[0.65rem]"
             />
             <p className="mt-[0.31rem] text-[0.2rem] text-[#111111] max-w-[4rem]">
               {t("sec1.sec12")}
@@ -87,7 +87,7 @@ export function MixpadSwitchOverview({
               width={66}
               height={70}
               unoptimized
-              className="align-middle w-[0.66rem] h-[0.7rem]"
+              className="inline align-middle w-[0.66rem] h-[0.7rem]"
             />
             <p className="mt-[0.3rem] text-[0.2rem] text-[#111111] max-w-[4rem]">
               {t("sec1.sec13")}
@@ -102,7 +102,7 @@ export function MixpadSwitchOverview({
               width={121}
               height={25}
               unoptimized
-              className="align-middle w-[1.21rem] h-[0.25rem]"
+              className="inline align-middle w-[1.21rem] h-[0.25rem]"
             />
             <p className="mt-[0.52rem] text-[0.2rem] text-[#111111] max-w-[4rem]">
               {t("sec1.sec14")}
@@ -567,7 +567,7 @@ export function MixpadSwitchOverview({
                 width={58}
                 height={58}
                 unoptimized
-                className="align-middle w-[0.58rem] h-[0.58rem]"
+                className="inline align-middle w-[0.58rem] h-[0.58rem]"
               />
               <p className="mt-[0.26rem] text-[0.18rem] font-medium text-white">
                 {t("sec11.delay_1")}
@@ -582,7 +582,7 @@ export function MixpadSwitchOverview({
                 width={49}
                 height={53}
                 unoptimized
-                className="align-middle w-[0.49rem] h-[0.53rem]"
+                className="inline align-middle w-[0.49rem] h-[0.53rem]"
               />
               <p className="mt-[0.28rem] text-[0.18rem] font-medium text-white">
                 {t("sec11.delay_2")}
@@ -597,7 +597,7 @@ export function MixpadSwitchOverview({
                 width={30}
                 height={50}
                 unoptimized
-                className="align-middle w-[0.3rem] h-[0.5rem]"
+                className="inline align-middle w-[0.3rem] h-[0.5rem]"
               />
               <p className="mt-[0.31rem] text-[0.18rem] font-medium text-white">
                 {t("sec11.delay_3")}
@@ -612,7 +612,7 @@ export function MixpadSwitchOverview({
                 width={43}
                 height={52}
                 unoptimized
-                className="align-middle w-[0.43rem] h-[0.52rem]"
+                className="inline align-middle w-[0.43rem] h-[0.52rem]"
               />
               <p className="mt-[0.29rem] text-[0.18rem] font-medium text-white">
                 {t("sec11.delay_4")}
@@ -627,7 +627,7 @@ export function MixpadSwitchOverview({
                 width={46}
                 height={36}
                 unoptimized
-                className="mt-[0.08rem] align-middle w-[0.46rem] h-[0.36rem]"
+                className="inline mt-[0.08rem] align-middle w-[0.46rem] h-[0.36rem]"
               />
               <p className="mt-[0.37rem] text-[0.18rem] font-medium text-white">
                 {t("sec11.delay_5")}
