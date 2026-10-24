@@ -7,8 +7,6 @@ export default {
   theme: {
     extend: {
       animation: {
-        marquee: "marquee 25s linear infinite",
-        marquee2: "marquee2 25s linear infinite",
         "mixpad-marquee": "mixpad-marquee 24s linear infinite",
       },
       colors: {
@@ -25,14 +23,6 @@ export default {
         orvibo: ["PingFang SC", "Helvetica", "Microsoft YaHei", "sans-serif"],
       },
       keyframes: {
-        marquee: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
-        },
-        marquee2: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(0%)" },
-        },
         "mixpad-marquee": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
