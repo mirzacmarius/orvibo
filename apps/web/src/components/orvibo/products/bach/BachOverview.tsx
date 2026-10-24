@@ -169,7 +169,7 @@ export function BachOverview({ locale, text, common }: ProductViewProps) {
         </div>
         {/* sec5 */}
         <div className="pt-[1.08rem] pb-[1.23rem] relative">
-          <ProductReveal className="bg-clip-text [-webkit-text-fill-color:transparent] bg-[image:linear-gradient(rgb(243,210,171)_0px,rgb(155,116,68)_100%)] leading-[0.64rem] text-[0.55rem] font-semibold text-center">
+          <ProductReveal className="bg-clip-text [-webkit-text-fill-color:transparent] bg-[image:linear-gradient(rgb(243,210,171)_0px,rgb(155,116,68)_100%)] text-[0.55rem] leading-[0.64rem] font-semibold text-center">
             {t("sec5.bach_title")}
           </ProductReveal>
           <div className="mx-auto mt-[0.73rem] mb-[0.54rem] w-[13rem] flex">
