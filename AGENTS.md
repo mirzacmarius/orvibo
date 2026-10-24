@@ -50,10 +50,13 @@ under `apps/web/.next/types` after you delete a route, remove `apps/web/.next`
 - **Placeholder pages** use `PLACEHOLDER_ROBOTS` from `src/lib/orvibo/site.ts` and are
   left out of `src/app/sitemap.ts`. Remove the first and add the second when a page
   gets real content.
-- **Root font size.** `src/styles/orvibo.css` sets `html { font-size }` to 75–100px
-  to mimic the original site's rem layout. Any rem-based Tailwind or shadcn default
-  (`p-6`, `gap-4`, `text-sm`, `max-w-sm`) is therefore 4–6 times larger than usual.
-  Use pixel values (`p-[24px]`) or `calc(var(--orvibo-rem-scale)*N)`.
+- **Root font size.** `src/styles/orvibo.css` sets `html { font-size }` to mimic the
+  original site's rem layout: 75px below 1360px wide, 100px around 1760px, and
+  `83.34vw / 16` above 1920px (about 133px at 2560px). Any rem-based Tailwind or
+  shadcn default (`p-6`, `gap-4`, `text-sm`, `max-w-sm`) is therefore at least 4–6
+  times larger than usual, and more on wide screens. Use pixel values (`p-[24px]`)
+  for chrome, or `calc(var(--orvibo-rem-scale)*N)` for sections that should scale
+  with the viewport.
 - **Link colours.** `.orvibo-site a { color: inherit }` beats single-class utilities
   on an anchor, so `text-*` classes on a link have no effect. Put the colour on the
   link's parent element instead.

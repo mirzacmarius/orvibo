@@ -53,7 +53,8 @@ export async function generateMetadata({
   }
 
   const upcomingTitle = upcomingProductTitle(dict, slug);
-  if (!upcomingTitle) return {};
+  if (!upcomingTitle)
+    return { title: formatPageTitle(dict.shell.notFound.title) };
   return {
     title: formatPageTitle(upcomingTitle),
     description: dict.shell.unbuiltProduct,

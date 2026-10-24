@@ -18,7 +18,7 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const copy = getAboutPageCopy(dict, slug);
-  if (!copy) return {};
+  if (!copy) return { title: formatPageTitle(dict.shell.notFound.title) };
   return {
     title: formatPageTitle(copy.meta.title),
     description: copy.meta.description,

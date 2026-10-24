@@ -42,7 +42,9 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const product = getProductDefinition(slug);
-  if (!product?.segmentViews?.[segment]) return {};
+  if (!product?.segmentViews?.[segment]) {
+    return { title: formatPageTitle(dict.shell.notFound.title) };
+  }
   const resolved = resolveProductDefinition(product, dict, slug);
   const title = resolved?.copy.title ?? product.title;
   const tab = resolved?.product.tabs.find((item) => item.segment === segment);
