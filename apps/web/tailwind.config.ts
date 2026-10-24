@@ -10,6 +10,7 @@ export default {
         "mixpad-marquee": "mixpad-marquee 24s linear infinite",
         "bubble-ripple": "bubble-ripple 4s linear infinite",
         "bubble-ripple-wide": "bubble-ripple-wide 4s linear infinite",
+        "tap-ripple": "tap-ripple 2s ease 0.2s infinite",
       },
       colors: {
         orvibo: {
@@ -47,6 +48,12 @@ export default {
           "50%": { opacity: "0.9", transform: "scale(1.6)" },
           "75%": { opacity: "0.65", transform: "scale(3.2)" },
           "100%": { opacity: "0.2", transform: "scale(6)" },
+        },
+        // Rings spreading from a key being pressed (MixSwitch).
+        "tap-ripple": {
+          "0%": { transform: "scale(0)" },
+          "50%": { opacity: "1" },
+          "100%": { opacity: "0", transform: "scale(1)" },
         },
       },
       maxWidth: {

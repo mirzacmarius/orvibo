@@ -64,7 +64,7 @@
     "defy": "Întrerupător inteligent Defy (generația 1)",
     "bach": "Întrerupător inteligent Bach",
     "mixpadElf": "Întrerupător MixPad Elf (gateway)",
-    "mixSwitch": "Întrerupător cu comandă vocală MixSwitch",
+    "mixSwitch": "Întrerupător inteligent MixSwitch",
     "lockV5": "Încuietoare inteligentă V5",
     "lockS2": "Încuietoare inteligentă S2",
     "lockT1c": "Încuietoare inteligentă T1C",
@@ -522,6 +522,14 @@
       "title": "Întrerupător inteligent Gauss",
       "tabs": {
         "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "mixpad_switch": {
+      "title": "Întrerupător inteligent MixSwitch",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
       },
       "sections": {}
     }

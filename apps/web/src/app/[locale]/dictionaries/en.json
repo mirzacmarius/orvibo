@@ -64,7 +64,7 @@
     "defy": "Defy Smart Switch (Gen 1)",
     "bach": "Bach Smart Switch",
     "mixpadElf": "MixPad Elf Switch (Gateway)",
-    "mixSwitch": "MixSwitch Voice Switch",
+    "mixSwitch": "MixSwitch Smart Switch",
     "lockV5": "Smart Lock V5",
     "lockS2": "Smart Lock S2",
     "lockT1c": "Smart Lock T1C",
@@ -522,6 +522,14 @@
       "title": "Gauss Smart Switch",
       "tabs": {
         "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "mixpad_switch": {
+      "title": "MixSwitch Smart Switch",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
       },
       "sections": {}
     }

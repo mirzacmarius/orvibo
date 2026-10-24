@@ -1,3 +1,4 @@
+import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
@@ -6,9 +7,10 @@ import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultr
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
 import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_flagship/MixpadSFlagshipOverview";
+import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchOverview";
+import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
-import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -105,6 +107,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "gaosi",
     tabs: [{ id: "overview", label: "Overview" }],
     View: GaosiOverview,
+  },
+  {
+    slug: "mixpad_switch",
+    title: "MixSwitch Smart Switch",
+    rootClass: "mixpad_switch",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: MixpadSwitchOverview,
+    segmentViews: { spec: MixpadSwitchSpec },
   },
 ];
 
