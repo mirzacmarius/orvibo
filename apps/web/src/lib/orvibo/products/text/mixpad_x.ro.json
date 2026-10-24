@@ -56,5 +56,22 @@
   "sec14.video_title2": "Trezire cu energie",
   "sec14.video_desc2": "Sună alarma, dar mai vrei câteva minute de somn? Asistentul înțelege situația și te trezește din nou puțin mai târziu.",
   "sec14.video_title3": "Modul confort",
-  "sec14.video_desc3": "Închide ferestrele, pornește muzică liniștitoare și o lumină caldă, pentru o atmosferă mai primitoare."
+  "sec14.video_desc3": "Închide ferestrele, pornește muzică liniștitoare și o lumină caldă, pentru o atmosferă mai primitoare.",
+  "meta.spec.description": "Specificațiile panoului inteligent MixPad 12: ecran de 12,3 inchi 1920 × 720, procesor quad-core, Zigbee, Bluetooth, Wi-Fi și RS485, două circuite de iluminat.",
+  "spec.size": "Dimensiuni: 341 × 141 mm",
+  "spec.color": "Culoare: gri metalizat",
+  "spec.cpu": "Procesor: Cortex-A35 cu patru nuclee",
+  "spec.os": "Sistem de operare: HomeAI OS",
+  "spec.screen": "Ecran: 12,3 inchi, rezoluție 1920 × 720",
+  "spec.mics": "Microfoane: matrice liniară cu două microfoane",
+  "spec.speakers": "Difuzoare: 2 × 2,4 W",
+  "spec.housing": "Carcasă: PC ignifug clasa V0 + aliaj de aluminiu",
+  "spec.protocols": "Protocoale: Zigbee, Bluetooth, Wi-Fi, RS485",
+  "spec.backBox": "Doză de montaj: standard, simplă, de 86 mm",
+  "spec.voltage": "Tensiune de alimentare: 220 V c.a.",
+  "spec.circuits": "Circuite de iluminat: 2",
+  "spec.load": "Sarcină maximă: 600 W pe circuit",
+  "spec.ir": "Control IR: —",
+  "spec.zigbee": "Dispozitive Zigbee acceptate: 350",
+  "spec.scenes": "Număr de scene: nelimitat"
 }

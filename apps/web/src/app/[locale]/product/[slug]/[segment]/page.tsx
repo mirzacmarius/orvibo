@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { LOCALES } from "@/lib/orvibo/i18n";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
 import {
@@ -52,8 +52,11 @@ export async function generateMetadata({
   const tab = resolved?.product.tabs.find((item) => item.segment === segment);
   const text = await loadProductPageText(slug, locale);
   return {
-    title: formatPageTitle(`${title} — ${tab?.label ?? titleFromSlug(segment)}`),
-    description: text[`meta.${segment}.description`] ?? text["meta.description"],
+    title: formatPageTitle(
+      `${title} — ${tab?.label ?? titleFromSlug(segment)}`,
+    ),
+    description:
+      text[`meta.${segment}.description`] ?? text["meta.description"],
     alternates: localeAlternates(locale, `/product/${slug}/${segment}`),
   };
 }
@@ -70,6 +73,11 @@ export default async function ProductSegmentPage({
   const definition = getProductDefinition(slug);
   const SegmentView = definition?.segmentViews?.[segment];
 
+  // orvibo.com keeps specs on a separate page; products whose specs are a
+  // section of the main page (or not built yet) send `/spec` there.
+  if (segment === "spec" && !SegmentView) {
+    redirect(`/${locale}/product/${slug}#specifications`);
+  }
   if (!definition || !SegmentView) notFound();
 
   const resolved = resolveProductDefinition(definition, dict, slug);

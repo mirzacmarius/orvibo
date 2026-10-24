@@ -10,7 +10,9 @@
     "playVideo": "Redă videoclipul",
     "language": "Limba",
     "productDisclaimer": "Imaginile, videoclipurile și conținutul ecranelor de pe această pagină au doar rol ilustrativ. Produsul real (inclusiv, dar fără a se limita la aspect, culoare și dimensiuni) și ce afișează ecranul său (inclusiv, dar fără a se limita la fundaluri, interfață, imagini și videoclipuri) pot diferi ușor; produsul real este cel de referință.\nDatele de pe această pagină sunt valori teoretice din laboratorul intern ORVIBO, măsurate în condiții de testare specifice (vezi notele fiecărui punct). În utilizarea reală pot apărea mici diferențe, în funcție de exemplar, versiunea software, condițiile de utilizare și mediu.\nDeoarece loturile de producție și aprovizionarea se schimbă în timp, ORVIBO poate actualiza oricând textele, imaginile și celelalte conținuturi de pe această pagină, pentru a corespunde performanțelor, specificațiilor, parametrilor și componentelor reale ale produsului.",
-    "productDisclaimerNoNotice": "Când astfel de modificări sunt necesare, ele pot fi făcute fără o notificare separată."
+    "productDisclaimerNoNotice": "Când astfel de modificări sunt necesare, ele pot fi făcute fără o notificare separată.",
+    "productSpecTitle": "Specificații",
+    "productSpecNote": "* Toate valorile de mai sus provin din laboratorul ORVIBO. Rezultatele reale pot varia ușor în funcție de metoda de măsurare."
   },
   "shell": {
     "comingSoon": {

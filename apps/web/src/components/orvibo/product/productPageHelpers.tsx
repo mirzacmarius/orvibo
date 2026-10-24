@@ -3,7 +3,8 @@ import type { Locale } from "@/lib/orvibo/i18n";
 import { localizedAssetUrl } from "@/lib/orvibo/localizedAsset";
 import type { ProductPageText } from "@/lib/orvibo/products/page-text";
 
-function withLineBreaks(value: string): ReactNode {
+/** Renders a string with `\n` as `<br />` line breaks. */
+export function withLineBreaks(value: string): ReactNode {
   if (!value.includes("\n")) return value;
   const parts: ReactNode[] = [];
   const seen = new Map<string, number>();

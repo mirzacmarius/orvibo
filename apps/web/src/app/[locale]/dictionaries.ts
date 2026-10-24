@@ -55,6 +55,10 @@ export type Dictionary = {
     productDisclaimer: string;
     /** Extra closing line some product pages add to the disclaimer. */
     productDisclaimerNoNotice: string;
+    /** Heading of a product's specifications tab. */
+    productSpecTitle: string;
+    /** Note under a product's specifications list. */
+    productSpecNote: string;
   };
   shell: {
     comingSoon: { title: string; description: string; body: string };

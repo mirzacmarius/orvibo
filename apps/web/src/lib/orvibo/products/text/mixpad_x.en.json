@@ -56,5 +56,22 @@
   "sec14.video_title2": "Wake up refreshed",
   "sec14.video_desc2": "The alarm rings, but you want a few more minutes? The assistant reads the situation and wakes you again a little later.",
   "sec14.video_title3": "Cozy mode",
-  "sec14.video_desc3": "Closes the windows, plays soothing music and sets warm lighting for a cozier mood."
+  "sec14.video_desc3": "Closes the windows, plays soothing music and sets warm lighting for a cozier mood.",
+  "meta.spec.description": "MixPad 12 smart panel specifications: 12.3-inch 1920 × 720 screen, quad-core CPU, Zigbee, Bluetooth, Wi-Fi and RS485, two lighting circuits.",
+  "spec.size": "Dimensions: 341 × 141 mm",
+  "spec.color": "Color: gunmetal",
+  "spec.cpu": "CPU: quad-core Cortex-A35",
+  "spec.os": "Operating system: HomeAI OS",
+  "spec.screen": "Screen: 12.3 in, 1920 × 720 resolution",
+  "spec.mics": "Microphones: linear dual-mic array",
+  "spec.speakers": "Speakers: 2 × 2.4 W",
+  "spec.housing": "Housing: V0 flame-retardant PC + aluminum alloy",
+  "spec.protocols": "Protocols: Zigbee, Bluetooth, Wi-Fi, RS485",
+  "spec.backBox": "Back box: standard single 86 mm box",
+  "spec.voltage": "Input voltage: 220 V AC",
+  "spec.circuits": "Lighting circuits: 2",
+  "spec.load": "Max load: 600 W per circuit",
+  "spec.ir": "IR control: —",
+  "spec.zigbee": "Zigbee devices supported: 350",
+  "spec.scenes": "Scenes supported: unlimited"
 }

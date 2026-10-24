@@ -40,14 +40,6 @@ export function middleware(request: NextRequest) {
     );
   }
 
-  const specTabMatch = rest.match(/^\/product\/([^/]+)\/spec$/);
-  if (specTabMatch) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/${locale}/product/${specTabMatch[1]}`;
-    url.hash = "specifications";
-    return NextResponse.redirect(url, 308);
-  }
-
   return NextResponse.next();
 }
 
