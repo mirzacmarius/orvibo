@@ -22,7 +22,7 @@ in the repo but unused by the site.
 
 ## Getting started
 
-You need [Bun](https://bun.sh) 1.3.12 (pinned in `package.json`, the same version
+You need [Bun](https://bun.sh) 1.3.14 (pinned in `package.json`, the same version
 Vercel uses).
 
 ```bash

@@ -10,7 +10,7 @@ deploys. This file adds what an agent needs on top of that.
 - `apps/app` (port 3000), `packages/backend` (Convex) and `packages/email` are
   leftovers from the Create v1 starter. They are not deployed and the site does
   not import them. Do not wire the site to Convex.
-- Bun 1.3.12 is the package manager (`packageManager` in `package.json`). Do not use
+- Bun 1.3.14 is the package manager (`packageManager` in `package.json`). Do not use
   npm, yarn or pnpm, and keep `bun.lock` in sync (`bun install`).
 
 ## Before you push
