@@ -11,6 +11,7 @@ import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch
 import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
+import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -118,6 +119,13 @@ const definitions: ProductDefinition[] = [
     ],
     View: MixpadSwitchOverview,
     segmentViews: { spec: MixpadSwitchSpec },
+  },
+  {
+    slug: "s3",
+    title: "Anti-glare Smart Downlight S3",
+    rootClass: "s3",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: S3Overview,
   },
 ];
 

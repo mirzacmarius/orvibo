@@ -549,6 +549,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "s3": {
+      "title": "Spot încastrat inteligent antiorbire S3",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }

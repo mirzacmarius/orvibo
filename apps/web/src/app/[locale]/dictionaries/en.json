@@ -549,6 +549,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "s3": {
+      "title": "Anti-glare Smart Downlight S3",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }
