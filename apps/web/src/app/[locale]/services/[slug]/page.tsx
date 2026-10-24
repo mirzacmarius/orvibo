@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
+import { PLACEHOLDER_ROBOTS } from "@/lib/orvibo/site";
 import {
   formatPageTitle,
   getDictionary,
@@ -21,6 +22,7 @@ export async function generateMetadata({
   return {
     title: formatPageTitle(copy.meta.title),
     description: copy.meta.description,
+    robots: PLACEHOLDER_ROBOTS,
   };
 }
 

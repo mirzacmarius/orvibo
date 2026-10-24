@@ -3,27 +3,39 @@ import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
 import {
+  type Dictionary,
   formatPageTitle,
   getDictionary,
   getProductCopy,
   isLocale,
 } from "../../dictionaries";
-import { getProductDefinition } from "@/lib/orvibo/products/registry";
+import {
+  getProductDefinition,
+  listProductSlugs,
+} from "@/lib/orvibo/products/registry";
 import { resolveProductDefinition } from "@/lib/orvibo/products/resolve-product-copy";
+import {
+  getUpcomingProductLabelKey,
+  listUpcomingProductSlugs,
+} from "@/lib/orvibo/products/upcoming";
+import { PLACEHOLDER_ROBOTS } from "@/lib/orvibo/site";
 
 function titleFromSlug(slug: string) {
   return slug.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-export async function generateStaticParams() {
-  const { listProductSlugs } = await import("@/lib/orvibo/products/registry");
-  const locales = ["en"] as const;
-  return locales.flatMap((locale) =>
-    listProductSlugs().map((slug) => ({ locale, slug })),
-  );
+/** Display name for a product that is linked from the site but not built yet. */
+function upcomingProductTitle(dict: Dictionary, slug: string) {
+  const labelKey = getUpcomingProductLabelKey(slug);
+  if (!labelKey) return undefined;
+  return dict.navProducts[labelKey] ?? titleFromSlug(slug);
 }
 
-export const dynamicParams = true;
+export async function generateStaticParams() {
+  const locales = ["en"] as const;
+  const slugs = [...listProductSlugs(), ...listUpcomingProductSlugs()];
+  return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
+}
 
 export async function generateMetadata({
   params,
@@ -34,9 +46,19 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const product = getProductDefinition(slug);
-  const copy = getProductCopy(dict, slug);
-  const title = copy?.title ?? product?.title ?? titleFromSlug(slug);
-  return { title: formatPageTitle(title) };
+
+  if (product) {
+    const copy = getProductCopy(dict, slug);
+    return { title: formatPageTitle(copy?.title ?? product.title) };
+  }
+
+  const upcomingTitle = upcomingProductTitle(dict, slug);
+  if (!upcomingTitle) return {};
+  return {
+    title: formatPageTitle(upcomingTitle),
+    description: dict.shell.unbuiltProduct,
+    robots: PLACEHOLDER_ROBOTS,
+  };
 }
 
 export default async function ProductDetailPage({
@@ -51,17 +73,15 @@ export default async function ProductDetailPage({
   const definition = getProductDefinition(slug);
 
   if (!definition) {
-    const fallbackTitle = titleFromSlug(slug);
+    const title = upcomingProductTitle(dict, slug);
+    if (!title) notFound();
     return (
       <OrviboPageShell
         locale={locale}
         copy={{
-          meta: {
-            title: fallbackTitle,
-            description: dict.shell.unbuiltProduct,
-          },
-          title: fallbackTitle,
-          lead: dict.shell.unbuiltProduct,
+          meta: { title, description: dict.shell.unbuiltProduct },
+          title,
+          lead: "",
         }}
       />
     );

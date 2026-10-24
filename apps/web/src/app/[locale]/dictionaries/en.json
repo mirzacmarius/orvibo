@@ -14,10 +14,15 @@
   "shell": {
     "comingSoon": {
       "title": "Coming soon",
-      "description": "This page is queued for the Tailwind migration.",
-      "body": "The route is already wired into the new site shell so the shared chrome can be validated before the full page clone lands."
+      "description": "We're still preparing this page.",
+      "body": "In the meantime, you can explore these products:"
     },
-    "unbuiltProduct": "This product page is not built yet. Each product uses its own React layout registered in the product catalog."
+    "unbuiltProduct": "The full page for this product is on its way.",
+    "backHome": "Back to the home page",
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you're looking for doesn't exist or has moved."
+    }
   },
   "nav": {
     "home": "Home",
@@ -177,7 +182,7 @@
         "description": "Explore ORVIBO smart panels, lighting, HVAC, security, and whole-home automation products."
       },
       "title": "Products",
-      "lead": "Product catalog page — full clone coming in ORV-17."
+      "lead": "Smart panels, switches, lighting, curtains, security and whole-home automation from ORVIBO."
     },
     "cooperation": {
       "meta": {

@@ -54,6 +54,8 @@ export type Dictionary = {
   shell: {
     comingSoon: { title: string; description: string; body: string };
     unbuiltProduct: string;
+    backHome: string;
+    notFound: { title: string; description: string };
   };
   nav: {
     home: string;
