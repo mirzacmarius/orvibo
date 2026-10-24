@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { SITE_URL } from "@/lib/orvibo/site";
 
 const DepartureMono = localFont({
   src: "../fonts/DepartureMono-Regular.woff2",
@@ -12,7 +13,7 @@ const DepartureMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.orvibo.com"),
+  metadataBase: new URL(SITE_URL),
   title: "ORVIBO",
   description: "ORVIBO whole-home smart living and product experience.",
 };
@@ -32,7 +33,10 @@ export default function RootLayout({
       >
         {children}
 
-        <AnalyticsProvider />
+        {/* OpenPanel only loads once a client id is configured. */}
+        {process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID ? (
+          <AnalyticsProvider />
+        ) : null}
       </body>
     </html>
   );
