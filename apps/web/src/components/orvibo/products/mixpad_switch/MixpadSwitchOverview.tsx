@@ -209,7 +209,7 @@ export function MixpadSwitchOverview({
             width={1920}
             height={960}
             unoptimized
-            className="align-middle absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-[3s] ease-in group-data-[shown]:opacity-100 motion-reduce:transition-none"
+            className="align-middle absolute top-0 left-0 w-full h-full opacity-0 transition-opacity [transition-duration:3s] ease-in group-data-[shown]:opacity-100 motion-reduce:transition-none"
           />
           <Image
             src={img(
@@ -219,7 +219,7 @@ export function MixpadSwitchOverview({
             width={1920}
             height={960}
             unoptimized
-            className="align-middle absolute top-0 left-0 w-full h-full transition-opacity duration-[3s] ease-in group-data-[shown]:opacity-0 motion-reduce:transition-none"
+            className="align-middle absolute top-0 left-0 w-full h-full transition-opacity [transition-duration:3s] ease-in group-data-[shown]:opacity-0 motion-reduce:transition-none"
           />
           <div className="rounded-full animate-tap-ripple motion-reduce:animate-none w-[3.65rem] h-[3.65rem] relative bg-white/5 top-[3.7rem] left-[12.97rem]">
             <div className="rounded-full w-[2.75rem] h-[2.75rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/[0.04]" />
