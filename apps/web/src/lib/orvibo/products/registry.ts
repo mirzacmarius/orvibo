@@ -1,5 +1,6 @@
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
+import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixpadXSpec } from "@/components/orvibo/products/mixpad_x/MixpadXSpec";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
@@ -45,6 +46,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "mixpad7",
     tabs: [{ id: "overview", label: "Overview" }],
     View: Mixpad7UltraOverview,
+  },
+  {
+    slug: "mixpad_m2",
+    title: "MixPad 4 Smart Voice Switch",
+    rootClass: "mixpad_m2",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: MixpadM2Overview,
   },
 ];
 

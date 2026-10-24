@@ -479,6 +479,13 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "mixpad_m2": {
+      "title": "Comutator vocal inteligent MixPad 4",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }

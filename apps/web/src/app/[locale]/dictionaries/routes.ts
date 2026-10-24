@@ -29,6 +29,7 @@ export const PRODUCT_SLUGS = [
   "mixpad_7",
   "mixpad_x",
   "mixpad_7_ultra",
+  "mixpad_m2",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -138,5 +139,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "mixpad_7_ultra",
     cn: "https://www.orvibo.com/cn/product/mixpad_7_ultra.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_m2",
+    cn: "https://www.orvibo.com/cn/product/mixpad_m2.html",
   },
 ];

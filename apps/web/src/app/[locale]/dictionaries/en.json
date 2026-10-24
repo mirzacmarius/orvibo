@@ -479,6 +479,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "mixpad_m2": {
+      "title": "MixPad 4 Smart Voice Switch",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }
