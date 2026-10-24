@@ -2,8 +2,8 @@ import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Ov
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
-import { MixpadXSpec } from "@/components/orvibo/products/mixpad_x/MixpadXSpec";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
+import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -38,7 +38,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: MixpadXOverview,
-    segmentViews: { spec: MixpadXSpec },
+    segmentViews: { spec: ProductSpecView },
   },
   {
     slug: "mixpad_7_ultra",
