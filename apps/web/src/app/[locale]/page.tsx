@@ -47,7 +47,6 @@ export default async function Page({
             learnMoreHref={routes.productList}
             learnMoreLabel={dict.common.learnMore}
             marginTop={0.2}
-            poster="/orvibo/posters/orvibo_quanzhai_bg.jpg"
             title={dict.hero.subheadline}
             videoSrc="/orvibo/videos/orvibo_quanzhai_bg.mp4"
           />
