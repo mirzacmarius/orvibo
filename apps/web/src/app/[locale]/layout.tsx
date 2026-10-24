@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import { DocumentLang } from "@/components/orvibo/layout/DocumentLang";
 import { OrviboVideoProvider } from "@/components/orvibo/OrviboVideoProvider";
 import { LOCALE_LANG } from "@/lib/orvibo/i18n";
+import { setRequestLocale } from "@/lib/orvibo/requestLocale";
 import { getDictionary, isLocale } from "./dictionaries";
 
 export async function generateMetadata({
@@ -31,6 +32,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
+  setRequestLocale(locale);
 
   return (
     <div
