@@ -10,6 +10,7 @@ import {
   getProductCopy,
   isLocale,
 } from "../../dictionaries";
+import { loadProductPageText } from "@/lib/orvibo/products/page-text";
 import {
   getProductDefinition,
   listProductSlugs,
@@ -49,8 +50,10 @@ export async function generateMetadata({
 
   if (product) {
     const copy = getProductCopy(dict, slug);
+    const text = await loadProductPageText(slug, locale);
     return {
       title: formatPageTitle(copy?.title ?? product.title),
+      description: text["meta.description"],
       alternates: localeAlternates(locale, `/product/${slug}`),
     };
   }
@@ -97,6 +100,7 @@ export default async function ProductDetailPage({
   const { product, copy } = resolved;
   const base = `/${locale}`;
   const View = product.View;
+  const text = await loadProductPageText(slug, locale);
 
   return (
     <ProductPageShell
@@ -104,7 +108,13 @@ export default async function ProductDetailPage({
       product={product}
       navClassName={product.navClassName}
     >
-      <View locale={locale} base={base} copy={copy} common={dict.common} />
+      <View
+        locale={locale}
+        base={base}
+        copy={copy}
+        common={dict.common}
+        text={text}
+      />
     </ProductPageShell>
   );
 }

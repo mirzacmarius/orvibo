@@ -4,11 +4,16 @@ import type {
   Locale,
   ProductCopy,
 } from "@/app/[locale]/dictionaries";
+import type { ProductPageText } from "./page-text";
 
 /**
  * Product detail pages are not one shared template.
  * Each product ships its own React layout; only the chrome (header, sticky tabs, footer)
  * is shared via ProductPageShell.
+ */
+/**
+ * A tab with neither `sectionId` nor `segment` links to the product's main
+ * page (e.g. "Overview" next to a `spec` segment).
  */
 export interface ProductTab {
   id: string;
@@ -37,4 +42,6 @@ export interface ProductViewProps {
   base: string;
   copy: ProductCopy;
   common: Dictionary["common"];
+  /** Strings from `text/<slug>.<locale>.json` (empty when the page has none). */
+  text: ProductPageText;
 }

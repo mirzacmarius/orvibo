@@ -28,10 +28,13 @@ export function ProductDetailNav({
     sectionTabs[0]?.sectionId ?? "",
   );
 
+  const rootTab = tabs.find((tab) => !tab.segment && !tab.sectionId);
+
   const activeSegment =
     routeTabs.find((tab) => pathname.endsWith(`/${tab.segment}`))?.segment ??
     null;
-  const activeValue = activeSegment ?? activeSection ?? tabs[0]?.id ?? "";
+  const activeValue =
+    activeSegment ?? (activeSection || rootTab?.id || tabs[0]?.id || "");
 
   const scrollToSection = useCallback((sectionId: string) => {
     const node = document.getElementById(sectionId);
@@ -129,7 +132,7 @@ export function ProductDetailNav({
                   asChild
                   key={tab.id}
                   value={tab.id}
-                  className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-semibold leading-[50px] text-[#ccc] shadow-none data-[state=active]:bg-transparent data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
+                  className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
                 >
                   <Link href={`${base}/product/${slug}`}>{tab.label}</Link>
                 </TabsTrigger>

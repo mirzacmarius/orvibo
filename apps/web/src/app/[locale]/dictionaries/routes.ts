@@ -24,7 +24,7 @@ export const SERVICE_SLUGS = ["customization", "case"] as const;
 
 export type ServiceSlug = (typeof SERVICE_SLUGS)[number];
 
-export const PRODUCT_SLUGS = ["mixstation", "mixpad_7"] as const;
+export const PRODUCT_SLUGS = ["mixstation", "mixpad_7", "mixpad_x"] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
 
@@ -123,5 +123,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "mixpad_7",
     cn: "https://www.orvibo.com/cn/product/mixpad_7.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_x",
+    cn: "https://www.orvibo.com/cn/product/mixpad_x.html",
   },
 ];

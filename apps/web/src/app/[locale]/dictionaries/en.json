@@ -8,7 +8,9 @@
     "learnMore": "Learn more",
     "visitStore": "Visit a store",
     "playVideo": "Play video",
-    "language": "Language"
+    "language": "Language",
+    "productDisclaimer": "Product images, videos and screen content on this page are for illustration only. The actual product (including but not limited to its appearance, color and size) and what its screen shows (including but not limited to backgrounds, interface, pictures and videos) may differ slightly; the actual product prevails.\nFigures on this page are theoretical values from ORVIBO's internal laboratory, measured in specific test environments (see the notes for each item). Actual results may vary slightly with the individual unit, software version, conditions of use and environment.\nBecause production batches and supply change over time, ORVIBO may update the text, images and other content on this page at any time so that it matches the actual product's performance, specifications, ratings and components.",
+    "productDisclaimerNoNotice": "Where such changes are necessary, they may be made without separate notice."
   },
   "shell": {
     "comingSoon": {
@@ -51,10 +53,10 @@
   },
   "navProducts": {
     "mixstation": "ORVIBO Integrated HVAC",
-    "mixpad7Ultra": "MixPad 7 Ultra Smart Panel",
+    "mixpad7Ultra": "MixPad 10 Smart Panel",
     "mixpad7": "MixPad 7 Smart Panel",
-    "mixpadX": "MixPad X Smart Panel",
-    "mixpadM2": "MixPad M2 Smart Panel",
+    "mixpadX": "MixPad 12 Smart Panel",
+    "mixpadM2": "MixPad 4 Smart Panel",
     "mixpadSFlagship": "MixPad S Smart Panel (Flagship)",
     "gaosi": "Gauss Smart Switch",
     "defy": "Defy Smart Switch (Gen 1)",
@@ -104,7 +106,7 @@
   "highlights": {
     "switch": "Gauss Smart Switch",
     "switchTagline": "Five-way interaction, flagship control",
-    "mixPad": "MixPad 7 Ultra Smart Panel",
+    "mixPad": "MixPad 10 Smart Panel",
     "mixPadTagline": "Intelligence and design in balance",
     "lighting": "Cangqiong Pro Natural Light",
     "lightingTagline": "Redefining living-room aesthetics"
@@ -157,7 +159,7 @@
     "contactUs": "Contact us",
     "phone": "400-060-6050 ( 09:00 ~ 20:00 )",
     "onlineService": "Online support",
-    "mixpadX": "MixPad X Smart Panel",
+    "mixpadX": "MixPad 12 Smart Panel",
     "mixpadElf": "MixPad Elf Switch (Gateway)",
     "soproS": "SOPRO Lighting S Series",
     "soproQ": "SOPRO Lighting Q Series",
@@ -460,6 +462,14 @@
           }
         }
       }
+    },
+    "mixpad_x": {
+      "title": "MixPad 12 Smart Panel",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

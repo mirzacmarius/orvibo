@@ -8,7 +8,9 @@
     "learnMore": "Află mai multe",
     "visitStore": "Vizitează un magazin",
     "playVideo": "Redă videoclipul",
-    "language": "Limba"
+    "language": "Limba",
+    "productDisclaimer": "Imaginile, videoclipurile și conținutul ecranelor de pe această pagină au doar rol ilustrativ. Produsul real (inclusiv, dar fără a se limita la aspect, culoare și dimensiuni) și ce afișează ecranul său (inclusiv, dar fără a se limita la fundaluri, interfață, imagini și videoclipuri) pot diferi ușor; produsul real este cel de referință.\nDatele de pe această pagină sunt valori teoretice din laboratorul intern ORVIBO, măsurate în condiții de testare specifice (vezi notele fiecărui punct). În utilizarea reală pot apărea mici diferențe, în funcție de exemplar, versiunea software, condițiile de utilizare și mediu.\nDeoarece loturile de producție și aprovizionarea se schimbă în timp, ORVIBO poate actualiza oricând textele, imaginile și celelalte conținuturi de pe această pagină, pentru a corespunde performanțelor, specificațiilor, parametrilor și componentelor reale ale produsului.",
+    "productDisclaimerNoNotice": "Când astfel de modificări sunt necesare, ele pot fi făcute fără o notificare separată."
   },
   "shell": {
     "comingSoon": {
@@ -51,10 +53,10 @@
   },
   "navProducts": {
     "mixstation": "Climatizare integrată ORVIBO",
-    "mixpad7Ultra": "Panou inteligent MixPad 7 Ultra",
+    "mixpad7Ultra": "Panou inteligent MixPad 10",
     "mixpad7": "Panou inteligent MixPad 7",
-    "mixpadX": "Panou inteligent MixPad X",
-    "mixpadM2": "Panou inteligent MixPad M2",
+    "mixpadX": "Panou inteligent MixPad 12",
+    "mixpadM2": "Panou inteligent MixPad 4",
     "mixpadSFlagship": "Panou inteligent MixPad S (Flagship)",
     "gaosi": "Întrerupător inteligent Gauss",
     "defy": "Întrerupător inteligent Defy (generația 1)",
@@ -104,7 +106,7 @@
   "highlights": {
     "switch": "Întrerupător inteligent Gauss",
     "switchTagline": "Cinci moduri de interacțiune, control de top",
-    "mixPad": "Panou inteligent MixPad 7 Ultra",
+    "mixPad": "Panou inteligent MixPad 10",
     "mixPadTagline": "Inteligență și design în echilibru",
     "lighting": "Lumină naturală Cangqiong Pro",
     "lightingTagline": "O nouă estetică pentru living"
@@ -157,7 +159,7 @@
     "contactUs": "Contact",
     "phone": "400-060-6050 ( 09:00 ~ 20:00 )",
     "onlineService": "Asistență online",
-    "mixpadX": "Panou inteligent MixPad X",
+    "mixpadX": "Panou inteligent MixPad 12",
     "mixpadElf": "Întrerupător MixPad Elf (gateway)",
     "soproS": "Iluminat SOPRO seria S",
     "soproQ": "Iluminat SOPRO seria Q",
@@ -460,6 +462,14 @@
           }
         }
       }
+    },
+    "mixpad_x": {
+      "title": "Panou inteligent MixPad 12",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

@@ -51,6 +51,10 @@ export type Dictionary = {
     playVideo: string;
     /** Label of the footer language switcher. */
     language: string;
+    /** Disclaimer at the bottom of product pages; `\n` separates paragraphs. */
+    productDisclaimer: string;
+    /** Extra closing line some product pages add to the disclaimer. */
+    productDisclaimerNoNotice: string;
   };
   shell: {
     comingSoon: { title: string; description: string; body: string };

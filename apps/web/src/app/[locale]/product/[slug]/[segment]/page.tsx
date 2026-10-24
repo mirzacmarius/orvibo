@@ -7,8 +7,10 @@ import {
   getDictionary,
   isLocale,
 } from "../../../dictionaries";
+import { loadProductPageText } from "@/lib/orvibo/products/page-text";
 import { getProductDefinition } from "@/lib/orvibo/products/registry";
 import { resolveProductDefinition } from "@/lib/orvibo/products/resolve-product-copy";
+import { localeAlternates } from "@/lib/orvibo/site";
 
 function titleFromSlug(slug: string) {
   return slug.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -48,8 +50,11 @@ export async function generateMetadata({
   const resolved = resolveProductDefinition(product, dict, slug);
   const title = resolved?.copy.title ?? product.title;
   const tab = resolved?.product.tabs.find((item) => item.segment === segment);
+  const text = await loadProductPageText(slug, locale);
   return {
     title: formatPageTitle(`${title} — ${tab?.label ?? titleFromSlug(segment)}`),
+    description: text[`meta.${segment}.description`] ?? text["meta.description"],
+    alternates: localeAlternates(locale, `/product/${slug}/${segment}`),
   };
 }
 
@@ -72,6 +77,7 @@ export default async function ProductSegmentPage({
 
   const { product, copy } = resolved;
   const base = `/${locale}`;
+  const text = await loadProductPageText(slug, locale);
 
   return (
     <ProductPageShell
@@ -84,6 +90,7 @@ export default async function ProductSegmentPage({
         base={base}
         copy={copy}
         common={dict.common}
+        text={text}
       />
     </ProductPageShell>
   );
