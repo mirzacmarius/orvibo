@@ -510,6 +510,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "defy": {
+      "title": "Defy Smart Switch",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

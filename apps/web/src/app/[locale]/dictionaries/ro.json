@@ -510,6 +510,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "defy": {
+      "title": "Întrerupător inteligent Defy",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }
