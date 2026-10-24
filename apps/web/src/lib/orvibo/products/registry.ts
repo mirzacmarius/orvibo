@@ -14,6 +14,7 @@ import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch
 import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
+import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import type { ProductDefinition } from "./types";
 
@@ -147,6 +148,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "cangqiong",
     tabs: [{ id: "overview", label: "Overview" }],
     View: CangqiongOverview,
+  },
+  {
+    slug: "q3",
+    title: "Eye-care Downlight Q3",
+    rootClass: "q3",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: Q3Overview,
   },
 ];
 

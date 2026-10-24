@@ -8,7 +8,6 @@
  * real page, register it in `registry.ts` and remove it from this list.
  */
 const UPCOMING_PRODUCTS = new Map<string, string>([
-  ["q3", "lightQ3"],
   ["s5", "lightS5"],
   ["daofeng", "daofeng"],
   ["v5", "lockV5"],
