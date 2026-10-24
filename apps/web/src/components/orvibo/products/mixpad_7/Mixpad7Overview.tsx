@@ -1,6 +1,3 @@
-import { cn } from "@v1/ui/utils";
-import Image from "next/image";
-import type { CSSProperties, ReactNode } from "react";
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductParallaxTitleMask } from "@/components/orvibo/product/ProductParallaxTitleMask";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
@@ -8,16 +5,19 @@ import { ProductSpecificationsSection } from "@/components/orvibo/product/Produc
 import { assetUrl } from "@/lib/orvibo/assetUrl";
 import type { Locale } from "@/lib/orvibo/i18n";
 import { localizedAssetUrl } from "@/lib/orvibo/localizedAsset";
+import { getMixpad7Section } from "@/lib/orvibo/products/content/mixpad-sections";
 import {
-  buildMixpad7Specifications,
   type Mixpad7VoiceTone,
+  buildMixpad7Specifications,
   mixpad7ImageBase,
+  mixpad7Videos,
   mixpad7VoiceAvatarBase,
   mixpad7VoiceBubbles,
-  mixpad7Videos,
 } from "@/lib/orvibo/products/content/mixpad_7";
-import { getMixpad7Section } from "@/lib/orvibo/products/content/mixpad-sections";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { cn } from "@v1/ui/utils";
+import Image from "next/image";
+import type { CSSProperties, ReactNode } from "react";
 
 function multilineText(value: string): ReactNode {
   const lines = value.split("\n");
@@ -143,6 +143,34 @@ function RevealImage({
   );
 }
 
+/** A captioned image that fades up into view; `delay` lags it 150 ms behind its neighbours. */
+function RevealCard({
+  className,
+  path,
+  label,
+  locale,
+  delay,
+}: {
+  className: string;
+  path: string;
+  label?: string;
+  locale: Locale;
+  delay?: boolean;
+}) {
+  return (
+    <ProductReveal
+      className={cn(className, delay && "[transition-delay:150ms]")}
+    >
+      <div
+        role="img"
+        aria-label={label}
+        className="h-full w-full bg-cover bg-center bg-no-repeat"
+        style={bg(path, locale)}
+      />
+    </ProductReveal>
+  );
+}
+
 const voiceTones: Record<Mixpad7VoiceTone, string> = {
   amber: "bg-[rgba(205,89,6,0.24)] shadow-[0_0.1rem_0.5rem_rgba(205,89,6,0.3)]",
   olive:
@@ -252,9 +280,11 @@ export function Mixpad7Overview({ copy, locale }: ProductViewProps) {
   const remote = getMixpad7Section(copy, "remote");
   const gateway = getMixpad7Section(copy, "gateway");
   const intercom = getMixpad7Section(copy, "intercom");
-  const album = getMixpad7Section(copy, "album");
+  const voice = getMixpad7Section(copy, "voice");
   const audio = getMixpad7Section(copy, "audio");
+  const album = getMixpad7Section(copy, "album");
   const partner = getMixpad7Section(copy, "partner");
+  const extra = getMixpad7Section(copy, "extra");
   const specRows = buildMixpad7Specifications(copy);
   const specTitle = copy.specifications?.title ?? "Specifications";
 
@@ -340,6 +370,7 @@ export function Mixpad7Overview({ copy, locale }: ProductViewProps) {
         <InfoBlock
           className="mx-auto w-full overflow-hidden"
           description={remote.description}
+          descriptionClassName="mx-auto max-w-[12rem]"
           title={remote.title}
         />
       </section>
@@ -400,8 +431,9 @@ export function Mixpad7Overview({ copy, locale }: ProductViewProps) {
       >
         <InfoBlock
           className="absolute top-[1.36rem] left-0 z-50 w-full overflow-hidden"
-          description={album.description}
-          title={album.title}
+          description={voice.description}
+          descriptionClassName="mx-auto max-w-[13rem]"
+          title={voice.title}
           titleStyle={{
             backgroundImage:
               "linear-gradient(150deg, #abd5ff 0%, #dddfea 23%, #fbe8f0 38%, #fffdef 56%, #fbe8f0 75%, #b9ecff 100%)",
@@ -409,8 +441,8 @@ export function Mixpad7Overview({ copy, locale }: ProductViewProps) {
         />
         <div className="absolute top-[4.61rem] left-0 z-[5] overflow-hidden">
           <div className="flex w-max animate-mixpad-marquee">
-            <VoiceStrip items={album.items ?? {}} />
-            <VoiceStrip hidden items={album.items ?? {}} />
+            <VoiceStrip items={voice.items ?? {}} />
+            <VoiceStrip hidden items={voice.items ?? {}} />
           </div>
         </div>
         <div
@@ -457,13 +489,100 @@ export function Mixpad7Overview({ copy, locale }: ProductViewProps) {
       >
         <InfoBlock
           className="absolute top-[3.14rem] left-1/2 -translate-x-1/2 overflow-hidden"
-          description={partner.description}
-          title={partner.title}
+          title={multilineText(album.title)}
           titleStyle={{
             backgroundImage:
               "linear-gradient(193deg, #f9e8d8 0%, #ba9471 100%)",
           }}
         />
+      </section>
+
+      {/* MixPad Extra, the door station that pairs with it. The headings sit in
+          the flow (CN places them absolutely), so a longer translation pushes
+          the images down instead of running into them; each heading is only as
+          wide as its text, so its gradient spans the text as on CN. */}
+      <section className="flex flex-col items-center pt-[2.97rem] pb-[0.78rem]">
+        <InfoBlock
+          className="overflow-hidden"
+          title={multilineText(partner.title)}
+          titleStyle={{
+            backgroundImage: "linear-gradient(151deg, #fff 0%, #ceb67f 100%)",
+          }}
+        />
+        <RevealCard
+          className="mt-[1.18rem] h-[9rem] w-[16rem]"
+          label={partner.items?.card}
+          locale={locale}
+          path="sec10-fc34d8a0b1.png"
+        />
+      </section>
+
+      <section className="flex flex-col items-center pt-[1.2rem] pb-[1.32rem]">
+        <InfoBlock
+          className="overflow-hidden"
+          title={multilineText(extra.title)}
+          titleStyle={{
+            backgroundImage:
+              "linear-gradient(158deg, #536271 0%, #dddfea 23%, #f3fbe8 38%, #fff 56%, #d1bb87 75%, #272727 100%)",
+          }}
+        />
+        <div className="mt-[1.69rem] flex gap-[0.15rem]">
+          <div className="w-[7.93rem]">
+            <RevealCard
+              className="h-[2.53rem] w-full"
+              label={extra.items?.microphones}
+              locale={locale}
+              path="sec11_1-113f04b91f.png"
+            />
+            <div className="mt-[0.15rem] flex justify-between">
+              <div className="flex h-[5.91rem] w-[3.91rem] flex-col justify-between">
+                <RevealCard
+                  className="h-[2.3rem] w-full"
+                  label={extra.items?.scanner}
+                  locale={locale}
+                  path="sec11_2-4a76c7a7b9.png"
+                />
+                <RevealCard
+                  delay
+                  className="h-[3.46rem] w-full"
+                  label={extra.items?.unlock}
+                  locale={locale}
+                  path="sec11_3-3ce5ef562e.png"
+                />
+              </div>
+              <RevealCard
+                delay
+                className="h-[5.91rem] w-[3.87rem]"
+                label={extra.items?.screen}
+                locale={locale}
+                path="sec11_4-56eaffce28.png"
+              />
+            </div>
+          </div>
+          <div className="w-[7.93rem]">
+            <RevealCard
+              className="h-[4.21rem] w-full"
+              label={extra.items?.product}
+              locale={locale}
+              path="sec11_5-9898d3ddee.png"
+            />
+            <div className="mt-[0.15rem] flex justify-between">
+              <RevealCard
+                className="h-[4.23rem] w-[3.89rem]"
+                label={extra.items?.match}
+                locale={locale}
+                path="sec11_6-22b9db367e.png"
+              />
+              <RevealCard
+                delay
+                className="h-[4.23rem] w-[3.89rem]"
+                label={extra.items?.camera}
+                locale={locale}
+                path="sec11_7-fc33cb0699.png"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <ProductSpecificationsSection rows={specRows} title={specTitle} />

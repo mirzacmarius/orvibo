@@ -368,7 +368,7 @@
         },
         "screen": {
           "title": "Remarcabil din orice unghi",
-          "description": "Ecran de 7 inci cu imagine superbă"
+          "description": "Ecran de 7 inchi cu imagine superbă"
         },
         "border": {
           "title": "Ramă aurie specială"
@@ -384,9 +384,9 @@
         "intercom": {
           "title": "Interfon video premium"
         },
-        "album": {
-          "title": "Super inteligent",
-          "description": "Album foto",
+        "voice": {
+          "title": "Super inteligent, te înțelege instant",
+          "description": "Să saluți mai întâi? Lasă, spune direct ce vrei! Majordomul ORVIBO 3.0 controlează toate dispozitivele inteligente din casă, fără cuvânt de activare.",
           "items": {
             "weather": "Hei ORVIBO, cum e vremea azi?",
             "grandpaName": "Bunicul",
@@ -415,9 +415,26 @@
             "tws": "Se extinde cu boxe\nBluetooth TWS"
           }
         },
+        "album": {
+          "title": "Album foto\nsuper inteligent"
+        },
         "partner": {
-          "title": "Încă ceva",
-          "description": "Partenerul perfect"
+          "title": "Încă ceva:\npartenerul perfect",
+          "items": {
+            "card": "MixPad Extra, post de apel video inteligent cu ecran tactil HD de 10 inchi"
+          }
+        },
+        "extra": {
+          "title": "Un salt epic, ca de la\ntelefonul clasic la smartphone\nMixPad Extra",
+          "items": {
+            "microphones": "Matrice dublă de microfoane cu rază lungă",
+            "scanner": "Interfață deschisă pentru scanner de temperatură",
+            "unlock": "Conectat în cloud: deschidere la distanță",
+            "screen": "Ecran HD de 10 inchi, fără margini",
+            "product": "MixPad Extra pe suport și pe perete",
+            "match": "Perechea perfectă pentru orice MixPad",
+            "camera": "Cameră dublă AI de 5 MP: recunoaștere facială 24/7, acces fără contact"
+          }
         }
       },
       "specifications": {

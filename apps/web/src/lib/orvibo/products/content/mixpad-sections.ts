@@ -7,9 +7,11 @@ export type Mixpad7SectionKey =
   | "remote"
   | "gateway"
   | "intercom"
-  | "album"
+  | "voice"
   | "audio"
-  | "partner";
+  | "album"
+  | "partner"
+  | "extra";
 
 export function getMixpad7Section(
   copy: ProductCopy,

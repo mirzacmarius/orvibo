@@ -384,9 +384,9 @@
         "intercom": {
           "title": "High-End Video Intercom"
         },
-        "album": {
-          "title": "Super Smart",
-          "description": "Photo AIbum",
+        "voice": {
+          "title": "Brilliantly smart, gets you instantly",
+          "description": "Say hello first? Forget it, just say what you want! ORVIBO Butler 3.0 controls every smart device in your home, no wake word needed.",
           "items": {
             "weather": "Hey ORVIBO, what's the weather like today?",
             "grandpaName": "Grandpa",
@@ -415,9 +415,26 @@
             "tws": "Pairs with TWS\nBluetooth speakers"
           }
         },
+        "album": {
+          "title": "Super smart\nphoto album"
+        },
         "partner": {
-          "title": "One more thing",
-          "description": "A perfect partner"
+          "title": "One more thing:\na perfect partner",
+          "items": {
+            "card": "MixPad Extra smart video door station with a 10-inch HD touchscreen"
+          }
+        },
+        "extra": {
+          "title": "An epic leap, like going from\nfeature phone to smartphone\nMixPad Extra",
+          "items": {
+            "microphones": "Far-field dual-array microphones",
+            "scanner": "Open interface: add a thermal scanner",
+            "unlock": "Cloud-connected: remote door opening",
+            "screen": "10-inch HD full-screen design",
+            "product": "MixPad Extra on a stand and on the wall",
+            "match": "A natural match for every MixPad",
+            "camera": "5 MP dual AI camera: 24/7 face recognition, touch-free entry"
+          }
         }
       },
       "specifications": {

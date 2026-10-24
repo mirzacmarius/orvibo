@@ -1,6 +1,7 @@
 import type { ProductCopy } from "@/app/[locale]/dictionaries";
 
-export const mixpad7ImageBase = "/guanwang_second/front/images/products/mixpad_7";
+export const mixpad7ImageBase =
+  "/guanwang_second/front/images/products/mixpad_7";
 
 export const mixpad7Videos = {
   hero: "/orvibo/videos/mixpad7_banner3.mp4",
@@ -28,7 +29,7 @@ export const mixpad7VoiceAvatarBase = "/orvibo/products/mixpad_7";
 export type Mixpad7VoiceTone = "amber" | "olive" | "indigo" | "teal";
 
 export interface Mixpad7VoiceBubble {
-  /** Key of the sentence in `sections.album.items`. */
+  /** Key of the sentence in `sections.voice.items`. */
   id: string;
   /** Tailwind position inside one 24rem × 6.03rem strip tile. */
   position: string;
@@ -36,7 +37,7 @@ export interface Mixpad7VoiceBubble {
   speaker?: { avatar: string; tone: Mixpad7VoiceTone };
 }
 
-/** Voice commands floating behind the photo frame in the "Super Smart" section. */
+/** Voice commands floating behind the photo frame in the voice section. */
 export const mixpad7VoiceBubbles: Mixpad7VoiceBubble[] = [
   { id: "weather", position: "top-[0.4rem] left-[0.2rem]" },
   {
