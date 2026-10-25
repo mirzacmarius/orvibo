@@ -22,6 +22,10 @@ const nextConfig = {
         destination: `${assetsOrigin}/guanwang_second/:path*`,
       },
       {
+        source: "/html/:path*",
+        destination: `${assetsOrigin}/html/:path*`,
+      },
+      {
         source: "/orvibo/:path*",
         destination: `${assetsOrigin}/orvibo/:path*`,
       },
