@@ -713,6 +713,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "miniHost": {
+      "title": "Zigbee Mini Gateway",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

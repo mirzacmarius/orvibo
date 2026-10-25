@@ -19,6 +19,7 @@ import { DownlightOverview } from "@/components/orvibo/products/downlight/Downli
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
+import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
@@ -344,6 +345,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "safepackage",
     tabs: [{ id: "overview", label: "Overview" }],
     View: SafepackageOverview,
+  },
+  {
+    slug: "miniHost",
+    title: "Zigbee Mini Gateway",
+    rootClass: "miniHost",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: MiniHostOverview,
   },
 ];
 
