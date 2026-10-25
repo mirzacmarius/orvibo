@@ -34,6 +34,8 @@ import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
+import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
+import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import type { ProductDefinition } from "./types";
 
@@ -297,6 +299,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "v5",
     tabs: [{ id: "overview", label: "Overview" }],
     View: V5Overview,
+  },
+  {
+    slug: "t1c",
+    title: "Smart Lock T1C",
+    rootClass: "t1c",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: T1COverview,
+    segmentViews: { spec: T1CSpec },
   },
 ];
 

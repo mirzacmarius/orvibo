@@ -682,6 +682,14 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "t1c": {
+      "title": "Încuietoare inteligentă T1C",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

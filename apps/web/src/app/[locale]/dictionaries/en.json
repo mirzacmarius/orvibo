@@ -682,6 +682,14 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "t1c": {
+      "title": "Smart Lock T1C",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }
