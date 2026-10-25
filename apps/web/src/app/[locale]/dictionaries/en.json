@@ -643,6 +643,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "chuangliansmart": {
+      "title": "Super Smart Curtain (Smart Control)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

@@ -12,6 +12,9 @@ export default {
         "bubble-ripple-wide": "bubble-ripple-wide 4s linear infinite",
         "tap-ripple": "tap-ripple 2s ease 0.2s infinite",
         "gradient-drift": "gradient-drift 5s ease-in-out infinite forwards",
+        "warn-pulse": "warn-pulse 3s ease-out infinite",
+        "nudge-left": "nudge-left 1.6s linear infinite",
+        "nudge-right": "nudge-right 1.6s linear infinite",
       },
       colors: {
         orvibo: {
@@ -60,6 +63,27 @@ export default {
         // dancingColors); set the distance with `[--drift:-5.2rem]`.
         "gradient-drift": {
           "50%": { backgroundPosition: "var(--drift)" },
+        },
+        // A ring swelling out of a dot and fading (orvibo.com's warn: the
+        // Super Smart curtain's motors).
+        "warn-pulse": {
+          "0%": { opacity: "0", transform: "scale(0)" },
+          "25%": { opacity: "0.1", transform: "scale(0)" },
+          "50%": { opacity: "0.3", transform: "scale(0.1)" },
+          "75%": { opacity: "0.5", transform: "scale(0.5)" },
+          "100%": { opacity: "0", transform: "scale(1)" },
+        },
+        // An arrow gliding away and fading, as a curtain moves (move and
+        // moveRight).
+        "nudge-left": {
+          "0%": { opacity: "0", transform: "translateX(0)" },
+          "50%": { opacity: "1", transform: "translateX(-0.5rem)" },
+          "100%": { opacity: "0", transform: "translateX(-1rem)" },
+        },
+        "nudge-right": {
+          "0%": { opacity: "0", transform: "translateX(0)" },
+          "50%": { opacity: "1", transform: "translateX(0.5rem)" },
+          "100%": { opacity: "0", transform: "translateX(1rem)" },
         },
       },
       maxWidth: {

@@ -1,6 +1,8 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
+import { ChuangliansmartOverview } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartOverview";
+import { ChuangliansmartSpec } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartSpec";
 import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
 import { CurtainMotorOverview } from "@/components/orvibo/products/curtain_motor/CurtainMotorOverview";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
@@ -237,6 +239,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: CurtainMotorOverview,
     segmentViews: { spec: ProductSpecView },
+  },
+  {
+    slug: "chuangliansmart",
+    title: "Super Smart Curtain (Smart Control)",
+    rootClass: "chuangliansmart",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: ChuangliansmartOverview,
+    segmentViews: { spec: ChuangliansmartSpec },
   },
 ];
 

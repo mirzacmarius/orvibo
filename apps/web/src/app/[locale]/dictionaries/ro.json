@@ -643,6 +643,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "chuangliansmart": {
+      "title": "Draperie super inteligentă (Control inteligent)",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }
