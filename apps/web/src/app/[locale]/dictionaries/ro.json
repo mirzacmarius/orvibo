@@ -698,6 +698,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "doorsensor": {
+      "title": "Senzor pentru uși și ferestre",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

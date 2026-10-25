@@ -10,7 +10,6 @@
 const UPCOMING_PRODUCTS = new Map<string, string>([
   ["camera_4", "cameraS1"],
   ["yuntai", "cameraYuntai"],
-  ["doorsensor", "doorSensor"],
   ["mixpad_plus", "mixpadPlus"],
   ["mixpad_mirror", "mixpadMirror"],
   ["robot_r2", "robotR2"],

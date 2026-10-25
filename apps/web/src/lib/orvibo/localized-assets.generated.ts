@@ -387,4 +387,5 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/guanwang_second/front/images/products/s5/pic9-0a60bc930b.webp",
   "/guanwang_second/front/images/products/s5/sec5-05c8b15ebd.webp",
   "/guanwang_second/front/images/products/s5/text1-4465d8f872.webp",
+  "/html/images/products/suite/door_pics.webp",
 ]);

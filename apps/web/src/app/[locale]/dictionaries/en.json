@@ -698,6 +698,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "doorsensor": {
+      "title": "Door & Window Sensor",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

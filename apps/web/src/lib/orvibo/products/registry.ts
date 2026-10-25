@@ -13,6 +13,8 @@ import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curta
 import { CurtainMotorOverview } from "@/components/orvibo/products/curtain_motor/CurtainMotorOverview";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
+import { DoorsensorOverview } from "@/components/orvibo/products/doorsensor/DoorsensorOverview";
+import { DoorsensorSpec } from "@/components/orvibo/products/doorsensor/DoorsensorSpec";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
@@ -323,6 +325,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: BodysensorOverview,
     segmentViews: { spec: BodysensorSpec },
+  },
+  {
+    slug: "doorsensor",
+    title: "Door & Window Sensor",
+    rootClass: "doorsensor",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: DoorsensorOverview,
+    segmentViews: { spec: DoorsensorSpec },
   },
 ];
 

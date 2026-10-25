@@ -55,6 +55,7 @@ export const PRODUCT_SLUGS = [
   "v5",
   "t1c",
   "bodysensor",
+  "doorsensor",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -294,5 +295,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "bodysensor",
     cn: "https://www.orvibo.com/cn/product/bodysensor.html",
+  },
+  {
+    scope: "product",
+    key: "doorsensor",
+    cn: "https://www.orvibo.com/cn/product/doorsensor.html",
   },
 ];
