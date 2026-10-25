@@ -3,6 +3,9 @@
 Read `README.md` first: it describes the repo layout, the scripts and how the site
 deploys. This file adds what an agent needs on top of that.
 
+`HANDOFF.md` has the project's state as of 2026-10-25 (the product page rebuild,
+open pull requests, R2 uploads, the shop plan) and how to continue the work.
+
 ## What matters in this repo
 
 - `apps/web` is the only deployed app: the ORVIBO site at https://www.orvibo.ro
