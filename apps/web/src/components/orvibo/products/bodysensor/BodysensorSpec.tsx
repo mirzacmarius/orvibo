@@ -9,7 +9,7 @@ export function BodysensorSpec({ locale, text, common }: ProductViewProps) {
       {/* pd_content */}
       <div
         id="spec"
-        className="relative h-[920px] bg-center bg-no-repeat text-white"
+        className="relative h-[920px] bg-center bg-no-repeat font-normal text-white"
         style={bg(
           "/guanwang_second/front/images/products/bodysensor/11-878a49c393.webp",
         )}
