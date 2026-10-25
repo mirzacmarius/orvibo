@@ -706,6 +706,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "safepackage": {
+      "title": "Security Kit",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

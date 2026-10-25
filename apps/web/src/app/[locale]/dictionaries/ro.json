@@ -706,6 +706,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "safepackage": {
+      "title": "Kit de securitate",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }
