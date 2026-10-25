@@ -17,6 +17,7 @@ import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch
 import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
+import { MotorDb28Overview } from "@/components/orvibo/products/motor_db28/MotorDb28Overview";
 import { SoproQOverview } from "@/components/orvibo/products/q/SoproQOverview";
 import { SoproQSpec } from "@/components/orvibo/products/q/SoproQSpec";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
@@ -217,6 +218,13 @@ const definitions: ProductDefinition[] = [
     ],
     View: Curtain3dOverview,
     segmentViews: { spec: ProductSpecView },
+  },
+  {
+    slug: "motor_db28",
+    title: "DB28 Ultra-quiet Curtain Motor",
+    rootClass: "db28",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: MotorDb28Overview,
   },
 ];
 

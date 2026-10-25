@@ -628,6 +628,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "motor_db28": {
+      "title": "DB28 Ultra-quiet Curtain Motor",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

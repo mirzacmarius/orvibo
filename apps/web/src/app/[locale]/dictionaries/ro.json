@@ -628,6 +628,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "motor_db28": {
+      "title": "Motor ultrasilențios pentru draperii DB28",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }
