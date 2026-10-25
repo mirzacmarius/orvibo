@@ -71,7 +71,7 @@
     "lightQ3": "Eye-care Downlight Q3",
     "lightS3": "Anti-glare Downlight S3",
     "lightS5": "Smart Spotlight S5",
-    "lightBauhaus": "Bauhaus Decorative Ambient Light",
+    "lightBauhaus": "Bauhaus Smart Ambient Lights",
     "cangqiong": "Cangqiong Pro Natural Light",
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
     "soproS": "SOPRO Lighting S Series",
@@ -119,7 +119,7 @@
     "spotlightS5": "Smart Spotlight S5",
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
     "lockV5": "Smart Lock V5",
-    "bauhausLight": "Bauhaus Decorative Ambient Light"
+    "bauhausLight": "Bauhaus Smart Ambient Lights"
   },
   "store": {
     "title": "ORVIBO Smart Home Experience Store",
@@ -584,6 +584,13 @@
     },
     "s5": {
       "title": "Smart Spotlight S5",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "light": {
+      "title": "Bauhaus Smart Ambient Lights",
       "tabs": {
         "overview": "Overview"
       },

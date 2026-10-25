@@ -71,7 +71,7 @@
     "lightQ3": "Spot încastrat Q3 pentru confortul ochilor",
     "lightS3": "Spot încastrat antiorbire S3",
     "lightS5": "Spot inteligent S5",
-    "lightBauhaus": "Lampă decorativă ambientală Bauhaus",
+    "lightBauhaus": "Lumini ambientale inteligente Bauhaus",
     "cangqiong": "Lumină naturală Cangqiong Pro",
     "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
     "soproS": "Iluminat SOPRO seria S",
@@ -119,7 +119,7 @@
     "spotlightS5": "Spot inteligent S5",
     "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
     "lockV5": "Încuietoare inteligentă V5",
-    "bauhausLight": "Lampă decorativă ambientală Bauhaus"
+    "bauhausLight": "Lumini ambientale inteligente Bauhaus"
   },
   "store": {
     "title": "Magazinul de experiență ORVIBO Smart Home",
@@ -584,6 +584,13 @@
     },
     "s5": {
       "title": "Spot inteligent S5",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "light": {
+      "title": "Lumini ambientale inteligente Bauhaus",
       "tabs": {
         "overview": "Prezentare"
       },

@@ -5,6 +5,7 @@ import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
+import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
@@ -163,6 +164,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "s5",
     tabs: [{ id: "overview", label: "Overview" }],
     View: S5Overview,
+  },
+  {
+    slug: "light",
+    title: "Bauhaus Smart Ambient Lights",
+    rootClass: "light",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: LightOverview,
   },
 ];
 

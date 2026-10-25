@@ -29,7 +29,6 @@ const UPCOMING_PRODUCTS = new Map<string, string>([
   ["s", "soproS"],
   ["q", "soproQ"],
   // Home page product grid
-  ["light", "lightBauhaus"],
 ]);
 
 /** Returns the `dict.navProducts` key for an upcoming product slug. */
