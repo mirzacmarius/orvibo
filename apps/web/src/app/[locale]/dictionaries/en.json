@@ -635,6 +635,14 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "curtain_motor": {
+      "title": "Elf Ultra-quiet Curtain Motor",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

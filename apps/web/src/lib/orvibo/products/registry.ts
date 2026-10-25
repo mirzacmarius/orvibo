@@ -2,6 +2,7 @@ import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
+import { CurtainMotorOverview } from "@/components/orvibo/products/curtain_motor/CurtainMotorOverview";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
@@ -225,6 +226,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "db28",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MotorDb28Overview,
+  },
+  {
+    slug: "curtain_motor",
+    title: "Elf Ultra-quiet Curtain Motor",
+    rootClass: "curtain__motor",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: CurtainMotorOverview,
+    segmentViews: { spec: ProductSpecView },
   },
 ];
 

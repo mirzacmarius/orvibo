@@ -635,6 +635,14 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "curtain_motor": {
+      "title": "Motor ultrasilențios pentru draperii Elf",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

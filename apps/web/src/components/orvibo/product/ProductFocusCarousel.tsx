@@ -1,12 +1,15 @@
 "use client";
 
+import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { cn } from "@v1/ui/utils";
 import { type ReactNode, useEffect, useRef, useState } from "react";
 
 export interface ProductFocusSlide {
   key: string;
-  /** Resolved image URL. */
+  /** Resolved image URL (a film's poster when `video` is set). */
   image: string;
+  /** A film that plays over the image while the slide is in view. */
+  video?: string;
   title?: ReactNode;
   desc?: ReactNode;
   /** Drawn on the image and dimmed with it (S5's captions). */
@@ -31,7 +34,7 @@ interface Look {
   loop?: boolean;
 }
 
-type LookName = "dark" | "light" | "scenes" | "products" | "sensor";
+type LookName = "dark" | "light" | "scenes" | "products" | "sensor" | "films";
 
 /**
  * The looks orvibo.com gives this carousel. `pitch` is the slide width plus
@@ -125,6 +128,22 @@ const LOOKS: Record<LookName, Look> = {
     title:
       "mt-[0.29rem] text-[0.24rem] font-bold text-white transition-opacity duration-300",
     titleDimmed: "opacity-[0.35]",
+    desc: "",
+  },
+  /**
+   * The Elf curtain motor's scene films: 14.82rem slides on white, none
+   * dimmed, with a caption under each.
+   */
+  films: {
+    width: 14.82,
+    pitch: 15.12,
+    track: "duration-300 [transition-timing-function:ease]",
+    slide: "mr-[0.3rem] w-[14.82rem]",
+    image: "h-[7.12rem] rounded-[0.2rem]",
+    imageDimmed: "",
+    title:
+      "mt-[0.24rem] pl-[0.46rem] text-[0.22rem] leading-[0.36rem] font-normal text-[#545454]",
+    titleDimmed: "",
     desc: "",
   },
 };
@@ -237,6 +256,13 @@ export function ProductFocusCarousel({
                   )}
                   style={{ backgroundImage: `url(${slide.image})` }}
                 >
+                  {slide.video && (
+                    <MarketingVideo
+                      bare
+                      src={slide.video}
+                      className="absolute inset-0 h-full w-full object-cover"
+                    />
+                  )}
                   {slide.overlay}
                 </span>
                 {(slide.title || slide.desc) && (
