@@ -25,7 +25,6 @@ const UPCOMING_PRODUCTS = new Map<string, string>([
   ["xiaofang", "xiaofang"],
   ["s30c", "s30c"],
   // Footer "Featured products"
-  ["s", "soproS"],
   // Home page product grid
 ]);
 

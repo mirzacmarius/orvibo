@@ -76,7 +76,7 @@
     "lightBauhaus": "Bauhaus Smart Ambient Lights",
     "cangqiong": "Cangqiong Pro Natural Light",
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
-    "soproS": "SOPRO Lighting S Series",
+    "soproS": "SOPRO Smart Lighting S Series",
     "soproQ": "SOPRO Smart Lighting Q Series",
     "downlight": "Smart Tunable Light",
     "curtain3d": "3D Light & Shadow Smart Curtain",
@@ -165,7 +165,7 @@
     "onlineService": "Online support",
     "mixpadX": "MixPad 12 Smart Panel",
     "mixpadElf": "MixPad Elf Switch (Gateway)",
-    "soproS": "SOPRO Lighting S Series",
+    "soproS": "SOPRO Smart Lighting S Series",
     "soproQ": "SOPRO Smart Lighting Q Series",
     "customization": "Custom solutions",
     "cases": "Featured projects",
@@ -607,6 +607,14 @@
     },
     "q": {
       "title": "SOPRO Smart Lighting Q Series",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "s": {
+      "title": "SOPRO Smart Lighting S Series",
       "tabs": {
         "overview": "Overview",
         "spec": "Specifications"

@@ -31,11 +31,13 @@ interface Look {
   loop?: boolean;
 }
 
+type LookName = "dark" | "light" | "scenes" | "products" | "sensor";
+
 /**
  * The looks orvibo.com gives this carousel. `pitch` is the slide width plus
  * the gap after it, in rem.
  */
-const LOOKS: Record<"dark" | "light" | "scenes" | "products", Look> = {
+const LOOKS: Record<LookName, Look> = {
   /** MixPad 10's finishes: 16rem slides on black, darkened out of focus. */
   dark: {
     width: 16,
@@ -108,13 +110,30 @@ const LOOKS: Record<"dark" | "light" | "scenes" | "products", Look> = {
     },
     loop: true,
   },
+  /**
+   * SOPRO S's AISense slides: 12rem photos on black, darkened out of focus,
+   * with a caption under each that fades with it.
+   */
+  sensor: {
+    width: 12,
+    pitch: 12.69,
+    track: "duration-300 [transition-timing-function:ease]",
+    slide: "mr-[0.69rem] w-[12rem]",
+    image:
+      "h-[6.05rem] rounded-[0.2rem] after:rounded-[0.2rem] after:bg-black after:transition-opacity after:duration-300",
+    imageDimmed: "after:opacity-[0.75]",
+    title:
+      "mt-[0.29rem] text-[0.24rem] font-bold text-white transition-opacity duration-300",
+    titleDimmed: "opacity-[0.35]",
+    desc: "",
+  },
 };
 
 /** Copies of the slides kept beyond each end of an endless track. */
 const CLONES = 2;
 
 /** orvibo.com's (Swiper's) arrow glyphs, 27 x 44. */
-const ARROWS = {
+export const SWIPER_ARROWS = {
   prev: "M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22z",
   next: "M27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22z",
 };
@@ -137,7 +156,7 @@ export function ProductFocusCarousel({
   labels,
 }: {
   slides: ProductFocusSlide[];
-  look?: keyof typeof LOOKS;
+  look?: LookName;
   className?: string;
   /** Accessible names of the arrows, for looks that have them. */
   labels?: { prev: string; next: string };
@@ -273,7 +292,7 @@ export function ProductFocusCarousel({
               aria-hidden="true"
               className="h-full w-full fill-current"
             >
-              <path d={ARROWS[side]} />
+              <path d={SWIPER_ARROWS[side]} />
             </svg>
           </button>
         ))}

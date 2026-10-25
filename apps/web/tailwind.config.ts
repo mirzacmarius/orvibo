@@ -11,6 +11,7 @@ export default {
         "bubble-ripple": "bubble-ripple 4s linear infinite",
         "bubble-ripple-wide": "bubble-ripple-wide 4s linear infinite",
         "tap-ripple": "tap-ripple 2s ease 0.2s infinite",
+        "gradient-drift": "gradient-drift 5s ease-in-out infinite forwards",
       },
       colors: {
         orvibo: {
@@ -54,6 +55,11 @@ export default {
           "0%": { transform: "scale(0)" },
           "50%": { opacity: "1" },
           "100%": { opacity: "0", transform: "scale(1)" },
+        },
+        // Gradient text whose colors drift sideways and back (orvibo.com's
+        // dancingColors); set the distance with `[--drift:-5.2rem]`.
+        "gradient-drift": {
+          "50%": { backgroundPosition: "var(--drift)" },
         },
       },
       maxWidth: {

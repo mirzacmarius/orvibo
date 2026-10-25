@@ -76,7 +76,7 @@
     "lightBauhaus": "Lumini ambientale inteligente Bauhaus",
     "cangqiong": "Lumină naturală Cangqiong Pro",
     "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
-    "soproS": "Iluminat SOPRO seria S",
+    "soproS": "Iluminat inteligent SOPRO, seria S",
     "soproQ": "Iluminat inteligent SOPRO, seria Q",
     "downlight": "Lumină inteligentă reglabilă",
     "curtain3d": "Draperie inteligentă 3D Lumină și Umbră",
@@ -165,7 +165,7 @@
     "onlineService": "Asistență online",
     "mixpadX": "Panou inteligent MixPad 12",
     "mixpadElf": "Întrerupător MixPad Elf (gateway)",
-    "soproS": "Iluminat SOPRO seria S",
+    "soproS": "Iluminat inteligent SOPRO, seria S",
     "soproQ": "Iluminat inteligent SOPRO, seria Q",
     "customization": "Soluții personalizate",
     "cases": "Proiecte reprezentative",
@@ -607,6 +607,14 @@
     },
     "q": {
       "title": "Iluminat inteligent SOPRO, seria Q",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
+    },
+    "s": {
+      "title": "Iluminat inteligent SOPRO, seria S",
       "tabs": {
         "overview": "Prezentare",
         "spec": "Specificații"

@@ -19,6 +19,8 @@ import { MixstationOverview } from "@/components/orvibo/products/mixstation/Mixs
 import { SoproQOverview } from "@/components/orvibo/products/q/SoproQOverview";
 import { SoproQSpec } from "@/components/orvibo/products/q/SoproQSpec";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
+import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
+import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import type { ProductDefinition } from "./types";
@@ -192,6 +194,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: SoproQOverview,
     segmentViews: { spec: SoproQSpec },
+  },
+  {
+    slug: "s",
+    title: "SOPRO Smart Lighting S Series",
+    rootClass: "s",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: SoproSOverview,
+    segmentViews: { spec: SoproSSpec },
   },
 ];
 
