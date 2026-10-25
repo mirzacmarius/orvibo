@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
 import {
   formatPageTitle,
@@ -43,10 +42,11 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const product = getProductDefinition(slug);
-  const resolved = product
-    ? resolveProductDefinition(product, dict, slug)
-    : undefined;
-  const title = resolved?.copy.title ?? product?.title ?? titleFromSlug(slug);
+  if (!product?.segmentViews?.[segment]) {
+    return { title: formatPageTitle(dict.shell.notFound.title) };
+  }
+  const resolved = resolveProductDefinition(product, dict, slug);
+  const title = resolved?.copy.title ?? product.title;
   const tab = resolved?.product.tabs.find((item) => item.segment === segment);
   return {
     title: formatPageTitle(`${title} — ${tab?.label ?? titleFromSlug(segment)}`),
@@ -65,20 +65,7 @@ export default async function ProductSegmentPage({
   const definition = getProductDefinition(slug);
   const SegmentView = definition?.segmentViews?.[segment];
 
-  if (!definition || !SegmentView) {
-    const fallbackTitle = titleFromSlug(slug);
-    const lead = "This product tab is not available yet.";
-    return (
-      <OrviboPageShell
-        locale={locale}
-        copy={{
-          meta: { title: fallbackTitle, description: lead },
-          title: fallbackTitle,
-          lead,
-        }}
-      />
-    );
-  }
+  if (!definition || !SegmentView) notFound();
 
   const resolved = resolveProductDefinition(definition, dict, slug);
   if (!resolved) notFound();

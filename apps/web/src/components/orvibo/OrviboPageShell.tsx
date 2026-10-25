@@ -2,11 +2,15 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import {
   getDictionary,
+  getProductCopy,
   isLocale,
   type Locale,
   type PageCopy,
 } from "@/app/[locale]/dictionaries";
 import { SiteShell } from "@/components/orvibo/layout";
+import { Link } from "@/components/orvibo/ui/link";
+import { listProductSlugs } from "@/lib/orvibo/products/registry";
+import { orviboRoutes } from "@/lib/orvibo/routes";
 import {
   Card,
   CardContent,
@@ -30,7 +34,12 @@ export async function OrviboPageShell({
 
   const dict = await getDictionary(locale as Locale);
   const base = `/${locale}`;
+  const routes = orviboRoutes(base);
   const shell = dict.shell.comingSoon;
+  const builtProducts = listProductSlugs().flatMap((slug) => {
+    const title = getProductCopy(dict, slug)?.title;
+    return title ? [{ slug, title }] : [];
+  });
 
   return (
     <div className="orvibo-inner min-h-screen min-w-0 bg-[#f0f2f5] text-[#111]">
@@ -55,7 +64,27 @@ export async function OrviboPageShell({
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-[32px] pt-0 text-[14px] leading-[24px] text-[#777]">
-                {shell.body}
+                {builtProducts.length > 0 ? (
+                  <>
+                    <p>{shell.body}</p>
+                    {/* `.orvibo-site a` inherits its colour, so links are coloured via their wrapper. */}
+                    <ul className="mt-[12px] flex flex-col gap-[8px]">
+                      {builtProducts.map((product) => (
+                        <li
+                          className="w-fit text-[16px] leading-[24px] text-orvibo-link hover:text-orvibo-link-hover"
+                          key={product.slug}
+                        >
+                          <Link href={routes.product(product.slug)}>
+                            {product.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
+                <p className="mt-[24px] w-fit text-[14px] leading-[24px] text-orvibo-link hover:text-orvibo-link-hover">
+                  <Link href={routes.home}>{dict.shell.backHome}</Link>
+                </p>
               </CardContent>
             </Card>
           )}

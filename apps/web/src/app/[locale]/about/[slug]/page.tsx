@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { OrviboPageShell } from "@/components/orvibo/OrviboPageShell";
+import { PLACEHOLDER_ROBOTS } from "@/lib/orvibo/site";
 import {
   formatPageTitle,
   getAboutPageCopy,
@@ -17,10 +18,11 @@ export async function generateMetadata({
   if (!isLocale(locale)) return {};
   const dict = await getDictionary(locale);
   const copy = getAboutPageCopy(dict, slug);
-  if (!copy) return {};
+  if (!copy) return { title: formatPageTitle(dict.shell.notFound.title) };
   return {
     title: formatPageTitle(copy.meta.title),
     description: copy.meta.description,
+    robots: PLACEHOLDER_ROBOTS,
   };
 }
 

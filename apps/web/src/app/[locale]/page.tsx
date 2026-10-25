@@ -44,16 +44,15 @@ export default async function Page({
 
           <HeroVideoBanner
             description={dict.hero.headline}
-            learnMoreHref={base}
+            learnMoreHref={routes.productList}
             learnMoreLabel={dict.common.learnMore}
             marginTop={0.2}
-            poster="/orvibo/posters/orvibo_quanzhai_bg.jpg"
             title={dict.hero.subheadline}
             videoSrc="/orvibo/videos/orvibo_quanzhai_bg.mp4"
           />
 
           <HeroVideoBanner
-            learnMoreHref={base}
+            learnMoreHref={routes.app}
             learnMoreLabel={dict.common.learnMore}
             logo={{
               alt: "HomeAI",
@@ -150,7 +149,7 @@ export default async function Page({
           <StoreVideoSection
             body={dict.store.body}
             playLabel={dict.common.playVideo}
-            storeHref={base}
+            storeHref={routes.store}
             storeLabel={dict.common.visitStore}
             title={dict.store.title}
             videoSrc="/orvibo/videos/orvibo_store_pc.mp4"
@@ -161,7 +160,7 @@ export default async function Page({
             items={[
               {
                 body: dict.cards.partnership.desc,
-                href: base,
+                href: routes.cooperation,
                 imageSrc:
                   "/guanwang_second/front/images/2020/index/sec6_1-89269b671e.jpg",
                 label: dict.common.learnMore,
@@ -169,7 +168,7 @@ export default async function Page({
               },
               {
                 body: dict.cards.custom.desc,
-                href: base,
+                href: routes.service("customization"),
                 imageSrc:
                   "/guanwang_second/front/images/2020/index/sec6_2-574c2a4402.jpg",
                 label: dict.common.learnMore,
@@ -177,7 +176,7 @@ export default async function Page({
               },
               {
                 body: dict.cards.cases.desc,
-                href: base,
+                href: routes.service("case"),
                 imageSrc:
                   "/guanwang_second/front/images/2020/index/sec6_3-f265c5b27d.jpg",
                 label: dict.common.learnMore,
@@ -188,7 +187,7 @@ export default async function Page({
 
           <OrviboVideoCenter
             heading={dict.videos.sectionTitle}
-            headingHref={base}
+            headingHref={routes.exploreConference}
             items={[
               {
                 id: "video05",
