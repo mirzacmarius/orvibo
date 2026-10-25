@@ -12,7 +12,9 @@
     "productDisclaimer": "Product images, videos and screen content on this page are for illustration only. The actual product (including but not limited to its appearance, color and size) and what its screen shows (including but not limited to backgrounds, interface, pictures and videos) may differ slightly; the actual product prevails.\nFigures on this page are theoretical values from ORVIBO's internal laboratory, measured in specific test environments (see the notes for each item). Actual results may vary slightly with the individual unit, software version, conditions of use and environment.\nBecause production batches and supply change over time, ORVIBO may update the text, images and other content on this page at any time so that it matches the actual product's performance, specifications, ratings and components.",
     "productDisclaimerNoNotice": "Where such changes are necessary, they may be made without separate notice.",
     "productSpecTitle": "Specifications",
-    "productSpecNote": "* All figures above come from ORVIBO's laboratory. Actual results may vary slightly with the measuring method."
+    "productSpecNote": "* All figures above come from ORVIBO's laboratory. Actual results may vary slightly with the measuring method.",
+    "previous": "Previous",
+    "next": "Next"
   },
   "shell": {
     "comingSoon": {
@@ -591,6 +593,13 @@
     },
     "light": {
       "title": "Bauhaus Smart Ambient Lights",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "daofeng": {
+      "title": "Blade Ultra-thin Magnetic Track Light",
       "tabs": {
         "overview": "Overview"
       },

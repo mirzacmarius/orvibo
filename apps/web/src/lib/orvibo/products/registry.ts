@@ -1,6 +1,7 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
+import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
@@ -171,6 +172,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "light",
     tabs: [{ id: "overview", label: "Overview" }],
     View: LightOverview,
+  },
+  {
+    slug: "daofeng",
+    title: "Blade Ultra-thin Magnetic Track Light",
+    rootClass: "daofeng",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: DaofengOverview,
   },
 ];
 

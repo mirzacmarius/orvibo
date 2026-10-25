@@ -59,6 +59,9 @@ export type Dictionary = {
     productSpecTitle: string;
     /** Note under a product's specifications list. */
     productSpecNote: string;
+    /** Accessible names of a carousel's arrows. */
+    previous: string;
+    next: string;
   };
   shell: {
     comingSoon: { title: string; description: string; body: string };
