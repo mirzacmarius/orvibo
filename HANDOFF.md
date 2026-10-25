@@ -545,7 +545,9 @@ Follow the pipeline in §6 for each page. Notes per page:
 
 - **`yuntai`**: an older page (not in orvibo.com's current lineup, but in the
   mirror), with a spec tab from `yuntai_install`. Start from `pages/camera_4`
-  (the same kind of camera app screens, live views and event bubbles); the
+  and its components (`Camera4Film`, `Camera4Panorama`, `Camera4LiveViews`):
+  the same product family, with the same kind of app screens, live views and
+  event bubbles. The
   water and climate sensor pages (`pages/water_alarm`, `pages/temp_hum_sensor`)
   have the closest tilted phones and bubbles. If the Claude agent finished it
   after the snapshot, it is in a newer `followup.bundle`.
@@ -816,7 +818,13 @@ shared one-line-per-spec tab), `ProductSpecSheet`, `ProductSpecScroller` (wide
 spec tables with a sticky label column), `ProductSpecificationsSection`,
 `BalancedLines` (balances each `\n` part of a text on its own),
 `productPageHelpers`. Also `products/chuanglian/CurtainKitSpec` (curtain kit
-spec tab with load table and install guide).
+spec tab with load table and install guide), and page-specific widgets next to
+their views, such as `products/camera_4/Camera4Film` (a film pinned under the
+50px product bar that steps through words, zoom, film and frame by the share of
+the pinned distance scrolled), `Camera4Panorama` (Left/Right buttons move a
+strip), `Camera4LiveViews` (cards paged by two) and
+`products/daofeng/DaofengGroupControl` (scroll-zoom title with
+`mix-blend-multiply` text).
 
 A view starts like this:
 
@@ -1121,6 +1129,10 @@ glossary (玄关 is "Hall" / "Hol" on tiles).
 - Sensors: 吊灯 = Pendant light / Lustră; 除湿剂 = moisture absorber / absorbant
   de umiditate; 水浸探测器 = Water leak sensor / Senzor de inundație; app tiles on
   the security kit: Senzor PIR, Fum/Smoke, CO, Gaz/Gas.
+- Cameras (S1 2K page): events Motion / Mișcare, Person / Persoană, Baby crying /
+  Plâns de bebeluș, Unusual sound / Sunet neobișnuit; 全部 = All / Toate; 实时 =
+  Live; 巨目 = "big eye" / „ochi mare”. Spec rows are `block.l*` / `block.v*`
+  plus `block.note`, and the spec tab is `bg-white`.
 - A child's name in the V5 alert picture (小明) became "Alex".
 
 ---
@@ -1185,10 +1197,19 @@ true` moves only an icon's ink), `addRows`, `rects` (with `"locale"`), `front`
   `a = (in − out)/(255 − out)` ≈ 0.12 to 0.13; when the per-channel regression
   is unstable, pool all channels (grey veil `#cfcfcf` a 0.166, white a 0.124).
   Measure a bubble's right end on a luminance profile.
-- **Bubbles as HTML** (water leak sensor): draw the bubble picture as a CSS
-  border image (`border-l-[74px] border-r-[N px]` +
+- **Bubbles as HTML** (water leak sensor, S1 camera): draw the bubble picture as
+  a CSS border image (`border-l-[74px] border-r-[N px]` +
   `[border-image-slice:0_N_0_74_fill]`, `borderImageSource` from `img()`), so the
-  middle stretches with HTML text and both ends and the tail stay.
+  middle stretches with HTML text and both ends and the tail stay. The left
+  slice is where the text starts and the right one the width minus where it
+  ends, scaled by orvibo.com's `bg-cover` scale; bubbles on the left are anchored
+  right, those on the right anchored left.
+- **Filter-chip rows on phone screens** (S1 camera): `chips()` in
+  `pages/camera_4/images.py` draws a row per language as text frames (min width,
+  padding, gap, radius; filled or outlined).
+- **Keeping straight edges behind a badge** (S1 camera `sec10_3`): erase with
+  `"method": "clone"` and `"shift": [0, -36]` to copy the band above, so window
+  edges stay vertical.
 - **Pills** (curtain pages, V5): erase with a flat fill and redraw with a text
   frame `{fill, color, radius}`, one spec per language with padX =
   max(30, (CN width − text)/2) so the CN width stays unless the text needs more
@@ -1273,7 +1294,12 @@ true` moves only an icon's ink), `addRows`, `rects` (with `"locale"`), `front`
 - Tailwind animations `caption-ticker`, `spotlight-dim`, `spotlight-caption`
   port orvibo.com's keyframes (offsets with `[animation-delay:-4s]`);
   `animate-mixpad-marquee` for looping strips; gradient headings use
-  `animate-gradient-drift` with `[--drift:X]` and `motion-reduce:animate-none`.
+  `animate-gradient-drift` with `[--drift:X]` and `motion-reduce:animate-none`;
+  radar rings use `animate-circle-wave` (2 s ease-in-out) and
+  `animate-circle-wave-linear` (2.1 s linear), centred with negative margins
+  because the animation owns `transform`.
+- Section titles on the camera page: `h2` with `max-w-[17rem] text-balance`;
+  paragraphs `max-w-[10rem]`, each `\n` part through `BalancedLines`.
 - Hover photo panels (sos, climate sensor): grayscale + veil, the hovered one in
   colour (`group/panel`). Phones that rise in: `ProductInView` + a RISE class
   (100 px, 1 s, 0.6 s delay). Icons that turn in: a TURN class (−350° to 0, 2 s,
