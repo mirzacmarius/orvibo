@@ -77,7 +77,7 @@
     "cangqiong": "Cangqiong Pro Natural Light",
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
     "soproS": "SOPRO Lighting S Series",
-    "soproQ": "SOPRO Lighting Q Series",
+    "soproQ": "SOPRO Smart Lighting Q Series",
     "downlight": "Smart Tunable Light",
     "curtain3d": "3D Light & Shadow Smart Curtain",
     "motorDb28": "DB28 Ultra-quiet Curtain Motor",
@@ -166,7 +166,7 @@
     "mixpadX": "MixPad 12 Smart Panel",
     "mixpadElf": "MixPad Elf Switch (Gateway)",
     "soproS": "SOPRO Lighting S Series",
-    "soproQ": "SOPRO Lighting Q Series",
+    "soproQ": "SOPRO Smart Lighting Q Series",
     "customization": "Custom solutions",
     "cases": "Featured projects",
     "zhijiayi": "Zhijiayi",
@@ -602,6 +602,14 @@
       "title": "Blade Ultra-thin Magnetic Track Light",
       "tabs": {
         "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "q": {
+      "title": "SOPRO Smart Lighting Q Series",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
       },
       "sections": {}
     }

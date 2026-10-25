@@ -16,6 +16,8 @@ import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch
 import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
+import { SoproQOverview } from "@/components/orvibo/products/q/SoproQOverview";
+import { SoproQSpec } from "@/components/orvibo/products/q/SoproQSpec";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
@@ -179,6 +181,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "daofeng",
     tabs: [{ id: "overview", label: "Overview" }],
     View: DaofengOverview,
+  },
+  {
+    slug: "q",
+    title: "SOPRO Smart Lighting Q Series",
+    rootClass: "q",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: SoproQOverview,
+    segmentViews: { spec: SoproQSpec },
   },
 ];
 

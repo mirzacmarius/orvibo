@@ -26,7 +26,6 @@ const UPCOMING_PRODUCTS = new Map<string, string>([
   ["s30c", "s30c"],
   // Footer "Featured products"
   ["s", "soproS"],
-  ["q", "soproQ"],
   // Home page product grid
 ]);
 

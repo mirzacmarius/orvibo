@@ -43,6 +43,7 @@ export const PRODUCT_SLUGS = [
   "s5",
   "light",
   "daofeng",
+  "q",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -222,5 +223,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "daofeng",
     cn: "https://www.orvibo.com/cn/product/daofeng.html",
+  },
+  {
+    scope: "product",
+    key: "q",
+    cn: "https://www.orvibo.com/cn/product/q.html",
   },
 ];

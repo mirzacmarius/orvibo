@@ -77,7 +77,7 @@
     "cangqiong": "Lumină naturală Cangqiong Pro",
     "daofeng": "Lampă pe șină magnetică ultrasubțire Blade",
     "soproS": "Iluminat SOPRO seria S",
-    "soproQ": "Iluminat SOPRO seria Q",
+    "soproQ": "Iluminat inteligent SOPRO, seria Q",
     "downlight": "Lumină inteligentă reglabilă",
     "curtain3d": "Draperie inteligentă 3D Lumină și Umbră",
     "motorDb28": "Motor ultrasilențios pentru draperii DB28",
@@ -166,7 +166,7 @@
     "mixpadX": "Panou inteligent MixPad 12",
     "mixpadElf": "Întrerupător MixPad Elf (gateway)",
     "soproS": "Iluminat SOPRO seria S",
-    "soproQ": "Iluminat SOPRO seria Q",
+    "soproQ": "Iluminat inteligent SOPRO, seria Q",
     "customization": "Soluții personalizate",
     "cases": "Proiecte reprezentative",
     "zhijiayi": "Zhijiayi",
@@ -602,6 +602,14 @@
       "title": "Lampă pe șină magnetică ultrasubțire Blade",
       "tabs": {
         "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "q": {
+      "title": "Iluminat inteligent SOPRO, seria Q",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
       },
       "sections": {}
     }
