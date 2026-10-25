@@ -16,6 +16,7 @@ import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOv
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
+import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -155,6 +156,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "q3",
     tabs: [{ id: "overview", label: "Overview" }],
     View: Q3Overview,
+  },
+  {
+    slug: "s5",
+    title: "Smart Spotlight S5",
+    rootClass: "s5",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: S5Overview,
   },
 ];
 

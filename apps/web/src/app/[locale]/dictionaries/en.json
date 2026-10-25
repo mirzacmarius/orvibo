@@ -581,6 +581,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "s5": {
+      "title": "Smart Spotlight S5",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

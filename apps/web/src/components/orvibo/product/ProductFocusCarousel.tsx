@@ -7,15 +7,31 @@ export interface ProductFocusSlide {
   key: string;
   /** Resolved image URL. */
   image: string;
-  title: ReactNode;
-  desc: ReactNode;
+  title?: ReactNode;
+  desc?: ReactNode;
+  /** Drawn on the image and dimmed with it (S5's captions). */
+  overlay?: ReactNode;
+}
+
+interface Look {
+  width: number;
+  pitch: number;
+  track: string;
+  slide: string;
+  image: string;
+  imageDimmed: string;
+  title: string;
+  titleDimmed: string;
+  desc: string;
+  /** Pagination dots: the row, each dot, and the active and idle fills. */
+  dots?: { row: string; dot: string; active: string; idle: string };
 }
 
 /**
- * The two looks orvibo.com gives this carousel. `pitch` is the slide width
- * plus the gap after it, in rem.
+ * The looks orvibo.com gives this carousel. `pitch` is the slide width plus
+ * the gap after it, in rem.
  */
-const LOOKS = {
+const LOOKS: Record<"dark" | "light" | "scenes", Look> = {
   /** MixPad 10's finishes: 16rem slides on black, darkened out of focus. */
   dark: {
     width: 16,
@@ -43,6 +59,31 @@ const LOOKS = {
     titleDimmed: "",
     desc: "mt-[0.14rem] text-[0.2rem] font-normal text-black",
   },
+  /**
+   * S5's scenes: 16.02rem slides on black, darkened out of focus, captions
+   * on the photos and dots under the track (give the carousel the bottom
+   * padding the dots sit in). orvibo.com never shows these photos (their
+   * URLs are broken there), so its captions sit on black; here a soft shade
+   * at the foot of each photo keeps them readable.
+   */
+  scenes: {
+    width: 16.02,
+    pitch: 16.54,
+    track: "duration-300 [transition-timing-function:ease]",
+    slide: "mr-[0.52rem] w-[16.02rem]",
+    image:
+      "h-[9.62rem] before:absolute before:inset-x-0 before:bottom-0 before:h-[40%] before:bg-gradient-to-t before:from-black/60 before:to-transparent before:content-[''] after:bg-black after:transition-opacity after:[transition-duration:360ms] after:[transition-timing-function:ease]",
+    imageDimmed: "after:opacity-[0.75]",
+    title: "",
+    titleDimmed: "",
+    desc: "",
+    dots: {
+      row: "absolute bottom-[2.08rem] left-0 w-full text-center",
+      dot: "mr-[18px] inline-block h-[14px] w-[14px] cursor-pointer rounded-full",
+      active: "bg-[#f9d6b5]",
+      idle: "bg-white/20",
+    },
+  },
 };
 
 /**
@@ -64,6 +105,7 @@ export function ProductFocusCarousel({
   const [active, setActive] = useState(0);
   const dragStart = useRef<number | null>(null);
   const style = LOOKS[look];
+  const dots = style.dots;
 
   const go = (index: number) =>
     setActive(Math.max(0, Math.min(slides.length - 1, index)));
@@ -105,22 +147,45 @@ export function ProductFocusCarousel({
                     current ? "after:opacity-0" : style.imageDimmed,
                   )}
                   style={{ backgroundImage: `url(${slide.image})` }}
-                />
-                <span
-                  className={cn(
-                    "block",
-                    style.title,
-                    !current && style.titleDimmed,
-                  )}
                 >
-                  {slide.title}
-                  <span className={cn("block", style.desc)}>{slide.desc}</span>
+                  {slide.overlay}
                 </span>
+                {(slide.title || slide.desc) && (
+                  <span
+                    className={cn(
+                      "block",
+                      style.title,
+                      !current && style.titleDimmed,
+                    )}
+                  >
+                    {slide.title}
+                    <span className={cn("block", style.desc)}>
+                      {slide.desc}
+                    </span>
+                  </span>
+                )}
               </button>
             </li>
           );
         })}
       </ul>
+      {dots && (
+        <div className={dots.row}>
+          {slides.map((slide, index) => (
+            <button
+              key={slide.key}
+              type="button"
+              aria-label={`${index + 1} / ${slides.length}`}
+              aria-current={index === active}
+              onClick={() => go(index)}
+              className={cn(
+                dots.dot,
+                index === active ? dots.active : dots.idle,
+              )}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
