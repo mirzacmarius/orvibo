@@ -59,6 +59,7 @@ export const PRODUCT_SLUGS = [
   "safepackage",
   "miniHost",
   "sos",
+  "temp_hum_sensor",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -318,5 +319,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "sos",
     cn: "https://www.orvibo.com/cn/product/sos.html",
+  },
+  {
+    scope: "product",
+    key: "temp_hum_sensor",
+    cn: "https://www.orvibo.com/cn/product/temp_hum_sensor.html",
   },
 ];

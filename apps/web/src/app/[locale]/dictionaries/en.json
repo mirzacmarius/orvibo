@@ -727,6 +727,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "temp_hum_sensor": {
+      "title": "Temperature & Humidity Sensor",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

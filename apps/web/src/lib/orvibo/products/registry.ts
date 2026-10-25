@@ -43,6 +43,7 @@ import { SafepackageOverview } from "@/components/orvibo/products/safepackage/Sa
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
 import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
+import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import type { ProductDefinition } from "./types";
 
@@ -360,6 +361,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "sos",
     tabs: [{ id: "overview", label: "Overview" }],
     View: SosOverview,
+  },
+  {
+    slug: "temp_hum_sensor",
+    title: "Temperature & Humidity Sensor",
+    rootClass: "temp_hum_sensor",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: TempHumSensorOverview,
   },
 ];
 

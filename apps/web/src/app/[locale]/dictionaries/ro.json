@@ -727,6 +727,13 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "temp_hum_sensor": {
+      "title": "Senzor de temperatură și umiditate",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }
