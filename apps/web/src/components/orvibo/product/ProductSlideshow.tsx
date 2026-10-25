@@ -16,18 +16,26 @@ export interface ProductSlide {
    * `group-data-[tone=light]/slideshow:` classes.
    */
   tone?: "light" | "dark";
+  /**
+   * The slide's entry in the "swatches" pagination: its name, the name's
+   * colour and the dot's colour (both `text-*` classes).
+   */
+  swatch?: { label: ReactNode; text: string; dot: string };
 }
 
 /**
  * orvibo.com's looping slideshows: one slide at a time, swipeable, with
  * clickable pagination at the bottom edge of the box set by `className`.
- * The pagination is Swiper's dots (the default) or slidesjs' "bars", 50 px
- * lines that fill up while their slide shows (move them with
- * `paginationClassName`). `children` are laid over the slides.
+ * The pagination is Swiper's dots (the default), slidesjs' "bars", 50 px
+ * lines that fill up while their slide shows, or "swatches", each slide's
+ * name beside a dot of its colour, ringed while it shows (the V5 lock's
+ * finishes); move it with `paginationClassName`. `children` are laid over
+ * the slides. Without `autoplay`, the slides change only when asked.
  */
 export function ProductSlideshow({
   slides,
   className,
+  autoplay = true,
   delay = 4000,
   speed = 300,
   pagination = "dots",
@@ -36,11 +44,12 @@ export function ProductSlideshow({
 }: {
   slides: ProductSlide[];
   className?: string;
+  autoplay?: boolean;
   /** Milliseconds each slide stays. */
   delay?: number;
   /** Milliseconds a slide takes to slide in. */
   speed?: number;
-  pagination?: "dots" | "bars";
+  pagination?: "dots" | "bars" | "swatches";
   paginationClassName?: string;
   children?: ReactNode;
 }) {
@@ -53,10 +62,10 @@ export function ProductSlideshow({
       className={cn("group/slideshow relative overflow-hidden", className)}
     >
       <Swiper
-        modules={[Autoplay]}
+        modules={autoplay ? [Autoplay] : []}
         loop
         speed={speed}
-        autoplay={{ delay, disableOnInteraction: false }}
+        autoplay={autoplay && { delay, disableOnInteraction: false }}
         onSwiper={setSwiper}
         onRealIndexChange={(instance) => setActive(instance.realIndex)}
       >
@@ -68,12 +77,35 @@ export function ProductSlideshow({
       <div
         className={cn(
           "absolute inset-x-0 bottom-0 z-10 flex justify-center",
-          pagination === "bars" ? "gap-[10px]" : "gap-[8px]",
+          { bars: "gap-[10px]", dots: "gap-[8px]", swatches: "gap-[0.55rem]" }[
+            pagination
+          ],
           paginationClassName,
         )}
       >
         {slides.map((slide, index) =>
-          pagination === "bars" ? (
+          pagination === "swatches" ? (
+            <button
+              key={slide.key}
+              type="button"
+              aria-current={index === active}
+              onClick={() => swiper?.slideToLoop(index)}
+              className={cn(
+                "flex cursor-pointer items-center text-[0.2rem]",
+                slide.swatch?.text,
+              )}
+            >
+              <span
+                className={cn(
+                  "relative mr-[0.08rem] size-[0.12rem] rounded-full bg-current",
+                  slide.swatch?.dot,
+                  index === active &&
+                    "after:absolute after:-inset-[0.04rem] after:rounded-full after:border-2 after:border-current after:content-['']",
+                )}
+              />
+              {slide.swatch?.label}
+            </button>
+          ) : pagination === "bars" ? (
             <button
               key={slide.key}
               type="button"

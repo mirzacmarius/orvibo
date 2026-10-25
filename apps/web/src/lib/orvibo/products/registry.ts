@@ -34,6 +34,7 @@ import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
+import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -289,6 +290,13 @@ const definitions: ProductDefinition[] = [
     ],
     View: MixpadS2Overview,
     segmentViews: { spec: MixpadS2Spec },
+  },
+  {
+    slug: "v5",
+    title: "Smart Lock V5",
+    rootClass: "v5",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: V5Overview,
   },
 ];
 

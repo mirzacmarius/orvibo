@@ -675,6 +675,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "v5": {
+      "title": "Încuietoare inteligentă V5",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }

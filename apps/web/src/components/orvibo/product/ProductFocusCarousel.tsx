@@ -41,7 +41,8 @@ type LookName =
   | "products"
   | "sensor"
   | "films"
-  | "rooms";
+  | "rooms"
+  | "lock";
 
 /** A 40 x 100 tile with an 11 x 18 glyph (the rooms look's arrows). */
 const ROOM_ARROW =
@@ -178,6 +179,22 @@ const LOOKS: Record<LookName, Look> = {
       next: `right-[calc(50%-5.55rem)] ${ROOM_ARROW}`,
     },
     loop: true,
+  },
+  /**
+   * The V5 lock's photos: 14.98rem slides on black, darkened out of focus,
+   * sliding in 800 ms.
+   */
+  lock: {
+    width: 14.98,
+    pitch: 15.5,
+    track: "[transition-duration:800ms] [transition-timing-function:ease]",
+    slide: "mr-[0.52rem] w-[14.98rem]",
+    image:
+      "h-[8.95rem] after:bg-black after:transition-opacity after:[transition-duration:360ms] after:[transition-timing-function:ease]",
+    imageDimmed: "after:opacity-30",
+    title: "",
+    titleDimmed: "",
+    desc: "",
   },
 };
 

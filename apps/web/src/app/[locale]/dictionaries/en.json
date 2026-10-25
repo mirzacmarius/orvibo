@@ -675,6 +675,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "v5": {
+      "title": "Smart Lock V5",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }
