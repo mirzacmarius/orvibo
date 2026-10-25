@@ -1,3 +1,4 @@
+import { BalancedLines } from "@/components/orvibo/product/BalancedLines";
 import { ProductInView } from "@/components/orvibo/product/ProductInView";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
@@ -25,21 +26,6 @@ const RISE =
 /** A round feature icon that turns in once its section is on screen. */
 const TURN =
   "-rotate-[350deg] opacity-0 transition-[opacity,transform] [transition-delay:600ms] [transition-duration:2000ms] [transition-timing-function:ease-out] group-data-[shown]:rotate-0 group-data-[shown]:opacity-100 motion-reduce:transition-none";
-
-/**
- * A question on a photo panel: each of its two parts balanced on its own.
- */
-function Question({ text }: { text: string }) {
-  return (
-    <p className="text-[24px] text-white">
-      {text.split("\n").map((line) => (
-        <span key={line} className="block text-balance">
-          {line}
-        </span>
-      ))}
-    </p>
-  );
-}
 
 export function TempHumSensorOverview({
   locale,
@@ -83,7 +69,9 @@ export function TempHumSensorOverview({
           </h2>
           <div className="group/panel w-1/4 bg-white grayscale hover:grayscale-0">
             <div className="h-full bg-black/30 px-[40px] pt-[450px] text-center group-hover/panel:invisible">
-              <Question text={ts("temp_sec2.shadow")} />
+              <p className="text-[24px] text-white">
+                <BalancedLines text={ts("temp_sec2.shadow")} />
+              </p>
             </div>
           </div>
           <div
@@ -93,7 +81,9 @@ export function TempHumSensorOverview({
             )}
           >
             <div className="h-full bg-black/30 px-[40px] pt-[450px] text-center group-hover/panel:invisible">
-              <Question text={ts("temp_sec2.shadow2")} />
+              <p className="text-[24px] text-white">
+                <BalancedLines text={ts("temp_sec2.shadow2")} />
+              </p>
             </div>
           </div>
           <div
@@ -103,7 +93,9 @@ export function TempHumSensorOverview({
             )}
           >
             <div className="h-full bg-black/30 px-[40px] pt-[450px] text-center group-hover/panel:invisible">
-              <Question text={ts("temp_sec2.shadow3")} />
+              <p className="text-[24px] text-white">
+                <BalancedLines text={ts("temp_sec2.shadow3")} />
+              </p>
             </div>
           </div>
           <div
@@ -113,7 +105,9 @@ export function TempHumSensorOverview({
             )}
           >
             <div className="h-full bg-black/30 px-[40px] pt-[450px] text-center group-hover/panel:invisible">
-              <Question text={ts("temp_sec2.shadow4")} />
+              <p className="text-[24px] text-white">
+                <BalancedLines text={ts("temp_sec2.shadow4")} />
+              </p>
             </div>
           </div>
         </div>
@@ -292,7 +286,7 @@ export function TempHumSensorOverview({
                   "/guanwang_second/front/images/products/temp/icons_01-0d21e0242b.webp",
                 )}
               />
-              <p className="text-center text-[18px]">
+              <p className="text-balance text-center text-[18px]">
                 {t("temp_sec7.clearfix")}
               </p>
             </li>
@@ -303,7 +297,7 @@ export function TempHumSensorOverview({
                   "/guanwang_second/front/images/products/temp/icons_01-0d21e0242b.webp",
                 )}
               />
-              <p className="text-center text-[18px]">
+              <p className="text-balance text-center text-[18px]">
                 {t("temp_sec7.clearfix2")}
               </p>
             </li>
@@ -314,7 +308,7 @@ export function TempHumSensorOverview({
                   "/guanwang_second/front/images/products/temp/icons_01-0d21e0242b.webp",
                 )}
               />
-              <p className="text-center text-[18px]">
+              <p className="text-balance text-center text-[18px]">
                 {t("temp_sec7.clearfix3")}
               </p>
             </li>
@@ -325,7 +319,7 @@ export function TempHumSensorOverview({
                   "/guanwang_second/front/images/products/temp/icons_01-0d21e0242b.webp",
                 )}
               />
-              <p className="text-center text-[18px]">
+              <p className="text-balance text-center text-[18px]">
                 {t("temp_sec7.clearfix4")}
               </p>
             </li>

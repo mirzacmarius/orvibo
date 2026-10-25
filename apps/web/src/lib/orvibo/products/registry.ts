@@ -45,6 +45,7 @@ import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
 import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
+import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -368,6 +369,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "temp_hum_sensor",
     tabs: [{ id: "overview", label: "Overview" }],
     View: TempHumSensorOverview,
+  },
+  {
+    slug: "water_alarm",
+    title: "Water Leak Sensor",
+    rootClass: "water_alarm",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: WaterAlarmOverview,
   },
 ];
 

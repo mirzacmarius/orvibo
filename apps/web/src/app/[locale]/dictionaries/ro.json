@@ -734,6 +734,13 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "water_alarm": {
+      "title": "Senzor de inundație",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }

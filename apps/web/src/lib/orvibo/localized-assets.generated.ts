@@ -404,6 +404,8 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/guanwang_second/front/images/products/temp/iphone_2-98670f8e10.webp",
   "/guanwang_second/front/images/products/temp/temp_img-4dfa44bbd5.webp",
   "/guanwang_second/front/images/products/temp/temp_img2-d076743638.webp",
+  "/guanwang_second/front/images/products/water/bg_06_03-deb0a9dca6.webp",
+  "/guanwang_second/front/images/products/water/iphone6_2-bef81215cf.webp",
   "/html/images/products/suite/door_pics.webp",
   "/html/images/products/suite/phone1.webp",
   "/html/images/products/suite/phone2.webp",

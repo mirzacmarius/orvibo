@@ -734,6 +734,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "water_alarm": {
+      "title": "Water Leak Sensor",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }
