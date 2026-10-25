@@ -2,6 +2,7 @@ import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
+import { localizedAssetPath } from "@/lib/orvibo/localizedAsset";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { DaofengGroupControl } from "./DaofengGroupControl";
 
@@ -116,7 +117,10 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
             <MarketingVideo
               bare
               src="/orvibo/videos/daofeng_spwm.mp4"
-              poster="/guanwang_second/front/images/new/products/daofeng/daofeng_spwm-6a973273ec.webp"
+              poster={localizedAssetPath(
+                "/guanwang_second/front/images/new/products/daofeng/daofeng_spwm-6a973273ec.webp",
+                locale,
+              )}
               className="w-full h-full aspect-[1920/1000]"
             />
           </div>
