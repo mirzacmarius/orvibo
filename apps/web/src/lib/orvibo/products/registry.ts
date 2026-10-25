@@ -1,6 +1,7 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
+import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
@@ -205,6 +206,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: SoproSOverview,
     segmentViews: { spec: SoproSSpec },
+  },
+  {
+    slug: "curtain_3d",
+    title: "3D Light & Shadow Smart Curtain",
+    rootClass: "curtain_3d",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: Curtain3dOverview,
+    segmentViews: { spec: ProductSpecView },
   },
 ];
 

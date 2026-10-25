@@ -620,6 +620,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "curtain_3d": {
+      "title": "3D Light & Shadow Smart Curtain",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

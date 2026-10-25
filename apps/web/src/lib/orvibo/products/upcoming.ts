@@ -11,7 +11,6 @@ const UPCOMING_PRODUCTS = new Map<string, string>([
   ["v5", "lockV5"],
   ["mixpad_s2", "lockS2"],
   ["t1c", "lockT1c"],
-  ["curtain_3d", "curtain3d"],
   ["motor_db28", "motorDb28"],
   ["curtain_motor", "curtainMotor"],
   ["camera_4", "cameraS1"],

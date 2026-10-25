@@ -620,6 +620,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "curtain_3d": {
+      "title": "Draperie inteligentă 3D Lumină și Umbră",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }
