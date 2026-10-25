@@ -720,6 +720,13 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "sos": {
+      "title": "Emergency Button",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

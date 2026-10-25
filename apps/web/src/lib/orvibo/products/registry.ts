@@ -40,6 +40,7 @@ import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
+import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
 import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
@@ -352,6 +353,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "miniHost",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MiniHostOverview,
+  },
+  {
+    slug: "sos",
+    title: "Emergency Button",
+    rootClass: "sos",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: SosOverview,
   },
 ];
 

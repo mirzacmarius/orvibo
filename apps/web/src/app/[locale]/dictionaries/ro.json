@@ -720,6 +720,13 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "sos": {
+      "title": "Buton de urgență",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }
