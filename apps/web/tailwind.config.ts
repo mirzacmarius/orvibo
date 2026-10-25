@@ -19,6 +19,8 @@ export default {
         "spotlight-dim": "spotlight-dim 6s ease infinite",
         "spotlight-caption": "spotlight-caption 6s ease infinite",
         "bar-fill": "bar-fill 5s linear forwards",
+        "circle-wave": "circle-wave 2s ease-in-out infinite",
+        "circle-wave-linear": "circle-wave 2.1s linear infinite",
       },
       colors: {
         orvibo: {
@@ -117,6 +119,13 @@ export default {
         "bar-fill": {
           "0%": { transform: "scaleX(0)" },
           "100%": { transform: "scaleX(1)" },
+        },
+        // A disc swelling out of a point and fading as it grows (orvibo.com's
+        // circleWave: the S1 2K camera's radar rings); stagger the rings
+        // with `[animation-delay:…]`.
+        "circle-wave": {
+          "0%": { opacity: "1", transform: "scale(0)" },
+          "100%": { opacity: "0", transform: "scale(1)" },
         },
       },
       maxWidth: {

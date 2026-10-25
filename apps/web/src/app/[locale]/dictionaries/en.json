@@ -741,6 +741,14 @@
         "overview": "Overview"
       },
       "sections": {}
+    },
+    "camera_4": {
+      "title": "S1 2K Smart Camera",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

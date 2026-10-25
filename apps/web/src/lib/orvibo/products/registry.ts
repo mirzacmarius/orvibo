@@ -2,6 +2,8 @@ import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { BodysensorOverview } from "@/components/orvibo/products/bodysensor/BodysensorOverview";
 import { BodysensorSpec } from "@/components/orvibo/products/bodysensor/BodysensorSpec";
+import { Camera4Overview } from "@/components/orvibo/products/camera_4/Camera4Overview";
+import { Camera4Spec } from "@/components/orvibo/products/camera_4/Camera4Spec";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
 import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
@@ -376,6 +378,17 @@ const definitions: ProductDefinition[] = [
     rootClass: "water_alarm",
     tabs: [{ id: "overview", label: "Overview" }],
     View: WaterAlarmOverview,
+  },
+  {
+    slug: "camera_4",
+    title: "S1 2K Smart Camera",
+    rootClass: "camera_4",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: Camera4Overview,
+    segmentViews: { spec: Camera4Spec },
   },
 ];
 

@@ -741,6 +741,14 @@
         "overview": "Prezentare"
       },
       "sections": {}
+    },
+    "camera_4": {
+      "title": "Cameră inteligentă S1 2K",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

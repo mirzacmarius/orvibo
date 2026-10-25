@@ -61,6 +61,7 @@ export const PRODUCT_SLUGS = [
   "sos",
   "temp_hum_sensor",
   "water_alarm",
+  "camera_4",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -330,5 +331,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "water_alarm",
     cn: "https://www.orvibo.com/cn/product/water_alarm.html",
+  },
+  {
+    scope: "product",
+    key: "camera_4",
+    cn: "https://www.orvibo.com/cn/product/camera_4.html",
   },
 ];
