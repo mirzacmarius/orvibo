@@ -659,6 +659,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "chuanglian2": {
+      "title": "Ultra-quiet Smart Curtain (Zigbee Edition)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

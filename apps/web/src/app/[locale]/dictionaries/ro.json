@@ -659,6 +659,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "chuanglian2": {
+      "title": "Draperie inteligentă ultrasilențioasă (ediția Zigbee)",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

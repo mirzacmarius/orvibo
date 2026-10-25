@@ -11,6 +11,7 @@ export function ChuanglianSpec(props: ProductViewProps) {
         className: "h-[100px] w-[298px]",
       }}
       specs={["model", "power", "electrical", "performance", "control"]}
+      lengths={["3 m", "4 m"]}
       loads={[
         ["straight", "—", "50 kg", "40 kg"],
         ["l_track", "R400", "40 kg", "30 kg"],

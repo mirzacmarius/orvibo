@@ -18,6 +18,7 @@ export default {
         "caption-ticker": "caption-ticker 6s ease infinite",
         "spotlight-dim": "spotlight-dim 6s ease infinite",
         "spotlight-caption": "spotlight-caption 6s ease infinite",
+        "bar-fill": "bar-fill 5s linear forwards",
       },
       colors: {
         orvibo: {
@@ -109,6 +110,13 @@ export default {
           "0%": { opacity: "0" },
           "13.333%, 33.333%": { opacity: "1" },
           "46.667%, 100%": { opacity: "0" },
+        },
+        // A slideshow's progress bar filling up while its slide shows
+        // (slidesjs' im_progress); set the time with an inline
+        // `animationDuration`.
+        "bar-fill": {
+          "0%": { transform: "scaleX(0)" },
+          "100%": { transform: "scaleX(1)" },
         },
       },
       maxWidth: {

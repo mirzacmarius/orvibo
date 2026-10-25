@@ -3,6 +3,8 @@ import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
 import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
+import { Chuanglian2Overview } from "@/components/orvibo/products/chuanglian2/Chuanglian2Overview";
+import { Chuanglian2Spec } from "@/components/orvibo/products/chuanglian2/Chuanglian2Spec";
 import { ChuangliansmartOverview } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartOverview";
 import { ChuangliansmartSpec } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartSpec";
 import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
@@ -263,6 +265,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: ChuanglianOverview,
     segmentViews: { spec: ChuanglianSpec },
+  },
+  {
+    slug: "chuanglian2",
+    title: "Ultra-quiet Smart Curtain (Zigbee Edition)",
+    rootClass: "chuanglian2",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: Chuanglian2Overview,
+    segmentViews: { spec: Chuanglian2Spec },
   },
 ];
 

@@ -1,6 +1,7 @@
 import { ProductMoreToggle } from "@/components/orvibo/product/ProductMoreToggle";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import type { ReactNode } from "react";
 
 /** One diagram of the install guide: its picture, height and title offset. */
 export interface CurtainKitGuidePart {
@@ -11,12 +12,14 @@ export interface CurtainKitGuidePart {
   note?: boolean;
 }
 
-/** A row of the load table: the track's text key, its bend radius and its loads. */
+/**
+ * A row of the load table: the track's text key, its bend radius and its
+ * load for each track length.
+ */
 export type CurtainKitLoad = [
   track: string,
   radius: string,
-  load3m: string,
-  load4m: string,
+  ...loads: string[],
 ];
 
 interface CurtainKitSpecProps extends ProductViewProps {
@@ -24,7 +27,13 @@ interface CurtainKitSpecProps extends ProductViewProps {
   photo: { path: string; className: string };
   /** `spec.<key>` lines ("Label: value"), the label in black. */
   specs: string[];
+  /** Lay the spec lines out in one column, or in two (row by row). */
+  specColumns?: 1 | 2;
+  /** The load table's track lengths ("4 m"), one column each. */
+  lengths: string[];
   loads: CurtainKitLoad[];
+  /** A note under the load table. */
+  tips?: ReactNode;
   guide: CurtainKitGuidePart[];
 }
 
@@ -39,7 +48,10 @@ export function CurtainKitSpec({
   common,
   photo,
   specs,
+  specColumns = 1,
+  lengths,
   loads,
+  tips,
   guide,
 }: CurtainKitSpecProps) {
   const { t, ts, bg, img, lines } = productPageHelpers(locale, text);
@@ -61,7 +73,13 @@ export function CurtainKitSpec({
               {t("spec_name")}
             </p>
           </div>
-          <ul className="mt-[40px] ml-[422px] max-w-[560px]">
+          <ul
+            className={
+              specColumns === 2
+                ? "mx-auto mt-[40px] grid w-[800px] grid-cols-2 gap-x-[40px] pl-[60px]"
+                : "mt-[40px] ml-[422px] max-w-[560px]"
+            }
+          >
             {specs.map((key) => {
               const line = ts(`spec.${key}`);
               const at = line.indexOf(": ");
@@ -86,15 +104,14 @@ export function CurtainKitSpec({
                   <th scope="col" className="w-[280px] px-[10px] font-normal">
                     {t("load.track")}
                   </th>
-                  <th scope="col" className="w-[160px] px-[10px] font-normal">
+                  <th scope="col" className="w-[180px] px-[10px] font-normal">
                     {t("load.radius")}
                   </th>
-                  <th scope="col" className="font-normal">
-                    3 m
-                  </th>
-                  <th scope="col" className="font-normal">
-                    4 m
-                  </th>
+                  {lengths.map((length) => (
+                    <th key={length} scope="col" className="font-normal">
+                      {length}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -120,6 +137,11 @@ export function CurtainKitSpec({
                 ))}
               </tbody>
             </table>
+            {tips && (
+              <p className="mt-[8px] text-[16px] leading-[1.6] text-[#888888]">
+                {tips}
+              </p>
+            )}
           </div>
         </div>
         <ProductMoreToggle

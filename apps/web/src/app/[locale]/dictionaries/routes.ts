@@ -50,6 +50,7 @@ export const PRODUCT_SLUGS = [
   "curtain_motor",
   "chuangliansmart",
   "chuanglian",
+  "chuanglian2",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -264,5 +265,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "chuanglian",
     cn: "https://www.orvibo.com/cn/product/chuanglian.html",
+  },
+  {
+    scope: "product",
+    key: "chuanglian2",
+    cn: "https://www.orvibo.com/cn/product/chuanglian2.html",
   },
 ];
