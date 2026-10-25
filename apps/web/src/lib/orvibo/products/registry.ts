@@ -1,5 +1,7 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
+import { BodysensorOverview } from "@/components/orvibo/products/bodysensor/BodysensorOverview";
+import { BodysensorSpec } from "@/components/orvibo/products/bodysensor/BodysensorSpec";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
 import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
@@ -310,6 +312,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: T1COverview,
     segmentViews: { spec: T1CSpec },
+  },
+  {
+    slug: "bodysensor",
+    title: "Motion Sensor",
+    rootClass: "bodysensor",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: BodysensorOverview,
+    segmentViews: { spec: BodysensorSpec },
   },
 ];
 

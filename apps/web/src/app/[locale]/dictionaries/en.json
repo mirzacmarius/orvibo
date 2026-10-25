@@ -690,6 +690,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "bodysensor": {
+      "title": "Motion Sensor",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

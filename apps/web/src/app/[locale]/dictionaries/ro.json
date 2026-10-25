@@ -690,6 +690,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "bodysensor": {
+      "title": "Senzor de mișcare",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }
