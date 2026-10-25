@@ -1,6 +1,8 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
+import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
+import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
 import { ChuangliansmartOverview } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartOverview";
 import { ChuangliansmartSpec } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartSpec";
 import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
@@ -250,6 +252,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: ChuangliansmartOverview,
     segmentViews: { spec: ChuangliansmartSpec },
+  },
+  {
+    slug: "chuanglian",
+    title: "Smart Curtain Kit (Chocolate Edition)",
+    rootClass: "chuanglian",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: ChuanglianOverview,
+    segmentViews: { spec: ChuanglianSpec },
   },
 ];
 

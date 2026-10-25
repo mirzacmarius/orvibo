@@ -651,6 +651,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "chuanglian": {
+      "title": "Kit de draperie inteligentă (ediția Chocolate)",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

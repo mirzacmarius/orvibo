@@ -34,7 +34,18 @@ interface Look {
   loop?: boolean;
 }
 
-type LookName = "dark" | "light" | "scenes" | "products" | "sensor" | "films";
+type LookName =
+  | "dark"
+  | "light"
+  | "scenes"
+  | "products"
+  | "sensor"
+  | "films"
+  | "rooms";
+
+/** A 40 x 100 tile with an 11 x 18 glyph (the rooms look's arrows). */
+const ROOM_ARROW =
+  "top-[2.62rem] mt-0 h-[1rem] w-[0.4rem] rounded-[0.08rem] bg-white/90 px-[0.145rem] py-[0.41rem] text-[#2f2f2f] transition-colors hover:bg-[#2f2f2f] hover:text-white";
 
 /**
  * The looks orvibo.com gives this carousel. `pitch` is the slide width plus
@@ -145,6 +156,28 @@ const LOOKS: Record<LookName, Look> = {
       "mt-[0.24rem] pl-[0.46rem] text-[0.22rem] leading-[0.36rem] font-normal text-[#545454]",
     titleDimmed: "",
     desc: "",
+  },
+  /**
+   * The curtain kits' rooms: 11.1rem photos on white, none dimmed, endless,
+   * sliding with jQuery's easeInOutQuad, and orvibo.com's tall rounded
+   * arrow tiles on the centred photo's edges (dark when hovered).
+   */
+  rooms: {
+    width: 11.1,
+    pitch: 11.45,
+    track:
+      "duration-[600ms] [transition-timing-function:cubic-bezier(0.455,0.03,0.515,0.955)]",
+    slide: "mr-[0.35rem] w-[11.1rem]",
+    image: "h-[6.25rem]",
+    imageDimmed: "",
+    title: "",
+    titleDimmed: "",
+    desc: "",
+    arrows: {
+      prev: `left-[calc(50%-5.55rem)] ${ROOM_ARROW}`,
+      next: `right-[calc(50%-5.55rem)] ${ROOM_ARROW}`,
+    },
+    loop: true,
   },
 };
 

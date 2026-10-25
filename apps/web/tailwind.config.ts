@@ -15,6 +15,9 @@ export default {
         "warn-pulse": "warn-pulse 3s ease-out infinite",
         "nudge-left": "nudge-left 1.6s linear infinite",
         "nudge-right": "nudge-right 1.6s linear infinite",
+        "caption-ticker": "caption-ticker 6s ease infinite",
+        "spotlight-dim": "spotlight-dim 6s ease infinite",
+        "spotlight-caption": "spotlight-caption 6s ease infinite",
       },
       colors: {
         orvibo: {
@@ -84,6 +87,28 @@ export default {
           "0%": { opacity: "0", transform: "translateX(0)" },
           "50%": { opacity: "1", transform: "translateX(0.5rem)" },
           "100%": { opacity: "0", transform: "translateX(1rem)" },
+        },
+        // Four one-line captions scrolling up a line at a time, the last a
+        // copy of the first so the loop is seamless (orvibo.com's mymove).
+        "caption-ticker": {
+          "0%": { transform: "translateY(0)" },
+          "13.333%, 33.333%": { transform: "translateY(-25%)" },
+          "46.667%, 66.667%": { transform: "translateY(-50%)" },
+          "80%, 100%": { transform: "translateY(-75%)" },
+        },
+        // Three photos taking turns in the spotlight, one third of the
+        // cycle each (myshow and myhide): the shade over the others and
+        // the caption on the lit one. Offset the second and third photos
+        // with `[animation-delay:-4s]` and `[animation-delay:-2s]`.
+        "spotlight-dim": {
+          "0%": { opacity: "0.4" },
+          "13.333%, 33.333%": { opacity: "0" },
+          "46.667%, 100%": { opacity: "0.4" },
+        },
+        "spotlight-caption": {
+          "0%": { opacity: "0" },
+          "13.333%, 33.333%": { opacity: "1" },
+          "46.667%, 100%": { opacity: "0" },
         },
       },
       maxWidth: {
