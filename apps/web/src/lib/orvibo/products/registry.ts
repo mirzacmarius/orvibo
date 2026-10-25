@@ -19,6 +19,8 @@ import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Ov
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
+import { MixpadS2Overview } from "@/components/orvibo/products/mixpad_s2/MixpadS2Overview";
+import { MixpadS2Spec } from "@/components/orvibo/products/mixpad_s2/MixpadS2Spec";
 import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_flagship/MixpadSFlagshipOverview";
 import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchOverview";
 import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
@@ -276,6 +278,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: Chuanglian2Overview,
     segmentViews: { spec: Chuanglian2Spec },
+  },
+  {
+    slug: "mixpad_s2",
+    title: "Smart Lock S2",
+    rootClass: "mixpad_s2",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: MixpadS2Overview,
+    segmentViews: { spec: MixpadS2Spec },
   },
 ];
 

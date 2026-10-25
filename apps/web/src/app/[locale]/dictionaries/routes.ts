@@ -51,6 +51,7 @@ export const PRODUCT_SLUGS = [
   "chuangliansmart",
   "chuanglian",
   "chuanglian2",
+  "mixpad_s2",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -270,5 +271,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "chuanglian2",
     cn: "https://www.orvibo.com/cn/product/chuanglian2.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_s2",
+    cn: "https://www.orvibo.com/cn/product/mixpad_s2.html",
   },
 ];

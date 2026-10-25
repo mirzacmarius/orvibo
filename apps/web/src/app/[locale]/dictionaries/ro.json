@@ -667,6 +667,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "mixpad_s2": {
+      "title": "Încuietoare inteligentă S2",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

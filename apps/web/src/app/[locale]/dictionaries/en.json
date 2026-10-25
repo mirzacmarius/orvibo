@@ -667,6 +667,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "mixpad_s2": {
+      "title": "Smart Lock S2",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }
