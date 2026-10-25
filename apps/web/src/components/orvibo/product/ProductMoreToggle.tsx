@@ -59,7 +59,7 @@ export function ProductMoreToggle({
       <div
         id={id}
         className={cn(
-          "grid transition-[grid-template-rows,visibility] duration-[400ms] ease-in-out motion-reduce:transition-none",
+          "grid transition-[grid-template-rows,visibility] [transition-duration:400ms] ease-in-out motion-reduce:transition-none",
           open ? "visible grid-rows-[1fr]" : "invisible grid-rows-[0fr]",
         )}
       >

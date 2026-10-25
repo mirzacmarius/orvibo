@@ -63,7 +63,7 @@ export function DaofengGroupControl({ src, title }: DaofengGroupControlProps) {
     <div ref={ref} className="relative h-[28rem]">
       <div className="sticky top-[50px] flex h-[calc(100vh-50px)] items-center overflow-hidden">
         <div
-          className="relative w-full transition-transform duration-[600ms] ease-linear motion-reduce:transition-none"
+          className="relative w-full transition-transform [transition-duration:600ms] ease-linear motion-reduce:transition-none"
           style={{ transform: `scale(${film})` }}
         >
           <MarketingVideo
@@ -72,7 +72,7 @@ export function DaofengGroupControl({ src, title }: DaofengGroupControlProps) {
             className="block w-full aspect-[1920/860] object-cover"
           />
           <div
-            className="absolute top-0 left-0 z-10 flex w-full aspect-[2184/1024] items-center justify-center bg-black mix-blend-multiply transition-[transform,opacity] duration-[600ms] ease-linear motion-reduce:transition-none"
+            className="absolute top-0 left-0 z-10 flex w-full aspect-[2184/1024] items-center justify-center bg-black mix-blend-multiply transition-[transform,opacity] [transition-duration:600ms] ease-linear motion-reduce:transition-none"
             style={{ transform: `scale(${card})`, opacity }}
           >
             <h2 className="whitespace-pre-line text-center text-[1.3rem] leading-[1.7rem] font-extrabold text-white">

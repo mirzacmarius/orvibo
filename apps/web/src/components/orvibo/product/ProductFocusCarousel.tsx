@@ -166,7 +166,7 @@ const LOOKS: Record<LookName, Look> = {
     width: 11.1,
     pitch: 11.45,
     track:
-      "duration-[600ms] [transition-timing-function:cubic-bezier(0.455,0.03,0.515,0.955)]",
+      "[transition-duration:600ms] [transition-timing-function:cubic-bezier(0.455,0.03,0.515,0.955)]",
     slide: "mr-[0.35rem] w-[11.1rem]",
     image: "h-[6.25rem]",
     imageDimmed: "",

@@ -461,10 +461,10 @@ export function ChuanglianOverview({ locale, text, common }: ProductViewProps) {
         }
       >
         <div className="absolute inset-x-0 top-0 z-[9] text-center text-white">
-          <h2 className="pt-[120px] text-[36px] font-normal transition-opacity duration-[600ms] delay-[1500ms] ease-in-out group-data-[active]:opacity-0 motion-reduce:transition-none">
+          <h2 className="pt-[120px] text-[36px] font-normal transition-opacity [transition-duration:600ms] [transition-delay:1500ms] ease-in-out group-data-[active]:opacity-0 motion-reduce:transition-none">
             {t("fix.fix")}
           </h2>
-          <p className="mx-auto mt-[24px] max-w-[10rem] text-balance text-[16px] leading-[1.6] transition-opacity duration-[600ms] delay-[1500ms] ease-in-out group-data-[active]:opacity-0 motion-reduce:transition-none">
+          <p className="mx-auto mt-[24px] max-w-[10rem] text-balance text-[16px] leading-[1.6] transition-opacity [transition-duration:600ms] [transition-delay:1500ms] ease-in-out group-data-[active]:opacity-0 motion-reduce:transition-none">
             {t("fix.fix2")}
           </p>
         </div>
