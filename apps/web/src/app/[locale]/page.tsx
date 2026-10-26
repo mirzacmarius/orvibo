@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "./dictionaries";
 import { OrviboVideoCenter } from "@/components/orvibo/OrviboVideoCenter";
@@ -9,6 +10,17 @@ import { HeroVideoBanner } from "@/components/orvibo/sections/HeroVideoBanner";
 import { ProductGridSection } from "@/components/orvibo/sections/ProductGridSection";
 import { StoreVideoSection } from "@/components/orvibo/sections/StoreVideoSection";
 import { orviboRoutes } from "@/lib/orvibo/routes";
+import { localeAlternates } from "@/lib/orvibo/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return { alternates: localeAlternates(locale, "") };
+}
 
 export default async function Page({
   params,

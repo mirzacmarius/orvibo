@@ -9,6 +9,7 @@ import {
 } from "@/lib/orvibo/products/content/mixstation";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
+import { localizedAssetPath } from "@/lib/orvibo/localizedAsset";
 
 interface SectionPresentation {
   height: number;
@@ -148,7 +149,7 @@ function MixstationTextSection({
   );
 }
 
-export function MixstationOverview({ copy, common }: ProductViewProps) {
+export function MixstationOverview({ copy, common, locale }: ProductViewProps) {
   const mixstationSections = buildMixstationSections(copy);
 
   return (
@@ -182,7 +183,7 @@ export function MixstationOverview({ copy, common }: ProductViewProps) {
         <MixstationTextSection
           key={section.id}
           id={section.id}
-          imagePath={section.imagePath}
+          imagePath={localizedAssetPath(section.imagePath, locale)}
           title={section.title}
           description={section.description}
         />

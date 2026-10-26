@@ -24,7 +24,37 @@ export const SERVICE_SLUGS = ["customization", "case"] as const;
 
 export type ServiceSlug = (typeof SERVICE_SLUGS)[number];
 
-export const PRODUCT_SLUGS = ["mixstation", "mixpad_7"] as const;
+export const PRODUCT_SLUGS = [
+  "mixstation",
+  "mixpad_7",
+  "mixpad_x",
+  "mixpad_7_ultra",
+  "mixpad_m2",
+  "mixpad_s_flagship",
+  "mixpad_elf",
+  "bach",
+  "defy",
+  "gaosi",
+  "mixpad_switch",
+  "s3",
+  "downlight",
+  "cangqiong",
+  "q3",
+  "s5",
+  "light",
+  "daofeng",
+  "q",
+  "s",
+  "curtain_3d",
+  "motor_db28",
+  "curtain_motor",
+  "chuangliansmart",
+  "chuanglian",
+  "chuanglian2",
+  "mixpad_s2",
+  "v5",
+  "t1c",
+] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
 
@@ -123,5 +153,140 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "mixpad_7",
     cn: "https://www.orvibo.com/cn/product/mixpad_7.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_x",
+    cn: "https://www.orvibo.com/cn/product/mixpad_x.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_7_ultra",
+    cn: "https://www.orvibo.com/cn/product/mixpad_7_ultra.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_m2",
+    cn: "https://www.orvibo.com/cn/product/mixpad_m2.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_s_flagship",
+    cn: "https://www.orvibo.com/cn/product/mixpad_s_flagship.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_elf",
+    cn: "https://www.orvibo.com/cn/product/mixpad_elf.html",
+  },
+  {
+    scope: "product",
+    key: "bach",
+    cn: "https://www.orvibo.com/cn/product/bach.html",
+  },
+  {
+    scope: "product",
+    key: "defy",
+    cn: "https://www.orvibo.com/cn/product/defy.html",
+  },
+  {
+    scope: "product",
+    key: "gaosi",
+    cn: "https://www.orvibo.com/cn/product/gaosi.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_switch",
+    cn: "https://www.orvibo.com/cn/product/mixpad_switch.html",
+  },
+  {
+    scope: "product",
+    key: "s3",
+    cn: "https://www.orvibo.com/cn/product/s3.html",
+  },
+  {
+    scope: "product",
+    key: "downlight",
+    cn: "https://www.orvibo.com/cn/product/downlight.html",
+  },
+  {
+    scope: "product",
+    key: "cangqiong",
+    cn: "https://www.orvibo.com/cn/product/cangqiong.html",
+  },
+  {
+    scope: "product",
+    key: "q3",
+    cn: "https://www.orvibo.com/cn/product/q3.html",
+  },
+  {
+    scope: "product",
+    key: "s5",
+    cn: "https://www.orvibo.com/cn/product/s5.html",
+  },
+  {
+    scope: "product",
+    key: "light",
+    cn: "https://www.orvibo.com/cn/product/light.html",
+  },
+  {
+    scope: "product",
+    key: "daofeng",
+    cn: "https://www.orvibo.com/cn/product/daofeng.html",
+  },
+  {
+    scope: "product",
+    key: "q",
+    cn: "https://www.orvibo.com/cn/product/q.html",
+  },
+  {
+    scope: "product",
+    key: "s",
+    cn: "https://www.orvibo.com/cn/product/s.html",
+  },
+  {
+    scope: "product",
+    key: "curtain_3d",
+    cn: "https://www.orvibo.com/cn/product/curtain_3d.html",
+  },
+  {
+    scope: "product",
+    key: "motor_db28",
+    cn: "https://www.orvibo.com/cn/product/motor_db28.html",
+  },
+  {
+    scope: "product",
+    key: "curtain_motor",
+    cn: "https://www.orvibo.com/cn/product/curtain_motor.html",
+  },
+  {
+    scope: "product",
+    key: "chuangliansmart",
+    cn: "https://www.orvibo.com/cn/product/chuangliansmart.html",
+  },
+  {
+    scope: "product",
+    key: "chuanglian",
+    cn: "https://www.orvibo.com/cn/product/chuanglian.html",
+  },
+  {
+    scope: "product",
+    key: "chuanglian2",
+    cn: "https://www.orvibo.com/cn/product/chuanglian2.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_s2",
+    cn: "https://www.orvibo.com/cn/product/mixpad_s2.html",
+  },
+  {
+    scope: "product",
+    key: "v5",
+    cn: "https://www.orvibo.com/cn/product/v5.html",
+  },
+  {
+    scope: "product",
+    key: "t1c",
+    cn: "https://www.orvibo.com/cn/product/t1c.html",
   },
 ];

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+import { LOCALES } from "@/lib/orvibo/i18n";
 import { ProductPageShell } from "@/components/orvibo/product/ProductPageShell";
 import {
   formatPageTitle,
   getDictionary,
   isLocale,
 } from "../../../dictionaries";
+import { loadProductPageText } from "@/lib/orvibo/products/page-text";
 import { getProductDefinition } from "@/lib/orvibo/products/registry";
 import { resolveProductDefinition } from "@/lib/orvibo/products/resolve-product-copy";
+import { localeAlternates } from "@/lib/orvibo/site";
 
 function titleFromSlug(slug: string) {
   return slug.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -17,10 +20,9 @@ export async function generateStaticParams() {
   const { listProductSlugs, getProductDefinition } = await import(
     "@/lib/orvibo/products/registry"
   );
-  const locales = ["en"] as const;
   const params: { locale: string; slug: string; segment: string }[] = [];
 
-  for (const locale of locales) {
+  for (const locale of LOCALES) {
     for (const slug of listProductSlugs()) {
       const product = getProductDefinition(slug);
       if (!product?.segmentViews) continue;
@@ -48,8 +50,14 @@ export async function generateMetadata({
   const resolved = resolveProductDefinition(product, dict, slug);
   const title = resolved?.copy.title ?? product.title;
   const tab = resolved?.product.tabs.find((item) => item.segment === segment);
+  const text = await loadProductPageText(slug, locale);
   return {
-    title: formatPageTitle(`${title} — ${tab?.label ?? titleFromSlug(segment)}`),
+    title: formatPageTitle(
+      `${title} — ${tab?.label ?? titleFromSlug(segment)}`,
+    ),
+    description:
+      text[`meta.${segment}.description`] ?? text["meta.description"],
+    alternates: localeAlternates(locale, `/product/${slug}/${segment}`),
   };
 }
 
@@ -65,6 +73,11 @@ export default async function ProductSegmentPage({
   const definition = getProductDefinition(slug);
   const SegmentView = definition?.segmentViews?.[segment];
 
+  // orvibo.com keeps specs on a separate page; products whose specs are a
+  // section of the main page (or not built yet) send `/spec` there.
+  if (segment === "spec" && !SegmentView) {
+    redirect(`/${locale}/product/${slug}#specifications`);
+  }
   if (!definition || !SegmentView) notFound();
 
   const resolved = resolveProductDefinition(definition, dict, slug);
@@ -72,6 +85,7 @@ export default async function ProductSegmentPage({
 
   const { product, copy } = resolved;
   const base = `/${locale}`;
+  const text = await loadProductPageText(slug, locale);
 
   return (
     <ProductPageShell
@@ -84,6 +98,7 @@ export default async function ProductSegmentPage({
         base={base}
         copy={copy}
         common={dict.common}
+        text={text}
       />
     </ProductPageShell>
   );

@@ -3,8 +3,11 @@ import "../../styles/orvibo.css";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
+import { DocumentLang } from "@/components/orvibo/layout/DocumentLang";
 import { OrviboVideoProvider } from "@/components/orvibo/OrviboVideoProvider";
-import { getDictionary, isLocale, type Locale } from "./dictionaries";
+import { LOCALE_LANG } from "@/lib/orvibo/i18n";
+import { setRequestLocale } from "@/lib/orvibo/requestLocale";
+import { getDictionary, isLocale } from "./dictionaries";
 
 export async function generateMetadata({
   params,
@@ -29,9 +32,15 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
+  setRequestLocale(locale);
 
   return (
-    <div className="orvibo-site" data-locale={locale as Locale}>
+    <div
+      className="orvibo-site"
+      data-locale={locale}
+      lang={LOCALE_LANG[locale]}
+    >
+      <DocumentLang lang={LOCALE_LANG[locale]} />
       <OrviboVideoProvider>{children}</OrviboVideoProvider>
     </div>
   );

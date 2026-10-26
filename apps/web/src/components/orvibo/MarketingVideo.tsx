@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   className?: string;
@@ -9,6 +9,8 @@ type Props = {
   poster?: string;
   title?: string;
   autoPlayWhenVisible?: boolean;
+  /** When false, the film plays once the first time it is seen and stops on its last frame. */
+  loop?: boolean;
   /** When true, omit the layout wrapper so section components can size the video directly. */
   bare?: boolean;
 };
@@ -19,6 +21,7 @@ export function MarketingVideo({
   poster,
   title,
   autoPlayWhenVisible = true,
+  loop = true,
   bare = false,
 }: Props) {
   const ref = useRef<HTMLVideoElement | null>(null);
@@ -40,7 +43,7 @@ export function MarketingVideo({
     }
 
     async function play() {
-      if (!autoPlayWhenVisible) return;
+      if (!autoPlayWhenVisible || ref.current?.ended) return;
       try {
         await ref.current?.play();
       } catch {
@@ -68,7 +71,7 @@ export function MarketingVideo({
       className={className}
       muted
       playsInline
-      loop
+      loop={loop}
       preload="metadata"
       poster={poster ? assetUrl(poster) : undefined}
       aria-label={title}

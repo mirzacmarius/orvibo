@@ -62,7 +62,7 @@ export function redirectLegacyOrviboPath(pathname: string): string | null {
 
   const installMatch = path.match(/^(.*\/product\/[^/]+)_install$/);
   if (installMatch) {
-    return `${installMatch[1]}#specifications`;
+    return `${installMatch[1]}/spec`;
   }
 
   return path;

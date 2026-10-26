@@ -1,7 +1,6 @@
+import { DEFAULT_LOCALE, splitLocalePath } from "@/lib/orvibo/i18n";
 import { redirectLegacyOrviboPath } from "@/lib/orvibo/routes";
 import { NextResponse, type NextRequest } from "next/server";
-
-const LOCALE = "en";
 
 function isPublicFile(pathname: string) {
   if (pathname.startsWith("/favicon")) return true;
@@ -33,20 +32,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
-  const specTabMatch = pathname.match(new RegExp(`^/${LOCALE}/product/([^/]+)/spec$`));
-  if (specTabMatch) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/${LOCALE}/product/${specTabMatch[1]}`;
-    url.hash = "specifications";
-    return NextResponse.redirect(url, 308);
-  }
+  const { locale, rest } = splitLocalePath(pathname);
 
-  if (pathname === "/") {
-    return NextResponse.redirect(new URL(`/${LOCALE}`, request.url));
-  }
-
-  if (!pathname.startsWith(`/${LOCALE}/`) && pathname !== `/${LOCALE}`) {
-    return NextResponse.redirect(new URL(`/${LOCALE}${pathname}`, request.url));
+  if (!locale) {
+    return NextResponse.redirect(
+      new URL(`/${DEFAULT_LOCALE}${rest}`, request.url),
+    );
   }
 
   return NextResponse.next();
@@ -55,4 +46,3 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: ["/((?!_next).*)"],
 };
-

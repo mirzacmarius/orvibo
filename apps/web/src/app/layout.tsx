@@ -4,8 +4,17 @@ import { cn } from "@v1/ui/utils";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { DEFAULT_LOCALE, LOCALE_LANG } from "@/lib/orvibo/i18n";
 import { SITE_URL } from "@/lib/orvibo/site";
+
+/** Site text font: covers Romanian diacritics (ă â î ș ț) on every platform. */
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 const DepartureMono = localFont({
   src: "../fonts/DepartureMono-Regular.woff2",
@@ -24,10 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={LOCALE_LANG[DEFAULT_LOCALE]} suppressHydrationWarning>
       <body
         className={cn(
-          `${DepartureMono.variable} ${GeistSans.variable} ${GeistMono.variable}`,
+          `${inter.variable} ${DepartureMono.variable} ${GeistSans.variable} ${GeistMono.variable}`,
           "antialiased",
         )}
       >

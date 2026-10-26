@@ -8,8 +8,13 @@
     "learnMore": "Learn more",
     "visitStore": "Visit a store",
     "playVideo": "Play video",
-    "english": "English",
-    "chinese": "中文"
+    "language": "Language",
+    "productDisclaimer": "Product images, videos and screen content on this page are for illustration only. The actual product (including but not limited to its appearance, color and size) and what its screen shows (including but not limited to backgrounds, interface, pictures and videos) may differ slightly; the actual product prevails.\nFigures on this page are theoretical values from ORVIBO's internal laboratory, measured in specific test environments (see the notes for each item). Actual results may vary slightly with the individual unit, software version, conditions of use and environment.\nBecause production batches and supply change over time, ORVIBO may update the text, images and other content on this page at any time so that it matches the actual product's performance, specifications, ratings and components.",
+    "productDisclaimerNoNotice": "Where such changes are necessary, they may be made without separate notice.",
+    "productSpecTitle": "Specifications",
+    "productSpecNote": "* All figures above come from ORVIBO's laboratory. Actual results may vary slightly with the measuring method.",
+    "previous": "Previous",
+    "next": "Next"
   },
   "shell": {
     "comingSoon": {
@@ -52,28 +57,28 @@
   },
   "navProducts": {
     "mixstation": "ORVIBO Integrated HVAC",
-    "mixpad7Ultra": "MixPad 7 Ultra Smart Panel",
+    "mixpad7Ultra": "MixPad 10 Smart Panel",
     "mixpad7": "MixPad 7 Smart Panel",
-    "mixpadX": "MixPad X Smart Panel",
-    "mixpadM2": "MixPad M2 Smart Panel",
+    "mixpadX": "MixPad 12 Smart Panel",
+    "mixpadM2": "MixPad 4 Smart Panel",
     "mixpadSFlagship": "MixPad S Smart Panel (Flagship)",
     "gaosi": "Gauss Smart Switch",
     "defy": "Defy Smart Switch (Gen 1)",
     "bach": "Bach Smart Switch",
     "mixpadElf": "MixPad Elf Switch (Gateway)",
-    "mixSwitch": "MixSwitch Voice Switch",
+    "mixSwitch": "MixSwitch Smart Switch",
     "lockV5": "Smart Lock V5",
     "lockS2": "Smart Lock S2",
     "lockT1c": "Smart Lock T1C",
     "lightQ3": "Eye-care Downlight Q3",
     "lightS3": "Anti-glare Downlight S3",
     "lightS5": "Smart Spotlight S5",
-    "lightBauhaus": "Bauhaus Decorative Ambient Light",
+    "lightBauhaus": "Bauhaus Smart Ambient Lights",
     "cangqiong": "Cangqiong Pro Natural Light",
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
-    "soproS": "SOPRO Lighting S Series",
-    "soproQ": "SOPRO Lighting Q Series",
-    "downlight": "Stepless Color-temp Light",
+    "soproS": "SOPRO Smart Lighting S Series",
+    "soproQ": "SOPRO Smart Lighting Q Series",
+    "downlight": "Smart Tunable Light",
     "curtain3d": "3D Light & Shadow Smart Curtain",
     "motorDb28": "DB28 Ultra-quiet Curtain Motor",
     "curtainMotor": "Elf Ultra-quiet Curtain Motor",
@@ -105,7 +110,7 @@
   "highlights": {
     "switch": "Gauss Smart Switch",
     "switchTagline": "Five-way interaction, flagship control",
-    "mixPad": "MixPad 7 Ultra Smart Panel",
+    "mixPad": "MixPad 10 Smart Panel",
     "mixPadTagline": "Intelligence and design in balance",
     "lighting": "Cangqiong Pro Natural Light",
     "lightingTagline": "Redefining living-room aesthetics"
@@ -116,7 +121,7 @@
     "spotlightS5": "Smart Spotlight S5",
     "daofeng": "Blade Ultra-thin Magnetic Track Light",
     "lockV5": "Smart Lock V5",
-    "bauhausLight": "Bauhaus Decorative Ambient Light"
+    "bauhausLight": "Bauhaus Smart Ambient Lights"
   },
   "store": {
     "title": "ORVIBO Smart Home Experience Store",
@@ -158,10 +163,10 @@
     "contactUs": "Contact us",
     "phone": "400-060-6050 ( 09:00 ~ 20:00 )",
     "onlineService": "Online support",
-    "mixpadX": "MixPad X Smart Panel",
+    "mixpadX": "MixPad 12 Smart Panel",
     "mixpadElf": "MixPad Elf Switch (Gateway)",
-    "soproS": "SOPRO Lighting S Series",
-    "soproQ": "SOPRO Lighting Q Series",
+    "soproS": "SOPRO Smart Lighting S Series",
+    "soproQ": "SOPRO Smart Lighting Q Series",
     "customization": "Custom solutions",
     "cases": "Featured projects",
     "zhijiayi": "Zhijiayi",
@@ -381,17 +386,57 @@
         "intercom": {
           "title": "High-End Video Intercom"
         },
-        "album": {
-          "title": "Super Smart",
-          "description": "Photo AIbum"
+        "voice": {
+          "title": "Brilliantly smart, gets you instantly",
+          "description": "Say hello first? Forget it, just say what you want! ORVIBO Butler 3.0 controls every smart device in your home, no wake word needed.",
+          "items": {
+            "weather": "Hey ORVIBO, what's the weather like today?",
+            "grandpaName": "Grandpa",
+            "grandpa": "Turn off the study light and turn on the bedroom light.",
+            "dadName": "Dad",
+            "dad": "I'm leaving at 8, book me a car in advance.",
+            "dryingRack": "Hey ORVIBO, raise the drying rack.",
+            "livingRoomAc": "Hey ORVIBO, turn on the living room AC and set it to 20 degrees.",
+            "acOn": "Turn on the AC.",
+            "cleaning": "Hey ORVIBO, start cleaning the kitchen.",
+            "momName": "Mom",
+            "mom": "Turn off all the lights.",
+            "alarm": "Hey ORVIBO, set an alarm for 6:30 tomorrow morning.",
+            "daughterName": "Daughter",
+            "daughter": "Hey ORVIBO, lights off and close the window.",
+            "music": "Hey ORVIBO, play some relaxing music.",
+            "window": "Close the window.",
+            "date": "What's the date and day today?"
+          }
         },
         "audio": {
           "title": "Hi-Fi Wall Stereo\nSuper Thin Sound",
-          "description": "Premium acoustics with licensed streaming libraries, listen without limits."
+          "description": "Premium acoustics with licensed streaming libraries, listen without limits.",
+          "items": {
+            "hifi": "Hi-Fi grade\nimmersive sound",
+            "tws": "Pairs with TWS\nBluetooth speakers"
+          }
+        },
+        "album": {
+          "title": "Super smart\nphoto album"
         },
         "partner": {
-          "title": "One more thing",
-          "description": "A perfect partner"
+          "title": "One more thing:\na perfect partner",
+          "items": {
+            "card": "MixPad Extra smart video door station with a 10-inch HD touchscreen"
+          }
+        },
+        "extra": {
+          "title": "An epic leap, like going from\nfeature phone to smartphone\nMixPad Extra",
+          "items": {
+            "microphones": "Far-field dual-array microphones",
+            "scanner": "Open interface: add a thermal scanner",
+            "unlock": "Cloud-connected: remote door opening",
+            "screen": "10-inch HD full-screen design",
+            "product": "MixPad Extra on a stand and on the wall",
+            "match": "A natural match for every MixPad",
+            "camera": "5 MP dual AI camera: 24/7 face recognition, touch-free entry"
+          }
         }
       },
       "specifications": {
@@ -410,7 +455,10 @@
             "label": "Display",
             "value": "7\" IPS touchscreen, 1024 × 600"
           },
-          "microphone": { "label": "Microphone", "value": "Dual-microphone array" },
+          "microphone": {
+            "label": "Microphone",
+            "value": "Dual-microphone array"
+          },
           "connectivity": {
             "label": "Connectivity",
             "value": "Wi-Fi / Bluetooth / Zigbee 3.0"
@@ -438,6 +486,210 @@
           }
         }
       }
+    },
+    "mixpad_x": {
+      "title": "MixPad 12 Smart Panel",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "mixpad_7_ultra": {
+      "title": "MixPad 10 Smart Panel",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "mixpad_m2": {
+      "title": "MixPad 4 Smart Voice Switch",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "mixpad_s_flagship": {
+      "title": "MixPad S Smart Panel (Flagship)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "mixpad_elf": {
+      "title": "MixPad Elf Smart Switch (Gateway)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "bach": {
+      "title": "Bach Smart Switch",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "defy": {
+      "title": "Defy Smart Switch",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "gaosi": {
+      "title": "Gauss Smart Switch",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "mixpad_switch": {
+      "title": "MixSwitch Smart Switch",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "s3": {
+      "title": "Anti-glare Smart Downlight S3",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "downlight": {
+      "title": "Smart Tunable Light",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "cangqiong": {
+      "title": "Cangqiong Pro Natural Light",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "q3": {
+      "title": "Eye-care Downlight Q3",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "s5": {
+      "title": "Smart Spotlight S5",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "light": {
+      "title": "Bauhaus Smart Ambient Lights",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "daofeng": {
+      "title": "Blade Ultra-thin Magnetic Track Light",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "q": {
+      "title": "SOPRO Smart Lighting Q Series",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "s": {
+      "title": "SOPRO Smart Lighting S Series",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "curtain_3d": {
+      "title": "3D Light & Shadow Smart Curtain",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "motor_db28": {
+      "title": "DB28 Ultra-quiet Curtain Motor",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "curtain_motor": {
+      "title": "Elf Ultra-quiet Curtain Motor",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "chuangliansmart": {
+      "title": "Super Smart Curtain (Smart Control)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "chuanglian": {
+      "title": "Smart Curtain Kit (Chocolate Edition)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "chuanglian2": {
+      "title": "Ultra-quiet Smart Curtain (Zigbee Edition)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "mixpad_s2": {
+      "title": "Smart Lock S2",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "v5": {
+      "title": "Smart Lock V5",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "t1c": {
+      "title": "Smart Lock T1C",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }
