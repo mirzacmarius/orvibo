@@ -50,6 +50,7 @@ import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import { S30cOverview } from "@/components/orvibo/products/s30c/S30cOverview";
 import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
+import { S350lOverview } from "@/components/orvibo/products/s350l/S350lOverview";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
@@ -482,6 +483,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "jidacheng",
     tabs: [{ id: "overview", label: "Overview" }],
     View: JidachengOverview,
+  },
+  {
+    slug: "s350l",
+    title: "ORVIBO Integrated HVAC S350L",
+    rootClass: "s350l",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: S350lOverview,
   },
 ];
 
