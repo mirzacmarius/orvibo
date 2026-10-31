@@ -773,6 +773,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "artisbox_play": {
+      "title": "Boxă HiFi ArtisBox Play",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

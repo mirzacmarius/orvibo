@@ -11,7 +11,6 @@ const UPCOMING_PRODUCTS = new Map<string, string>([
   ["mixpad_plus", "mixpadPlus"],
   ["mixpad_mirror", "mixpadMirror"],
   ["robot_r2", "robotR2"],
-  ["artisbox_play", "artisbox"],
   // Footer "Featured products"
   // Home page product grid
 ]);

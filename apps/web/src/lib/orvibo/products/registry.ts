@@ -1,4 +1,6 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
+import { ArtisboxPlayOverview } from "@/components/orvibo/products/artisbox_play/ArtisboxPlayOverview";
+import { ArtisboxPlaySpec } from "@/components/orvibo/products/artisbox_play/ArtisboxPlaySpec";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
 import { BodysensorOverview } from "@/components/orvibo/products/bodysensor/BodysensorOverview";
 import { BodysensorSpec } from "@/components/orvibo/products/bodysensor/BodysensorSpec";
@@ -428,6 +430,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: XiaofangOverview,
     segmentViews: { spec: XiaofangSpec },
+  },
+  {
+    slug: "artisbox_play",
+    title: "ArtisBox Play HiFi Speaker",
+    rootClass: "artisbox_play",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: ArtisboxPlayOverview,
+    segmentViews: { spec: ArtisboxPlaySpec },
   },
 ];
 

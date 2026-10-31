@@ -773,6 +773,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "artisbox_play": {
+      "title": "ArtisBox Play HiFi Speaker",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

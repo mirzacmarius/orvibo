@@ -65,6 +65,7 @@ export const PRODUCT_SLUGS = [
   "yuntai",
   "s30c",
   "xiaofang",
+  "artisbox_play",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -354,5 +355,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "xiaofang",
     cn: "https://www.orvibo.com/cn/product/xiaofang.html",
+  },
+  {
+    scope: "product",
+    key: "artisbox_play",
+    cn: "https://www.orvibo.com/cn/product/artisbox_play.html",
   },
 ];
