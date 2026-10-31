@@ -24,6 +24,7 @@ import { DoorsensorSpec } from "@/components/orvibo/products/doorsensor/Doorsens
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
+import { GaosiPhone } from "@/components/orvibo/products/gaosi/GaosiPhone";
 import { JidachengOverview } from "@/components/orvibo/products/jidacheng/JidachengOverview";
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
 import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
@@ -172,6 +173,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "gaosi",
     tabs: [{ id: "overview", label: "Overview" }],
     View: GaosiOverview,
+    PhoneView: GaosiPhone,
   },
   {
     slug: "mixpad_switch",
