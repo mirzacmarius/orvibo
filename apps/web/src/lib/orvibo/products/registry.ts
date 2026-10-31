@@ -8,6 +8,7 @@ import { BodysensorSpec } from "@/components/orvibo/products/bodysensor/Bodysens
 import { Camera4Overview } from "@/components/orvibo/products/camera_4/Camera4Overview";
 import { Camera4Spec } from "@/components/orvibo/products/camera_4/Camera4Spec";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
+import { CangqiongPhone } from "@/components/orvibo/products/cangqiong/CangqiongPhone";
 import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
 import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
 import { Chuanglian2Overview } from "@/components/orvibo/products/chuanglian2/Chuanglian2Overview";
@@ -212,6 +213,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "cangqiong",
     tabs: [{ id: "overview", label: "Overview" }],
     View: CangqiongOverview,
+    PhoneView: CangqiongPhone,
   },
   {
     slug: "q3",
