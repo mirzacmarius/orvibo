@@ -71,7 +71,7 @@ import type { ProductDefinition } from "./types";
 const definitions: ProductDefinition[] = [
   {
     slug: "mixstation",
-    title: "ORVIBO Integrated HVAC",
+    title: "ORVIBO Integrated HVAC W1",
     rootClass: "mixstation",
     tabs: [{ id: "overview", label: "Overview", sectionId: "overview" }],
     navClassName: "pZindex",

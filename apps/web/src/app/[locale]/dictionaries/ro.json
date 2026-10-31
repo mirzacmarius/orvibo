@@ -56,7 +56,7 @@
     }
   },
   "navProducts": {
-    "mixstation": "Climatizare integrată ORVIBO",
+    "mixstation": "Climatizare integrată ORVIBO W1",
     "w180": "Climatizare integrată ORVIBO W180",
     "w260": "Climatizare integrată ORVIBO W260",
     "w300": "Climatizare integrată ORVIBO W300",
@@ -325,43 +325,11 @@
   },
   "products": {
     "mixstation": {
-      "title": "Climatizare integrată ORVIBO",
+      "title": "Climatizare integrată ORVIBO W1",
       "tabs": {
         "overview": "Prezentare"
       },
-      "sections": {
-        "value": {
-          "title": "Un singur sistem, mai multe funcții: economisești energie și efort"
-        },
-        "savings": {
-          "title": "Costuri de funcționare mai mici"
-        },
-        "comfort": {
-          "title": "Mai mult confort"
-        },
-        "compact": {
-          "title": "Ocupă cu 45% mai puțin spațiu*",
-          "description": "Confort de vilă pentru locuințe medii și compacte"
-        },
-        "power": {
-          "title": "Performanță mai mare"
-        },
-        "smart": {
-          "title": "Controlat de panoul inteligent MixPad"
-        },
-        "design": {
-          "title": "Design premiat"
-        },
-        "airpro": {
-          "title": "Unități interioare AirPro: confort silențios și eficient"
-        },
-        "sustainability": {
-          "title": "Gândit pentru sustenabilitate"
-        },
-        "warranty": {
-          "title": "Garanție de până la 10 ani*"
-        }
-      }
+      "sections": {}
     },
     "mixpad_7": {
       "title": "Panou de control MixPad 7",

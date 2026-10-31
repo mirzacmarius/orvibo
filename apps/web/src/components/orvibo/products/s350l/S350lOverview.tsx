@@ -1,18 +1,16 @@
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
+import {
+  CENTRE,
+  CctvBanner,
+  FRAME,
+  PHOTO,
+} from "@/components/orvibo/products/hvac/HvacSections";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
 import { Fragment, type ReactNode } from "react";
 
 /** orvibo.com's pictures without their words (hvac_clean.py); every word here is HTML laid over them. */
 const IMG = "/orvibo/products/s350l";
-/** The CCTV banner, which MixStation's page shows too. */
-const CCTV = "/orvibo/products/hvac/cctv.webp";
-
-const PHOTO = "bg-cover bg-center bg-no-repeat";
-/** A box as wide as the 1920 px pictures, centred, so words laid over a cropped picture stay on their spot. */
-const FRAME = "absolute inset-y-0 left-1/2 w-[19.2rem] -translate-x-1/2";
-/** Centres a box on its left/top point. */
-const CENTRE = "-translate-x-1/2 -translate-y-1/2 text-center";
 /** The sections' headings, on one line across the picture. */
 const TITLE =
   "absolute inset-x-0 -translate-y-1/2 text-center text-[0.56rem] leading-[0.7rem] font-semibold";
@@ -299,39 +297,8 @@ export function S350lOverview({ locale, text, common }: ProductViewProps) {
             ))}
           </div>
         </section>
-        {/* the CCTV banner */}
-        <section
-          className={cn("relative h-[8.06rem] overflow-hidden", PHOTO)}
-          style={bg(CCTV)}
-        >
-          <div className={FRAME}>
-            <p
-              className={cn(
-                "absolute top-[2.485rem] left-[6.6rem] whitespace-nowrap text-[0.26rem] leading-[0.34rem] font-semibold text-[#f1d5c0]",
-                CENTRE,
-              )}
-            >
-              {t("cctv.brand")}
-            </p>
-            {/* orvibo.com writes this in gold brush strokes */}
-            <h2
-              className={cn(
-                "absolute top-[3.82rem] left-[6.64rem] whitespace-nowrap bg-gradient-to-b from-[#fdf0e4] to-[#e2b28f] bg-clip-text pr-[0.1rem] text-[1rem] leading-[1.2rem] font-black text-transparent italic",
-                CENTRE,
-              )}
-            >
-              {t("cctv.title")}
-            </h2>
-            <p
-              className={cn(
-                "absolute top-[4.755rem] left-[6.62rem] whitespace-nowrap text-[0.23rem] leading-[0.3rem] font-medium text-[#e2bb9e]",
-                CENTRE,
-              )}
-            >
-              {t("cctv.channels")}
-            </p>
-          </div>
-        </section>
+        {/* the CCTV banner (MixStation shows it too) */}
+        <CctvBanner locale={locale} text={text} />
         {/* sec3: the plant room becomes living space */}
         <section
           className={cn("relative h-[11.81rem] overflow-hidden", PHOTO)}

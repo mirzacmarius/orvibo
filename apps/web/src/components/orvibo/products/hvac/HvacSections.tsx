@@ -13,7 +13,46 @@ export const CENTRE = "-translate-x-1/2 -translate-y-1/2 text-center";
 
 type SectionProps = Pick<ProductViewProps, "locale" | "text">;
 
-/** The CCTV banner as a card (V180 and the W pages); its words are the cctv.* strings of S350L's wide banner. */
+/** The CCTV banner (S350L and MixStation), its words over orvibo.com's picture without them. */
+export function CctvBanner({ locale, text }: SectionProps) {
+  const { t, bg } = productPageHelpers(locale, text);
+  return (
+    <section
+      className={cn("relative h-[8.06rem] overflow-hidden", PHOTO)}
+      style={bg(`${IMG}/cctv.webp`)}
+    >
+      <div className={FRAME}>
+        <p
+          className={cn(
+            "absolute top-[2.485rem] left-[6.6rem] whitespace-nowrap text-[0.26rem] leading-[0.34rem] font-semibold text-[#f1d5c0]",
+            CENTRE,
+          )}
+        >
+          {t("cctv.brand")}
+        </p>
+        {/* orvibo.com writes this in gold brush strokes */}
+        <h2
+          className={cn(
+            "absolute top-[3.82rem] left-[6.64rem] whitespace-nowrap bg-gradient-to-b from-[#fdf0e4] to-[#e2b28f] bg-clip-text pr-[0.1rem] text-[1rem] leading-[1.2rem] font-black text-transparent italic",
+            CENTRE,
+          )}
+        >
+          {t("cctv.title")}
+        </h2>
+        <p
+          className={cn(
+            "absolute top-[4.755rem] left-[6.62rem] whitespace-nowrap text-[0.23rem] leading-[0.3rem] font-medium text-[#e2bb9e]",
+            CENTRE,
+          )}
+        >
+          {t("cctv.channels")}
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/** The CCTV banner as a card (V180 and the W pages); its words are the cctv.* strings of the wide banner. */
 export function CctvCardBanner({ locale, text }: SectionProps) {
   const { t, bg } = productPageHelpers(locale, text);
   return (

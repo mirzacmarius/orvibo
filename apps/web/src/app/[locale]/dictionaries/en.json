@@ -56,7 +56,7 @@
     }
   },
   "navProducts": {
-    "mixstation": "ORVIBO Integrated HVAC",
+    "mixstation": "ORVIBO Integrated HVAC W1",
     "w180": "ORVIBO Integrated HVAC W180",
     "w260": "ORVIBO Integrated HVAC W260",
     "w300": "ORVIBO Integrated HVAC W300",
@@ -325,43 +325,11 @@
   },
   "products": {
     "mixstation": {
-      "title": "ORVIBO Integrated HVAC",
+      "title": "ORVIBO Integrated HVAC W1",
       "tabs": {
         "overview": "Overview"
       },
-      "sections": {
-        "value": {
-          "title": "One system, multiple modes — save energy and effort"
-        },
-        "savings": {
-          "title": "Lower running costs"
-        },
-        "comfort": {
-          "title": "Greater comfort"
-        },
-        "compact": {
-          "title": "45% smaller footprint*",
-          "description": "Villa-grade comfort for medium and compact homes"
-        },
-        "power": {
-          "title": "Stronger performance"
-        },
-        "smart": {
-          "title": "Powered by MixPad smart panel"
-        },
-        "design": {
-          "title": "Award-winning design"
-        },
-        "airpro": {
-          "title": "AirPro indoor units — quiet, efficient comfort"
-        },
-        "sustainability": {
-          "title": "Sustainable by design"
-        },
-        "warranty": {
-          "title": "Up to 10-year warranty*"
-        }
-      }
+      "sections": {}
     },
     "mixpad_7": {
       "title": "MixPad 7 Control Panel",
