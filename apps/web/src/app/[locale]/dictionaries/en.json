@@ -781,6 +781,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "mixpad_mirror": {
+      "title": "MixPad Mirror Smart Bathroom Mirror",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

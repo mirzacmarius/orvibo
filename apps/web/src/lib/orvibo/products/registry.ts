@@ -28,6 +28,7 @@ import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Ov
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
+import { MixpadMirrorOverview } from "@/components/orvibo/products/mixpad_mirror/MixpadMirrorOverview";
 import { MixpadS2Overview } from "@/components/orvibo/products/mixpad_s2/MixpadS2Overview";
 import { MixpadS2Spec } from "@/components/orvibo/products/mixpad_s2/MixpadS2Spec";
 import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_flagship/MixpadSFlagshipOverview";
@@ -42,9 +43,9 @@ import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
 import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
+import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import { S30cOverview } from "@/components/orvibo/products/s30c/S30cOverview";
 import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
-import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
@@ -441,6 +442,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: ArtisboxPlayOverview,
     segmentViews: { spec: ArtisboxPlaySpec },
+  },
+  {
+    slug: "mixpad_mirror",
+    title: "MixPad Mirror Smart Bathroom Mirror",
+    rootClass: "mirror",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: MixpadMirrorOverview,
+    segmentViews: { spec: ProductSpecView },
   },
 ];
 

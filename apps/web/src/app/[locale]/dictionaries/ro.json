@@ -781,6 +781,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "mixpad_mirror": {
+      "title": "Oglindă inteligentă de baie MixPad Mirror",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }
