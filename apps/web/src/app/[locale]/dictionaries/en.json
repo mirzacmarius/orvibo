@@ -57,6 +57,7 @@
   },
   "navProducts": {
     "mixstation": "ORVIBO Integrated HVAC",
+    "v180": "ORVIBO Integrated HVAC V180",
     "s350l": "ORVIBO Integrated HVAC S350L",
     "jidacheng": "ORVIBO Jidacheng Series",
     "mixpad7Ultra": "MixPad 10 Smart Panel",
@@ -816,6 +817,13 @@
     },
     "s350l": {
       "title": "ORVIBO Integrated HVAC S350L",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "v180": {
+      "title": "ORVIBO Integrated HVAC V180",
       "tabs": {
         "overview": "Overview"
       },

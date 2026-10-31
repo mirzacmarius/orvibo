@@ -57,6 +57,7 @@
   },
   "navProducts": {
     "mixstation": "Climatizare integrată ORVIBO",
+    "v180": "Climatizare integrată ORVIBO V180",
     "s350l": "Climatizare integrată ORVIBO S350L",
     "jidacheng": "Seria ORVIBO Jidacheng",
     "mixpad7Ultra": "Panou inteligent MixPad 10",
@@ -816,6 +817,13 @@
     },
     "s350l": {
       "title": "Climatizare integrată ORVIBO S350L",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "v180": {
+      "title": "Climatizare integrată ORVIBO V180",
       "tabs": {
         "overview": "Prezentare"
       },
