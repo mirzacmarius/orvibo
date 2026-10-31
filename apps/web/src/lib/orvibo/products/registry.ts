@@ -53,6 +53,7 @@ import { RobotR2Spec } from "@/components/orvibo/products/robot_r2/RobotR2Spec";
 import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
+import { S3Phone } from "@/components/orvibo/products/s3/S3Phone";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import { S30cOverview } from "@/components/orvibo/products/s30c/S30cOverview";
 import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
@@ -192,6 +193,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "s3",
     tabs: [{ id: "overview", label: "Overview" }],
     View: S3Overview,
+    PhoneView: S3Phone,
   },
   {
     slug: "downlight",

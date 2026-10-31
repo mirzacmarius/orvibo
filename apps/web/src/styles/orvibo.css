@@ -75,3 +75,16 @@ body:has(.orvibo-site) {
   min-width: 0;
   background-color: #f0f2f5;
 }
+
+/* One of three pictures shown in turn, a second each, as orvibo.com's animated GIFs do (S3's three scenes): give the
+   second and third `animation-delay` -2s and -1s. */
+@keyframes orvibo-one-of-three {
+  0%,
+  33.33% {
+    opacity: 1;
+  }
+  33.34%,
+  100% {
+    opacity: 0;
+  }
+}

@@ -512,4 +512,6 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/orvibo/products/mixpad_m2/phone/p10.webp",
   "/orvibo/products/mixpad_m2/phone/p11.webp",
   "/orvibo/products/mixpad_m2/phone/p15.webp",
+  "/orvibo/products/s3/phone/p04.webp",
+  "/orvibo/products/s3/phone/p05.webp",
 ]);
