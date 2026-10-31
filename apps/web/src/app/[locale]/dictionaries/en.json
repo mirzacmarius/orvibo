@@ -749,6 +749,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "yuntai": {
+      "title": "Smart Camera (Pan-tilt)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

@@ -749,6 +749,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "yuntai": {
+      "title": "Cameră inteligentă rotativă",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

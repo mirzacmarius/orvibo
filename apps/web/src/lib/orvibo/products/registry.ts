@@ -48,6 +48,8 @@ import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
+import { YuntaiOverview } from "@/components/orvibo/products/yuntai/YuntaiOverview";
+import { YuntaiSpec } from "@/components/orvibo/products/yuntai/YuntaiSpec";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -389,6 +391,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: Camera4Overview,
     segmentViews: { spec: Camera4Spec },
+  },
+  {
+    slug: "yuntai",
+    title: "Smart Camera (Pan-tilt)",
+    rootClass: "yuntai",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: YuntaiOverview,
+    segmentViews: { spec: YuntaiSpec },
   },
 ];
 
