@@ -30,6 +30,7 @@ import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultr
 import { Mixpad7UltraPhone } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraPhone";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
+import { MixpadM2Phone } from "@/components/orvibo/products/mixpad_m2/MixpadM2Phone";
 import { MixpadMirrorOverview } from "@/components/orvibo/products/mixpad_mirror/MixpadMirrorOverview";
 import { MixpadPlusOverview } from "@/components/orvibo/products/mixpad_plus/MixpadPlusOverview";
 import { MixpadS2Overview } from "@/components/orvibo/products/mixpad_s2/MixpadS2Overview";
@@ -119,6 +120,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "mixpad_m2",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MixpadM2Overview,
+    PhoneView: MixpadM2Phone,
   },
   {
     slug: "mixpad_s_flagship",
