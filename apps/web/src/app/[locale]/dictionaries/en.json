@@ -57,6 +57,7 @@
   },
   "navProducts": {
     "mixstation": "ORVIBO Integrated HVAC",
+    "w180": "ORVIBO Integrated HVAC W180",
     "v180": "ORVIBO Integrated HVAC V180",
     "s350l": "ORVIBO Integrated HVAC S350L",
     "jidacheng": "ORVIBO Jidacheng Series",
@@ -824,6 +825,13 @@
     },
     "v180": {
       "title": "ORVIBO Integrated HVAC V180",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "w180": {
+      "title": "ORVIBO Integrated HVAC W180",
       "tabs": {
         "overview": "Overview"
       },

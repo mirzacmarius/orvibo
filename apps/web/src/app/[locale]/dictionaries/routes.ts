@@ -72,6 +72,7 @@ export const PRODUCT_SLUGS = [
   "jidacheng",
   "s350l",
   "v180",
+  "w180",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -396,5 +397,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "v180",
     cn: "https://www.orvibo.com/cn/product/v180.html",
+  },
+  {
+    scope: "product",
+    key: "w180",
+    cn: "https://www.orvibo.com/cn/product/w180.html",
   },
 ];

@@ -56,8 +56,9 @@ import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
 import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
-import { V180Overview } from "@/components/orvibo/products/v180/V180Overview";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
+import { V180Overview } from "@/components/orvibo/products/v180/V180Overview";
+import { W180Overview } from "@/components/orvibo/products/w180/W180Overview";
 import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
 import { XiaofangOverview } from "@/components/orvibo/products/xiaofang/XiaofangOverview";
 import { XiaofangSpec } from "@/components/orvibo/products/xiaofang/XiaofangSpec";
@@ -498,6 +499,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "v180",
     tabs: [{ id: "overview", label: "Overview" }],
     View: V180Overview,
+  },
+  {
+    slug: "w180",
+    title: "ORVIBO Integrated HVAC W180",
+    rootClass: "w180",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: W180Overview,
   },
 ];
 

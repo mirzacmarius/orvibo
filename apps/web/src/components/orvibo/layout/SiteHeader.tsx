@@ -50,6 +50,13 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           label: products.mixstation,
         },
         {
+          href: routes.product("w180"),
+          image:
+            "/guanwang_second/front/images/new/products/w180/pro-8f6d853201.png",
+          imageClassName: "w-[168px]",
+          label: products.w180,
+        },
+        {
           href: routes.product("v180"),
           image:
             "/guanwang_second/front/images/new/products/v180/pro-7ed4be549a.png",

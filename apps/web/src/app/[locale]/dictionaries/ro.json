@@ -57,6 +57,7 @@
   },
   "navProducts": {
     "mixstation": "Climatizare integrată ORVIBO",
+    "w180": "Climatizare integrată ORVIBO W180",
     "v180": "Climatizare integrată ORVIBO V180",
     "s350l": "Climatizare integrată ORVIBO S350L",
     "jidacheng": "Seria ORVIBO Jidacheng",
@@ -824,6 +825,13 @@
     },
     "v180": {
       "title": "Climatizare integrată ORVIBO V180",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "w180": {
+      "title": "Climatizare integrată ORVIBO W180",
       "tabs": {
         "overview": "Prezentare"
       },
