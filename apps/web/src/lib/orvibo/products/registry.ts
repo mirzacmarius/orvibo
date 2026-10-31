@@ -59,6 +59,8 @@ import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sen
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import { V180Overview } from "@/components/orvibo/products/v180/V180Overview";
 import { W180Overview } from "@/components/orvibo/products/w180/W180Overview";
+import { W260Overview } from "@/components/orvibo/products/w260/W260Overview";
+import { W300Overview } from "@/components/orvibo/products/w300/W300Overview";
 import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
 import { XiaofangOverview } from "@/components/orvibo/products/xiaofang/XiaofangOverview";
 import { XiaofangSpec } from "@/components/orvibo/products/xiaofang/XiaofangSpec";
@@ -506,6 +508,20 @@ const definitions: ProductDefinition[] = [
     rootClass: "w180",
     tabs: [{ id: "overview", label: "Overview" }],
     View: W180Overview,
+  },
+  {
+    slug: "w260",
+    title: "ORVIBO Integrated HVAC W260",
+    rootClass: "w260",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: W260Overview,
+  },
+  {
+    slug: "w300",
+    title: "ORVIBO Integrated HVAC W300",
+    rootClass: "w300",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: W300Overview,
   },
 ];
 

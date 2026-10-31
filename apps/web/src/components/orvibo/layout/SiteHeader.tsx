@@ -57,6 +57,20 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           label: products.w180,
         },
         {
+          href: routes.product("w260"),
+          image:
+            "/guanwang_second/front/images/new/products/w260/pro-02596c12ac.png",
+          imageClassName: "w-[168px]",
+          label: products.w260,
+        },
+        {
+          href: routes.product("w300"),
+          image:
+            "/guanwang_second/front/images/new/products/w300/pro-a8e5fa5b65.png",
+          imageClassName: "w-[168px]",
+          label: products.w300,
+        },
+        {
           href: routes.product("v180"),
           image:
             "/guanwang_second/front/images/new/products/v180/pro-7ed4be549a.png",
