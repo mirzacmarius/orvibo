@@ -789,6 +789,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "robot_r2": {
+      "title": "Robot aspirator și mop R2",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

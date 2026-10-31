@@ -67,6 +67,7 @@ export const PRODUCT_SLUGS = [
   "xiaofang",
   "artisbox_play",
   "mixpad_mirror",
+  "robot_r2",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -366,5 +367,10 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "mixpad_mirror",
     cn: "https://www.orvibo.com/cn/product/mixpad_mirror.html",
+  },
+  {
+    scope: "product",
+    key: "robot_r2",
+    cn: "https://www.orvibo.com/cn/product/robot_r2.html",
   },
 ];

@@ -789,6 +789,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "robot_r2": {
+      "title": "R2 Robot Vacuum & Mop",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

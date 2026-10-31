@@ -9,7 +9,6 @@
  */
 const UPCOMING_PRODUCTS = new Map<string, string>([
   ["mixpad_plus", "mixpadPlus"],
-  ["robot_r2", "robotR2"],
   // Footer "Featured products"
   // Home page product grid
 ]);

@@ -40,6 +40,8 @@ import { MotorDb28Overview } from "@/components/orvibo/products/motor_db28/Motor
 import { SoproQOverview } from "@/components/orvibo/products/q/SoproQOverview";
 import { SoproQSpec } from "@/components/orvibo/products/q/SoproQSpec";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
+import { RobotR2Overview } from "@/components/orvibo/products/robot_r2/RobotR2Overview";
+import { RobotR2Spec } from "@/components/orvibo/products/robot_r2/RobotR2Spec";
 import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
@@ -453,6 +455,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: MixpadMirrorOverview,
     segmentViews: { spec: ProductSpecView },
+  },
+  {
+    slug: "robot_r2",
+    title: "R2 Robot Vacuum & Mop",
+    rootClass: "robot_r2",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: RobotR2Overview,
+    segmentViews: { spec: RobotR2Spec },
   },
 ];
 
