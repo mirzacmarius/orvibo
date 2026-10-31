@@ -277,7 +277,7 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
                   {t("hero.badge")}
                 </span>
               </p>
-              <p className="mt-[0.43rem] text-[0.36rem] leading-[0.5rem] text-[#c3c3c3]">
+              <p className="mt-[0.43rem] text-[0.36rem] leading-[0.5rem] font-normal text-[#c3c3c3]">
                 {t("hero.brand")}
               </p>
               <h1 className="mt-[0.26rem] text-[0.56rem] leading-[0.72rem] font-bold text-white">
@@ -329,7 +329,7 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
               <h2 className="text-[0.56rem] leading-[0.8rem] font-extrabold">
                 {t("value.title")}
               </h2>
-              <p className="mt-[0.15rem] text-[0.26rem] leading-[0.42rem]">
+              <p className="mt-[0.15rem] text-[0.26rem] leading-[0.42rem] font-normal">
                 {t("value.text")}
               </p>
             </ProductReveal>
@@ -619,7 +619,7 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
               <h3 className="text-[0.48rem] leading-[0.77rem] font-bold text-[#434b49]">
                 {t("comfort.heatTitle")}
               </h3>
-              <p className="mt-[0.28rem] text-[0.26rem] leading-[0.48rem] text-[#4d5652]">
+              <p className="mt-[0.28rem] text-[0.26rem] leading-[0.48rem] font-normal text-[#4d5652]">
                 {t("comfort.heatText")}
               </p>
             </div>
@@ -639,7 +639,7 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
         >
           <div className={FRAME}>
             <ProductReveal className="absolute inset-x-0 top-[1.25rem] text-center text-white">
-              <h2 className="text-[0.48rem] leading-[0.77rem]">
+              <h2 className="text-[0.48rem] leading-[0.77rem] font-normal">
                 {rich("size.title")}
               </h2>
               <p className="text-[0.56rem] leading-[0.9rem] font-extrabold">
@@ -713,7 +713,7 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
               <h3 className="text-[0.48rem] leading-[0.62rem] font-bold text-white">
                 {rich("turbo.title", "text-[#8ba8ff]")}
               </h3>
-              <p className="mt-[0.32rem] text-[0.26rem] leading-[0.42rem]">
+              <p className="mt-[0.32rem] text-[0.26rem] leading-[0.42rem] font-normal">
                 {t("turbo.text")}
               </p>
             </ProductReveal>
@@ -747,13 +747,13 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
         >
           <div className={FRAME}>
             <ProductReveal className="absolute top-[2.08rem] left-[3.06rem] whitespace-nowrap text-white">
-              <p className="text-[0.36rem] leading-[0.62rem]">
+              <p className="text-[0.36rem] leading-[0.62rem] font-normal">
                 {t("tank.title")}
               </p>
               <h3 className="text-[0.42rem] leading-[0.62rem] font-bold">
                 {t("tank.heading")}
               </h3>
-              <p className="mt-[0.3rem] text-[0.26rem] leading-[0.48rem]">
+              <p className="mt-[0.3rem] text-[0.26rem] leading-[0.48rem] font-normal">
                 {t("tank.text")}
               </p>
             </ProductReveal>
@@ -1063,7 +1063,7 @@ export function MixstationOverview({ locale, text, common }: ProductViewProps) {
               <h3 className="text-[0.48rem] leading-[0.77rem] font-bold">
                 {t("eco.heading")}
               </h3>
-              <p className="mt-[0.42rem] text-[0.26rem] leading-[0.48rem]">
+              <p className="mt-[0.42rem] text-[0.26rem] leading-[0.48rem] font-normal">
                 {t("eco.text")}
               </p>
             </ProductReveal>
