@@ -2,6 +2,7 @@ import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { ArtisboxPlayOverview } from "@/components/orvibo/products/artisbox_play/ArtisboxPlayOverview";
 import { ArtisboxPlaySpec } from "@/components/orvibo/products/artisbox_play/ArtisboxPlaySpec";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
+import { BachPhone } from "@/components/orvibo/products/bach/BachPhone";
 import { BodysensorOverview } from "@/components/orvibo/products/bodysensor/BodysensorOverview";
 import { BodysensorSpec } from "@/components/orvibo/products/bodysensor/BodysensorSpec";
 import { Camera4Overview } from "@/components/orvibo/products/camera_4/Camera4Overview";
@@ -153,6 +154,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: BachOverview,
+    PhoneView: BachPhone,
     segmentViews: { spec: ProductSpecView },
   },
   {
