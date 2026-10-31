@@ -29,6 +29,7 @@ import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultr
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
 import { MixpadM2Overview } from "@/components/orvibo/products/mixpad_m2/MixpadM2Overview";
 import { MixpadMirrorOverview } from "@/components/orvibo/products/mixpad_mirror/MixpadMirrorOverview";
+import { MixpadPlusOverview } from "@/components/orvibo/products/mixpad_plus/MixpadPlusOverview";
 import { MixpadS2Overview } from "@/components/orvibo/products/mixpad_s2/MixpadS2Overview";
 import { MixpadS2Spec } from "@/components/orvibo/products/mixpad_s2/MixpadS2Spec";
 import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_flagship/MixpadSFlagshipOverview";
@@ -466,6 +467,13 @@ const definitions: ProductDefinition[] = [
     ],
     View: RobotR2Overview,
     segmentViews: { spec: RobotR2Spec },
+  },
+  {
+    slug: "mixpad_plus",
+    title: "AI Video Intercom System",
+    rootClass: "mixpad_plus",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: MixpadPlusOverview,
   },
 ];
 

@@ -797,6 +797,13 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "mixpad_plus": {
+      "title": "Sistem de interfon video cu AI",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
     }
   }
 }

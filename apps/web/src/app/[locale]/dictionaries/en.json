@@ -797,6 +797,13 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "mixpad_plus": {
+      "title": "AI Video Intercom System",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
     }
   }
 }

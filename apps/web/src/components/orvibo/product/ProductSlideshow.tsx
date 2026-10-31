@@ -31,6 +31,9 @@ export interface ProductSlide {
  * name beside a dot of its colour, ringed while it shows (the V5 lock's
  * finishes); move it with `paginationClassName`. `children` are laid over
  * the slides. Without `autoplay`, the slides change only when asked.
+ * `direction="vertical"` slides them up instead (the AI video intercom's door
+ * stations), which needs the height from `className`; `pagination="none"`
+ * leaves the pagination out.
  */
 export function ProductSlideshow({
   slides,
@@ -38,6 +41,7 @@ export function ProductSlideshow({
   autoplay = true,
   delay = 4000,
   speed = 300,
+  direction = "horizontal",
   pagination = "dots",
   paginationClassName,
   children,
@@ -49,7 +53,8 @@ export function ProductSlideshow({
   delay?: number;
   /** Milliseconds a slide takes to slide in. */
   speed?: number;
-  pagination?: "dots" | "bars" | "swatches";
+  direction?: "horizontal" | "vertical";
+  pagination?: "dots" | "bars" | "swatches" | "none";
   paginationClassName?: string;
   children?: ReactNode;
 }) {
@@ -63,6 +68,8 @@ export function ProductSlideshow({
     >
       <Swiper
         modules={autoplay ? [Autoplay] : []}
+        direction={direction}
+        className={cn(direction === "vertical" && "h-full")}
         loop
         speed={speed}
         autoplay={autoplay && { delay, disableOnInteraction: false }}
@@ -74,69 +81,73 @@ export function ProductSlideshow({
         ))}
       </Swiper>
       {children}
-      <div
-        className={cn(
-          "absolute inset-x-0 bottom-0 z-10 flex justify-center",
-          { bars: "gap-[10px]", dots: "gap-[8px]", swatches: "gap-[0.55rem]" }[
-            pagination
-          ],
-          paginationClassName,
-        )}
-      >
-        {slides.map((slide, index) =>
-          pagination === "swatches" ? (
-            <button
-              key={slide.key}
-              type="button"
-              aria-current={index === active}
-              onClick={() => swiper?.slideToLoop(index)}
-              className={cn(
-                "flex cursor-pointer items-center text-[0.2rem]",
-                slide.swatch?.text,
-              )}
-            >
-              <span
+      {pagination !== "none" && (
+        <div
+          className={cn(
+            "absolute inset-x-0 bottom-0 z-10 flex justify-center",
+            {
+              bars: "gap-[10px]",
+              dots: "gap-[8px]",
+              swatches: "gap-[0.55rem]",
+            }[pagination],
+            paginationClassName,
+          )}
+        >
+          {slides.map((slide, index) =>
+            pagination === "swatches" ? (
+              <button
+                key={slide.key}
+                type="button"
+                aria-current={index === active}
+                onClick={() => swiper?.slideToLoop(index)}
                 className={cn(
-                  "relative mr-[0.08rem] size-[0.12rem] rounded-full bg-current",
-                  slide.swatch?.dot,
-                  index === active &&
-                    "after:absolute after:-inset-[0.04rem] after:rounded-full after:border-2 after:border-current after:content-['']",
+                  "flex cursor-pointer items-center text-[0.2rem]",
+                  slide.swatch?.text,
+                )}
+              >
+                <span
+                  className={cn(
+                    "relative mr-[0.08rem] size-[0.12rem] rounded-full bg-current",
+                    slide.swatch?.dot,
+                    index === active &&
+                      "after:absolute after:-inset-[0.04rem] after:rounded-full after:border-2 after:border-current after:content-['']",
+                  )}
+                />
+                {slide.swatch?.label}
+              </button>
+            ) : pagination === "bars" ? (
+              <button
+                key={slide.key}
+                type="button"
+                aria-label={`${index + 1} / ${slides.length}`}
+                aria-current={index === active}
+                onClick={() => swiper?.slideToLoop(index)}
+                className="relative h-[10px] w-[50px] cursor-pointer"
+              >
+                <span className="absolute inset-x-0 top-[4px] h-[2px] bg-[#2f2f2f]" />
+                {index === active && (
+                  <span
+                    className="absolute inset-x-0 top-[4px] h-[2px] origin-left animate-bar-fill bg-[#cccccc] motion-reduce:animate-none"
+                    style={{ animationDuration: `${speed + delay}ms` }}
+                  />
+                )}
+              </button>
+            ) : (
+              <button
+                key={slide.key}
+                type="button"
+                aria-label={`${index + 1} / ${slides.length}`}
+                aria-current={index === active}
+                onClick={() => swiper?.slideToLoop(index)}
+                className={cn(
+                  "size-[0.1rem] cursor-pointer rounded-full",
+                  index === active ? "bg-white" : "bg-[#3c3c3c]",
                 )}
               />
-              {slide.swatch?.label}
-            </button>
-          ) : pagination === "bars" ? (
-            <button
-              key={slide.key}
-              type="button"
-              aria-label={`${index + 1} / ${slides.length}`}
-              aria-current={index === active}
-              onClick={() => swiper?.slideToLoop(index)}
-              className="relative h-[10px] w-[50px] cursor-pointer"
-            >
-              <span className="absolute inset-x-0 top-[4px] h-[2px] bg-[#2f2f2f]" />
-              {index === active && (
-                <span
-                  className="absolute inset-x-0 top-[4px] h-[2px] origin-left animate-bar-fill bg-[#cccccc] motion-reduce:animate-none"
-                  style={{ animationDuration: `${speed + delay}ms` }}
-                />
-              )}
-            </button>
-          ) : (
-            <button
-              key={slide.key}
-              type="button"
-              aria-label={`${index + 1} / ${slides.length}`}
-              aria-current={index === active}
-              onClick={() => swiper?.slideToLoop(index)}
-              className={cn(
-                "size-[0.1rem] cursor-pointer rounded-full",
-                index === active ? "bg-white" : "bg-[#3c3c3c]",
-              )}
-            />
-          ),
-        )}
-      </div>
+            ),
+          )}
+        </div>
+      )}
     </div>
   );
 }
