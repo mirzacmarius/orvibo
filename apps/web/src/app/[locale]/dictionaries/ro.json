@@ -765,6 +765,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "xiaofang": {
+      "title": "Telecomandă inteligentă Xiaofang",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

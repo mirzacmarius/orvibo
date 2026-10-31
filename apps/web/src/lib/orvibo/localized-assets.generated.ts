@@ -434,4 +434,5 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/html/images/products/suite/door_pics.webp",
   "/html/images/products/suite/phone1.webp",
   "/html/images/products/suite/phone2.webp",
+  "/html/images/products/xiaofang/xf_five_phone.webp",
 ]);

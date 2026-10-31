@@ -765,6 +765,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "xiaofang": {
+      "title": "Xiaofang Smart Remote",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

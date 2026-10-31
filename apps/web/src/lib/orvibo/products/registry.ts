@@ -50,6 +50,8 @@ import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
+import { XiaofangOverview } from "@/components/orvibo/products/xiaofang/XiaofangOverview";
+import { XiaofangSpec } from "@/components/orvibo/products/xiaofang/XiaofangSpec";
 import { YuntaiOverview } from "@/components/orvibo/products/yuntai/YuntaiOverview";
 import { YuntaiSpec } from "@/components/orvibo/products/yuntai/YuntaiSpec";
 import type { ProductDefinition } from "./types";
@@ -415,6 +417,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: S30cOverview,
     segmentViews: { spec: S30cSpec },
+  },
+  {
+    slug: "xiaofang",
+    title: "Xiaofang Smart Remote",
+    rootClass: "xiaofang",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: XiaofangOverview,
+    segmentViews: { spec: XiaofangSpec },
   },
 ];
 
