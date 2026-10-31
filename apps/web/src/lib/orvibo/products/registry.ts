@@ -22,6 +22,7 @@ import { DoorsensorSpec } from "@/components/orvibo/products/doorsensor/Doorsens
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
+import { JidachengOverview } from "@/components/orvibo/products/jidacheng/JidachengOverview";
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
 import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
@@ -474,6 +475,13 @@ const definitions: ProductDefinition[] = [
     rootClass: "mixpad_plus",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MixpadPlusOverview,
+  },
+  {
+    slug: "jidacheng",
+    title: "ORVIBO Jidacheng Series",
+    rootClass: "jidacheng",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: JidachengOverview,
   },
 ];
 

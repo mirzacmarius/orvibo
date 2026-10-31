@@ -57,6 +57,7 @@
   },
   "navProducts": {
     "mixstation": "Climatizare integrată ORVIBO",
+    "jidacheng": "Seria ORVIBO Jidacheng",
     "mixpad7Ultra": "Panou inteligent MixPad 10",
     "mixpad7": "Panou inteligent MixPad 7",
     "mixpadX": "Panou inteligent MixPad 12",
@@ -800,6 +801,13 @@
     },
     "mixpad_plus": {
       "title": "Sistem de interfon video cu AI",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "jidacheng": {
+      "title": "Seria ORVIBO Jidacheng",
       "tabs": {
         "overview": "Prezentare"
       },

@@ -57,6 +57,7 @@
   },
   "navProducts": {
     "mixstation": "ORVIBO Integrated HVAC",
+    "jidacheng": "ORVIBO Jidacheng Series",
     "mixpad7Ultra": "MixPad 10 Smart Panel",
     "mixpad7": "MixPad 7 Smart Panel",
     "mixpadX": "MixPad 12 Smart Panel",
@@ -800,6 +801,13 @@
     },
     "mixpad_plus": {
       "title": "AI Video Intercom System",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "jidacheng": {
+      "title": "ORVIBO Jidacheng Series",
       "tabs": {
         "overview": "Overview"
       },

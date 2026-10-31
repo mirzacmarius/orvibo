@@ -49,6 +49,13 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           imageClassName: "w-[168px]",
           label: products.mixstation,
         },
+        {
+          href: routes.product("jidacheng"),
+          image:
+            "/guanwang_second/front/images/new/products/jidacheng/pro-a0695953e4.png",
+          imageClassName: "w-[168px]",
+          label: products.jidacheng,
+        },
       ],
     },
     {
