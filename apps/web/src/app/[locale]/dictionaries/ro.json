@@ -757,6 +757,14 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "s30c": {
+      "title": "Priză inteligentă S30c",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

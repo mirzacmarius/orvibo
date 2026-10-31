@@ -757,6 +757,14 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "s30c": {
+      "title": "S30c Smart Plug",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }

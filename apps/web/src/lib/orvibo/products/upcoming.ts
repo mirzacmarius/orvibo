@@ -13,7 +13,6 @@ const UPCOMING_PRODUCTS = new Map<string, string>([
   ["robot_r2", "robotR2"],
   ["artisbox_play", "artisbox"],
   ["xiaofang", "xiaofang"],
-  ["s30c", "s30c"],
   // Footer "Featured products"
   // Home page product grid
 ]);

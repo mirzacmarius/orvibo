@@ -40,6 +40,8 @@ import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
 import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
+import { S30cOverview } from "@/components/orvibo/products/s30c/S30cOverview";
+import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
@@ -402,6 +404,17 @@ const definitions: ProductDefinition[] = [
     ],
     View: YuntaiOverview,
     segmentViews: { spec: YuntaiSpec },
+  },
+  {
+    slug: "s30c",
+    title: "S30c Smart Plug",
+    rootClass: "s30c",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: S30cOverview,
+    segmentViews: { spec: S30cSpec },
   },
 ];
 
