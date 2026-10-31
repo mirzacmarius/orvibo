@@ -1,6 +1,6 @@
 {
   "meta.description": "Senzorul ORVIBO pentru uși și ferestre funcționează cu gateway-ul Zigbee Mini: îți arată în timp real dacă ușile și ferestrele sunt deschise, închide geamul când plouă și sună soneria când vin copiii acasă.",
-  "meta.spec.description": "Specificațiile senzorului ORVIBO pentru uși și ferestre CT10: o baterie CR2032, Zigbee HA, IEEE 802.15.4 la 2,4 GHz, 61 × 30 × 7 mm.",
+  "meta.spec.description": "Specificațiile senzorului ORVIBO pentru uși și ferestre CT10: o baterie CR2032, Zigbee HA, IEEE 802.15.4 la 2,4 GHz, 61 × 30 × 7 mm.",
   "ds_page.ds_page": "Senzor pentru uși și ferestre",
   "ds_page.animate": "Plouă, ai lăsat geamul deschis și ești plecat din oraș?",
   "ds_page.animate2": "Gătești în bucătărie și nu auzi când vin copiii de la școală?",

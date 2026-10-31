@@ -1,7 +1,7 @@
 {
   "meta.description": "The ORVIBO Zigbee Mini Gateway is the control hub of your smart home: it links hundreds of wireless devices, from sensors to switches, and runs them by themselves in the scenes you set up in the ORVIBO Home app.",
   "alt.banner": "The Zigbee Mini gateway on a table next to a vase of flowers: a smart control hub for hundreds of wireless devices.",
-  "alt.features": "Standard Zigbee ZHA protocol, works with smart devices from major platforms, fast 10 ms response.",
+  "alt.features": "Standard Zigbee ZHA protocol, works with smart devices from major platforms, fast 10 ms response.",
   "alt.scenes": "Quickly set up your smart home scenes: open the door and the lights come on, the AC settles at a comfortable temperature and the hot water is ready. The Zigbee Mini gateway links the devices together.",
   "alt.door": "Open the door and the lights and AC welcome you home: through the gateway, the door & window sensor on the door turns on a smart switch and an IR blaster.",
   "alt.window": "Open the window in the morning and the AC turns itself off: through the gateway, the door & window sensor on the window turns it off with an IR blaster.",

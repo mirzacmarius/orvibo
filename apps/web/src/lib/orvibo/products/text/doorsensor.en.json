@@ -1,6 +1,6 @@
 {
   "meta.description": "The ORVIBO Door & Window Sensor works with the Zigbee Mini gateway: it shows in real time whether doors and windows are open, shuts the window when it rains and rings the doorbell when the kids get home.",
-  "meta.spec.description": "ORVIBO CT10 Door & Window Sensor specifications: one CR2032 battery, Zigbee HA, IEEE 802.15.4 at 2.4 GHz, 61 × 30 × 7 mm.",
+  "meta.spec.description": "ORVIBO CT10 Door & Window Sensor specifications: one CR2032 battery, Zigbee HA, IEEE 802.15.4 at 2.4 GHz, 61 × 30 × 7 mm.",
   "ds_page.ds_page": "Door & Window Sensor",
   "ds_page.animate": "It's raining, a window is open and you're away on a trip?",
   "ds_page.animate2": "Cooking in the kitchen and missing the kids coming home from school?",
