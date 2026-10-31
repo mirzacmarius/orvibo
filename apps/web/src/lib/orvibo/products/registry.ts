@@ -18,6 +18,7 @@ import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curta
 import { CurtainMotorOverview } from "@/components/orvibo/products/curtain_motor/CurtainMotorOverview";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
+import { DefyPhone } from "@/components/orvibo/products/defy/DefyPhone";
 import { DoorsensorOverview } from "@/components/orvibo/products/doorsensor/DoorsensorOverview";
 import { DoorsensorSpec } from "@/components/orvibo/products/doorsensor/DoorsensorSpec";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
@@ -163,6 +164,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "defy",
     tabs: [{ id: "overview", label: "Overview" }],
     View: DefyOverview,
+    PhoneView: DefyPhone,
   },
   {
     slug: "gaosi",

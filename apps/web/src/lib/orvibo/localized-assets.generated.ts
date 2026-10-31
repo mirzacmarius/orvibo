@@ -488,6 +488,8 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/html/images/products/xiaofang/xf_five_phone.webp",
   "/orvibo/products/bach/phone/p09.webp",
   "/orvibo/products/bach/phone/p10.webp",
+  "/orvibo/products/defy/phone/p09.webp",
+  "/orvibo/products/defy/phone/p11.webp",
   "/orvibo/products/mixpad_7_ultra/phone/p09.webp",
   "/orvibo/products/mixpad_7_ultra/phone/p10.webp",
   "/orvibo/products/mixpad_7_ultra/phone/p11.webp",
