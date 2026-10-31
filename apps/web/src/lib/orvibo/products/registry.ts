@@ -1,5 +1,9 @@
 import { ProductSpecView } from "@/components/orvibo/product/ProductSpecView";
 import { BachOverview } from "@/components/orvibo/products/bach/BachOverview";
+import { BodysensorOverview } from "@/components/orvibo/products/bodysensor/BodysensorOverview";
+import { BodysensorSpec } from "@/components/orvibo/products/bodysensor/BodysensorSpec";
+import { Camera4Overview } from "@/components/orvibo/products/camera_4/Camera4Overview";
+import { Camera4Spec } from "@/components/orvibo/products/camera_4/Camera4Spec";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
 import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
@@ -11,10 +15,13 @@ import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curta
 import { CurtainMotorOverview } from "@/components/orvibo/products/curtain_motor/CurtainMotorOverview";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
+import { DoorsensorOverview } from "@/components/orvibo/products/doorsensor/DoorsensorOverview";
+import { DoorsensorSpec } from "@/components/orvibo/products/doorsensor/DoorsensorSpec";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightSpec";
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
+import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { MixpadElfOverview } from "@/components/orvibo/products/mixpad_elf/MixpadElfOverview";
@@ -34,9 +41,15 @@ import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
+import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
+import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
 import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
+import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
+import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
+import { YuntaiOverview } from "@/components/orvibo/products/yuntai/YuntaiOverview";
+import { YuntaiSpec } from "@/components/orvibo/products/yuntai/YuntaiSpec";
 import type { ProductDefinition } from "./types";
 
 const definitions: ProductDefinition[] = [
@@ -310,6 +323,85 @@ const definitions: ProductDefinition[] = [
     ],
     View: T1COverview,
     segmentViews: { spec: T1CSpec },
+  },
+  {
+    slug: "bodysensor",
+    title: "Motion Sensor",
+    rootClass: "bodysensor",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: BodysensorOverview,
+    segmentViews: { spec: BodysensorSpec },
+  },
+  {
+    slug: "doorsensor",
+    title: "Door & Window Sensor",
+    rootClass: "doorsensor",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: DoorsensorOverview,
+    segmentViews: { spec: DoorsensorSpec },
+  },
+  {
+    slug: "safepackage",
+    title: "Security Kit",
+    rootClass: "safepackage",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: SafepackageOverview,
+  },
+  {
+    slug: "miniHost",
+    title: "Zigbee Mini Gateway",
+    rootClass: "miniHost",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: MiniHostOverview,
+  },
+  {
+    slug: "sos",
+    title: "Emergency Button",
+    rootClass: "sos",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: SosOverview,
+  },
+  {
+    slug: "temp_hum_sensor",
+    title: "Temperature & Humidity Sensor",
+    rootClass: "temp_hum_sensor",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: TempHumSensorOverview,
+  },
+  {
+    slug: "water_alarm",
+    title: "Water Leak Sensor",
+    rootClass: "water_alarm",
+    tabs: [{ id: "overview", label: "Overview" }],
+    View: WaterAlarmOverview,
+  },
+  {
+    slug: "camera_4",
+    title: "S1 2K Smart Camera",
+    rootClass: "camera_4",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: Camera4Overview,
+    segmentViews: { spec: Camera4Spec },
+  },
+  {
+    slug: "yuntai",
+    title: "Smart Camera (Pan-tilt)",
+    rootClass: "yuntai",
+    tabs: [
+      { id: "overview", label: "Overview" },
+      { id: "spec", label: "Specifications", segment: "spec" },
+    ],
+    View: YuntaiOverview,
+    segmentViews: { spec: YuntaiSpec },
   },
 ];
 

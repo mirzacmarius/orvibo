@@ -690,6 +690,73 @@
         "spec": "Specificații"
       },
       "sections": {}
+    },
+    "bodysensor": {
+      "title": "Senzor de mișcare",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
+    },
+    "doorsensor": {
+      "title": "Senzor pentru uși și ferestre",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
+    },
+    "safepackage": {
+      "title": "Kit de securitate",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "miniHost": {
+      "title": "Gateway Zigbee Mini",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "sos": {
+      "title": "Buton de urgență",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "temp_hum_sensor": {
+      "title": "Senzor de temperatură și umiditate",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "water_alarm": {
+      "title": "Senzor de inundație",
+      "tabs": {
+        "overview": "Prezentare"
+      },
+      "sections": {}
+    },
+    "camera_4": {
+      "title": "Cameră inteligentă S1 2K",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
+    },
+    "yuntai": {
+      "title": "Cameră inteligentă rotativă",
+      "tabs": {
+        "overview": "Prezentare",
+        "spec": "Specificații"
+      },
+      "sections": {}
     }
   }
 }

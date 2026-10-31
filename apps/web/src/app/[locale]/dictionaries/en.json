@@ -690,6 +690,73 @@
         "spec": "Specifications"
       },
       "sections": {}
+    },
+    "bodysensor": {
+      "title": "Motion Sensor",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "doorsensor": {
+      "title": "Door & Window Sensor",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "safepackage": {
+      "title": "Security Kit",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "miniHost": {
+      "title": "Zigbee Mini Gateway",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "sos": {
+      "title": "Emergency Button",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "temp_hum_sensor": {
+      "title": "Temperature & Humidity Sensor",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "water_alarm": {
+      "title": "Water Leak Sensor",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "camera_4": {
+      "title": "S1 2K Smart Camera",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "yuntai": {
+      "title": "Smart Camera (Pan-tilt)",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
     }
   }
 }
