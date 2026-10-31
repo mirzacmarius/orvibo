@@ -49,6 +49,7 @@ import { MotorDb28Overview } from "@/components/orvibo/products/motor_db28/Motor
 import { SoproQOverview } from "@/components/orvibo/products/q/SoproQOverview";
 import { SoproQSpec } from "@/components/orvibo/products/q/SoproQSpec";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
+import { Q3Phone } from "@/components/orvibo/products/q3/Q3Phone";
 import { RobotR2Overview } from "@/components/orvibo/products/robot_r2/RobotR2Overview";
 import { RobotR2Spec } from "@/components/orvibo/products/robot_r2/RobotR2Spec";
 import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
@@ -221,6 +222,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "q3",
     tabs: [{ id: "overview", label: "Overview" }],
     View: Q3Overview,
+    PhoneView: Q3Phone,
   },
   {
     slug: "s5",
