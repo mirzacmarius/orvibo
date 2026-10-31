@@ -22,6 +22,14 @@
   }
 }
 
+/* A product page with a phone layout (ProductDefinition.PhoneView) shows it below 1024 px, sized like orvibo.com's
+   phone pages: 1rem is a hundredth of their 750 px wide design. */
+@media screen and (max-width: 1023.98px) {
+  html:has(.orvibo-phone-view) {
+    font-size: calc(100vw / 7.5);
+  }
+}
+
 .orvibo-site {
   --orvibo-header-height: 130px;
   --orvibo-rem-scale: 75px;

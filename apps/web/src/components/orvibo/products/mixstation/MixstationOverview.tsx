@@ -9,7 +9,7 @@ import {
 } from "@/components/orvibo/products/hvac/HvacSections";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
-import { Fragment, type ReactNode } from "react";
+import { figureWithUnit, richWords } from "./words";
 
 /** orvibo.com's pictures that carry no words, used as they are; the savings, power and tank backgrounds (sec3, sec9
  * and sec11) have translated copies (localized-assets.generated.ts). */
@@ -197,53 +197,10 @@ const AIR_VALUE =
 export function MixstationOverview({ locale, text, common }: ProductViewProps) {
   const { t, ts, bg, pseudoBg, lines } = productPageHelpers(locale, text);
   /** A heading in two tones: its [bracketed] words in `accent`; a "*" is a small raised footnote mark. */
-  const rich = (textKey: string, accent = ""): ReactNode => {
-    const seen = new Map<string, number>();
-    return ts(textKey)
-      .split(/(\[[^\]]*\]|\*|\n)/)
-      .filter(Boolean)
-      .map((part) => {
-        const count = (seen.get(part) ?? 0) + 1;
-        seen.set(part, count);
-        const key = `${part}-${count}`;
-        if (part === "\n") return <br key={key} />;
-        if (part === "*") {
-          return (
-            <sup key={key} className="text-[0.5em]">
-              *
-            </sup>
-          );
-        }
-        if (part.startsWith("[")) {
-          return (
-            <span key={key} className={accent}>
-              {part.slice(1, -1)}
-            </span>
-          );
-        }
-        return <Fragment key={key}>{part}</Fragment>;
-      });
-  };
+  const rich = (textKey: string, accent = "") => richWords(ts(textKey), accent);
   /** A figure with its unit (% or ¥, with the space before it) set smaller, as orvibo.com draws it. */
-  const unit = (textKey: string, unitClass: string): ReactNode =>
-    ts(textKey)
-      .split(/(\u00a0?[%¥])/)
-      .filter(Boolean)
-      .map((part, index) =>
-        /[%¥]/.test(part) ? (
-          <span
-            key={part}
-            className={cn(
-              index === 0 ? "mr-[0.03rem]" : "ml-[0.03rem]",
-              unitClass,
-            )}
-          >
-            {part}
-          </span>
-        ) : (
-          <Fragment key={part}>{part}</Fragment>
-        ),
-      );
+  const unit = (textKey: string, unitClass: string) =>
+    figureWithUnit(ts(textKey), unitClass);
   /** The line over each "more ..." heading, then the heading in its colours. */
   const heading = (titleKey: string, kicker: string, title: string) => (
     <>
