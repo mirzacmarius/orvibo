@@ -46,5 +46,11 @@
   "spec.spotlight.dimming": "Reglaj: 1%–100%",
   "spec.spotlight.cri": "Redarea culorilor: Ra90",
   "spec.spotlight.other": "Altele: fără pâlpâire, antiorbire",
-  "spec.spotlight.protocol": "Protocol: Zigbee"
+  "spec.spotlight.protocol": "Protocol: Zigbee",
+  "m.zigbee.title": "Zigbee pentru toată casa inteligentă",
+  "m.zigbee.desc": "Protocol Zigbee de nivel industrial, fiabil și ușor de extins. Rutarea integrată îl face potrivit pentru casele cu multe corpuri de iluminat: mai stabil decât Wi‑Fi și cu o rază mai mare decât Bluetooth.",
+  "m.specTitle": "Specificații",
+  "m.params": "Parametri",
+  "m.dimming": "Reglaj: 3%–100%",
+  "m.labNote": "Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot diferi puțin în funcție de metoda de măsurare."
 }

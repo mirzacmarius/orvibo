@@ -46,5 +46,11 @@
   "spec.spotlight.dimming": "Dimming: 1%–100%",
   "spec.spotlight.cri": "Color rendering: Ra90",
   "spec.spotlight.other": "Other: flicker-free, anti-glare",
-  "spec.spotlight.protocol": "Protocol: Zigbee"
+  "spec.spotlight.protocol": "Protocol: Zigbee",
+  "m.zigbee.title": "Zigbee across your smart home",
+  "m.zigbee.desc": "An industrial-grade Zigbee protocol, reliable and easy to extend. Built-in routing suits homes with many lights: more stable than Wi‑Fi, with more range than Bluetooth.",
+  "m.specTitle": "Specifications",
+  "m.params": "Parameters",
+  "m.dimming": "Dimming: 3%–100%",
+  "m.labNote": "All the data above come from ORVIBO's lab; actual results may differ slightly with the measuring method."
 }
