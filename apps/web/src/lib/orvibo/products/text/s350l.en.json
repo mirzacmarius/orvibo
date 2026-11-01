@@ -152,5 +152,8 @@
   "alt.s1": "The grey S350L outdoor unit on a rock under a starry sky",
   "alt.s2": "One S350L unit stands in for 10 split AC units, 10 fresh-air systems, 3 water heaters and a boiler",
   "alt.s5": "HeatCycle diagram: the opened outdoor unit and its two tanks deliver 35 kW of cooling, 36 kW of floor heating and 15 kW for hot water",
-  "alt.s8": "A house with solar panels on the roof, wired to the S350L unit and its tank"
+  "alt.s8": "A house with solar panels on the roof, wired to the S350L unit and its tank",
+  "m.grade1": "Grade 1",
+  "m.cooling": "Nominal cooling capacity (A35, W7)",
+  "m.coolingValue": "35 kW"
 }

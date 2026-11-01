@@ -152,5 +152,8 @@
   "alt.s1": "Unitatea exterioară S350L, gri, pe o stâncă sub cerul înstelat",
   "alt.s2": "O singură unitate S350L ține locul a 10 aparate split, 10 sisteme de aer proaspăt, 3 încălzitoare de apă și o centrală",
   "alt.s5": "Schemă HeatCycle: unitatea exterioară desfăcută și cele două rezervoare dau 35 kW de răcire, 36 kW de încălzire în pardoseală și 15 kW pentru apă caldă",
-  "alt.s8": "Casă cu panouri solare pe acoperiș, legate de unitatea S350L și de rezervorul ei"
+  "alt.s8": "Casă cu panouri solare pe acoperiș, legate de unitatea S350L și de rezervorul ei",
+  "m.grade1": "Clasa 1",
+  "m.cooling": "Capacitate nominală de răcire (A35, W7)",
+  "m.coolingValue": "35 kW"
 }

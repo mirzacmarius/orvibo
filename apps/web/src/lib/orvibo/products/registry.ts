@@ -67,6 +67,7 @@ import { S5Phone } from "@/components/orvibo/products/s5/S5Phone";
 import { S30cOverview } from "@/components/orvibo/products/s30c/S30cOverview";
 import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
 import { S350lOverview } from "@/components/orvibo/products/s350l/S350lOverview";
+import { S350lPhone } from "@/components/orvibo/products/s350l/S350lPhone";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
@@ -528,6 +529,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "s350l",
     tabs: [{ id: "overview", label: "Overview" }],
     View: S350lOverview,
+    PhoneView: S350lPhone,
   },
   {
     slug: "v180",
