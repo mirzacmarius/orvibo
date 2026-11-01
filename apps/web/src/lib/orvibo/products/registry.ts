@@ -49,6 +49,7 @@ import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOv
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
 import { MixstationPhone } from "@/components/orvibo/products/mixstation/MixstationPhone";
 import { MotorDb28Overview } from "@/components/orvibo/products/motor_db28/MotorDb28Overview";
+import { MotorDb28Phone } from "@/components/orvibo/products/motor_db28/MotorDb28Phone";
 import { SoproQOverview } from "@/components/orvibo/products/q/SoproQOverview";
 import { SoproQSpec } from "@/components/orvibo/products/q/SoproQSpec";
 import { Q3Overview } from "@/components/orvibo/products/q3/Q3Overview";
@@ -292,6 +293,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "db28",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MotorDb28Overview,
+    PhoneView: MotorDb28Phone,
   },
   {
     slug: "curtain_motor",
