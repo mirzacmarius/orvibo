@@ -60,6 +60,7 @@ import { Q3Phone } from "@/components/orvibo/products/q3/Q3Phone";
 import { RobotR2Overview } from "@/components/orvibo/products/robot_r2/RobotR2Overview";
 import { RobotR2Spec } from "@/components/orvibo/products/robot_r2/RobotR2Spec";
 import { SoproSOverview } from "@/components/orvibo/products/s/SoproSOverview";
+import { SoproSPhone } from "@/components/orvibo/products/s/SoproSPhone";
 import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S3Phone } from "@/components/orvibo/products/s3/S3Phone";
@@ -283,6 +284,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: SoproSOverview,
+    PhoneView: SoproSPhone,
     segmentViews: { spec: SoproSSpec },
   },
   {
