@@ -250,5 +250,10 @@
   "research.lab": "Din Laboratorul de tehnologii pentru locuințe inteligente cu energie nouă, pentru case de calitate",
   "research.name": "Ke Liu",
   "research.bio": "Cercetător în energie, cu renume internațional\nMembru al Academiei Australiene de Științe Tehnologice și Inginerie",
-  "research.tech": "AI și tehnologii inovatoare de energie nouă"
+  "research.tech": "AI și tehnologii inovatoare de energie nouă",
+  "m.grade1": "Clasa 1",
+  "m.cop": "Coeficient de performanță la încălzire, temperatură scăzută",
+  "m.copValue": "2,23",
+  "m.lowInput": "Putere consumată la încălzire, temperatură scăzută",
+  "m.lowInputValue": "4,94 kW"
 }

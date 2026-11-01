@@ -250,5 +250,10 @@
   "research.lab": "From the Smart New-Energy Home Technology Lab, made for quality homes",
   "research.name": "Ke Liu",
   "research.bio": "Internationally renowned energy scientist\nFellow of the Australian Academy of Technological Sciences and Engineering",
-  "research.tech": "AI combined with new-energy innovation"
+  "research.tech": "AI combined with new-energy innovation",
+  "m.grade1": "Grade 1",
+  "m.cop": "Low-temperature heating COP",
+  "m.copValue": "2.23",
+  "m.lowInput": "Low-temperature heating input power",
+  "m.lowInputValue": "4.94 kW"
 }
