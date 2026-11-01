@@ -57,6 +57,7 @@ import { SoproSSpec } from "@/components/orvibo/products/s/SoproSSpec";
 import { S3Overview } from "@/components/orvibo/products/s3/S3Overview";
 import { S3Phone } from "@/components/orvibo/products/s3/S3Phone";
 import { S5Overview } from "@/components/orvibo/products/s5/S5Overview";
+import { S5Phone } from "@/components/orvibo/products/s5/S5Phone";
 import { S30cOverview } from "@/components/orvibo/products/s30c/S30cOverview";
 import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
 import { S350lOverview } from "@/components/orvibo/products/s350l/S350lOverview";
@@ -230,6 +231,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "s5",
     tabs: [{ id: "overview", label: "Overview" }],
     View: S5Overview,
+    PhoneView: S5Phone,
   },
   {
     slug: "light",
