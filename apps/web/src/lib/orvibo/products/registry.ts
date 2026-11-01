@@ -80,7 +80,9 @@ import { V180Phone } from "@/components/orvibo/products/v180/V180Phone";
 import { W180Overview } from "@/components/orvibo/products/w180/W180Overview";
 import { W180Phone } from "@/components/orvibo/products/w180/W180Phone";
 import { W260Overview } from "@/components/orvibo/products/w260/W260Overview";
+import { W260Phone } from "@/components/orvibo/products/w260/W260Phone";
 import { W300Overview } from "@/components/orvibo/products/w300/W300Overview";
+import { W300Phone } from "@/components/orvibo/products/w300/W300Phone";
 import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
 import { XiaofangOverview } from "@/components/orvibo/products/xiaofang/XiaofangOverview";
 import { XiaofangSpec } from "@/components/orvibo/products/xiaofang/XiaofangSpec";
@@ -555,6 +557,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "w260",
     tabs: [{ id: "overview", label: "Overview" }],
     View: W260Overview,
+    PhoneView: W260Phone,
   },
   {
     slug: "w300",
@@ -562,6 +565,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "w300",
     tabs: [{ id: "overview", label: "Overview" }],
     View: W300Overview,
+    PhoneView: W300Phone,
   },
 ];
 
