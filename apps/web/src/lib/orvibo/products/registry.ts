@@ -18,6 +18,7 @@ import { ChuangliansmartSpec } from "@/components/orvibo/products/chuangliansmar
 import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
 import { Curtain3dPhone } from "@/components/orvibo/products/curtain_3d/Curtain3dPhone";
 import { CurtainMotorOverview } from "@/components/orvibo/products/curtain_motor/CurtainMotorOverview";
+import { CurtainMotorPhone } from "@/components/orvibo/products/curtain_motor/CurtainMotorPhone";
 import { DaofengOverview } from "@/components/orvibo/products/daofeng/DaofengOverview";
 import { DaofengPhone } from "@/components/orvibo/products/daofeng/DaofengPhone";
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
@@ -304,6 +305,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: CurtainMotorOverview,
+    PhoneView: CurtainMotorPhone,
     segmentViews: { spec: ProductSpecView },
   },
   {
