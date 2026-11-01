@@ -155,5 +155,7 @@
   "research.name": "Ke Liu",
   "research.bio": "Cercetător în energie, cu renume internațional\nMembru al Academiei Australiene de Științe Tehnologice și Inginerie",
   "research.tech": "AI și tehnologii inovatoare de energie nouă",
-  "research.patents": "Peste 100 de brevete de invenție acordate în lume, pentru un 4 în 1 puternic: aer condiționat, apă caldă, încălzire în pardoseală și aer proaspăt"
+  "research.patents": "Peste 100 de brevete de invenție acordate în lume, pentru un 4 în 1 puternic: aer condiționat, apă caldă, încălzire în pardoseală și aer proaspăt",
+  "m.modelLabel": "Model",
+  "m.model": "V180"
 }

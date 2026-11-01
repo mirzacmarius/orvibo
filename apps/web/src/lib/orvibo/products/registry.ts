@@ -76,6 +76,7 @@ import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sen
 import { V5Overview } from "@/components/orvibo/products/v5/V5Overview";
 import { V5Phone } from "@/components/orvibo/products/v5/V5Phone";
 import { V180Overview } from "@/components/orvibo/products/v180/V180Overview";
+import { V180Phone } from "@/components/orvibo/products/v180/V180Phone";
 import { W180Overview } from "@/components/orvibo/products/w180/W180Overview";
 import { W260Overview } from "@/components/orvibo/products/w260/W260Overview";
 import { W300Overview } from "@/components/orvibo/products/w300/W300Overview";
@@ -537,6 +538,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "v180",
     tabs: [{ id: "overview", label: "Overview" }],
     View: V180Overview,
+    PhoneView: V180Phone,
   },
   {
     slug: "w180",

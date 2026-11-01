@@ -155,5 +155,7 @@
   "research.name": "Ke Liu",
   "research.bio": "Internationally renowned energy scientist\nFellow of the Australian Academy of Technological Sciences and Engineering",
   "research.tech": "AI combined with new-energy innovation",
-  "research.patents": "Over 100 invention patents granted worldwide, for a powerful 4-in-1: air conditioning, hot water, floor heating and fresh air"
+  "research.patents": "Over 100 invention patents granted worldwide, for a powerful 4-in-1: air conditioning, hot water, floor heating and fresh air",
+  "m.modelLabel": "Model",
+  "m.model": "V180"
 }
