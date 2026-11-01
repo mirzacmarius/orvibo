@@ -30,6 +30,7 @@ import { DownlightSpec } from "@/components/orvibo/products/downlight/DownlightS
 import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview";
 import { GaosiPhone } from "@/components/orvibo/products/gaosi/GaosiPhone";
 import { JidachengOverview } from "@/components/orvibo/products/jidacheng/JidachengOverview";
+import { JidachengPhone } from "@/components/orvibo/products/jidacheng/JidachengPhone";
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
 import { LightPhone } from "@/components/orvibo/products/light/LightPhone";
 import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
@@ -519,6 +520,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "jidacheng",
     tabs: [{ id: "overview", label: "Overview" }],
     View: JidachengOverview,
+    PhoneView: JidachengPhone,
   },
   {
     slug: "s350l",
