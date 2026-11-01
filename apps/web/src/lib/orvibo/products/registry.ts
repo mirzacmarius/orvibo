@@ -28,6 +28,7 @@ import { GaosiOverview } from "@/components/orvibo/products/gaosi/GaosiOverview"
 import { GaosiPhone } from "@/components/orvibo/products/gaosi/GaosiPhone";
 import { JidachengOverview } from "@/components/orvibo/products/jidacheng/JidachengOverview";
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
+import { LightPhone } from "@/components/orvibo/products/light/LightPhone";
 import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
@@ -239,6 +240,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "light",
     tabs: [{ id: "overview", label: "Overview" }],
     View: LightOverview,
+    PhoneView: LightPhone,
   },
   {
     slug: "daofeng",
