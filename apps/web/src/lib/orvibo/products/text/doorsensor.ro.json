@@ -58,5 +58,11 @@
   "ds_page.dt_item20": "WEP/TKIP/AES",
   "ds_page.dt_item21": "Temperatură de funcționare:",
   "ds_page.dt_item21v": "−20…70 °C",
-  "ds_page.data_source_tips": "*Date din laboratorul ORVIBO; rezultatele pot varia ușor în funcție de metoda de măsurare."
+  "ds_page.data_source_tips": "*Date din laboratorul ORVIBO; rezultatele pot varia ușor în funcție de metoda de măsurare.",
+  "m.burglar.title": "Intră un hoț? Alarma pornește pe loc în toată casa",
+  "m.burglar.desc": "Montezi senzorul pe uși și ferestre și, în aplicația ORVIBO Home, îl legi de camere și lumini. Dacă intră un hoț, camera filmează și face poze ca dovadă, luminile clipesc fără oprire, primești alerta pe telefon, iar alarma din toată casa îl pune pe fugă.",
+  "m.fridge.title": "Fără griji: „Frigiderul e închis”",
+  "m.fridge.desc": "Montezi senzorul pe ușa frigiderului și vezi în timp real dacă e deschisă sau închisă; dacă a rămas deschisă, primești o notificare. Cu banii economisiți la curent îți mai iei un senzor: bine pentru buzunar și pentru mediu.",
+  "m.spec.product": "„Senzor pentru uși și ferestre”",
+  "m.labNote": "Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot diferi puțin în funcție de metoda de măsurare."
 }

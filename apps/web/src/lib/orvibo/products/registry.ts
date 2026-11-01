@@ -25,6 +25,7 @@ import { DaofengPhone } from "@/components/orvibo/products/daofeng/DaofengPhone"
 import { DefyOverview } from "@/components/orvibo/products/defy/DefyOverview";
 import { DefyPhone } from "@/components/orvibo/products/defy/DefyPhone";
 import { DoorsensorOverview } from "@/components/orvibo/products/doorsensor/DoorsensorOverview";
+import { DoorsensorPhone } from "@/components/orvibo/products/doorsensor/DoorsensorPhone";
 import { DoorsensorSpec } from "@/components/orvibo/products/doorsensor/DoorsensorSpec";
 import { DownlightOverview } from "@/components/orvibo/products/downlight/DownlightOverview";
 import { DownlightPhone } from "@/components/orvibo/products/downlight/DownlightPhone";
@@ -404,6 +405,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: DoorsensorOverview,
+    PhoneView: DoorsensorPhone,
     segmentViews: { spec: DoorsensorSpec },
   },
   {
