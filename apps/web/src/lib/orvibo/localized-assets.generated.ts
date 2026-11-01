@@ -490,6 +490,7 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/orvibo/products/bach/phone/p10.webp",
   "/orvibo/products/cangqiong/phone/p14.webp",
   "/orvibo/products/cangqiong/phone/p15.webp",
+  "/orvibo/products/daofeng/phone/p06.webp",
   "/orvibo/products/defy/phone/p09.webp",
   "/orvibo/products/defy/phone/p11.webp",
   "/orvibo/products/gaosi/phone/p01.webp",
