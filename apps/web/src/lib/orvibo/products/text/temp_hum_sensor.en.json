@@ -53,5 +53,6 @@
   "alt.phone1": "The ORVIBO Home app showing the sensor's current humidity, 15%, with a chart of the day.",
   "alt.phone2": "The ORVIBO Home app showing the current temperature, 15 °C, with a chart of the day.",
   "alt.screen1": "The app's temperature screen, at 35 °C.",
-  "alt.screen2": "The app's humidity screen, at 35%."
+  "alt.screen2": "The app's humidity screen, at 35%.",
+  "m.params": "Parameters"
 }
