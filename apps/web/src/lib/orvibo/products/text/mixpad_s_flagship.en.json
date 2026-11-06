@@ -56,5 +56,9 @@
   "spec.load": "Max load: 200 W per circuit",
   "spec.ir": "IR control: —",
   "spec.zigbee": "Zigbee devices supported: 350",
-  "spec.scenes": "Scenes supported: unlimited"
+  "spec.scenes": "Scenes supported: unlimited",
+  "m.sec5.desc": "A built-in 3 W stereo digital box speaker: a quality acoustic system with professional sound that fills a 100 m² space.",
+  "m.color.1": "Light Gold",
+  "m.color.2": "Titanium White",
+  "m.color.3": "Elegant Gray"
 }

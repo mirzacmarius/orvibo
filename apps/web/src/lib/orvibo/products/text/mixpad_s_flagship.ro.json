@@ -56,5 +56,9 @@
   "spec.load": "Sarcină maximă: 200 W pe circuit",
   "spec.ir": "Control IR: —",
   "spec.zigbee": "Dispozitive Zigbee acceptate: 350",
-  "spec.scenes": "Număr de scene: nelimitat"
+  "spec.scenes": "Număr de scene: nelimitat",
+  "m.sec5.desc": "Boxă digitală stereo de 3 W integrată: un sistem acustic de calitate, cu sunet profesionist, care umple un spațiu de 100 m².",
+  "m.color.1": "Auriu deschis",
+  "m.color.2": "Alb titan",
+  "m.color.3": "Gri elegant"
 }
