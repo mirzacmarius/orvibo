@@ -76,5 +76,6 @@
   "spec.temperature": "Temperatură de lucru:",
   "spec.temperature.range": "−20…60 °C",
   "spec.humidity": "Umiditate de lucru:",
-  "spec.range": "Rază wireless:"
+  "spec.range": "Rază wireless:",
+  "m.frame": "Rama milimetrică"
 }

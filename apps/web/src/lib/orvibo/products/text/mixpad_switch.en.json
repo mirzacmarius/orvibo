@@ -38,14 +38,14 @@
   "sec8.title": "Precise to 0.1 mm, made for perfectionists",
   "sec8.desc": "The Millimeter Frame is ORVIBO's mounting accessory for pairing MixSwitch with MixPad Mini. Made to 0.1 mm, it leaves no gap even for a sheet\nof paper, so the joints stay even and neat: true wall art, as it was designed.",
   "sec9.title": "Combine freely, mix and match",
-  "sec10.title": "Hard-core tech that pushes lifespan further",
+  "sec10.title": "Hard‑core tech that pushes lifespan further",
   "sec10.desc": "Patented RelayPro-Tech™ technology passes 2000 V lightning surge tests to protect the relay. Rated for over 60,000 switchings and 15+ years of use,\nit is a home product built to industrial standards.",
   "sec10.line1": "Fully isolated\nstructure",
   "sec10.line2": "UL94 V-0\nfire rating",
   "sec10.line3": "Covestro flame-\nretardant PC",
   "sec10.line4": "China CQC\nsafety certified",
   "sec10.after": "* Data from ORVIBO lab tests at normal temperature and humidity, assuming 10 switchings a day.\nActual results may vary slightly with the environment.",
-  "sec11.title": "Zigbee 3.0 inside\nRock-solid wireless, even in large homes",
+  "sec11.title": "Zigbee 3.0 inside\nRock‑solid wireless, even in large homes",
   "sec11.desc": "Zigbee 3.0 makes transmission faster and more stable, with almost zero latency. It keeps working even when the internet is down\nand links many devices efficiently.",
   "sec11.delay_1": "More stable network",
   "sec11.delay_2": "Faster response",
@@ -76,5 +76,6 @@
   "spec.temperature": "Operating temperature:",
   "spec.temperature.range": "−20 to 60 °C",
   "spec.humidity": "Operating humidity:",
-  "spec.range": "Wireless range:"
+  "spec.range": "Wireless range:",
+  "m.frame": "Millimeter Frame"
 }
