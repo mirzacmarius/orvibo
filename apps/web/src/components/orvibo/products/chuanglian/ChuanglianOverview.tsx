@@ -1,8 +1,10 @@
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductStickyScene } from "@/components/orvibo/product/ProductStickyScene";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /**
  * sec3's comparison: each row's label, then the classic motorized curtain's
@@ -537,28 +539,21 @@ export function ChuanglianOverview({ locale, text, common }: ProductViewProps) {
       </div>
       {/* sec13 */}
       <div className="text-center relative w-full">
-        <h2 className="text-center text-[36px] font-normal text-[#2f2f2f] absolute w-full top-[64px]">
+        <h2 className="text-center text-[36px] font-normal text-[#2f2f2f] absolute z-[1] w-full top-[64px]">
           {t("sec13.sec13")}
         </h2>
-        <Image
-          src={img(
-            "/guanwang_second/front/images/new/products/chuanglian/bg13-a6cc43d940.webp",
-          )}
-          alt=""
-          width={1920}
-          height={1108}
-          unoptimized
-          className="inline mt-[-5px] w-full"
+        {/* the parts, their words in HTML over copies without them */}
+        <TextImage
+          picture={DESKTOP_WORDS.bg13}
+          locale={locale}
+          text={text}
+          className="mt-[-5px] w-full"
         />
-        <Image
-          src={img(
-            "/guanwang_second/front/images/new/products/chuanglian/bg14-044cd1f6a3.webp",
-          )}
-          alt=""
-          width={1920}
-          height={962}
-          unoptimized
-          className="inline mt-[-5px] w-full"
+        <TextImage
+          picture={DESKTOP_WORDS.bg14}
+          locale={locale}
+          text={text}
+          className="mt-[-5px] w-full"
         />
       </div>
       {/* product_detail_tips */}

@@ -1,7 +1,9 @@
 import { ProductMoreToggle } from "@/components/orvibo/product/ProductMoreToggle";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { COMPARISON } from "./ChuanglianOverview";
+import { PHONE_WORDS } from "./pictureWords";
 
 const PHONE = "/orvibo/products/chuanglian/phone";
 /** The spec lines (`spec.<key>`, "Label: value"), as on the desktop's spec tab. */
@@ -13,43 +15,38 @@ const LOADS = [
   ["straight", "—", "50 kg", "40 kg"],
   ["l_track", "R400", "40 kg", "30 kg"],
 ];
-/** The install guide's six pictures, whole (their heights at the page's width), with orvibo.com's title offsets. */
+/** The install guide's six pictures (their words in HTML), whole: their heights at the page's width, with orvibo.com's
+ * title offsets. */
 const GUIDE = [
   {
     key: "windows",
-    image:
-      "/guanwang_second/front/mobile/images/products/chuanglian/more1-f1d99be524.webp",
+    words: PHONE_WORDS.more1,
     className: "h-[12.76rem] pt-[0.76rem]",
   },
   {
     key: "opening",
-    image:
-      "/guanwang_second/front/mobile/images/products/chuanglian/more2-061297d643.webp",
+    words: PHONE_WORDS.more2,
     className: "h-[14.61rem] pt-[0.56rem]",
   },
   {
     key: "measure",
-    image:
-      "/guanwang_second/front/mobile/images/products/chuanglian/more3-41998c7747.webp",
+    words: PHONE_WORDS.more3,
     className: "h-[16.29rem] pt-[0.36rem]",
     note: true,
   },
   {
     key: "mounting",
-    image:
-      "/guanwang_second/front/mobile/images/products/chuanglian/more4-077c44c749.webp",
+    words: PHONE_WORDS.more4,
     className: "h-[9.76rem] pt-[0.6rem]",
   },
   {
     key: "box",
-    image:
-      "/guanwang_second/front/mobile/images/products/chuanglian/more5-730227ce99.webp",
+    words: PHONE_WORDS.more5,
     className: "h-[9.47rem] pt-[0.54rem]",
   },
   {
     key: "outlet",
-    image:
-      "/guanwang_second/front/mobile/images/products/chuanglian/more6-a74dcde664.webp",
+    words: PHONE_WORDS.more6,
     className: "h-[8.68rem] pt-[0.7rem]",
   },
 ];
@@ -67,8 +64,9 @@ const pairs = (line: string) => {
 };
 
 /** The Chocolate kit's page on phones: orvibo.com's phone page (/mobile/cn/product/chuanglian.html), its words in
- * Romanian and English, its comparison and load tables in HTML, the words in its app, parts and install pictures
- * redrawn, and the install guide shown whole under its toggle. */
+ * Romanian and English, its comparison and load tables in HTML, the words of its parts, setup and install pictures in
+ * HTML over copies without them (TextImage), the app's screens redrawn, and the install guide shown whole under its
+ * toggle. */
 export function ChuanglianPhone({ locale, text, common }: ProductViewProps) {
   const { t, ts, img, bg, lines } = productPageHelpers(locale, text);
 
@@ -450,13 +448,14 @@ export function ChuanglianPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* add6 */}
-      <div
-        className="bg-center block text-center h-[14.64rem] bg-cover bg-no-repeat text-balance"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/chuanglian/add5-18f2f408d0.webp",
-        )}
-      >
-        <h2 className="pt-[0.52rem] font-normal text-[0.288rem] text-[#888888] px-[5%] text-balance">
+      <div className="relative block h-[14.64rem] overflow-hidden text-center text-balance">
+        <TextImage
+          picture={PHONE_WORDS.add5}
+          locale={locale}
+          text={text}
+          className="absolute inset-x-0 top-1/2 -translate-y-1/2"
+        />
+        <h2 className="relative pt-[0.52rem] font-normal text-[0.288rem] text-[#888888] px-[5%] text-balance">
           {t("sec_add2.sec_add2")}
         </h2>
       </div>
@@ -491,13 +490,9 @@ export function ChuanglianPhone({ locale, text, common }: ProductViewProps) {
         />
       </div>
       {/* sec6 */}
-      <div
-        className="bg-center block text-center h-[17.99rem] bg-cover bg-no-repeat text-balance"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/chuanglian/bg13-a78ebbe368.webp",
-        )}
-      >
-        <h2 className="pt-[0.54rem] font-normal text-[0.288rem] text-[#2f2f2f] px-[5%] text-balance">
+      <div className="relative block text-center text-balance">
+        <TextImage picture={PHONE_WORDS.bg13} locale={locale} text={text} />
+        <h2 className="absolute inset-x-0 top-0 pt-[0.54rem] font-normal text-[0.288rem] text-[#2f2f2f] px-[5%] text-balance">
           {t("sec13.sec13")}
         </h2>
       </div>
@@ -605,16 +600,18 @@ export function ChuanglianPhone({ locale, text, common }: ProductViewProps) {
           {/* more_block */}
           <div className="bg-white text-center">
             {GUIDE.map((part) => (
-              <div
-                key={part.key}
-                className={`bg-center bg-cover bg-no-repeat ${part.className}`}
-                style={bg(part.image)}
-              >
-                <h3 className="text-[0.32rem] leading-[1.6] font-normal text-[#2f2f2f] px-[5%] text-balance">
+              <div key={part.key} className={`relative ${part.className}`}>
+                <TextImage
+                  picture={part.words}
+                  locale={locale}
+                  text={text}
+                  className="absolute inset-x-0 top-0"
+                />
+                <h3 className="relative text-[0.32rem] leading-[1.6] font-normal text-[#2f2f2f] px-[5%] text-balance">
                   {t(`guide.${part.key}`)}
                 </h3>
                 {part.note && (
-                  <p className="mx-auto mt-[0.16rem] max-w-[6rem] px-[5%] text-[0.176rem] leading-[1.6] text-[#2f2f2f] text-balance">
+                  <p className="relative mx-auto mt-[0.16rem] max-w-[6rem] px-[5%] text-[0.176rem] leading-[1.6] text-[#2f2f2f] text-balance">
                     {t(`guide.${part.key}_note`)}
                   </p>
                 )}
