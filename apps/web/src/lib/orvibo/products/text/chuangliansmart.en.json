@@ -29,13 +29,13 @@
   "sec3.content6": "Fancy a nap? No alarm needed: tap “Afternoon nap” and the curtains close, then open half an hour later to wake you.",
   "sec3.tips3": "Close the curtains now, open them in 30 minutes.",
   "sec3.tips4": "Afternoon nap mode",
-  "sec4.title": "Soft start and stop, silky-smooth running",
+  "sec4.title": "Soft start and stop, silky‑smooth running",
   "sec4.desc": "It eases in at every start and eases out at every stop, so sudden stops never strain the motor and every run looks more graceful.",
   "sec5.title": "A gentle tug sets it going, all the way",
   "sec5.desc": "When it's powered, pull the curtain about 5 cm and it starts moving on its own until it is fully open or closed. No extra effort, so opening and closing gets easier.",
   "sec6.title": "Pull it by hand, even in a power cut",
   "sec6.desc": "A built-in electromagnetic clutch means that even in a power cut you can open and close it by hand like an ordinary curtain, so nothing gets in your way.",
-  "sec7.title": "Focused on smart living, chosen by more and more high-end developments",
+  "sec7.title": "Focused on smart living, chosen by more and more high‑end developments",
   "sec7.desc": "Leading developers such as Fantasia, Evergrande, China Merchants and Gemdale choose us.",
   "sec8.title": "Installers all over China, always one near you",
   "sec8.desc": "New build or renovation, we provide a complete one-stop installation service. You get a full Super Smart Curtain without lifting a finger.",
@@ -43,7 +43,7 @@
   "sec8.content2": "We come to you anywhere in China",
   "sec8.content3": "2-year warranty",
   "sec8.content4": "Free repairs for any manufacturing defect for 2 years",
-  "sec9.title": "A high-quality aluminum alloy track\nSmooth running, extra-long life",
+  "sec9.title": "A high‑quality aluminum alloy track\nSmooth running, extra‑long life",
   "sec9.bg": "One-piece streamlined design",
   "sec9.bg2": "Polished in one piece with streamlined lines, it lasts and looks refined.",
   "sec9.bg3": "Nano rollers",
@@ -76,5 +76,6 @@
   "spec.track.length": "Length: 1.7–3 m / 2.2–4 m",
   "spec.track.load": "Load: 20 kg, 10 kg per side",
   "spec.track.wall": "Wall thickness: 1.3 mm",
-  "spec.track.width": "Width: 63.2 mm"
+  "spec.track.width": "Width: 63.2 mm",
+  "m.more": "More smart experiences across your home"
 }

@@ -15,6 +15,7 @@ import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/Chuangli
 import { Chuanglian2Overview } from "@/components/orvibo/products/chuanglian2/Chuanglian2Overview";
 import { Chuanglian2Spec } from "@/components/orvibo/products/chuanglian2/Chuanglian2Spec";
 import { ChuangliansmartOverview } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartOverview";
+import { ChuangliansmartPhone } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartPhone";
 import { ChuangliansmartSpec } from "@/components/orvibo/products/chuangliansmart/ChuangliansmartSpec";
 import { Curtain3dOverview } from "@/components/orvibo/products/curtain_3d/Curtain3dOverview";
 import { Curtain3dPhone } from "@/components/orvibo/products/curtain_3d/Curtain3dPhone";
@@ -343,6 +344,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: ChuangliansmartOverview,
+    PhoneView: ChuangliansmartPhone,
     segmentViews: { spec: ChuangliansmartSpec },
   },
   {
