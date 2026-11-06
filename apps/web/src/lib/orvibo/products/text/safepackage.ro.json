@@ -33,5 +33,14 @@
   "suit_page.sn_item2": "Senzor pentru uși și ferestre",
   "suit_page.sn_item3": "Senzor de mișcare",
   "alt.phone1": "Ecranul de blocare al telefonului cu o notificare ORVIBO Home: senzorul de ușă anunță că ușa s-a deschis",
-  "alt.phone2": "Aplicația ORVIBO Home cu alarma senzorului de mișcare: a trecut cineva"
+  "alt.phone2": "Aplicația ORVIBO Home cu alarma senzorului de mișcare: a trecut cineva",
+  "m.subtitle": "Paznicul casei, pentru mai multă liniște",
+  "m.camera.title": "Camera legată filmează pe loc, ca dovadă",
+  "m.camera.desc": "Când se deschide o ușă sau o fereastră, camera inteligentă legată de senzor detectează imediat sunetele neobișnuite din casă, filmează automat mișcarea și încarcă filmarea în cloud în timp real. Vezi repede ce se întâmplă acasă și descoperi la timp intrusul, iar filmarea poate fi dată apoi poliției ca dovadă.",
+  "m.steps.1": "Ușa se deschide",
+  "m.steps.2": "Alertă pe telefon",
+  "m.steps.3": "Camera pornește",
+  "m.steps.4": "Filmarea urcă în cloud",
+  "m.steps.5": "Dovezi pentru poliție",
+  "m.labNote": "Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot diferi puțin în funcție de metoda de măsurare."
 }

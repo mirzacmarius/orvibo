@@ -73,6 +73,7 @@ import { S30cSpec } from "@/components/orvibo/products/s30c/S30cSpec";
 import { S350lOverview } from "@/components/orvibo/products/s350l/S350lOverview";
 import { S350lPhone } from "@/components/orvibo/products/s350l/S350lPhone";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
+import { SafepackagePhone } from "@/components/orvibo/products/safepackage/SafepackagePhone";
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
 import { SosPhone } from "@/components/orvibo/products/sos/SosPhone";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
@@ -417,6 +418,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "safepackage",
     tabs: [{ id: "overview", label: "Overview" }],
     View: SafepackageOverview,
+    PhoneView: SafepackagePhone,
   },
   {
     slug: "miniHost",
