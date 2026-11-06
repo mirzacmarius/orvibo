@@ -17,9 +17,10 @@ export interface PhoneSwiperSlide {
  * orvibo.com's phone swipers (SOPRO S): slides as wide as `slideClassName`
  * makes them (the next one peeking in when narrower than the box), swiped
  * one at a time. The pagination is a row of short "lines" (the active one
- * white), "tabs" (the slides' names, the active one with a gold bar under
- * it) or none; place it with `paginationClassName`. `arrow` gives the
- * prev/next arrows' picture (a right-pointing chevron), at the sides.
+ * white, or black with `tone="dark"` on a light page), "tabs" (the slides'
+ * names, the active one with a gold bar under it) or none; place it with
+ * `paginationClassName`. `arrow` gives the prev/next arrows' picture (a
+ * right-pointing chevron), at the sides.
  */
 export function PhoneSwiper({
   slides,
@@ -27,6 +28,7 @@ export function PhoneSwiper({
   slideClassName,
   pagination = "lines",
   paginationClassName,
+  tone = "light",
   arrow,
   children,
 }: {
@@ -35,6 +37,7 @@ export function PhoneSwiper({
   slideClassName?: string;
   pagination?: "lines" | "tabs" | "none";
   paginationClassName?: string;
+  tone?: "light" | "dark";
   arrow?: string;
   children?: ReactNode;
 }) {
@@ -105,8 +108,14 @@ export function PhoneSwiper({
                 aria-current={index === active}
                 onClick={() => swiper?.slideTo(index)}
                 className={cn(
-                  "mr-[10px] h-[0.06rem] w-[0.5rem] cursor-pointer rounded-[0.06rem]",
-                  index === active ? "bg-white" : "bg-[#d4d3d3]/50",
+                  "h-[0.06rem] w-[0.5rem] cursor-pointer rounded-[0.06rem]",
+                  tone === "dark"
+                    ? index === active
+                      ? "mr-[0.12rem] bg-black"
+                      : "mr-[0.12rem] bg-[#d4d3d3]"
+                    : index === active
+                      ? "mr-[10px] bg-white"
+                      : "mr-[10px] bg-[#d4d3d3]/50",
                 )}
               />
             ),

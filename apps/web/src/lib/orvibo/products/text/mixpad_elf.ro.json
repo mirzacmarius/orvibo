@@ -50,7 +50,7 @@
   "sec5.who.mom": "Mama",
   "sec5.who.daughter": "Fiica",
   "sec6.title": "Design nou, fără instalare\nÎl pui oriunde vrei",
-  "sec7.title": "Ecranul-tablou întâlnește panoul colorat\nDă-i casei tale un strop de {culoare}",
+  "sec7.title": "Ecranul‑tablou întâlnește panoul colorat\nDă‑i casei tale un strop de {culoare}",
   "sec7.desc": "Un ecran-tablou dinamic, care se schimbă singur în fiecare zi, se joacă cu culorile pereților și ale panoului și îți împrospătează casa zilnic.",
   "sec7.remind": "*Roșu, portocaliu, albastru, verde și galben vin în curând!",
   "sec9.title": "Cool din fire: mai mult FUN, mai multă culoare",
@@ -73,5 +73,13 @@
   "spec.load": "Sarcină maximă: 200 W pe circuit",
   "spec.ir": "Control IR: da",
   "spec.zigbee": "Dispozitive Zigbee acceptate: niciunul",
-  "spec.scenes": "Număr de scene: nelimitat"
+  "spec.scenes": "Număr de scene: nelimitat",
+  "m.timer.title": "Un cronometru de gătit care nu ocupă blatul",
+  "m.timer.desc": "Îți e teamă că găluștele se lipesc sau rămân nefierte? Cu timpul măsurat exact, mâncarea bună nu se lasă așteptată!",
+  "m.voice.cleaning2": "Pornește curățenia în bucătărie.",
+  "m.voice.acTemp2": "Pornește aerul din living la 20°.",
+  "m.voice.bedroom": "Bună, Majordomule, stinge lumina din dormitor.",
+  "m.voice.robot": "Pornește robotul de aspirat.",
+  "m.voice.fan": "Majordomule, 20°C, ventilație la maxim.",
+  "m.voice.ok": "Sigur."
 }
