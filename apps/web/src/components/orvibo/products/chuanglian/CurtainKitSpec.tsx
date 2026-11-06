@@ -165,7 +165,7 @@ export function CurtainKitSpec({
             {guide.map((part) => (
               <div
                 key={part.key}
-                className={`relative mx-auto w-[1200px] bg-center bg-no-repeat ${part.className}`}
+                className={`relative isolate mx-auto w-[1200px] bg-center bg-no-repeat ${part.className}`}
                 style={part.image ? bg(part.image) : undefined}
               >
                 {part.words && (
@@ -173,7 +173,8 @@ export function CurtainKitSpec({
                     picture={part.words}
                     locale={locale}
                     text={text}
-                    className="absolute inset-x-0 top-1/2 -translate-y-1/2"
+                    fit={{ size: "natural" }}
+                    className="absolute inset-0 -z-10"
                   />
                 )}
                 <h3 className="relative text-[36px] font-normal text-[#2f2f2f]">

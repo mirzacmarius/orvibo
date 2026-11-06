@@ -2,6 +2,7 @@ import type { Locale } from "@/lib/orvibo/i18n";
 import { localizedAssetUrl } from "@/lib/orvibo/localizedAsset";
 import type { ProductPageText } from "@/lib/orvibo/products/page-text";
 import { cn } from "@v1/ui/utils";
+import Image from "next/image";
 import { type CSSProperties, Fragment, type ReactNode } from "react";
 
 /**
@@ -65,6 +66,43 @@ export interface TextImagePicture {
   labels: TextImageLabel[];
 }
 
+/**
+ * How the picture fills the box the TextImage is given, as a CSS background fills its element: `size` as
+ * background-size ("cover", "contain", "width" for `100% auto`, "natural" for the picture's own pixels) and `x`, `y`
+ * as background-position, in % (50 centres it, 0 puts it at the left or top edge). The picture is clipped to the box.
+ */
+export interface TextImageFit {
+  /** Or a CSS width, with the height by the picture's ratio (`background-size: 7.5rem auto`). */
+  size: "cover" | "contain" | "width" | "natural" | (string & {});
+  /** A % (as background-position's %), or a CSS length from the left or top edge. */
+  x?: number | string;
+  y?: number | string;
+}
+
+/** Where the picture sits in a fitted TextImage's box (whose size the cq units are). */
+function fitStyle(picture: TextImagePicture, fit: TextImageFit): CSSProperties {
+  const ratio = picture.width / picture.height;
+  const [width, height] =
+    fit.size === "cover"
+      ? [`max(100cqw, ${ratio * 100}cqh)`, `max(100cqh, ${100 / ratio}cqw)`]
+      : fit.size === "contain"
+        ? [`min(100cqw, ${ratio * 100}cqh)`, `min(100cqh, ${100 / ratio}cqw)`]
+        : fit.size === "width"
+          ? ["100cqw", `${100 / ratio}cqw`]
+          : fit.size === "natural"
+            ? [`${picture.width}px`, `${picture.height}px`]
+            : [fit.size, `calc(${fit.size} / ${ratio})`];
+  const at = (v: number | string | undefined, box: string, size: string) =>
+    typeof v === "string" ? v : `calc((${box} - ${size}) * ${(v ?? 50) / 100})`;
+  return {
+    position: "absolute",
+    width,
+    height,
+    left: at(fit.x, "100cqw", width),
+    top: at(fit.y, "100cqh", height),
+  };
+}
+
 /** Words with {…} parts in the accent colour. */
 function accented(words: string, accent: string | undefined): ReactNode {
   if (!words.includes("{")) return words;
@@ -126,11 +164,12 @@ function Run({
       style={style}
     >
       {icon && (
-        <img
+        <Image
           src={localizedAssetUrl(icon.src, locale)}
           alt=""
           width={icon.width}
           height={icon.height}
+          unoptimized
           className="block shrink-0"
           style={{
             width: `${icon.width}cqw`,
@@ -149,42 +188,43 @@ function Run({
 }
 
 /**
- * A picture whose words are HTML: the picture without them, and each run of words placed where the picture had it,
- * in the same font, size and colour, scaled with the picture (container query units). The words come from the
- * page's text file, so they change per language, and can be edited, without redrawing the picture.
+ * A picture whose words are page text: the picture without them (through next/image, like the site's other
+ * pictures), and each run of words placed where the picture had it, in the same font, size and colour, scaled with
+ * the picture (container query units). The words come from the page's text file, so they change per language, and
+ * can be edited, without redrawing the picture.
  *
- * The box is the picture's own size (as wide as its parent, height by its ratio). Where a section shows the picture
- * as a cropped background, place this box in the section the same way (e.g. centred with `absolute top-1/2
- * -translate-y-1/2`) and let the section clip it.
+ * Without `fit`, the box is the picture's own size (as wide as its parent, height by its ratio). With `fit`, it is
+ * the box the className gives it, and the picture fills it as a background would: for a section that had the
+ * picture as its background, `fit` with `className="absolute inset-0 -z-10"` and `isolate` on the section.
  */
 export function TextImage({
   picture,
   locale,
   text,
+  fit,
+  alt = "",
   className,
   style,
 }: {
   picture: TextImagePicture;
   locale: Locale;
   text: ProductPageText;
+  fit?: TextImageFit;
+  /** The picture's alt text (its words are already page text). */
+  alt?: string;
   className?: string;
   style?: CSSProperties;
 }) {
-  return (
-    <div
-      className={cn(
-        "relative font-orvibo normal-case tracking-normal [container-type:inline-size]",
-        className,
-      )}
-      style={style}
-    >
-      <img
+  const box =
+    "font-orvibo normal-case tracking-normal [container-type:inline-size]";
+  const content = (
+    <>
+      <Image
         src={localizedAssetUrl(picture.src, locale)}
-        alt=""
+        alt={alt}
         width={picture.width}
         height={picture.height}
-        loading="lazy"
-        decoding="async"
+        unoptimized
         className="block h-auto w-full"
       />
       {picture.labels.map((label) => {
@@ -212,6 +252,25 @@ export function TextImage({
           </Fragment>
         );
       })}
+    </>
+  );
+  if (!fit)
+    return (
+      <div className={cn("relative", box, className)} style={style}>
+        {content}
+      </div>
+    );
+  return (
+    <div
+      className={cn(
+        "pointer-events-none overflow-hidden [container-type:size]",
+        className,
+      )}
+      style={style}
+    >
+      <div className={box} style={fitStyle(picture, fit)}>
+        {content}
+      </div>
     </div>
   );
 }

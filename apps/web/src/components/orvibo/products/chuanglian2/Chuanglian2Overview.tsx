@@ -1,8 +1,10 @@
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductSlideshow } from "@/components/orvibo/product/ProductSlideshow";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function Chuanglian2Overview({
   locale,
@@ -198,12 +200,14 @@ export function Chuanglian2Overview({
         </p>
       </ProductSlideshow>
       {/* sec4 */}
-      <div
-        className="bg-bottom h-[872px] w-full bg-no-repeat bg-white"
-        style={bg(
-          "/guanwang_second/front/images/new/products/chuanglian/2/bg6-f9a1b5f986.webp",
-        )}
-      >
+      <div className="h-[872px] w-full bg-white relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.bg6}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural", y: 100 }}
+          className="absolute inset-0 -z-10"
+        />
         {/* container */}
         <div className="mx-auto w-[1188px]">
           <h2 className="pt-[66px] text-center text-[42px] text-[#2f2f2f] font-normal text-balance">
@@ -229,12 +233,14 @@ export function Chuanglian2Overview({
         </div>
       </div>
       {/* sec5 */}
-      <div
-        className="bg-center h-[670px] w-full bg-no-repeat"
-        style={bg(
-          "/guanwang_second/front/images/new/products/chuanglian/2/bg7-e0377950f7.webp",
-        )}
-      >
+      <div className="h-[670px] w-full relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.bg7}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* container */}
         <div className="mx-auto w-[1188px]">
           <div className="ml-[460px] pt-[480px]">
@@ -407,12 +413,14 @@ export function Chuanglian2Overview({
         </div>
       </div>
       {/* sec_add4 */}
-      <div
-        className="bg-center text-center h-[909px] bg-no-repeat relative"
-        style={bg(
-          "/guanwang_second/front/images/new/products/chuanglian/2/bg15-5d467927b6.webp",
-        )}
-      >
+      <div className="text-center h-[909px] relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.bg15}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural" }}
+          className="absolute inset-0 -z-10"
+        />
         <h2 className="pt-[80px] text-[36px] text-[#888888] font-normal">
           {t("sec_add4.sec_add4")}
         </h2>
@@ -424,12 +432,14 @@ export function Chuanglian2Overview({
         </div>
       </div>
       {/* sec_add2 */}
-      <div
-        className="bg-center text-center h-[710px] bg-no-repeat"
-        style={bg(
-          "/guanwang_second/front/images/new/products/chuanglian/2/bg16-e6c0a34546.webp",
-        )}
-      >
+      <div className="text-center h-[710px] relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.bg16}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural" }}
+          className="absolute inset-0 -z-10"
+        />
         <h2 className="pt-[68px] text-[36px] text-[#888888] font-normal">
           {t("sec_add2.sec_add2")}
         </h2>
@@ -482,28 +492,20 @@ export function Chuanglian2Overview({
       </div>
       {/* sec13 */}
       <div className="text-center w-full relative">
-        <h2 className="text-center text-[36px] text-[#2f2f2f] font-normal absolute w-full top-[64px]">
+        <h2 className="z-[1] text-center text-[36px] text-[#2f2f2f] font-normal absolute w-full top-[64px]">
           {t("sec13.sec13")}
         </h2>
-        <Image
-          src={img(
-            "/guanwang_second/front/images/new/products/chuanglian/2/bg17-f8188ed1d0.webp",
-          )}
-          alt=""
-          width={1920}
-          height={670}
-          unoptimized
-          className="inline mt-[-5px] w-full"
+        <TextImage
+          picture={DESKTOP_WORDS.bg17}
+          locale={locale}
+          text={text}
+          className="mt-[-5px] w-full"
         />
-        <Image
-          src={img(
-            "/guanwang_second/front/images/new/products/chuanglian/2/bg18-81b2a77741.webp",
-          )}
-          alt=""
-          width={1920}
-          height={968}
-          unoptimized
-          className="inline mt-[-5px] w-full"
+        <TextImage
+          picture={DESKTOP_WORDS.bg18}
+          locale={locale}
+          text={text}
+          className="mt-[-5px] w-full"
         />
       </div>
       {/* product_detail_tips */}
