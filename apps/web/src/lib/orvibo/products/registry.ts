@@ -89,6 +89,7 @@ import { W260Phone } from "@/components/orvibo/products/w260/W260Phone";
 import { W300Overview } from "@/components/orvibo/products/w300/W300Overview";
 import { W300Phone } from "@/components/orvibo/products/w300/W300Phone";
 import { WaterAlarmOverview } from "@/components/orvibo/products/water_alarm/WaterAlarmOverview";
+import { WaterAlarmPhone } from "@/components/orvibo/products/water_alarm/WaterAlarmPhone";
 import { XiaofangOverview } from "@/components/orvibo/products/xiaofang/XiaofangOverview";
 import { XiaofangSpec } from "@/components/orvibo/products/xiaofang/XiaofangSpec";
 import { YuntaiOverview } from "@/components/orvibo/products/yuntai/YuntaiOverview";
@@ -444,6 +445,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "water_alarm",
     tabs: [{ id: "overview", label: "Overview" }],
     View: WaterAlarmOverview,
+    PhoneView: WaterAlarmPhone,
   },
   {
     slug: "camera_4",

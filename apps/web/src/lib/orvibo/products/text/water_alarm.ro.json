@@ -44,5 +44,6 @@
   "install.v12": "Așezat direct unde vrei să detectezi apa",
   "install.note": "* Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot varia ușor în funcție de metoda de măsurare.",
   "alt.product": "Senzorul inteligent de inundație ORVIBO",
-  "alt.phone": "Ecranul de securitate din aplicația ORVIBO Home: în siguranță, cu senzorul de inundație din baie la nivel normal."
+  "alt.phone": "Ecranul de securitate din aplicația ORVIBO Home: în siguranță, cu senzorul de inundație din baie la nivel normal.",
+  "m.params": "Parametri"
 }

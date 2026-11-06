@@ -492,6 +492,7 @@ export const LOCALIZED_ASSETS: ReadonlySet<string> = new Set<string>([
   "/guanwang_second/front/mobile/images/details/st20/bg_08-81665602bb.webp",
   "/guanwang_second/front/mobile/images/details/st20/bg_09-c1af28e8c3.webp",
   "/guanwang_second/front/mobile/images/details/st20/bg_10-f716ce7212.webp",
+  "/guanwang_second/front/mobile/images/details/sw20/bg_06-583a896391.webp",
   "/guanwang_second/front/mobile/images/details/zigbee/images/icon_04-42507e7003.webp",
   "/guanwang_second/front/mobile/images/new/product/s/sec13-e4aae5c22a.webp",
   "/guanwang_second/front/mobile/images/new/product/s/sec14_1-8f0fdcc063.webp",
