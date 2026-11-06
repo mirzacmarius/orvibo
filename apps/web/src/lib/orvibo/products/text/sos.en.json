@@ -45,5 +45,7 @@
   "install.note": "* All the data above is from ORVIBO's lab; actual results may vary slightly with the measuring method.",
   "alt.product": "The ORVIBO Smart Emergency Button",
   "alt.phone1": "A phone's lock screen with an ORVIBO Home notification: someone pressed the emergency button in the living room.",
-  "alt.phone2": "The ORVIBO Home app's security screen, with the emergency button's alarm triggered."
+  "alt.phone2": "The ORVIBO Home app's security screen, with the emergency button's alarm triggered.",
+  "m.hero": "One-press alarm call | Alerts on your phone | Ultra-low power, long battery life",
+  "m.params": "Parameters"
 }

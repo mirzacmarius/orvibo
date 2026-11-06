@@ -74,6 +74,7 @@ import { S350lOverview } from "@/components/orvibo/products/s350l/S350lOverview"
 import { S350lPhone } from "@/components/orvibo/products/s350l/S350lPhone";
 import { SafepackageOverview } from "@/components/orvibo/products/safepackage/SafepackageOverview";
 import { SosOverview } from "@/components/orvibo/products/sos/SosOverview";
+import { SosPhone } from "@/components/orvibo/products/sos/SosPhone";
 import { T1COverview } from "@/components/orvibo/products/t1c/T1COverview";
 import { T1CSpec } from "@/components/orvibo/products/t1c/T1CSpec";
 import { TempHumSensorOverview } from "@/components/orvibo/products/temp_hum_sensor/TempHumSensorOverview";
@@ -430,6 +431,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "sos",
     tabs: [{ id: "overview", label: "Overview" }],
     View: SosOverview,
+    PhoneView: SosPhone,
   },
   {
     slug: "temp_hum_sensor",
