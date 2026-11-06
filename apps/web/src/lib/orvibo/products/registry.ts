@@ -11,6 +11,7 @@ import { Camera4Spec } from "@/components/orvibo/products/camera_4/Camera4Spec";
 import { CangqiongOverview } from "@/components/orvibo/products/cangqiong/CangqiongOverview";
 import { CangqiongPhone } from "@/components/orvibo/products/cangqiong/CangqiongPhone";
 import { ChuanglianOverview } from "@/components/orvibo/products/chuanglian/ChuanglianOverview";
+import { ChuanglianPhone } from "@/components/orvibo/products/chuanglian/ChuanglianPhone";
 import { ChuanglianSpec } from "@/components/orvibo/products/chuanglian/ChuanglianSpec";
 import { Chuanglian2Overview } from "@/components/orvibo/products/chuanglian2/Chuanglian2Overview";
 import { Chuanglian2Spec } from "@/components/orvibo/products/chuanglian2/Chuanglian2Spec";
@@ -356,6 +357,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: ChuanglianOverview,
+    PhoneView: ChuanglianPhone,
     segmentViews: { spec: ChuanglianSpec },
   },
   {

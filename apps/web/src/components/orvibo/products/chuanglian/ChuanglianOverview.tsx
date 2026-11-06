@@ -8,7 +8,7 @@ import Image from "next/image";
  * sec3's comparison: each row's label, then the classic motorized curtain's
  * and the kit's cells (a text key, or true / false for a tick / a cross).
  */
-const COMPARISON: [string, string | boolean, string | boolean][] = [
+export const COMPARISON: [string, string | boolean, string | boolean][] = [
   ["set", "classic_set", "kit_set"],
   ["outlet", "needed", "not_needed"],
   ["wiring", "needed", "not_needed"],
