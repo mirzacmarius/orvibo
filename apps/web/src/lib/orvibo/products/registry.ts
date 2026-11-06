@@ -52,6 +52,7 @@ import { MixpadSFlagshipOverview } from "@/components/orvibo/products/mixpad_s_f
 import { MixpadSwitchOverview } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchOverview";
 import { MixpadSwitchSpec } from "@/components/orvibo/products/mixpad_switch/MixpadSwitchSpec";
 import { MixpadXOverview } from "@/components/orvibo/products/mixpad_x/MixpadXOverview";
+import { MixpadXPhone } from "@/components/orvibo/products/mixpad_x/MixpadXPhone";
 import { MixstationOverview } from "@/components/orvibo/products/mixstation/MixstationOverview";
 import { MixstationPhone } from "@/components/orvibo/products/mixstation/MixstationPhone";
 import { MotorDb28Overview } from "@/components/orvibo/products/motor_db28/MotorDb28Overview";
@@ -132,6 +133,7 @@ const definitions: ProductDefinition[] = [
       { id: "spec", label: "Specifications", segment: "spec" },
     ],
     View: MixpadXOverview,
+    PhoneView: MixpadXPhone,
     segmentViews: { spec: ProductSpecView },
   },
   {
