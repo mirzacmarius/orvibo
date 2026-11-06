@@ -37,6 +37,7 @@ import { JidachengPhone } from "@/components/orvibo/products/jidacheng/Jidacheng
 import { LightOverview } from "@/components/orvibo/products/light/LightOverview";
 import { LightPhone } from "@/components/orvibo/products/light/LightPhone";
 import { MiniHostOverview } from "@/components/orvibo/products/miniHost/MiniHostOverview";
+import { MiniHostPhone } from "@/components/orvibo/products/miniHost/MiniHostPhone";
 import { Mixpad7Overview } from "@/components/orvibo/products/mixpad_7/Mixpad7Overview";
 import { Mixpad7UltraOverview } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraOverview";
 import { Mixpad7UltraPhone } from "@/components/orvibo/products/mixpad_7_ultra/Mixpad7UltraPhone";
@@ -426,6 +427,7 @@ const definitions: ProductDefinition[] = [
     rootClass: "miniHost",
     tabs: [{ id: "overview", label: "Overview" }],
     View: MiniHostOverview,
+    PhoneView: MiniHostPhone,
   },
   {
     slug: "sos",
