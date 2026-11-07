@@ -2,11 +2,13 @@ import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { BalancedLines } from "@/components/orvibo/product/BalancedLines";
 import { ProductInView } from "@/components/orvibo/product/ProductInView";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { Camera4Film } from "./Camera4Film";
 import { Camera4LiveViews } from "./Camera4LiveViews";
 import { Camera4Panorama } from "./Camera4Panorama";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The banner title's sheen (orvibo.com's gradient text). */
 const SHINE =
@@ -86,12 +88,15 @@ export function Camera4Overview({ locale, text, common }: ProductViewProps) {
           <ProductReveal className="w-full">
             <h2 className={TITLE}>{t("sec2.title")}</h2>
           </ProductReveal>
-          <div
-            className="mt-[0.9rem] h-[7.99rem] w-[13.61rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/images/products/camera/sec2-5a30feacb8.webp",
-            )}
-          />
+          <div className="mt-[0.9rem] h-[7.99rem] w-[13.61rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec2}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover", x: 0, y: 0 }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec3: the 2K film */}
         <Camera4Film
@@ -183,12 +188,15 @@ export function Camera4Overview({ locale, text, common }: ProductViewProps) {
             <h2 className={TITLE}>{t("sec5.title")}</h2>
             <p className={DESC}>{t("sec5.desc")}</p>
           </ProductReveal>
-          <div
-            className="mt-[1.06rem] mb-[1.85rem] h-[7.7rem] w-[16rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/images/products/camera/sec5-5a80d03dde.webp",
-            )}
-          />
+          <div className="mt-[1.06rem] mb-[1.85rem] h-[7.7rem] w-[16rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec5}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover", x: 0, y: 0 }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
           <ProductReveal className="w-full">
             <h3 className={TITLE}>{t("sec5.title2")}</h3>
           </ProductReveal>
@@ -288,12 +296,15 @@ export function Camera4Overview({ locale, text, common }: ProductViewProps) {
               <BalancedLines text={ts("sec7.desc")} />
             </p>
           </ProductReveal>
-          <div
-            className="mt-[0.9rem] h-[8rem] w-[15.6rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/images/products/camera/sec7-d8c2430460.webp",
-            )}
-          />
+          <div className="mt-[0.9rem] h-[8rem] w-[15.6rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec7}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover", x: 0, y: 0 }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec8: the bubbles' words over pictures that stretch with them */}
         <div className="flex flex-col items-center">
@@ -367,29 +378,53 @@ export function Camera4Overview({ locale, text, common }: ProductViewProps) {
                 {
                   key: "kids",
                   label: ts("sec10.kids"),
-                  photo: bg(
-                    "/guanwang_second/front/images/products/camera/sec10_1-b1c6f42532.webp",
+                  photo: (
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec10_1}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
                   ),
                 },
                 {
                   key: "pets",
                   label: ts("sec10.pets"),
-                  photo: bg(
-                    "/guanwang_second/front/images/products/camera/sec10_2-d788d8a67e.webp",
+                  photo: (
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec10_2}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
                   ),
                 },
                 {
                   key: "grandparents",
                   label: ts("sec10.grandparents"),
-                  photo: bg(
-                    "/guanwang_second/front/images/products/camera/sec10_3-a1b954239b.webp",
+                  photo: (
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec10_3}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
                   ),
                 },
                 {
                   key: "homework",
                   label: ts("sec10.homework"),
-                  photo: bg(
-                    "/guanwang_second/front/images/products/camera/sec10_4-8040a389ad.webp",
+                  photo: (
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec10_4}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
                   ),
                 },
               ]}
@@ -404,12 +439,15 @@ export function Camera4Overview({ locale, text, common }: ProductViewProps) {
               <BalancedLines text={ts("sec11.desc")} />
             </p>
           </ProductReveal>
-          <div
-            className="mt-[0.93rem] h-[4.62rem] w-[16rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/images/products/camera/sec11-e6b95d3ff7.webp",
-            )}
-          />
+          <div className="mt-[0.93rem] h-[4.62rem] w-[16rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec11}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover", x: 0, y: 0 }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec12: the devices around the camera grow in once it is on screen */}
         <div className="flex flex-col items-center bg-[image:linear-gradient(rgb(0,0,0)_0px,rgb(18,19,20)_100%)] pb-[1.79rem]">

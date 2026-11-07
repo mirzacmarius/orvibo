@@ -52,5 +52,17 @@
   "parameter.l7": "Standarde:",
   "parameter.v7": "GB 2099.7-2015, GB 1002-2008",
   "alt.size": "Dimensiunile prizei S30c: 68 × 55 × 30 mm.",
-  "data_source_tips.data_source_tips": "* Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot varia ușor în funcție de metoda de măsurare."
+  "data_source_tips.data_source_tips": "* Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot varia ușor în funcție de metoda de măsurare.",
+  "pic.workday_mode": "Mod zi lucrătoare",
+  "pic.runs_the_water_heater": "Pornește boilerul 1 oră după serviciu",
+  "pic.holiday_mode": "Mod vacanță",
+  "pic.heats_water_on_off": "Încălzește apa la tarif redus",
+  "pic.compact_10_a_plug": "Ștecher mic de 10 A",
+  "pic.voltage": "Tensiune:",
+  "pic.current": "Curent:",
+  "pic.power": "Putere:",
+  "pic.safety_shutters": "Obturatoare de siguranță",
+  "pic.nickel_plated_brass_contacts": "Contacte din alamă nichelată",
+  "pic.front_cover_v_0": "Capac frontal: PC ignifug V-0",
+  "pic.back_cover_v_0": "Capac spate: PC ignifug V-0"
 }

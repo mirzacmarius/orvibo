@@ -1,6 +1,8 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { BODYSENSOR_PHONE_WORDS, PHONE_WORDS } from "./pictureWords";
 
 export function MiniHostPhone({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, lines } = productPageHelpers(locale, text);
@@ -89,25 +91,17 @@ export function MiniHostPhone({ locale, text, common }: ProductViewProps) {
             <span className="font-bold">{t("m.door.bold")}</span>
           </h2>
           <p className="mb-[0.3rem] text-[0.192rem]">{t("m.door.text")}</p>
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/zigbee/images/icon_04-42507e7003.webp",
-            )}
-            alt=""
-            width={267}
-            height={128}
-            unoptimized
-            className="inline mb-[0.25rem] align-middle w-[36%]"
+          <TextImage
+            picture={BODYSENSOR_PHONE_WORDS.icon_04}
+            locale={locale}
+            text={text}
+            className="inline-block mb-[0.25rem] align-middle w-[36%]"
           />
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/zigbee/images/icon_05-cf1635c172.webp",
-            )}
-            alt=""
-            width={446}
-            height={123}
-            unoptimized
-            className="inline mb-[0.25rem] align-middle w-[80%]"
+          <TextImage
+            picture={PHONE_WORDS.icon_05}
+            locale={locale}
+            text={text}
+            className="inline-block mb-[0.25rem] align-middle w-[80%]"
           />
         </section>
         {/* zig_sec6 */}
@@ -124,25 +118,17 @@ export function MiniHostPhone({ locale, text, common }: ProductViewProps) {
             <span className="font-bold">{t("m.window.bold")}</span>
           </h2>
           <p className="mb-[0.3rem] text-[0.192rem]">{t("m.window.text")}</p>
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/zigbee/images/icon_04-42507e7003.webp",
-            )}
-            alt=""
-            width={267}
-            height={128}
-            unoptimized
-            className="inline mb-[0.25rem] align-middle w-[36%]"
+          <TextImage
+            picture={BODYSENSOR_PHONE_WORDS.icon_04}
+            locale={locale}
+            text={text}
+            className="inline-block mb-[0.25rem] align-middle w-[36%]"
           />
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/zigbee/images/icon_06-d945e99827.webp",
-            )}
-            alt=""
-            width={458}
-            height={117}
-            unoptimized
-            className="inline mb-[0.25rem] ml-[0.2rem] align-middle w-[80%]"
+          <TextImage
+            picture={PHONE_WORDS.icon_06}
+            locale={locale}
+            text={text}
+            className="inline-block mb-[0.25rem] ml-[0.2rem] align-middle w-[80%]"
           />
         </section>
         {/* zig_sec8 */}
@@ -160,14 +146,10 @@ export function MiniHostPhone({ locale, text, common }: ProductViewProps) {
             {t("m.away.text")}
           </p>
           <div className="relative mt-[0.3rem] inline-block align-middle w-[16.25%]">
-            <Image
-              src={img(
-                "/guanwang_second/front/mobile/images/details/zigbee/images/icon_07-a34f2611c9.webp",
-              )}
-              alt=""
-              width={103}
-              height={675}
-              unoptimized
+            <TextImage
+              picture={PHONE_WORDS.icon_07}
+              locale={locale}
+              text={text}
               className="block w-full"
             />
             <span className="absolute left-1/2 top-[18.3%] -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-[0.2rem] text-white">

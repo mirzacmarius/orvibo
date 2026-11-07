@@ -1,8 +1,10 @@
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import { ProductScrollFrames } from "@/components/orvibo/product/ProductScrollFrames";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, lines } = productPageHelpers(locale, text);
@@ -106,12 +108,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </div>
         </div>
         {/* sec3 */}
-        <div
-          className="bg-center pt-[2.85rem] pl-[2.19rem] h-[10.8rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec3-179b33b2a9.webp",
-          )}
-        >
+        <div className="pt-[2.85rem] pl-[2.19rem] h-[10.8rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec3}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <div>
             <ProductReveal className="">
               <div className="mb-[0.3rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.77rem]">
@@ -124,12 +128,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </div>
         </div>
         {/* sec4 up show */}
-        <div
-          className="bg-center h-[10.8rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec4-b08bc868e1.webp",
-          )}
-        >
+        <div className="h-[10.8rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec4}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="pt-[1.1rem] pb-[0.3rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
               {t("sec4.title")}
@@ -140,12 +146,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
         </div>
         {/* sec5 up show */}
-        <div
-          className="bg-center h-[11.43rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec5-487d3eb6ab.webp",
-          )}
-        >
+        <div className="h-[11.43rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec5}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="pt-[1.1rem] pb-[0.3rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
               {t("sec5.title")}
@@ -156,12 +164,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
         </div>
         {/* sec6 up show */}
-        <div
-          className="bg-center h-[12rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec6-ccebe0a8f6.webp",
-          )}
-        >
+        <div className="h-[12rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec6}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="pt-[1.04rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
               {t("sec6.title")}
@@ -185,12 +195,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
         </div>
         {/* sec8 up show */}
-        <div
-          className="bg-center pt-[1.49rem] pl-[2.32rem] h-[9rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec8-49c19d0be1.webp",
-          )}
-        >
+        <div className="pt-[1.49rem] pl-[2.32rem] h-[9rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec8}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="mb-[0.26rem] ml-[0.01rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.77rem]">
               {t("sec8.title")}
@@ -201,12 +213,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
         </div>
         {/* sec9 up show */}
-        <div
-          className="bg-center h-[10rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec9-8e75bb737a.webp",
-          )}
-        >
+        <div className="h-[10rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec9}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="pt-[1.1rem] pb-[0.3rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
               {t("sec9.title")}
@@ -232,12 +246,14 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
           </ul>
         </div>
         {/* sec10 up show */}
-        <div
-          className="bg-center h-[9.6rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/sec10-d9246d07a8.webp",
-          )}
-        >
+        <div className="h-[9.6rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec10}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="pt-[1rem] font-extrabold text-[#ebd2b3] text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
               {t("sec10.title")}
@@ -268,30 +284,24 @@ export function MixpadS2Overview({ locale, text, common }: ProductViewProps) {
             {
               key: "lights",
               content: (
-                <Image
-                  src={img(
-                    "/guanwang_second/front/images/products/s2/sec12_1-60fbdef267.webp",
-                  )}
-                  alt=""
-                  width={1920}
-                  height={960}
-                  unoptimized
-                  className="size-full object-cover"
+                <TextImage
+                  picture={DESKTOP_WORDS.sec12_1}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="block size-full"
                 />
               ),
             },
             {
               key: "curtains",
               content: (
-                <Image
-                  src={img(
-                    "/guanwang_second/front/images/products/s2/sec12_2-20c26f59c4.webp",
-                  )}
-                  alt=""
-                  width={1920}
-                  height={960}
-                  unoptimized
-                  className="size-full object-cover"
+                <TextImage
+                  picture={DESKTOP_WORDS.sec12_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="block size-full"
                 />
               ),
             },

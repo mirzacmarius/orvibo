@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function S30cOverview({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, lines } = productPageHelpers(locale, text);
@@ -113,12 +115,14 @@ export function S30cOverview({ locale, text, common }: ProductViewProps) {
         {/* s30c_sec4: four uses for a timer */}
         <section className="bg-white pt-[0.96rem] pb-[1.2rem]">
           <ul className="mx-auto grid w-[14.92rem] grid-cols-2 gap-[0.3rem] p-[0.15rem]">
-            <li
-              className="h-[4rem] pt-[0.403rem] bg-cover bg-center bg-no-repeat text-[#111111]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/s30c/s30c_sec4_1-a7aeafd687.webp",
-              )}
-            >
+            <li className="h-[4rem] pt-[0.403rem] text-[#111111] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.s30c_sec4_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
               <h3 className="pl-[0.24rem] text-[0.24rem] leading-[1.6] font-black">
                 {t("s30c_sec4.clear")}
               </h3>
@@ -178,12 +182,14 @@ export function S30cOverview({ locale, text, common }: ProductViewProps) {
           </p>
         </section>
         {/* s30c_sec6 */}
-        <section
-          className="h-[9rem] bg-cover bg-center bg-no-repeat pt-[0.714rem] text-center text-[#111111]"
-          style={bg(
-            "/guanwang_second/front/images/new/products/s30c/s30c_sec6-d9dea50023.webp",
-          )}
-        >
+        <section className="h-[9rem] pt-[0.714rem] text-center text-[#111111] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.s30c_sec6}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="text-[0.42rem] leading-[1.6]">
             {t("s30c_sec6.s30c_sec6")}
           </h2>

@@ -1,6 +1,8 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function MixpadS2Spec({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, lines } = productPageHelpers(locale, text);
@@ -10,12 +12,14 @@ export function MixpadS2Spec({ locale, text, common }: ProductViewProps) {
       {/* s2Page */}
       <div id="spec" className="bg-white">
         {/* param1 */}
-        <div
-          className="bg-center h-[9.49rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/param_sec1-0c3ed9b43e.webp",
-          )}
-        >
+        <div className="h-[9.49rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.param_sec1}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <div className="pt-[1.1rem] pb-[0.31rem] font-extrabold text-black text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
             {t("param1.title")}
           </div>
@@ -24,12 +28,14 @@ export function MixpadS2Spec({ locale, text, common }: ProductViewProps) {
           </div>
         </div>
         {/* param2 */}
-        <div
-          className="bg-center h-[5.5rem] bg-no-repeat bg-cover"
-          style={bg(
-            "/guanwang_second/front/images/products/s2/param_sec2-f4e5eadfbb.webp",
-          )}
-        >
+        <div className="h-[5.5rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.param_sec2}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <div className="pt-[1.1rem] font-extrabold text-black text-[0.48rem] leading-[0.67rem] text-center px-[0.2rem] text-balance">
             {t("param2.title")}
           </div>

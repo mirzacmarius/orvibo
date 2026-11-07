@@ -1,6 +1,8 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { PHONE_WORDS } from "./pictureWords";
 
 const LINE =
   "/guanwang_second/front/mobile/images/details/coco/line-59fc505db8.webp";
@@ -92,25 +94,17 @@ export function BodysensorPhone({ locale, text, common }: ProductViewProps) {
             <span className="font-bold">{t("m.night.bold")}</span>
           </h2>
           <p className="mb-[0.6rem] text-[0.2rem]">{t("m.night.how")}</p>
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/zigbee/images/icon_04-42507e7003.webp",
-            )}
-            alt=""
-            width={267}
-            height={128}
-            unoptimized
-            className="mx-auto mb-[0.2rem] align-middle w-[38%]"
+          <TextImage
+            picture={PHONE_WORDS.icon_04}
+            locale={locale}
+            text={text}
+            className="block mx-auto mb-[0.2rem] align-middle w-[38%]"
           />
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/sensor/images/icon_01-7413420e87.webp",
-            )}
-            alt=""
-            width={351}
-            height={113}
-            unoptimized
-            className="mx-auto mb-[0.2rem] align-middle w-[55%]"
+          <TextImage
+            picture={PHONE_WORDS.icon_01}
+            locale={locale}
+            text={text}
+            className="block mx-auto mb-[0.2rem] align-middle w-[55%]"
           />
         </section>
         {/* sensor_sec6 */}
@@ -127,24 +121,22 @@ export function BodysensorPhone({ locale, text, common }: ProductViewProps) {
             <span className="font-bold">{t("m.delay.bold")}</span>
           </h2>
           <p className="mb-[0.6rem] text-[0.2rem]">{t("m.delay.how")}</p>
-          <Image
-            src={img(
-              "/guanwang_second/front/mobile/images/details/sensor/images/bg_05-22e18a6c92.webp",
-            )}
-            alt=""
-            width={790}
-            height={495}
-            unoptimized
-            className="inline align-middle w-full"
+          <TextImage
+            picture={PHONE_WORDS.bg_05}
+            locale={locale}
+            text={text}
+            className="inline-block align-middle w-full"
           />
         </section>
         {/* sensor_sec8 */}
-        <section
-          className="pt-[1.2rem] block w-full bg-cover text-center h-[12rem] text-white bg-no-repeat text-balance"
-          style={bg(
-            "/guanwang_second/front/mobile/images/details/sensor/images/bg_05-db1a7c5eaa.webp",
-          )}
-        >
+        <section className="pt-[1.2rem] block w-full text-center h-[12rem] text-white text-balance relative isolate">
+          <TextImage
+            picture={PHONE_WORDS.bg_05_2}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover", x: 0, y: 0 }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="mb-[0.3rem] font-medium text-[0.272rem]">
             {t("m.away.title")}{" "}
             <span className="font-bold">{t("m.away.bold")}</span>

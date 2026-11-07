@@ -52,5 +52,17 @@
   "parameter.l7": "Standards:",
   "parameter.v7": "GB 2099.7-2015, GB 1002-2008",
   "alt.size": "The S30c's size: 68 × 55 × 30 mm.",
-  "data_source_tips.data_source_tips": "* All the data above is from ORVIBO's lab; actual results may vary slightly with the measuring method."
+  "data_source_tips.data_source_tips": "* All the data above is from ORVIBO's lab; actual results may vary slightly with the measuring method.",
+  "pic.workday_mode": "Workday mode",
+  "pic.runs_the_water_heater": "Runs the water heater 1 hour after work",
+  "pic.holiday_mode": "Holiday mode",
+  "pic.heats_water_on_off": "Heats water on off-peak power",
+  "pic.compact_10_a_plug": "Compact 10 A plug",
+  "pic.voltage": "Voltage:",
+  "pic.current": "Current:",
+  "pic.power": "Power:",
+  "pic.safety_shutters": "Safety shutters",
+  "pic.nickel_plated_brass_contacts": "Nickel-plated brass contacts",
+  "pic.front_cover_v_0": "Front cover: V-0 fire-rated PC",
+  "pic.back_cover_v_0": "Back cover: V-0 fire-rated PC"
 }

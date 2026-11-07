@@ -1,6 +1,8 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { PHONE_WORDS } from "./pictureWords";
 
 const LINE =
   "/guanwang_second/front/mobile/images/details/coco/line-59fc505db8.webp";
@@ -93,12 +95,14 @@ export function DoorsensorPhone({ locale, text, common }: ProductViewProps) {
           </p>
         </section>
         {/* door_sec4 */}
-        <section
-          className="pt-[0.5rem] block w-full text-center h-[8.99rem] text-white bg-cover bg-no-repeat text-balance"
-          style={bg(
-            "/guanwang_second/front/mobile/images/details/door/images/bg_08-9e28694727.webp",
-          )}
-        >
+        <section className="pt-[0.5rem] block w-full text-center h-[8.99rem] text-white text-balance relative isolate">
+          <TextImage
+            picture={PHONE_WORDS.bg_08}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover", x: 0, y: 0 }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="mb-[0.5rem] px-[5%] font-medium text-[0.32rem] text-balance">
             {t("ds_page.df_title")}
           </h2>
@@ -107,12 +111,14 @@ export function DoorsensorPhone({ locale, text, common }: ProductViewProps) {
           </p>
         </section>
         {/* door_sec5 */}
-        <section
-          className="pt-[0.5rem] block w-full text-white h-[8.99rem] bg-cover text-center bg-no-repeat text-balance"
-          style={bg(
-            "/guanwang_second/front/mobile/images/details/door/images/bg_09-bed3bc4e70.webp",
-          )}
-        >
+        <section className="pt-[0.5rem] block w-full text-white h-[8.99rem] text-center text-balance relative isolate">
+          <TextImage
+            picture={PHONE_WORDS.bg_09}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover", x: 0, y: 0 }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="mb-[0.5rem] px-[5%] font-medium text-[0.24rem] text-center text-balance">
             {t("ds_page.df_title2")}
           </h2>
@@ -121,12 +127,14 @@ export function DoorsensorPhone({ locale, text, common }: ProductViewProps) {
           </p>
         </section>
         {/* door_sec6 */}
-        <section
-          className="pt-[0.5rem] block w-full text-white h-[8.98rem] bg-cover bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/mobile/images/details/door/images/bg_10-d97d59d4f8.webp",
-          )}
-        >
+        <section className="pt-[0.5rem] block w-full text-white h-[8.98rem] relative isolate">
+          <TextImage
+            picture={PHONE_WORDS.bg_10}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover", x: 0, y: 0 }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="mb-[0.5rem] px-[5%] font-medium text-[0.24rem] text-center text-balance">
             {t("m.burglar.title")}
           </h2>

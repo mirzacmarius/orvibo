@@ -1,7 +1,9 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
 import Link from "next/link";
+import { PHONE_WORDS } from "./pictureWords";
 
 export function SafepackagePhone({
   locale,
@@ -156,15 +158,12 @@ export function SafepackagePhone({
             {t("m.camera.desc")}
           </p>
           <div className="absolute bottom-[0.88rem] left-[2.45rem] w-[2.5rem] h-[7.06rem]">
-            <Image
-              src={img(
-                "/guanwang_second/front/mobile/images/details/safety/safety_step-665c160796.webp",
-              )}
-              alt=""
-              width={250}
-              height={706}
-              unoptimized
-              className="align-middle w-[2.5rem] h-[7.06rem]"
+            <TextImage
+              picture={PHONE_WORDS.safety_step}
+              locale={locale}
+              text={text}
+              fit={{ size: "fill" }}
+              className="block align-middle w-[2.5rem] h-[7.06rem]"
             />
             <span className="absolute left-[0.84rem] top-[0.31rem] -translate-y-1/2 whitespace-nowrap text-left text-[0.22rem] text-white">
               {t("m.steps.1")}

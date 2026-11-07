@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 const SPEC = [
   ["spec.l1", "spec.v1"],
@@ -24,22 +26,32 @@ export function MiniHostOverview({ locale, text, common }: ProductViewProps) {
         id="overview"
         role="img"
         aria-label={ts("alt.banner")}
-        className="h-[600px] bg-center bg-no-repeat"
-        style={bg(
-          "/guanwang_second/front/images/new/products/miniHost/mini_01-72cc3c57cc.webp",
-        )}
-      />
+        className="h-[600px] relative isolate"
+      >
+        <TextImage
+          picture={DESKTOP_WORDS.mini_01}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural" }}
+          className="absolute inset-0 -z-10"
+        />
+      </div>
       {/* pd_content */}
       <div className="bg-white">
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.features")}
-          className="h-[320px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/new/products/miniHost/mini_02-c2c93fa72c.webp",
-          )}
-        />
+          className="h-[320px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.mini_02}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
@@ -53,20 +65,30 @@ export function MiniHostOverview({ locale, text, common }: ProductViewProps) {
         <div
           role="img"
           aria-label={ts("alt.door")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/new/products/miniHost/mini_04-1f612edaea.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.mini_04}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.window")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/new/products/miniHost/mini_05-ea0c59df0d.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.mini_05}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
@@ -80,11 +102,16 @@ export function MiniHostOverview({ locale, text, common }: ProductViewProps) {
         <div
           role="img"
           aria-label={ts("alt.devices")}
-          className="h-[921px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/new/products/miniHost/mini_07-1eb44b5214.webp",
-          )}
-        />
+          className="h-[921px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.mini_07}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
@@ -98,11 +125,16 @@ export function MiniHostOverview({ locale, text, common }: ProductViewProps) {
         <div
           role="img"
           aria-label={ts("alt.app")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/new/products/miniHost/mini_09-def7530945.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.mini_09}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
@@ -113,12 +145,14 @@ export function MiniHostOverview({ locale, text, common }: ProductViewProps) {
           )}
         />
         {/* pd_img */}
-        <div
-          className="relative h-[920px] bg-center bg-no-repeat font-normal text-white"
-          style={bg(
-            "/guanwang_second/front/images/new/products/miniHost/mini_11-541907308d.webp",
-          )}
-        >
+        <div className="relative h-[920px] font-normal text-white isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.mini_11}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="absolute top-[236.5px] left-1/2 ml-[115px] text-[44px] leading-[56px]">
             {t("spec.title")}
           </h2>

@@ -110,5 +110,12 @@
   "parameter.v30": "≤ 5 W (infrared on)",
   "parameter.l31": "Mounting:",
   "parameter.v31": "Desk or wall",
-  "data_source_tips.data_source_tips": "* All the data above is from ORVIBO's lab; actual results may vary slightly with the measuring method."
+  "data_source_tips.data_source_tips": "* All the data above is from ORVIBO's lab; actual results may vary slightly with the measuring method.",
+  "pic.75_vertical": "75° vertical »",
+  "pic.355_orizontal": "",
+  "pic.355_horizontal": "355° horizontal »",
+  "pic.smart_pan_tilt_camera": "Smart pan-tilt camera",
+  "pic.ordinary_pan_tilt_camera": "Ordinary pan-tilt camera",
+  "pic.sd_card_storage": "SD card storage",
+  "pic.cloud_storage": "Cloud storage"
 }

@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function T1CSpec({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -18,12 +20,15 @@ export function T1CSpec({ locale, text, common }: ProductViewProps) {
           {t("install_sec1.install_sec12")}
         </p>
         {/* pic */}
-        <div
-          className="bg-center mx-auto mt-[90px] w-[1200px] h-[360px] bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/new/products/t1c/install_pic1-6728e45334.webp",
-          )}
-        />
+        <div className="mx-auto mt-[90px] w-[1200px] h-[360px] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.install_pic1}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         <p className="text-[14px] text-[#b0b0b0] text-center absolute w-full bottom-[80px]">
           {t("install_sec1.install_sec13")}
         </p>

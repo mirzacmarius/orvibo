@@ -1,9 +1,10 @@
 import { ProductInView } from "@/components/orvibo/product/ProductInView";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Link from "next/link";
+import { DESKTOP_WORDS } from "./pictureWords";
 
-const PICS = "/html/images/products/suite/door_pics.webp";
 const ICONS = "/html/images/products/suite/door_icons.webp";
 
 const SCENES = [
@@ -76,10 +77,15 @@ export function DoorsensorOverview({
             <p className="mx-auto mt-[20px] w-[80%] text-[18px] leading-[28px]">
               {t("ds_page.dt_txt")}
             </p>
-            <div
-              className="mx-auto mt-[96px] h-[325px] w-[321px] bg-no-repeat"
-              style={bg(PICS)}
-            />
+            <div className="mx-auto mt-[96px] h-[325px] w-[321px] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.door_pics}
+                locale={locale}
+                text={text}
+                fit={{ size: "natural", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </div>
           </div>
         </section>
         {/* ds_page ds_fourth */}
@@ -92,10 +98,15 @@ export function DoorsensorOverview({
             <p className="mx-auto mt-[20px] w-[80%] text-[18px] leading-[28px]">
               {t("ds_page.df_txt")}
             </p>
-            <div
-              className="mx-auto mt-[192px] h-[60px] w-[382px] bg-[position:-328px_0] bg-no-repeat"
-              style={bg(PICS)}
-            />
+            <div className="mx-auto mt-[192px] h-[60px] w-[382px] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.door_pics}
+                locale={locale}
+                text={text}
+                fit={{ size: "natural", x: "-328px", y: "0" }}
+                className="absolute inset-0 -z-10"
+              />
+            </div>
             <ol className="mx-auto mt-[18px] flex w-[488px] text-[18px]">
               <li className="w-1/3">{t("ds_page.df_tips")}</li>
               <li className="w-1/3">{t("ds_page.df_tips2")}</li>
@@ -113,10 +124,15 @@ export function DoorsensorOverview({
             <p className="mx-auto mt-[20px] w-[80%] text-[18px] leading-[28px]">
               {t("ds_page.df_txt2")}
             </p>
-            <div
-              className="mx-auto mt-[192px] h-[60px] w-[382px] bg-[position:-736px_0] bg-no-repeat"
-              style={bg(PICS)}
-            />
+            <div className="mx-auto mt-[192px] h-[60px] w-[382px] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.door_pics}
+                locale={locale}
+                text={text}
+                fit={{ size: "natural", x: "-736px", y: "0" }}
+                className="absolute inset-0 -z-10"
+              />
+            </div>
             <ol className="mx-auto mt-[18px] flex w-[488px] text-[18px]">
               <li className="w-1/3">{t("ds_page.df_tips4")}</li>
               <li className="w-1/3">{t("ds_page.df_tips5")}</li>
@@ -134,10 +150,15 @@ export function DoorsensorOverview({
             <p className="mx-auto mt-[20px] w-[80%] text-[18px] leading-[28px]">
               {t("ds_page.ds_txt")}
             </p>
-            <div
-              className="mx-auto mt-[92px] h-[301px] w-[450px] bg-[position:-342px_-74px] bg-no-repeat"
-              style={bg(PICS)}
-            />
+            <div className="mx-auto mt-[92px] h-[301px] w-[450px] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.door_pics}
+                locale={locale}
+                text={text}
+                fit={{ size: "natural", x: "-342px", y: "-74px" }}
+                className="absolute inset-0 -z-10"
+              />
+            </div>
           </div>
         </section>
         {/* ds_page ds_eighth */}
@@ -146,10 +167,15 @@ export function DoorsensorOverview({
             <h2 className="pt-[136px] text-[30px] text-[#333333]">
               {t("ds_page.de_title")}
             </h2>
-            <div
-              className="mx-auto mt-[34px] h-[307px] w-[1010px] bg-[position:0_-453px] bg-no-repeat"
-              style={bg(PICS)}
-            />
+            <div className="mx-auto mt-[34px] h-[307px] w-[1010px] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.door_pics}
+                locale={locale}
+                text={text}
+                fit={{ size: "natural", x: "0", y: "-453px" }}
+                className="absolute inset-0 -z-10"
+              />
+            </div>
             <ol className="flex gap-x-[53px]">
               {FEATURES.map(([numeral, key, icon]) => (
                 <li key={key} className="mt-[34px] w-[195px]">

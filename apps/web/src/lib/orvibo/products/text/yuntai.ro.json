@@ -110,5 +110,12 @@
   "parameter.v30": "≤ 5 W (cu infraroșul pornit)",
   "parameter.l31": "Montaj:",
   "parameter.v31": "Pe masă sau pe perete",
-  "data_source_tips.data_source_tips": "* Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot varia ușor în funcție de metoda de măsurare."
+  "data_source_tips.data_source_tips": "* Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot varia ușor în funcție de metoda de măsurare.",
+  "pic.75_vertical": "75° vertical »",
+  "pic.355_orizontal": "355° orizontal »",
+  "pic.355_horizontal": "",
+  "pic.smart_pan_tilt_camera": "Cameră inteligentă rotativă",
+  "pic.ordinary_pan_tilt_camera": "Cameră rotativă obișnuită",
+  "pic.sd_card_storage": "Stocare pe card SD",
+  "pic.cloud_storage": "Stocare în cloud"
 }

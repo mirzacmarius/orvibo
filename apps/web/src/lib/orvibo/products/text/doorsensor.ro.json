@@ -64,5 +64,17 @@
   "m.fridge.title": "Fără griji: „Frigiderul e închis”",
   "m.fridge.desc": "Montezi senzorul pe ușa frigiderului și vezi în timp real dacă e deschisă sau închisă; dacă a rămas deschisă, primești o notificare. Cu banii economisiți la curent îți mai iei un senzor: bine pentru buzunar și pentru mediu.",
   "m.spec.product": "„Senzor pentru uși și ferestre”",
-  "m.labNote": "Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot diferi puțin în funcție de metoda de măsurare."
+  "m.labNote": "Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot diferi puțin în funcție de metoda de măsurare.",
+  "pic.power": "Putere",
+  "pic.time": "Timp",
+  "pic.it_rains": "Plouă",
+  "pic.opener_starts": "Pornește motorul",
+  "pic.window_shuts": "Geam închis",
+  "pic.kids_get_home": "Vin copiii",
+  "pic.door_opens": "Ușa se deschide",
+  "pic.doorbell_rings": "Sună soneria",
+  "pic.door_opens_2": "Ușă deschisă",
+  "pic.camera_records": "Camera filmează",
+  "pic.home_alarm": "Alarmă în casă",
+  "pic.alert_sent": "Primești alerta"
 }

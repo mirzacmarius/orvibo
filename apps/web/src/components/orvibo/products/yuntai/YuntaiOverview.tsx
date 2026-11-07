@@ -1,7 +1,9 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { YuntaiCompare } from "./YuntaiCompare";
 import { YuntaiDevices } from "./YuntaiDevices";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The devices in sec11, in YuntaiDevices' order: text key, icon and product picture. */
 const DEVICES = [
@@ -90,24 +92,28 @@ export function YuntaiOverview({ locale, text, common }: ProductViewProps) {
           />
         </div>
         {/* sec3 */}
-        <div
-          className="h-[9.5rem] min-w-[1280px] overflow-hidden bg-cover bg-center bg-no-repeat pt-[0.8rem] text-center text-[#2f2f2f]"
-          style={bg(
-            "/guanwang_second/front/images/2019/products/yuntai/sec3-37b1769b22.webp",
-          )}
-        >
+        <div className="h-[9.5rem] min-w-[1280px] overflow-hidden pt-[0.8rem] text-center text-[#2f2f2f] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec3}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="text-[0.36rem] leading-[1em]">{t("w.title2")}</h2>
           <p className="mx-auto mt-[0.21rem] max-w-[9rem] text-balance text-[0.16rem] leading-[0.26rem]">
             {t("w.desc")}
           </p>
         </div>
         {/* sec4 */}
-        <div
-          className="h-[9.53rem] min-w-[1280px] overflow-hidden bg-cover bg-center bg-no-repeat pt-[4.37rem] text-center text-white"
-          style={bg(
-            "/guanwang_second/front/images/2019/products/yuntai/sec4-5d84b2f921.webp",
-          )}
-        >
+        <div className="h-[9.53rem] min-w-[1280px] overflow-hidden pt-[4.37rem] text-center text-white relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec4}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="text-[0.36rem] leading-[1em]">{t("w.title3")}</h2>
           <p className="mx-auto mt-[0.21rem] max-w-[10rem] text-balance text-[0.16rem] leading-[0.26rem]">
             {t("w.desc2")}
@@ -181,12 +187,14 @@ export function YuntaiOverview({ locale, text, common }: ProductViewProps) {
           </div>
         </div>
         {/* sec10 */}
-        <div
-          className="h-[9.5rem] min-w-[1280px] overflow-hidden bg-cover bg-center bg-no-repeat pt-[0.83rem] text-center text-white"
-          style={bg(
-            "/guanwang_second/front/images/2019/products/yuntai/sec10-e7d2e47dcc.webp",
-          )}
-        >
+        <div className="h-[9.5rem] min-w-[1280px] overflow-hidden pt-[0.83rem] text-center text-white relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec10}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className="text-[0.36rem] leading-[1em]">{t("w.title8")}</h2>
           <p className="mx-auto mt-[0.21rem] max-w-[10.4rem] text-balance text-[0.16rem]">
             {t("w.desc7")}

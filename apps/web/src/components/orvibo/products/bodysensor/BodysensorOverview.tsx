@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function BodysensorOverview({ locale, text, common }: ProductViewProps) {
   const { t, ts, bg, lines } = productPageHelpers(locale, text);
@@ -11,49 +13,74 @@ export function BodysensorOverview({ locale, text, common }: ProductViewProps) {
         id="overview"
         role="img"
         aria-label={ts("alt.banner")}
-        className="h-[600px] bg-center bg-no-repeat"
-        style={bg(
-          "/guanwang_second/front/images/products/bodysensor/01-cec630379a.webp",
-        )}
-      />
+        className="h-[600px] relative isolate"
+      >
+        <TextImage
+          picture={DESKTOP_WORDS.pic01}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural" }}
+          className="absolute inset-0 -z-10"
+        />
+      </div>
       {/* pd_content */}
       <div className="bg-white">
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.features")}
-          className="h-[320px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/02-87d5af45bc.webp",
-          )}
-        />
+          className="h-[320px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic02}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.rooms")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/03-94f24813b6.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic03}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.night")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/04-f26fa79597.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic04}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.delay")}
-          className="h-[923px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/05_1-9c5250f11c.webp",
-          )}
-        />
+          className="h-[923px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic05_1}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
@@ -67,29 +94,44 @@ export function BodysensorOverview({ locale, text, common }: ProductViewProps) {
         <div
           role="img"
           aria-label={ts("alt.mount")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/07-442e669616.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic07}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.install")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/08-c4f4328c76.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic08}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"
           aria-label={ts("alt.app")}
-          className="h-[920px] bg-center bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/images/products/bodysensor/09-049d1c9139.webp",
-          )}
-        />
+          className="h-[920px] relative isolate"
+        >
+          <TextImage
+            picture={DESKTOP_WORDS.pic09}
+            locale={locale}
+            text={text}
+            fit={{ size: "natural" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* pd_img */}
         <div
           role="img"

@@ -64,5 +64,17 @@
   "m.fridge.title": "No more worrying: “Your fridge is shut”",
   "m.fridge.desc": "Fit the sensor on the fridge door and see in real time whether it's open or shut; if it's left open, you get a notification. The power you save pays for another sensor: good for your wallet and the planet.",
   "m.spec.product": "“Door & Window Sensor”",
-  "m.labNote": "All the data above come from ORVIBO's lab; actual results may differ slightly with the measuring method."
+  "m.labNote": "All the data above come from ORVIBO's lab; actual results may differ slightly with the measuring method.",
+  "pic.power": "Power",
+  "pic.time": "Time",
+  "pic.it_rains": "It rains",
+  "pic.opener_starts": "Opener starts",
+  "pic.window_shuts": "Window shuts",
+  "pic.kids_get_home": "Kids get home",
+  "pic.door_opens": "Door opens",
+  "pic.doorbell_rings": "Doorbell rings",
+  "pic.door_opens_2": "Door opens",
+  "pic.camera_records": "Camera records",
+  "pic.home_alarm": "Home alarm",
+  "pic.alert_sent": "Alert sent"
 }
