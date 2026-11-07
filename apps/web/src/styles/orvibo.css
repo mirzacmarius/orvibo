@@ -76,6 +76,79 @@ body:has(.orvibo-site) {
   background-color: #f0f2f5;
 }
 
+/* ORVIBO.ro design system tokens (https://claude.ai/artifact/6LfGFDDLBMjnBLSZBmsdXC). Paper is the default theme; a
+   section on a black band (header, footer, hero films) adds `ov-band` and every token inverts inside it, and `ov-paper`
+   turns them back (the white mega-menu under the header). Use them through the Tailwind `ov` names (bg-ov-page,
+   text-ov-ink-muted, …), not by hand. */
+:root,
+.ov-paper {
+  --ov-page: #f0f2f5;
+  --ov-surface: #ffffff;
+  --ov-surface-muted: #eeeeee;
+  --ov-ink: #111111;
+  --ov-ink-muted: #666666;
+  --ov-ink-disabled: #a7a7a7;
+  --ov-on-ink: #ffffff;
+  --ov-ink-hover: #2f2f2f;
+  --ov-line: #e8e8e8;
+  --ov-line-strong: #8c8c8c;
+  --ov-accent: #0d7fef;
+  --ov-accent-ink: #005ec9;
+  --ov-champagne: #d9bf93;
+  --ov-success: #1a7f37;
+  --ov-success-soft: #e6f4ea;
+  --ov-warning: #a15c00;
+  --ov-warning-soft: #fdf1e1;
+  --ov-danger: #c8102e;
+  --ov-danger-soft: #fdecee;
+  --ov-info-soft: #e7f1fd;
+  --ov-scrim: rgba(0, 0, 0, 0.6);
+}
+
+/* Back to paper inside a band: the white mega-menu under the black header. */
+.ov-paper {
+  color: var(--ov-ink);
+}
+
+.ov-band {
+  --ov-page: #000000;
+  --ov-surface: #111111;
+  --ov-surface-muted: #1c1c1c;
+  --ov-ink: #ffffff;
+  --ov-ink-muted: #a7a7a7;
+  --ov-ink-disabled: #5c5c5c;
+  --ov-on-ink: #111111;
+  --ov-ink-hover: #d9d9d9;
+  --ov-line: #2a2a2a;
+  --ov-line-strong: #707070;
+  --ov-accent: #359ffc;
+  --ov-accent-ink: #359ffc;
+  --ov-success: #4cc38a;
+  --ov-success-soft: #0c2414;
+  --ov-warning: #f0a33a;
+  --ov-warning-soft: #2a1c08;
+  --ov-danger: #ff6b6b;
+  --ov-danger-soft: #2a0d10;
+  --ov-info-soft: #0a1d33;
+  --ov-scrim: rgba(0, 0, 0, 0.7);
+  background-color: var(--ov-page);
+  color: var(--ov-ink);
+}
+
+/* One focus ring for every control: solid accent, 2px off the edge, in both themes. */
+.ov-focus-ring:focus-visible {
+  outline: 2px solid var(--ov-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ov-motion,
+  .ov-motion::before,
+  .ov-motion::after {
+    transition: none !important;
+  }
+}
+
 /* One of three pictures shown in turn, a second each, as orvibo.com's animated GIFs do (S3's three scenes): give the
    second and third `animation-delay` -2s and -1s. */
 @keyframes orvibo-one-of-three {

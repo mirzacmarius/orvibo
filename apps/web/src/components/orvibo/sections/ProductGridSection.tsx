@@ -24,7 +24,7 @@ export function ProductGridSection({
   return (
     <section className="mx-auto mt-[calc(var(--orvibo-rem-scale)*1.4)] flex w-[min(16rem,calc(100%-32px))] flex-col items-center">
       <NextLink
-        className="group relative text-[calc(var(--orvibo-rem-scale)*0.48)] font-extrabold leading-[calc(var(--orvibo-rem-scale)*0.66)] text-[#111] after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 after:bg-black after:transition-all after:duration-300 hover:text-[#111] hover:after:w-full"
+        className="group relative text-[calc(var(--orvibo-rem-scale)*0.48)] font-extrabold leading-[calc(var(--orvibo-rem-scale)*0.66)] !text-ov-ink after:absolute after:bottom-[-4px] after:left-0 after:h-[3px] after:w-0 after:bg-ov-ink after:transition-all after:duration-300 hover:after:w-full"
         href={titleHref}
       >
         {title}
@@ -55,7 +55,7 @@ export function ProductGridSection({
                 }}
               />
             </div>
-            <div className="mt-[calc(var(--orvibo-rem-scale)*0.4)] text-[calc(var(--orvibo-rem-scale)*0.24)] font-bold leading-[calc(var(--orvibo-rem-scale)*0.32)] text-[#111]">
+            <div className="mt-[calc(var(--orvibo-rem-scale)*0.4)] text-[calc(var(--orvibo-rem-scale)*0.24)] font-bold leading-[calc(var(--orvibo-rem-scale)*0.32)] text-ov-ink">
               {item.title}
             </div>
           </NextLink>

@@ -8,16 +8,10 @@ import {
   type PageCopy,
 } from "@/app/[locale]/dictionaries";
 import { SiteShell } from "@/components/orvibo/layout";
-import { Link } from "@/components/orvibo/ui/link";
+import { Card, CardText, CardTitle } from "@/components/orvibo/ui/card";
+import { TextLink } from "@/components/orvibo/ui/text-link";
 import { listProductSlugs } from "@/lib/orvibo/products/registry";
 import { orviboRoutes } from "@/lib/orvibo/routes";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@v1/ui/card";
 
 interface OrviboPageShellProps {
   locale: string;
@@ -42,50 +36,38 @@ export async function OrviboPageShell({
   });
 
   return (
-    <div className="orvibo-inner min-h-screen min-w-0 bg-[#f0f2f5] text-[#111]">
+    <div className="orvibo-inner min-h-screen min-w-0 bg-ov-page text-ov-ink">
       <SiteShell base={base} dict={dict}>
-        <main className="orvibo-inner-main mx-auto max-w-[1200px] px-[24px] py-[96px]">
-          <h1 className="mb-[16px] text-[32px] font-medium leading-[40px]">
-            {copy.title}
-          </h1>
+        <main className="orvibo-inner-main mx-auto max-w-ov-content px-ov-4 py-ov-24 sm:px-ov-6">
+          <h1 className="mb-ov-4 text-ov-title-l text-ov-ink">{copy.title}</h1>
           {copy.lead ? (
-            <p className="mb-[32px] max-w-[640px] text-[16px] leading-[26px] text-[#666]">
+            <p className="mb-ov-8 max-w-[640px] text-ov-body text-ov-ink-muted">
               {copy.lead}
             </p>
           ) : null}
           {children ?? (
-            <Card className="max-w-[760px] rounded-[4px] bg-white shadow-none">
-              <CardHeader className="p-[32px] pb-[16px]">
-                <CardTitle className="text-[24px] font-medium leading-[32px] text-orvibo-fg">
-                  {shell.title}
-                </CardTitle>
-                <CardDescription className="text-[16px] leading-[26px] text-[#666]">
-                  {shell.description}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-[32px] pt-0 text-[14px] leading-[24px] text-[#777]">
-                {builtProducts.length > 0 ? (
-                  <>
-                    <p>{shell.body}</p>
-                    {/* `.orvibo-site a` inherits its colour, so links are coloured via their wrapper. */}
-                    <ul className="mt-[12px] flex flex-col gap-[8px]">
-                      {builtProducts.map((product) => (
-                        <li
-                          className="w-fit text-[16px] leading-[24px] text-orvibo-link hover:text-orvibo-link-hover"
-                          key={product.slug}
-                        >
-                          <Link href={routes.product(product.slug)}>
-                            {product.title}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                ) : null}
-                <p className="mt-[24px] w-fit text-[14px] leading-[24px] text-orvibo-link hover:text-orvibo-link-hover">
-                  <Link href={routes.home}>{dict.shell.backHome}</Link>
-                </p>
-              </CardContent>
+            <Card className="max-w-[760px]">
+              <CardTitle>{shell.title}</CardTitle>
+              <CardText>{shell.description}</CardText>
+              {builtProducts.length > 0 ? (
+                <div className="flex flex-col gap-ov-3">
+                  <p className="text-ov-body-s text-ov-ink-muted">
+                    {shell.body}
+                  </p>
+                  <ul className="flex flex-col gap-ov-2">
+                    {builtProducts.map((product) => (
+                      <li className="text-ov-body" key={product.slug}>
+                        <TextLink href={routes.product(product.slug)}>
+                          {product.title}
+                        </TextLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+              <p className="mt-ov-2 text-ov-body-s">
+                <TextLink href={routes.home}>{dict.shell.backHome}</TextLink>
+              </p>
             </Card>
           )}
         </main>
