@@ -71,5 +71,14 @@
   "m.spec.beam": "Unghi fascicul",
   "m.spec.downlight": "Spot încastrat inteligent ultrasubțire S3",
   "m.spec.spot": "Spot inteligent ultrasubțire S3",
-  "m.spec.antiglare": "Spot inteligent antiorbire S3"
+  "m.spec.antiglare": "Spot inteligent antiorbire S3",
+  "pic.10_000_brightness_levels": "10.000 de trepte de luminozitate",
+  "pic.butler_turn_off_the": "Majordomule, stinge lumina.",
+  "pic.1st_gen_standard_spotlight": "Generația 1\nSpot obișnuit",
+  "pic.2nd_gen_anti_glare": "Generația 2\nSpot antiorbire",
+  "pic.3rd_gen_surgical_grade": "Generația 3\nSpot antiorbire\nde nivel chirurgical",
+  "pic.bright": "Luminos",
+  "pic.no_visible_flicker": "Fără pâlpâire",
+  "pic.true_colors": "Culori fidele",
+  "pic.more_durable": "Mai durabil"
 }

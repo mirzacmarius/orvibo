@@ -479,6 +479,7 @@ export function ChuangliansmartOverview({
                 picture={DESKTOP_WORDS.sec8_2}
                 locale={locale}
                 text={text}
+                fit={{ size: "fill" }}
                 className="inline-block align-middle w-[0.55rem] h-[0.69rem]"
               />
               <h2 className="mt-[0.21rem] mb-[0.1rem] text-[0.24rem] leading-[0.33rem] font-extrabold">

@@ -2,11 +2,13 @@ import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { PhoneSwiper } from "@/components/orvibo/product/PhoneSwiper";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { orviboRoutes } from "@/lib/orvibo/routes";
 import { cn } from "@v1/ui/utils";
 import Link from "next/link";
+import { DESKTOP_WORDS, PHONE_WORDS } from "./pictureWords";
 
 /** orvibo.com's phone pictures for this page. */
 const PIC = "/guanwang_second/front/mobile/images/new/product/s";
@@ -63,21 +65,21 @@ const STRIPS = {
 
 /** The optics cards (sec5): orvibo.com's phone page has the first two only, so the desktop page's six. */
 const OPTICS = [
-  "sec5_1-d80d70e70c",
-  "sec5_2-0c933d7a0e",
-  "sec5_3-60b795f2f4",
-  "sec5_4-b4db8f63a4",
-  "sec5_5-93a890e592",
-  "sec5_6-aa4d5ef309",
+  DESKTOP_WORDS.sec5_1,
+  DESKTOP_WORDS.sec5_2,
+  DESKTOP_WORDS.sec5_3,
+  DESKTOP_WORDS.sec5_4,
+  DESKTOP_WORDS.sec5_5,
+  DESKTOP_WORDS.sec5_6,
 ];
 
 /** The presence sensor's slides (sec12): orvibo.com's phone pictures are missing on its server, so the
  * desktop page's four, with their names. */
 const SENSOR = [
-  ["sec13_1-a06407767e", "sec13.slide_info"],
-  ["sec13_2-29ecc08128", "sec13.slide_info2"],
-  ["sec13_3-ef72b3e026", "sec13.slide_info3"],
-  ["sec13_4-3a9e28d8c3", "sec13.slide_info4"],
+  [DESKTOP_WORDS.sec13_1, "sec13.slide_info"],
+  [DESKTOP_WORDS.sec13_2, "sec13.slide_info2"],
+  [DESKTOP_WORDS.sec13_3, "sec13.slide_info3"],
+  [DESKTOP_WORDS.sec13_4, "sec13.slide_info4"],
 ] as const;
 
 /** The SOPRO S page on phones: orvibo.com's phone page (/mobile/cn/product/s.html), its HTML words in
@@ -189,39 +191,74 @@ export function SoproSPhone({ locale, text, base, common }: ProductViewProps) {
         {/* sec2: the cards */}
         <div className="pt-[0.3rem] pb-[0.5rem] flex justify-center w-full">
           <div className="w-[7.08rem]">
-            <ProductReveal
-              className="bg-center bg-no-repeat bg-cover h-[3.18rem]"
-              style={bg(`${PIC}/sec2_1-aca0b1edcc.webp`)}
-            />
-            <div className="mt-[0.24rem] flex">
-              <ProductReveal
-                className="bg-center mr-[0.24rem] bg-no-repeat bg-cover w-[3.72rem] h-[6.1rem]"
-                style={bg(`${PIC}/sec2_2-c079328828.webp`)}
+            <ProductReveal className="h-[3.18rem] relative isolate">
+              <TextImage
+                picture={PHONE_WORDS.sec2_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
               />
+            </ProductReveal>
+            <div className="mt-[0.24rem] flex">
+              <ProductReveal className="mr-[0.24rem] w-[3.72rem] h-[6.1rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec2_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
               <div className="w-[3.11rem]">
-                <ProductReveal
-                  className="bg-center mb-[0.24rem] bg-no-repeat bg-cover h-[2.79rem]"
-                  style={bg(`${PIC}/sec2_3-5dfdde94cb.webp`)}
-                />
-                <ProductReveal
-                  className="bg-center bg-no-repeat bg-cover h-[3.05rem]"
-                  style={bg(`${PIC}/sec2_4-4ded9b6ee3.webp`)}
-                />
+                <ProductReveal className="mb-[0.24rem] h-[2.79rem] relative isolate">
+                  <TextImage
+                    picture={PHONE_WORDS.sec2_3}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
+                <ProductReveal className="h-[3.05rem] relative isolate">
+                  <TextImage
+                    picture={PHONE_WORDS.sec2_4}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
               </div>
             </div>
-            <ProductReveal
-              className="bg-center mt-[0.24rem] bg-no-repeat bg-cover h-[3.7rem]"
-              style={bg(`${PIC}/sec2_5-0bc3951eda.webp`)}
-            />
+            <ProductReveal className="mt-[0.24rem] h-[3.7rem] relative isolate">
+              <TextImage
+                picture={PHONE_WORDS.sec2_5}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
             <div className="mt-[0.24rem] flex">
-              <ProductReveal
-                className="bg-center mr-[0.24rem] bg-no-repeat bg-cover w-[3.42rem] h-[3.44rem]"
-                style={bg(`${PIC}/sec2_6-5c27cae2df.webp`)}
-              />
-              <ProductReveal
-                className="bg-center bg-no-repeat bg-cover w-[3.42rem] h-[3.44rem]"
-                style={bg(`${PIC}/sec2_7-fc0523ffd6.webp`)}
-              />
+              <ProductReveal className="mr-[0.24rem] w-[3.42rem] h-[3.44rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec2_6}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="w-[3.42rem] h-[3.44rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec2_7}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
@@ -292,14 +329,19 @@ export function SoproSPhone({ locale, text, base, common }: ProductViewProps) {
             className="mt-[0.6rem] px-[0.49rem] pb-[0.66rem]"
             slideClassName="!w-[6.35rem] pr-[0.3rem]"
             paginationClassName="bottom-0 left-[0.49rem]"
-            slides={OPTICS.map((name, i) => ({
-              key: name,
+            slides={OPTICS.map((picture, i) => ({
+              key: picture.src,
               content: (
                 <div className="rounded-[0.3rem] overflow-hidden w-[6.05rem] h-[7.94rem] bg-white">
-                  <div
-                    className="bg-top bg-no-repeat bg-cover h-[6rem]"
-                    style={bg(`${DESK}/${name}.webp`)}
-                  />
+                  <div className="relative isolate h-[6rem]">
+                    <TextImage
+                      picture={picture}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 50, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </div>
                   <p className="flex items-center justify-center h-[1.94rem] px-[0.3rem] text-center text-[0.24rem] leading-[0.36rem] font-medium text-[#111111]">
                     {t(`sec5.card${i + 1}`)}
                   </p>
@@ -363,10 +405,15 @@ export function SoproSPhone({ locale, text, base, common }: ProductViewProps) {
                 key: "bedroom",
                 label: t("sec7.swiper_pagination_item3"),
                 content: (
-                  <div
-                    className="bg-center bg-no-repeat bg-cover w-full h-[9.8rem]"
-                    style={bg(`${PIC}/sec7_3-54c89bedb9.webp`)}
-                  />
+                  <div className="w-full h-[9.8rem] relative isolate">
+                    <TextImage
+                      picture={PHONE_WORDS.sec7_3}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover" }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </div>
                 ),
               },
             ]}
@@ -379,24 +426,44 @@ export function SoproSPhone({ locale, text, base, common }: ProductViewProps) {
           </ProductReveal>
           <div className="mt-[0.6rem] flex">
             <div className="mr-[0.24rem]">
-              <ProductReveal
-                className="bg-center mb-[0.24rem] bg-no-repeat bg-cover w-[3.33rem] h-[4.33rem]"
-                style={bg(`${PIC}/sec8_1-1b61dd62fb.webp`)}
-              />
-              <ProductReveal
-                className="bg-center bg-no-repeat bg-cover w-[3.33rem] h-[5.43rem]"
-                style={bg(`${PIC}/sec8_2-3d8abc9851.webp`)}
-              />
+              <ProductReveal className="mb-[0.24rem] w-[3.33rem] h-[4.33rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec8_1}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="w-[3.33rem] h-[5.43rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec8_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
             <div>
-              <ProductReveal
-                className="bg-center mb-[0.24rem] bg-no-repeat bg-cover w-[3.33rem] h-[5.43rem]"
-                style={bg(`${PIC}/sec8_3-66b126ec68.webp`)}
-              />
-              <ProductReveal
-                className="bg-center bg-no-repeat bg-cover w-[3.33rem] h-[4.33rem]"
-                style={bg(`${PIC}/sec8_4-9187ec90f1.webp`)}
-              />
+              <ProductReveal className="mb-[0.24rem] w-[3.33rem] h-[5.43rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec8_3}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="w-[3.33rem] h-[4.33rem] relative isolate">
+                <TextImage
+                  picture={PHONE_WORDS.sec8_4}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
@@ -515,14 +582,19 @@ export function SoproSPhone({ locale, text, base, common }: ProductViewProps) {
             className="mt-[0.9rem] px-[0.3rem]"
             slideClassName="!w-[6.35rem] pr-[0.3rem]"
             pagination="none"
-            slides={SENSOR.map(([name, key]) => ({
-              key: name,
+            slides={SENSOR.map(([picture, key]) => ({
+              key: picture.src,
               content: (
                 <div className="w-[6.05rem]">
-                  <div
-                    className="rounded-[0.2rem] bg-center bg-no-repeat bg-cover aspect-[1200/605]"
-                    style={bg(`${DESK}/${name}.webp`)}
-                  />
+                  <div className="relative isolate overflow-hidden rounded-[0.2rem] aspect-[1200/605]">
+                    <TextImage
+                      picture={picture}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover" }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </div>
                   <p className="mt-[0.4rem] text-[0.28rem] leading-[0.4rem] font-extrabold text-white">
                     {t(key)}
                   </p>
@@ -554,10 +626,15 @@ export function SoproSPhone({ locale, text, base, common }: ProductViewProps) {
               {t("sec14.desc")}
             </p>
           </ProductReveal>
-          <div
-            className="bg-center mt-[0.9rem] rounded-[0.3rem] bg-no-repeat bg-cover w-[6.9rem] h-[11.1rem]"
-            style={bg(`${PIC}/sec13-e4aae5c22a.webp`)}
-          />
+          <div className="mt-[0.9rem] rounded-[0.3rem] w-[6.9rem] h-[11.1rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec13}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec14: energy saving, the app's cards */}
         <div className="pt-[2.1rem]">

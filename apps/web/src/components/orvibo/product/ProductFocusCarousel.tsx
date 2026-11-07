@@ -6,8 +6,8 @@ import { type ReactNode, useEffect, useRef, useState } from "react";
 
 export interface ProductFocusSlide {
   key: string;
-  /** Resolved image URL (a film's poster when `video` is set). */
-  image: string;
+  /** Resolved image URL (a film's poster when `video` is set); left out when the overlay draws the picture. */
+  image?: string;
   /** A film that plays over the image while the slide is in view. */
   video?: string;
   title?: ReactNode;
@@ -304,7 +304,11 @@ export function ProductFocusCarousel({
                     style.image,
                     current ? "after:opacity-0" : style.imageDimmed,
                   )}
-                  style={{ backgroundImage: `url(${slide.image})` }}
+                  style={
+                    slide.image
+                      ? { backgroundImage: `url(${slide.image})` }
+                      : undefined
+                  }
                 >
                   {slide.video && (
                     <MarketingVideo

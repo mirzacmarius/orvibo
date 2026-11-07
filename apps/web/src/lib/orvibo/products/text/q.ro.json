@@ -103,5 +103,18 @@
   "spec.recessed.spot": "Spot inteligent antiorbire, seria Q",
   "spec.recessed.down": "Spot încastrat inteligent antiorbire, seria Q",
   "spec.recessed.mount": "Montaj încastrat",
-  "spec.recessed.control": "Cu un MixPad, fiecare lampă se controlează și se reglează separat, imediat ce e alimentată"
+  "spec.recessed.control": "Cu un MixPad, fiecare lampă se controlează și se reglează separat, imediat ce e alimentată",
+  "pic.touch": "Tactil",
+  "pic.voice": "Voce",
+  "pic.buttons": "Butoane",
+  "pic.warm_light_like_the": "Lumină caldă, ca soarele de seară:\nprimitoare și confortabilă",
+  "pic.suggested_rooms_bedroom_tea": "Camere recomandate: dormitor, camera de ceai etc.",
+  "pic.warm_white_light_like": "Lumină alb-caldă, ca soarele de amiază:\nluminoasă și blândă",
+  "pic.suggested_rooms_living_room": "Camere recomandate: living, bibliotecă etc.",
+  "pic.white_light_like_the": "Lumină albă, ca soarele dimineții:\nte ține alert și concentrat",
+  "pic.suggested_rooms_office_kitchen": "Camere recomandate: birou, bucătărie, baie etc.",
+  "pic.if_infringing_contact_us": "Dacă încalcă drepturi, contactați-ne",
+  "pic.asian_skin_tone_fidelity": "Redarea tenului asiatic",
+  "pic.daylight_similarity": "Asemănarea cu lumina zilei",
+  "pic.makeup_color_rendering": "Redarea culorilor la machiaj"
 }

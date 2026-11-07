@@ -103,5 +103,18 @@
   "spec.recessed.spot": "Anti-glare smart spotlight, Q Series",
   "spec.recessed.down": "Anti-glare smart downlight, Q Series",
   "spec.recessed.mount": "Recessed mounting",
-  "spec.recessed.control": "With a MixPad, each light is controlled and dimmed on its own as soon as it is powered"
+  "spec.recessed.control": "With a MixPad, each light is controlled and dimmed on its own as soon as it is powered",
+  "pic.touch": "Touch",
+  "pic.voice": "Voice",
+  "pic.buttons": "Buttons",
+  "pic.warm_light_like_the": "Warm light, like the evening sun:\ncozy and comfortable",
+  "pic.suggested_rooms_bedroom_tea": "Suggested rooms: bedroom, tea room, etc.",
+  "pic.warm_white_light_like": "Warm white light, like the midday sun:\nbright and soft",
+  "pic.suggested_rooms_living_room": "Suggested rooms: living room, study, etc.",
+  "pic.white_light_like_the": "White light, like the morning sun:\nfresh and focused",
+  "pic.suggested_rooms_office_kitchen": "Suggested rooms: office, kitchen, bathroom, etc.",
+  "pic.if_infringing_contact_us": "If infringing, contact us to remove",
+  "pic.asian_skin_tone_fidelity": "Asian skin tone fidelity",
+  "pic.daylight_similarity": "Daylight similarity",
+  "pic.makeup_color_rendering": "Makeup color rendering"
 }

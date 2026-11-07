@@ -29,5 +29,11 @@
   "m.keyBedroom": "Bedroom",
   "m.onlyDefy": "*Only on the Defy smart switch",
   "m.mixctrlDesc": "Single press, long press and more.",
-  "m.mixctrlSoon": "*MixCtrl™ 2.0 is coming soon."
+  "m.mixctrlSoon": "*MixCtrl™ 2.0 is coming soon.",
+  "pic.touch_paint_finish": "Touch Paint™ finish",
+  "pic.shallow_dip_design": "Shallow-dip design",
+  "pic.mixctrl_2_0": "MixCtrl™ 2.0",
+  "pic.keys": "keys",
+  "pic.tunable_light": "Tunable light",
+  "pic.only_on_the_defy": "*Only on the Defy smart switch (touchscreen version)"
 }

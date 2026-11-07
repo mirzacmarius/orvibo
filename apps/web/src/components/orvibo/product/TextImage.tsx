@@ -68,12 +68,13 @@ export interface TextImagePicture {
 
 /**
  * How the picture fills the box the TextImage is given, as a CSS background fills its element: `size` as
- * background-size ("cover", "contain", "width" for `100% auto`, "natural" for the picture's own pixels) and `x`, `y`
- * as background-position, in % (50 centres it, 0 puts it at the left or top edge). The picture is clipped to the box.
+ * background-size ("cover", "contain", "width" for `100% auto`, "natural" for the picture's own pixels, "fill" for
+ * `100% 100%`, as an img given both a width and a height is stretched) and `x`, `y` as background-position, in %
+ * (50 centres it, 0 puts it at the left or top edge). The picture is clipped to the box.
  */
 export interface TextImageFit {
   /** Or a CSS width, with the height by the picture's ratio (`background-size: 7.5rem auto`). */
-  size: "cover" | "contain" | "width" | "natural" | (string & {});
+  size: "cover" | "contain" | "fill" | "width" | "natural" | (string & {});
   /** A % (as background-position's %), or a CSS length from the left or top edge. */
   x?: number | string;
   y?: number | string;
@@ -87,11 +88,13 @@ function fitStyle(picture: TextImagePicture, fit: TextImageFit): CSSProperties {
       ? [`max(100cqw, ${ratio * 100}cqh)`, `max(100cqh, ${100 / ratio}cqw)`]
       : fit.size === "contain"
         ? [`min(100cqw, ${ratio * 100}cqh)`, `min(100cqh, ${100 / ratio}cqw)`]
-        : fit.size === "width"
-          ? ["100cqw", `${100 / ratio}cqw`]
-          : fit.size === "natural"
-            ? [`${picture.width}px`, `${picture.height}px`]
-            : [fit.size, `calc(${fit.size} / ${ratio})`];
+        : fit.size === "fill"
+          ? ["100cqw", "100cqh"]
+          : fit.size === "width"
+            ? ["100cqw", `${100 / ratio}cqw`]
+            : fit.size === "natural"
+              ? [`${picture.width}px`, `${picture.height}px`]
+              : [fit.size, `calc(${fit.size} / ${ratio})`];
   const at = (v: number | string | undefined, box: string, size: string) =>
     typeof v === "string" ? v : `calc((${box} - ${size}) * ${(v ?? 50) / 100})`;
   return {
@@ -225,7 +228,7 @@ export function TextImage({
         width={picture.width}
         height={picture.height}
         unoptimized
-        className="block h-auto w-full"
+        className={fit ? "block size-full" : "block h-auto w-full"}
       />
       {picture.labels.map((label) => {
         const words = text[label.k] ?? label.k;
@@ -263,7 +266,7 @@ export function TextImage({
   return (
     <div
       className={cn(
-        "pointer-events-none overflow-hidden [container-type:size]",
+        "relative pointer-events-none overflow-hidden [container-type:size]",
         className,
       )}
       style={style}

@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { PHONE_WORDS } from "./pictureWords";
 
 export function DownlightPhone({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -10,12 +12,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
       className="font-orvibo text-[16px] leading-[1.6] text-[#333333]"
     >
       {/* sec1 bg */}
-      <div
-        className="bg-center overflow-hidden bg-cover bg-no-repeat relative h-[12.67rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec1-d7c75cf8a2.webp",
-        )}
-      >
+      <div className="overflow-hidden relative h-[12.67rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec1}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.1rem] text-center tracking-[0.02rem] text-[#111111] text-[0.56rem] leading-[1.15] font-bold text-balance px-[0.4rem]">
           {t("sec1.title")}
@@ -26,12 +30,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec2 bg */}
-      <div
-        className="bg-center overflow-hidden bg-cover bg-no-repeat relative h-[14.56rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec2-dcca071bac.webp",
-        )}
-      >
+      <div className="overflow-hidden relative h-[14.56rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec2}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[0.85rem] text-center tracking-[0.02rem] text-[#111111] text-[0.384rem] font-bold text-balance">
           {t("sec2.title")}
@@ -42,24 +48,28 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec3 bg */}
-      <div
-        className="bg-center mt-[0.21rem] overflow-hidden bg-cover bg-no-repeat relative h-[17.77rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec3-d01c17a5e5.webp",
-        )}
-      >
+      <div className="mt-[0.21rem] overflow-hidden relative h-[17.77rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec3}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[0.85rem] text-center tracking-[0.02rem] text-[#111111] text-[0.384rem] font-bold text-balance">
           {t("sec3.title")}
         </div>
       </div>
       {/* sec4 bg */}
-      <div
-        className="bg-center mt-[0.21rem] overflow-hidden bg-cover bg-no-repeat relative h-[14.99rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec4-eb8c3e69e7.webp",
-        )}
-      >
+      <div className="mt-[0.21rem] overflow-hidden relative h-[14.99rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec4}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[0.9rem] text-center tracking-[0.02rem] text-[0.336rem] font-bold text-[#111111] text-balance">
           {t("sec10.title")}
@@ -70,12 +80,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec5 bg */}
-      <div
-        className="bg-center mt-[0.21rem] overflow-hidden bg-cover bg-no-repeat relative h-[19.09rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec5-6a97c383a2.webp",
-        )}
-      >
+      <div className="mt-[0.21rem] overflow-hidden relative h-[19.09rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec5}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[0.9rem] text-center tracking-[0.02rem] text-[0.336rem] font-bold text-[#111111] text-balance">
           {t("sec11.title")}
@@ -102,12 +114,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec7 bg */}
-      <div
-        className="bg-center overflow-hidden bg-cover bg-no-repeat relative h-[14.75rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec7-a1ede1daf2.webp",
-        )}
-      >
+      <div className="overflow-hidden relative h-[14.75rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec7}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[0.9rem] text-center tracking-[0.02rem] text-[0.336rem] text-[#111111] font-bold text-balance">
           {t("sec5.title")}
@@ -134,12 +148,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec9 bg */}
-      <div
-        className="bg-center overflow-hidden bg-cover bg-no-repeat relative h-[11.7rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec9-616bace2e5.webp",
-        )}
-      >
+      <div className="overflow-hidden relative h-[11.7rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec9}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[0.85rem] text-center tracking-[0.02rem] text-[0.336rem] text-[#111111] font-bold text-balance">
           {t("sec7.title")}
@@ -150,12 +166,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec10 bg */}
-      <div
-        className="bg-center overflow-hidden bg-cover bg-no-repeat relative h-[12.97rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec10-f1c9d7fe71.webp",
-        )}
-      >
+      <div className="overflow-hidden relative h-[12.97rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec10}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.6rem] text-[0.336rem] text-[#111111] tracking-[0.02rem] text-center font-bold text-balance">
           {t("sec8.title")}
@@ -166,12 +184,14 @@ export function DownlightPhone({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* sec11 bg */}
-      <div
-        className="bg-center overflow-hidden bg-cover bg-no-repeat relative h-[12.54rem]"
-        style={bg(
-          "/guanwang_second/front/mobile/images/products/downlight/sec11-92468e2d8e.webp",
-        )}
-      >
+      <div className="overflow-hidden relative h-[12.54rem] isolate">
+        <TextImage
+          picture={PHONE_WORDS.sec11}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.6rem] text-[0.336rem] text-[#111111] tracking-[0.02rem] text-center font-bold text-balance">
           {t("sec9.title")}

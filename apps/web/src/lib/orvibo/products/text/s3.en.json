@@ -71,5 +71,14 @@
   "m.spec.beam": "Beam angle",
   "m.spec.downlight": "Ultra-thin smart downlight S3",
   "m.spec.spot": "Ultra-thin smart spotlight S3",
-  "m.spec.antiglare": "Anti-glare smart spotlight S3"
+  "m.spec.antiglare": "Anti-glare smart spotlight S3",
+  "pic.10_000_brightness_levels": "10,000 brightness levels",
+  "pic.butler_turn_off_the": "Butler, turn off the lights.",
+  "pic.1st_gen_standard_spotlight": "1st gen\nStandard spotlight",
+  "pic.2nd_gen_anti_glare": "2nd gen\nAnti-glare spotlight",
+  "pic.3rd_gen_surgical_grade": "3rd gen\nSurgical-grade\nanti-glare spotlight",
+  "pic.bright": "Bright",
+  "pic.no_visible_flicker": "No visible flicker",
+  "pic.true_colors": "True colors",
+  "pic.more_durable": "More durable"
 }

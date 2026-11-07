@@ -1,8 +1,10 @@
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The scene carousel: one evening in the bedroom, three light settings. */
 const SCENES = [
@@ -35,12 +37,14 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
           )}
         />
         {/* sec2 s__bg lazy */}
-        <div
-          className="bg-center bg-no-repeat bg-cover h-[10.8rem]"
-          style={bg(
-            "/guanwang_second/front/images/products/s3/sec2-b6ebff3bfc.webp",
-          )}
-        >
+        <div className="h-[10.8rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec2}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <div className="pt-[1.17rem] text-[0.6rem] font-extrabold leading-[0.72rem] text-center text-white">
               {t("sec2.title")}
@@ -103,15 +107,12 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
               </p>
             </ProductReveal>
             <ProductReveal className="w-[4.67rem]">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic3-d065691e62.webp",
-                )}
-                alt=""
-                width={467}
-                height={516}
-                unoptimized
-                className="align-middle w-full h-[5.16rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic3}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[5.16rem]"
               />
               <p className="mt-[0.34rem] text-[0.25rem] font-semibold text-black leading-[0.36rem] text-center">
                 {t("sec4.item3")}
@@ -162,45 +163,36 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
           <ProductReveal className="pt-[13.35rem] flex justify-center">
             <ProductReveal className="mr-[0.29rem] w-[2.79rem]">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic4-89f18ec43e.webp",
-                )}
-                alt=""
-                width={279}
-                height={496}
-                unoptimized
-                className="align-middle w-full h-[4.96rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic4}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[4.96rem]"
               />
               <p className="mt-[0.4rem] text-center text-[0.22rem] font-normal text-white leading-[0.3rem] max-w-[2.6rem] mx-auto">
                 {t("sec5.item7")}
               </p>
             </ProductReveal>
             <ProductReveal className="mr-[0.29rem] w-[2.79rem]">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic5-2bd7402a2f.webp",
-                )}
-                alt=""
-                width={279}
-                height={495}
-                unoptimized
-                className="align-middle w-full h-[4.96rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic5}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[4.96rem]"
               />
               <p className="mt-[0.4rem] text-center text-[0.22rem] font-normal text-white leading-[0.3rem] max-w-[2.6rem] mx-auto">
                 {t("sec5.item8")}
               </p>
             </ProductReveal>
             <ProductReveal className="w-[2.79rem]">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic6-75140c741c.webp",
-                )}
-                alt=""
-                width={286}
-                height={496}
-                unoptimized
-                className="align-middle w-full h-[4.96rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic6}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[4.96rem]"
               />
               <p className="mt-[0.4rem] text-center text-[0.22rem] font-normal text-white leading-[0.3rem] max-w-[2.4rem] mx-auto">
                 {t("sec5.item9")}
@@ -217,15 +209,12 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
           <div className="mt-[0.69rem] pb-[1.25rem] flex w-full items-start justify-center">
             <ProductReveal className="mr-[0.33rem] w-[3.37rem] text-center">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic7-4a1af97621.webp",
-                )}
-                alt=""
-                width={337}
-                height={533}
-                unoptimized
-                className="align-middle w-full h-[5.33rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic7}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[5.33rem]"
               />
               <p className="mt-[0.46rem] mb-[0.18rem] text-[0.28rem] font-medium text-black leading-[0.3rem] text-center">
                 {t("sec6.item")}
@@ -235,15 +224,12 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
               </span>
             </ProductReveal>
             <ProductReveal className="mr-[0.33rem] w-[3.37rem] text-center">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic8-5343004e8c.webp",
-                )}
-                alt=""
-                width={337}
-                height={533}
-                unoptimized
-                className="align-middle w-full h-[5.33rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic8}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[5.33rem]"
               />
               <p className="mt-[0.46rem] mb-[0.18rem] text-[0.28rem] font-medium text-black leading-[0.3rem] text-center">
                 {t("sec6.item3")}
@@ -253,15 +239,12 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
               </span>
             </ProductReveal>
             <ProductReveal className="mr-[0.33rem] w-[3.37rem] text-center">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic9-ca6c562bb6.webp",
-                )}
-                alt=""
-                width={337}
-                height={532}
-                unoptimized
-                className="align-middle w-full h-[5.33rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic9}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[5.33rem]"
               />
               <p className="mt-[0.46rem] mb-[0.18rem] text-[0.28rem] font-medium text-black leading-[0.3rem] text-center">
                 {"Ra≥90*"}
@@ -271,15 +254,12 @@ export function S3Overview({ locale, text, common }: ProductViewProps) {
               </span>
             </ProductReveal>
             <ProductReveal className="w-[3.37rem] text-center">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/s3/pic10-4e1fcb4d5e.webp",
-                )}
-                alt=""
-                width={338}
-                height={532}
-                unoptimized
-                className="align-middle w-full h-[5.33rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.pic10}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-full h-[5.33rem]"
               />
               <p className="mt-[0.46rem] mb-[0.18rem] text-[0.28rem] font-medium text-black leading-[0.3rem] text-center">
                 {t("sec6.item6")}
