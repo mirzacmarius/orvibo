@@ -162,7 +162,7 @@ export function CurtainMotorOverview({
             picture={DESKTOP_WORDS.sec_07}
             locale={locale}
             text={text}
-            className="mt-[1.32rem] align-middle w-[14.28rem]"
+            className="mt-[1.32rem] align-middle w-[14.28rem] max-w-full"
           />
         </div>
         {/* sec7 */}

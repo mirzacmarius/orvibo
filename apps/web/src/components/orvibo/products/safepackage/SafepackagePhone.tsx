@@ -163,7 +163,7 @@ export function SafepackagePhone({
               locale={locale}
               text={text}
               fit={{ size: "fill" }}
-              className="block align-middle w-[2.5rem] h-[7.06rem]"
+              className="block align-middle w-[2.5rem] h-[7.06rem] max-w-full"
             />
             <span className="absolute left-[0.84rem] top-[0.31rem] -translate-y-1/2 whitespace-nowrap text-left text-[0.22rem] text-white">
               {t("m.steps.1")}

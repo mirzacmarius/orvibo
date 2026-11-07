@@ -178,7 +178,7 @@ export function Q3Overview({ locale, text, common }: ProductViewProps) {
               locale={locale}
               text={text}
               fit={{ size: "fill" }}
-              className="inline-block ml-[-0.2rem] align-middle w-[6.39rem] h-[2.68rem]"
+              className="inline-block ml-[-0.2rem] align-middle w-[6.39rem] h-[2.68rem] max-w-full"
             />
             <div className="mt-[0.79rem] text-[#9c7a51] text-[0.13rem] leading-[0.22rem] font-normal">
               {t("sec5.tips")}
