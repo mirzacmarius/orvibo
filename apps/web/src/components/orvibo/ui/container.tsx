@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "@v1/ui/utils";
+import { cn } from "@/lib/orvibo/cn";
 
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   width?: "page" | "content";

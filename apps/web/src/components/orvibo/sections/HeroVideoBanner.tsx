@@ -5,6 +5,7 @@ import { cn } from "@v1/ui/utils";
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboPlayCircle } from "@/components/orvibo/icons";
 import { useOrviboVideo } from "@/components/orvibo/OrviboVideoProvider";
+import { Button } from "@/components/orvibo/ui/button";
 import { assetUrl } from "@/lib/orvibo/assetUrl";
 
 interface HeroVideoBannerProps {
@@ -112,15 +113,16 @@ export function HeroVideoBanner({
           </div>
         ) : null}
 
-        <NextLink
-          className="group relative flex h-[40px] w-[calc(var(--orvibo-rem-scale)*1.56)] items-center justify-center overflow-hidden rounded-[calc(var(--orvibo-rem-scale)*0.04)] border border-white text-[calc(var(--orvibo-rem-scale)*0.16)] font-normal leading-none tracking-[calc(var(--orvibo-rem-scale)*0.01)] text-white opacity-70 transition-opacity before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-white before:transition-all before:duration-300 hover:text-black hover:opacity-100 hover:before:w-full"
-          href={learnMoreHref}
+        <Button
+          asChild
+          className="h-[40px] w-[calc(var(--orvibo-rem-scale)*1.56)] rounded-[calc(var(--orvibo-rem-scale)*0.04)] px-0 text-[calc(var(--orvibo-rem-scale)*0.16)] font-normal tracking-[calc(var(--orvibo-rem-scale)*0.01)] opacity-70 transition-[color,opacity] hover:opacity-100"
           style={{
             marginTop: `calc(var(--orvibo-rem-scale) * ${learnMoreTopMargin})`,
           }}
+          variant="white"
         >
-          <span className="relative z-10">{learnMoreLabel}</span>
-        </NextLink>
+          <NextLink href={learnMoreHref}>{learnMoreLabel}</NextLink>
+        </Button>
 
         {hasWatch ? (
           <button

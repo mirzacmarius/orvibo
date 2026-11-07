@@ -1,7 +1,7 @@
 import type { VariantProps } from "class-variance-authority";
 import NextLink, { type LinkProps } from "next/link";
 import type * as React from "react";
-import { cn } from "@v1/ui/utils";
+import { cn } from "@/lib/orvibo/cn";
 import { Button } from "./button";
 import type { ButtonProps, buttonVariants } from "./button";
 

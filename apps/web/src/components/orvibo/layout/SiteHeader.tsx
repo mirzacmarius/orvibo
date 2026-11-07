@@ -375,7 +375,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
 
   return (
     <header
-      className="relative z-50 w-full min-w-0 bg-black font-orvibo text-white"
+      className="ov-band relative z-50 w-full min-w-0 bg-ov-page font-orvibo text-ov-ink"
       onMouseLeave={closeMenu}
     >
       <div className="flex h-[80px] items-center justify-center">
@@ -394,7 +394,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
         <ul className="flex h-full items-center justify-center">
           <li className="h-[50px] px-[25px] pr-[65px] text-[16px] leading-[50px]">
             <Link
-              className="text-[#a7a7a7] hover:text-white"
+              className="text-ov-ink-muted hover:text-ov-ink"
               href={routes.home}
             >
               {nav.home}
@@ -402,7 +402,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           </li>
           <li className="h-[50px] px-[25px] text-[16px] leading-[50px]">
             <Link
-              className="text-[#a7a7a7] hover:text-white"
+              className="text-ov-ink-muted hover:text-ov-ink"
               href={routes.home}
             >
               {nav.wholeHome}
@@ -414,7 +414,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           >
             <Link
               className={
-                openMenu === "products" ? "text-white" : "text-[#a7a7a7]"
+                openMenu === "products" ? "text-ov-ink" : "text-ov-ink-muted"
               }
               href={routes.productList}
             >
@@ -427,7 +427,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           >
             <Link
               className={
-                openMenu === "business" ? "text-white" : "text-[#a7a7a7]"
+                openMenu === "business" ? "text-ov-ink" : "text-ov-ink-muted"
               }
               href={routes.cooperation}
             >
@@ -436,7 +436,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
           </li>
           <li className="h-[50px] px-[65px] text-[16px] leading-[50px]">
             <Link
-              className="text-[#a7a7a7] hover:text-white"
+              className="text-ov-ink-muted hover:text-ov-ink"
               href={routes.exploreConference}
             >
               {nav.explore}
@@ -447,7 +447,9 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
             onMouseEnter={() => setOpenMenu("about")}
           >
             <Link
-              className={openMenu === "about" ? "text-white" : "text-[#a7a7a7]"}
+              className={
+                openMenu === "about" ? "text-ov-ink" : "text-ov-ink-muted"
+              }
               href={routes.about("about_us")}
             >
               {nav.about}
@@ -462,17 +464,20 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
             <Button
               aria-label="Open navigation"
               className="h-[40px] w-[40px] px-0"
-              variant="white"
+              variant="outline"
             >
               <Menu aria-hidden="true" className="h-[20px] w-[20px]" />
             </Button>
           </SheetTrigger>
-          <SheetContent className="bg-black text-white" side="right">
+          <SheetContent
+            className="ov-band border-ov-line bg-ov-page text-ov-ink"
+            side="right"
+          >
             <SheetTitle className="sr-only">Navigation</SheetTitle>
             <nav className="mt-[40px] flex flex-col gap-[24px]">
               {mobileLinks.map((link) => (
                 <Link
-                  className="text-[18px] text-white hover:text-orvibo-link-hover"
+                  className="text-ov-nav text-[18px] hover:!text-ov-accent"
                   href={link.href}
                   key={`${link.href}-${link.label}`}
                 >
@@ -485,7 +490,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
       </div>
 
       {openMenu === "products" ? (
-        <div className="absolute top-[130px] left-0 z-[999] hidden h-[385px] w-full overflow-hidden bg-white text-orvibo-fg shadow-sm lg:block">
+        <div className="ov-paper absolute top-[130px] left-0 z-[999] hidden h-[385px] w-full overflow-hidden bg-ov-surface text-ov-ink shadow-ov-menu lg:block">
           <ul className="mx-auto flex h-[93px] max-w-[1200px] items-center overflow-x-auto px-[16px] text-[18px] leading-[93px]">
             {productCategories.map((category) => (
               <li
@@ -494,7 +499,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
                 onMouseEnter={() => setActiveCategory(category.id)}
               >
                 <Link
-                  className="relative block text-orvibo-fg hover:text-orvibo-fg"
+                  className="relative block text-ov-ink"
                   href={`${routes.productList}#${category.hash}`}
                 >
                   <span>{nav.categories[category.id]}</span>
@@ -506,7 +511,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
             ))}
           </ul>
 
-          <div className="absolute inset-x-0 top-[93px] flex h-[292px] justify-center bg-white">
+          <div className="absolute inset-x-0 top-[93px] flex h-[292px] justify-center bg-ov-surface">
             <ul className="flex max-w-[1200px] justify-center overflow-x-auto">
               {activeProducts.items.map((product) => (
                 <li
@@ -514,7 +519,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
                   key={product.href}
                 >
                   <Link
-                    className="mb-[19px] flex h-[180px] w-[210px] items-center justify-center bg-[#eee]"
+                    className="mb-[19px] flex h-[180px] w-[210px] items-center justify-center bg-ov-surface-muted"
                     href={product.href}
                   >
                     <img
@@ -527,7 +532,7 @@ export function SiteHeader({ base, nav, products }: SiteHeaderProps) {
                     />
                   </Link>
                   <Link
-                    className="text-[14px] font-medium leading-[20px] text-orvibo-fg hover:text-orvibo-fg"
+                    className="text-[14px] font-medium leading-[20px] text-ov-ink"
                     href={product.href}
                   >
                     {product.label}
@@ -589,10 +594,10 @@ function SimpleMenu({
 }) {
   return (
     <div
-      className="absolute left-0 z-[999] hidden h-[100px] w-full bg-white text-orvibo-fg lg:block"
+      className="ov-paper absolute left-0 z-[999] hidden h-[100px] w-full bg-ov-surface text-ov-ink shadow-ov-menu lg:block"
       style={{ top }}
     >
-      <ul className="mx-auto flex h-[93px] max-w-[1200px] items-center justify-center gap-[46px] text-[18px] leading-[93px] [&_a]:text-orvibo-fg">
+      <ul className="mx-auto flex h-[93px] max-w-[1200px] items-center justify-center gap-[46px] text-[18px] leading-[93px] [&_a]:text-ov-ink">
         {children}
       </ul>
     </div>

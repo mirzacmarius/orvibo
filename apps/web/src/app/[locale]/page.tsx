@@ -35,7 +35,7 @@ export default async function Page({
   const routes = orviboRoutes(base);
 
   return (
-    <div className="orvibo-home min-h-screen min-w-0 bg-[#f0f2f5] text-[#111]">
+    <div className="orvibo-home min-h-screen min-w-0 bg-ov-page text-ov-ink">
       <SiteShell base={base} dict={dict}>
         <div className="w-full">
           <HeroVideoBanner

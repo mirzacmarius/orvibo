@@ -50,6 +50,16 @@ under `apps/web/.next/types` after you delete a route, remove `apps/web/.next`
 - **Placeholder pages** use `PLACEHOLDER_ROBOTS` from `src/lib/orvibo/site.ts` and are
   left out of `src/app/sitemap.ts`. Remove the first and add the second when a page
   gets real content.
+- **Design system.** Shell and shop UI use the tokens and components of the ORVIBO.ro design system
+  (reference: https://claude.ai/artifact/6LfGFDDLBMjnBLSZBmsdXC). Colours, type, spacing and radii are
+  Tailwind names under the `ov` prefix (`bg-ov-page`, `text-ov-ink-muted`, `text-ov-title-l`, `p-ov-6`,
+  `rounded-ov-s`), backed by the `--ov-*` variables in `src/styles/orvibo.css`; a black section (header,
+  footer) adds `ov-band` and the tokens invert inside it, `ov-paper` turns them back. Components live in
+  `src/components/orvibo/ui/` (Button, TextLink, ArrowLink, Card, SectionHeading, ProductCard, Price,
+  Badge, Field/Input/Select/Choice, QuantityStepper, Notice, Breadcrumb); `/ro/design-system` shows them
+  all (noindex, not linked). Use `cn` from `@/lib/orvibo/cn` with these names (plain tailwind-merge drops
+  `text-ov-ink` next to `text-ov-title-l`) and `formatLei()` from `@/lib/orvibo/money` for prices. The
+  product pages copied from orvibo.com keep their own values and the `orvibo-*` names.
 - **Root font size.** `src/styles/orvibo.css` sets `html { font-size }` to mimic the
   original site's rem layout: 75px below 1360px wide, 100px around 1760px, and
   `83.34vw / 16` above 1920px (about 133px at 2560px). Any rem-based Tailwind or

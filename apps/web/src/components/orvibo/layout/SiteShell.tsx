@@ -12,7 +12,7 @@ interface SiteShellProps {
 
 export function SiteShell({ base, children, dict }: SiteShellProps) {
   return (
-    <div className="min-h-screen min-w-0 bg-orvibo-bg font-orvibo text-orvibo-fg">
+    <div className="min-h-screen min-w-0 bg-ov-page font-orvibo text-ov-ink">
       <SiteHeader base={base} nav={dict.nav} products={dict.navProducts} />
       {children}
       <SiteFooter base={base} dict={dict} />

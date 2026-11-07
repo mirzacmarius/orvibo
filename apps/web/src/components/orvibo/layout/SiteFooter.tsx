@@ -115,22 +115,22 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
         </div>
       </div>
 
-      <footer className="w-full min-w-0 bg-black pt-[49px] font-orvibo text-white">
+      <footer className="ov-band w-full min-w-0 bg-ov-page pt-[49px] font-orvibo text-ov-ink">
         <Container className="px-[40px] min-[1441px]:px-[288.5px]" width="page">
           <div className="mb-[71px] flex flex-wrap justify-between gap-x-[32px] gap-y-[40px] xl:flex-nowrap">
             {groups.map((group) => (
               <nav aria-label={group.title} key={group.title}>
-                <h2 className="mb-[20px] text-[16px] font-semibold leading-[22px] text-white">
+                <h2 className="mb-[20px] text-[16px] font-semibold leading-[22px] text-ov-ink">
                   {group.title}
                 </h2>
                 <ul className="flex flex-col gap-[10px]">
                   {group.links.map((link) => (
                     <li
-                      className="text-[14px] leading-[20px] text-white/60 hover:text-white"
+                      className="text-[14px] leading-[20px] text-ov-ink-muted transition-colors duration-300 hover:text-ov-ink"
                       key={`${link.href}-${link.label}`}
                     >
                       <Link
-                        className="text-[14px] font-medium leading-[20px] text-white/60 hover:text-white"
+                        className="text-[14px] font-medium leading-[20px]"
                         href={link.href}
                         rel={"rel" in link ? link.rel : undefined}
                         target={"external" in link ? "_blank" : undefined}
@@ -144,12 +144,12 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
             ))}
           </div>
 
-          <div className="relative border-white/15 border-b pb-[25px]">
+          <div className="relative border-ov-line border-b pb-[25px]">
             <div>
-              <p className="mb-[3px] text-[16px] font-semibold leading-[22px] text-white">
+              <p className="mb-[3px] text-[16px] font-semibold leading-[22px] text-ov-ink">
                 {f.contactUs}
               </p>
-              <p className="text-[24px] font-semibold leading-[33px] text-white">
+              <p className="text-[24px] font-semibold leading-[33px] text-ov-ink">
                 <span>400-060-6050</span>
                 <span className="ml-[9px] align-[3px] text-[14px] leading-[20px]">
                   ( 09:00 ~ 20:00 )
@@ -205,7 +205,7 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
                 />
                 <span className="sr-only">Sina Weibo</span>
               </a>
-              <span className="group relative ml-[21px] block h-[40px] min-w-[123px] overflow-hidden whitespace-nowrap rounded-[2px] border border-white/60 px-[14px] text-center text-[14px] leading-[40px] before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
+              <span className="group relative ml-[21px] block h-[40px] min-w-[123px] overflow-hidden whitespace-nowrap rounded-ov-xs border border-ov-ink-muted px-[14px] text-center text-[14px] leading-[40px] before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-ov-ink before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
                 <span className="relative z-10 inline-block h-[16px] w-[19px] align-middle">
                   <img
                     alt=""
@@ -222,18 +222,18 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
                     )}
                   />
                 </span>
-                <span className="relative z-10 ml-[5px] text-white/60 transition-colors group-hover:text-orvibo-fg">
+                <span className="relative z-10 ml-[5px] text-ov-ink-muted transition-colors group-hover:text-ov-on-ink">
                   {f.onlineService}
                 </span>
               </span>
             </div>
           </div>
 
-          <div className="flex flex-col gap-[16px] py-[20px] pb-[60px] text-[14px] leading-[20px] text-white/50 lg:flex-row lg:justify-between">
+          <div className="flex flex-col gap-[16px] py-[20px] pb-[60px] text-[14px] leading-[20px] text-ov-ink-muted lg:flex-row lg:justify-between">
             <p className="flex-1">
               {f.copyright}{" "}
               <a
-                className="text-white/50"
+                className="text-ov-ink-muted"
                 href="https://beian.miit.gov.cn/"
                 rel="noreferrer"
                 target="_blank"
@@ -241,7 +241,7 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
                 粤ICP备12019139号
               </a>{" "}
               <a
-                className="border-[#707070] border-r pr-[0.1rem] text-white/50"
+                className="border-ov-line-strong border-r pr-[0.1rem]"
                 href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502001115"
                 rel="noreferrer"
                 target="_blank"
@@ -249,7 +249,7 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
                 粤公网安备44030502001115号
               </a>{" "}
               <a
-                className="pl-[0.08rem] text-white/50"
+                className="pl-[0.08rem]"
                 href={resolveExternalUrl(
                   "https://www.orvibo.com/cn/privacy_policy.pdf",
                 )}
@@ -262,7 +262,7 @@ export function SiteFooter({ base, dict }: SiteFooterProps) {
             </p>
             <LocaleSwitcher label={dict.common.language} />
           </div>
-          <Separator className="hidden bg-white/10" />
+          <Separator className="hidden bg-ov-line" />
         </Container>
       </footer>
     </>

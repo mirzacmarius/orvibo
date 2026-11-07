@@ -3,6 +3,7 @@
 import NextLink from "next/link";
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { useOrviboVideo } from "@/components/orvibo/OrviboVideoProvider";
+import { Button } from "@/components/orvibo/ui/button";
 
 interface StoreVideoSectionProps {
   body: string;
@@ -41,23 +42,22 @@ export function StoreVideoSection({
           {body}
         </p>
         <div className="mt-[calc(var(--orvibo-rem-scale)*0.6)] flex justify-center gap-[calc(var(--orvibo-rem-scale)*0.3)]">
-          <NextLink
-            className="group relative inline-flex h-[calc(var(--orvibo-rem-scale)*0.4)] items-center justify-center overflow-hidden rounded-[calc(var(--orvibo-rem-scale)*0.02)] border border-white bg-transparent px-[calc(var(--orvibo-rem-scale)*0.56)] text-[calc(var(--orvibo-rem-scale)*0.16)] text-white before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-white before:transition-all before:duration-300 hover:text-black hover:before:w-full"
-            href={storeHref}
+          <Button
+            asChild
+            className="rounded-[calc(var(--orvibo-rem-scale)*0.02)] font-normal"
+            size="wide"
+            variant="white"
           >
-            <span className="relative z-10 leading-[calc(var(--orvibo-rem-scale)*0.4)]">
-              {storeLabel}
-            </span>
-          </NextLink>
-          <button
-            className="group relative inline-flex h-[calc(var(--orvibo-rem-scale)*0.4)] items-center justify-center overflow-hidden rounded-[calc(var(--orvibo-rem-scale)*0.02)] border border-white bg-transparent px-[calc(var(--orvibo-rem-scale)*0.56)] text-[calc(var(--orvibo-rem-scale)*0.16)] text-white before:absolute before:inset-y-0 before:left-0 before:w-0 before:bg-white before:transition-all before:duration-300 hover:text-black hover:before:w-full"
+            <NextLink href={storeHref}>{storeLabel}</NextLink>
+          </Button>
+          <Button
+            className="rounded-[calc(var(--orvibo-rem-scale)*0.02)] font-normal"
             onClick={() => openVideo(watchVideoSrc)}
-            type="button"
+            size="wide"
+            variant="white"
           >
-            <span className="relative z-10 leading-[calc(var(--orvibo-rem-scale)*0.4)]">
-              {playLabel}
-            </span>
-          </button>
+            {playLabel}
+          </Button>
         </div>
       </div>
     </section>
