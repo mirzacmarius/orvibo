@@ -54,6 +54,15 @@ export const PRODUCT_SLUGS = [
   "mixpad_s2",
   "v5",
   "t1c",
+  "bodysensor",
+  "doorsensor",
+  "safepackage",
+  "miniHost",
+  "sos",
+  "temp_hum_sensor",
+  "water_alarm",
+  "camera_4",
+  "yuntai",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -288,5 +297,50 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "t1c",
     cn: "https://www.orvibo.com/cn/product/t1c.html",
+  },
+  {
+    scope: "product",
+    key: "bodysensor",
+    cn: "https://www.orvibo.com/cn/product/bodysensor.html",
+  },
+  {
+    scope: "product",
+    key: "doorsensor",
+    cn: "https://www.orvibo.com/cn/product/doorsensor.html",
+  },
+  {
+    scope: "product",
+    key: "safepackage",
+    cn: "https://www.orvibo.com/cn/product/safepackage.html",
+  },
+  {
+    scope: "product",
+    key: "miniHost",
+    cn: "https://www.orvibo.com/cn/product/miniHost.html",
+  },
+  {
+    scope: "product",
+    key: "sos",
+    cn: "https://www.orvibo.com/cn/product/sos.html",
+  },
+  {
+    scope: "product",
+    key: "temp_hum_sensor",
+    cn: "https://www.orvibo.com/cn/product/temp_hum_sensor.html",
+  },
+  {
+    scope: "product",
+    key: "water_alarm",
+    cn: "https://www.orvibo.com/cn/product/water_alarm.html",
+  },
+  {
+    scope: "product",
+    key: "camera_4",
+    cn: "https://www.orvibo.com/cn/product/camera_4.html",
+  },
+  {
+    scope: "product",
+    key: "yuntai",
+    cn: "https://www.orvibo.com/cn/product/yuntai.html",
   },
 ];

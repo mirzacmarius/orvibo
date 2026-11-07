@@ -11,6 +11,7 @@ export default {
         "bubble-ripple": "bubble-ripple 4s linear infinite",
         "bubble-ripple-wide": "bubble-ripple-wide 4s linear infinite",
         "tap-ripple": "tap-ripple 2s ease 0.2s infinite",
+        "hotspot-ripple": "tap-ripple 2s ease infinite",
         "gradient-drift": "gradient-drift 5s ease-in-out infinite forwards",
         "warn-pulse": "warn-pulse 3s ease-out infinite",
         "nudge-left": "nudge-left 1.6s linear infinite",
@@ -19,6 +20,8 @@ export default {
         "spotlight-dim": "spotlight-dim 6s ease infinite",
         "spotlight-caption": "spotlight-caption 6s ease infinite",
         "bar-fill": "bar-fill 5s linear forwards",
+        "circle-wave": "circle-wave 2s ease-in-out infinite",
+        "circle-wave-linear": "circle-wave 2.1s linear infinite",
       },
       colors: {
         orvibo: {
@@ -57,7 +60,9 @@ export default {
           "75%": { opacity: "0.65", transform: "scale(3.2)" },
           "100%": { opacity: "0.2", transform: "scale(6)" },
         },
-        // Rings spreading from a key being pressed (MixSwitch).
+        // Rings spreading from a key being pressed (MixSwitch); without the
+        // delay, the ring pulsing round a hotspot (the pan-tilt camera's
+        // device icons, orvibo.com's sh-ripple).
         "tap-ripple": {
           "0%": { transform: "scale(0)" },
           "50%": { opacity: "1" },
@@ -117,6 +122,13 @@ export default {
         "bar-fill": {
           "0%": { transform: "scaleX(0)" },
           "100%": { transform: "scaleX(1)" },
+        },
+        // A disc swelling out of a point and fading as it grows (orvibo.com's
+        // circleWave: the S1 2K camera's radar rings); stagger the rings
+        // with `[animation-delay:…]`.
+        "circle-wave": {
+          "0%": { opacity: "1", transform: "scale(0)" },
+          "100%": { opacity: "0", transform: "scale(1)" },
         },
       },
       maxWidth: {

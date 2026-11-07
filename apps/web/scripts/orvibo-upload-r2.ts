@@ -5,6 +5,8 @@ import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 
 const UPLOAD_PREFIXES = [
   "guanwang_second",
+  // orvibo.com's older pages (security sensors, kits) keep images in /html/images/.
+  "html",
   "orvibo",
   "8f4239b1vodgzp1251222210",
 ] as const;
