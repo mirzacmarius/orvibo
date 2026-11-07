@@ -22,6 +22,14 @@
   }
 }
 
+/* A product page with a phone layout (ProductDefinition.PhoneView) shows it below 1024 px, sized like orvibo.com's
+   phone pages: 1rem is a hundredth of their 750 px wide design. */
+@media screen and (max-width: 1023.98px) {
+  html:has(.orvibo-phone-view) {
+    font-size: calc(100vw / 7.5);
+  }
+}
+
 .orvibo-site {
   --orvibo-header-height: 130px;
   --orvibo-rem-scale: 75px;
@@ -66,4 +74,17 @@
 body:has(.orvibo-site) {
   min-width: 0;
   background-color: #f0f2f5;
+}
+
+/* One of three pictures shown in turn, a second each, as orvibo.com's animated GIFs do (S3's three scenes): give the
+   second and third `animation-delay` -2s and -1s. */
+@keyframes orvibo-one-of-three {
+  0%,
+  33.33% {
+    opacity: 1;
+  }
+  33.34%,
+  100% {
+    opacity: 0;
+  }
 }

@@ -53,5 +53,6 @@
   "alt.phone1": "Aplicația ORVIBO Home cu umiditatea actuală măsurată de senzor, 15%, și graficul zilei.",
   "alt.phone2": "Aplicația ORVIBO Home cu temperatura actuală, 15 °C, și graficul zilei.",
   "alt.screen1": "Ecranul de temperatură din aplicație, la 35 °C.",
-  "alt.screen2": "Ecranul de umiditate din aplicație, la 35%."
+  "alt.screen2": "Ecranul de umiditate din aplicație, la 35%.",
+  "m.params": "Parametri"
 }

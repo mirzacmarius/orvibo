@@ -1,8 +1,10 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function Q3Overview({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, lines } = productPageHelpers(locale, text);
@@ -56,30 +58,42 @@ export function Q3Overview({ locale, text, common }: ProductViewProps) {
             {t("sec3.title")}
           </ProductReveal>
           <div className="mt-[0.97rem] flex w-full items-center justify-center">
-            <ProductReveal
-              className="bg-center mr-[0.27rem] bg-no-repeat bg-cover w-[3.06rem] h-[3.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic1-a45c24776d.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center mr-[0.27rem] [transition-delay:0.1s] bg-no-repeat bg-cover w-[3.06rem] h-[3.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic2-67d0b32ed0.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center mr-[0.27rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[3.06rem] h-[3.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic3-52a918263c.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center [transition-delay:0.3s] bg-no-repeat bg-cover w-[3.06rem] h-[3.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic4-2aded269a3.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.27rem] w-[3.06rem] h-[3.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.27rem] [transition-delay:0.1s] w-[3.06rem] h-[3.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.27rem] [transition-delay:0.2s] w-[3.06rem] h-[3.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="[transition-delay:0.3s] w-[3.06rem] h-[3.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* video-box */}
@@ -159,15 +173,12 @@ export function Q3Overview({ locale, text, common }: ProductViewProps) {
             <span className="mb-[0.47rem] text-[#9c7a51] block text-[0.21rem] font-normal max-w-[6.9rem]">
               {t("sec5.left3")}
             </span>
-            <Image
-              src={img(
-                "/guanwang_second/front/images/products/q3/block3-c5730293d2.webp",
-              )}
-              alt=""
-              width={639}
-              height={268}
-              unoptimized
-              className="ml-[-0.2rem] align-middle w-[6.39rem] h-[2.68rem]"
+            <TextImage
+              picture={DESKTOP_WORDS.block3}
+              locale={locale}
+              text={text}
+              fit={{ size: "fill" }}
+              className="inline-block ml-[-0.2rem] align-middle w-[6.39rem] h-[2.68rem] max-w-full"
             />
             <div className="mt-[0.79rem] text-[#9c7a51] text-[0.13rem] leading-[0.22rem] font-normal">
               {t("sec5.tips")}
@@ -175,12 +186,14 @@ export function Q3Overview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
         </div>
         {/* sec6 s__bg lazy */}
-        <div
-          className="bg-center bg-no-repeat bg-cover h-[11.98rem]"
-          style={bg(
-            "/guanwang_second/front/images/products/q3/sec4-1474fc5f55.webp",
-          )}
-        >
+        <div className="h-[11.98rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec4}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="pt-[1.28rem] text-center">
             <h4 className="font-bold [-webkit-text-fill-color:transparent] text-[0.6rem] leading-[0.6rem] bg-[image:linear-gradient(120deg,rgb(240,201,148)_0px,rgb(255,255,255)_13%,rgb(255,242,206)_62%,rgb(207,163,98)_100%)] bg-clip-text">
               {t("sec6.info")}
@@ -277,33 +290,44 @@ export function Q3Overview({ locale, text, common }: ProductViewProps) {
             {t("sec10.title")}
           </ProductReveal>
           <div className="mt-[0.65rem] flex w-full items-center justify-center">
-            <ProductReveal
-              className="bg-center mr-[0.28rem] bg-no-repeat bg-cover w-[5.15rem] h-[4.7rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic6-49a6ad7420.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center mr-[0.28rem] [transition-delay:0.1s] bg-no-repeat bg-cover w-[5.15rem] h-[4.7rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic7-002e3cfef0.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center [transition-delay:0.2s] bg-no-repeat bg-cover w-[5.15rem] h-[4.7rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic8-e5296ea250.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.28rem] w-[5.15rem] h-[4.7rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic6}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.28rem] [transition-delay:0.1s] w-[5.15rem] h-[4.7rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic7}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="[transition-delay:0.2s] w-[5.15rem] h-[4.7rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic8}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec11 s__bg lazy */}
-        <div
-          className="bg-center bg-no-repeat bg-cover h-[9.52rem]"
-          style={bg(
-            "/guanwang_second/front/images/products/q3/sec8-e8862aea81.webp",
-          )}
-        >
+        <div className="h-[9.52rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec8}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="pt-[0.7rem] text-center">
             <h4 className="font-bold bg-[image:linear-gradient(90deg,rgb(255,212,151)_0px,rgb(193,131,64)_100%)] bg-clip-text text-[0.6rem] leading-[0.6rem] [-webkit-text-fill-color:transparent]">
               {t("sec11.info")}
@@ -316,18 +340,24 @@ export function Q3Overview({ locale, text, common }: ProductViewProps) {
             {t("sec12.title")}
           </ProductReveal>
           <div className="mt-[0.7rem] flex w-full items-center justify-center">
-            <ProductReveal
-              className="bg-center mr-[0.3rem] bg-no-repeat bg-cover w-[6.36rem] h-[5.51rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic9-6df0a70ca3.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center [transition-delay:0.1s] bg-no-repeat bg-cover w-[6.36rem] h-[5.51rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/q3/pic10-1c50c95e1e.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.3rem] w-[6.36rem] h-[5.51rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic9}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="[transition-delay:0.1s] w-[6.36rem] h-[5.51rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic10}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
       </div>

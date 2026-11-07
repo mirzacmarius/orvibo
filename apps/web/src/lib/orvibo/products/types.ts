@@ -33,6 +33,11 @@ export interface ProductDefinition {
   /** Optional class on `.detail_header` (e.g. MixStation uses `pZindex`). */
   navClassName?: string;
   View: ComponentType<ProductViewProps>;
+  /**
+   * The page laid out for phones, shown instead of `View` below 1024 px (its rem is a hundredth of a 750 px wide
+   * design there, as on orvibo.com's phone pages). Without it, phones get `View` as it is.
+   */
+  PhoneView?: ComponentType<ProductViewProps>;
   /** Secondary tab bodies keyed by `segment` (e.g. `spec`). */
   segmentViews?: Partial<Record<string, ComponentType<ProductViewProps>>>;
 }

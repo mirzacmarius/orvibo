@@ -1,10 +1,12 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import { localizedAssetPath } from "@/lib/orvibo/localizedAsset";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function CurtainMotorOverview({
   locale,
@@ -29,14 +31,10 @@ export function CurtainMotorOverview({
             unoptimized
             className="align-middle w-full"
           />
-          <Image
-            src={img(
-              "/guanwang_second/front/images/new/products/curtain_motor/banner_02-3bdc1b212e.webp",
-            )}
-            alt=""
-            width={1920}
-            height={857}
-            unoptimized
+          <TextImage
+            picture={DESKTOP_WORDS.banner_02}
+            locale={locale}
+            text={text}
             className="align-middle w-full"
           />
           <div className="absolute left-1/2 top-[1.98rem] w-max -translate-x-1/2">
@@ -55,14 +53,10 @@ export function CurtainMotorOverview({
         </div>
         {/* sec1 */}
         <div className="relative w-full bg-[#fdf6fe]">
-          <Image
-            src={img(
-              "/guanwang_second/front/images/new/products/curtain_motor/sec_01-943b00de38.webp",
-            )}
-            alt=""
-            width={1920}
-            height={1133}
-            unoptimized
+          <TextImage
+            picture={DESKTOP_WORDS.sec_01}
+            locale={locale}
+            text={text}
             className="align-middle w-full"
           />
           <ProductReveal className="text-center text-[0.48rem] leading-[0.52rem] font-bold bg-[image:linear-gradient(315deg,rgb(34,158,253)_0px,rgb(106,223,209)_100%)] bg-clip-text [-webkit-text-fill-color:transparent] absolute left-0 top-[1.28rem] w-full">
@@ -90,14 +84,10 @@ export function CurtainMotorOverview({
               unoptimized
               className="mb-[0.6rem] align-middle w-full"
             />
-            <Image
-              src={img(
-                "/guanwang_second/front/images/new/products/curtain_motor/sec_03-33838964ad.webp",
-              )}
-              alt=""
-              width={1600}
-              height={800}
-              unoptimized
+            <TextImage
+              picture={DESKTOP_WORDS.sec_03}
+              locale={locale}
+              text={text}
               className="align-middle w-full"
             />
           </div>
@@ -168,15 +158,11 @@ export function CurtainMotorOverview({
               {t("sec6.motor_title")}
             </div>
           </ProductReveal>
-          <Image
-            src={img(
-              "/guanwang_second/front/images/new/products/curtain_motor/sec_07-86acb076ae.webp",
-            )}
-            alt=""
-            width={1428}
-            height={768}
-            unoptimized
-            className="mt-[1.32rem] align-middle w-[14.28rem]"
+          <TextImage
+            picture={DESKTOP_WORDS.sec_07}
+            locale={locale}
+            text={text}
+            className="mt-[1.32rem] align-middle w-[14.28rem] max-w-full"
           />
         </div>
         {/* sec7 */}
@@ -226,14 +212,10 @@ export function CurtainMotorOverview({
         </div>
         {/* sec9 */}
         <div className="relative">
-          <Image
-            src={img(
-              "/guanwang_second/front/images/new/products/curtain_motor/sec_10-55fa096f0b.webp",
-            )}
-            alt=""
-            width={1920}
-            height={1172}
-            unoptimized
+          <TextImage
+            picture={DESKTOP_WORDS.sec_10}
+            locale={locale}
+            text={text}
             className="align-middle w-full"
           />
           <ProductReveal className="absolute left-0 top-[1.23rem] w-full z-[10]">
@@ -335,25 +317,34 @@ export function CurtainMotorOverview({
             {t("sec13.motor_title")}
           </ProductReveal>
           <div className="mt-[0.6rem] flex">
-            <ProductReveal
-              className="mr-[0.26rem] w-[4.89rem] h-[7.9rem] overflow-hidden bg-cover"
-              style={bg(
-                "/guanwang_second/front/images/new/products/curtain_motor/sec14_1-ab792c80cf.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.26rem] w-[4.89rem] h-[7.9rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec14_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
             <div>
-              <ProductReveal
-                className="mb-[0.26rem] [transition-delay:0.15s] w-[6.65rem] h-[3.82rem] bg-cover overflow-hidden"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/curtain_motor/sec14_2-32bcdb2231.webp",
-                )}
-              />
-              <ProductReveal
-                className="w-[6.65rem] h-[3.82rem] bg-cover overflow-hidden"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/curtain_motor/sec14_3-d2dda4bd35.webp",
-                )}
-              />
+              <ProductReveal className="mb-[0.26rem] [transition-delay:0.15s] w-[6.65rem] h-[3.82rem] overflow-hidden relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec14_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="w-[6.65rem] h-[3.82rem] overflow-hidden relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec14_3}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>

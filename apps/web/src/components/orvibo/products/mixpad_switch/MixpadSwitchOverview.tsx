@@ -1,10 +1,12 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductInView } from "@/components/orvibo/product/ProductInView";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
 import { SwitchColors } from "./SwitchColors";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function MixpadSwitchOverview({
   locale,
@@ -201,25 +203,19 @@ export function MixpadSwitchOverview({
           threshold={0.2}
           className="h-[9.6rem] relative overflow-hidden bg-black"
         >
-          <Image
-            src={img(
-              "/guanwang_second/front/images/products/mixpad_switch/sec5_1-a767705051.webp",
-            )}
-            alt=""
-            width={1920}
-            height={960}
-            unoptimized
-            className="align-middle absolute top-0 left-0 w-full h-full opacity-0 transition-opacity [transition-duration:3s] ease-in group-data-[shown]:opacity-100 motion-reduce:transition-none"
+          <TextImage
+            picture={DESKTOP_WORDS.sec5_1}
+            locale={locale}
+            text={text}
+            fit={{ size: "fill" }}
+            className="inline-block align-middle absolute top-0 left-0 w-full h-full opacity-0 transition-opacity [transition-duration:3s] ease-in group-data-[shown]:opacity-100 motion-reduce:transition-none"
           />
-          <Image
-            src={img(
-              "/guanwang_second/front/images/products/mixpad_switch/sec5_2-02f32cefdd.webp",
-            )}
-            alt=""
-            width={1920}
-            height={960}
-            unoptimized
-            className="align-middle absolute top-0 left-0 w-full h-full transition-opacity [transition-duration:3s] ease-in group-data-[shown]:opacity-0 motion-reduce:transition-none"
+          <TextImage
+            picture={DESKTOP_WORDS.sec5_2}
+            locale={locale}
+            text={text}
+            fit={{ size: "fill" }}
+            className="inline-block align-middle absolute top-0 left-0 w-full h-full transition-opacity [transition-duration:3s] ease-in group-data-[shown]:opacity-0 motion-reduce:transition-none"
           />
           <div className="rounded-full animate-tap-ripple motion-reduce:animate-none w-[3.65rem] h-[3.65rem] relative bg-white/5 top-[3.7rem] left-[12.97rem]">
             <div className="rounded-full w-[2.75rem] h-[2.75rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/[0.04]" />

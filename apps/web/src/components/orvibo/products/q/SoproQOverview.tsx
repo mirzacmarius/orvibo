@@ -1,7 +1,9 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The sec7 product strips, cropped to their photos. */
 const STRIPS = {
@@ -108,12 +110,14 @@ export function SoproQOverview({ locale, text, common }: ProductViewProps) {
                   {t("sec1.item_info")}
                 </div>
               </ProductReveal>
-              <ProductReveal
-                className="mt-[0.3rem] pl-[0.5rem] bg-no-repeat bg-cover relative flex items-center h-[2.97rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/q/sec1_5-f479cf60e7.webp",
-                )}
-              >
+              <ProductReveal className="mt-[0.3rem] pl-[0.5rem] relative flex items-center h-[2.97rem] isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_5}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
                 <div className="w-full text-[0.36rem] font-extrabold text-white">
                   <p>{t("sec1.item_info2")}</p>
                   <p className="mt-[0.09rem] w-full text-[0.2rem] font-normal">
@@ -347,12 +351,15 @@ export function SoproQOverview({ locale, text, common }: ProductViewProps) {
               {t("sec9.desc")}
             </div>
           </ProductReveal>
-          <div
-            className="mt-[0.6rem] bg-no-repeat bg-cover w-[16rem] h-[6.98rem]"
-            style={bg(
-              "/guanwang_second/front/images/new/products/q/sec10-45d32a4e14.webp",
-            )}
-          />
+          <div className="mt-[0.6rem] w-[16rem] h-[6.98rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec10}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover", x: 0, y: 0 }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec10 d__sec */}
         <div className="relative flex flex-col items-center h-[15.02rem] overflow-hidden">
@@ -388,12 +395,15 @@ export function SoproQOverview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
           <div className="mt-[0.8rem] flex">
             <div className="mr-[0.5rem] w-[6.7rem]">
-              <div
-                className="bg-no-repeat bg-cover w-full h-[8.1rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/q/sec12_2-7684bdc92d.webp",
-                )}
-              />
+              <div className="w-full h-[8.1rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec12_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
               <div className="mt-[0.67rem] text-center text-white">
                 <div className="text-[0.26rem] leading-[0.38rem] font-extrabold">
                   {t("sec11.item_title")}
@@ -404,12 +414,15 @@ export function SoproQOverview({ locale, text, common }: ProductViewProps) {
               </div>
             </div>
             <div className="w-[6.7rem]">
-              <div
-                className="bg-no-repeat bg-cover w-full h-[8.1rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/q/sec12_1-51b7e65b49.webp",
-                )}
-              />
+              <div className="w-full h-[8.1rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec12_1}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
               <div className="mt-[0.67rem] text-center text-white">
                 <div className="text-[0.26rem] leading-[0.38rem] font-extrabold">
                   {t("sec11.item_title2")}
@@ -428,12 +441,15 @@ export function SoproQOverview({ locale, text, common }: ProductViewProps) {
               {t("sec11.desc")}
             </div>
           </ProductReveal>
-          <div
-            className="mt-[0.52rem] bg-no-repeat bg-cover w-[13.9rem] h-[7rem]"
-            style={bg(
-              "/guanwang_second/front/images/new/products/q/sec13-2dfc5e2c58.webp",
-            )}
-          />
+          <div className="mt-[0.52rem] w-[13.9rem] h-[7rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec13}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover", x: 0, y: 0 }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
           <div className="mt-[1.05rem] text-[0.22rem] leading-[0.3rem] font-normal text-white opacity-[0.7]">
             {t("sec11.remind")}
           </div>

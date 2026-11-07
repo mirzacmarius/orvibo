@@ -44,5 +44,6 @@
   "install.v12": "Placed right where water should be detected",
   "install.note": "* All the data above is from ORVIBO's lab; actual results may vary slightly with the measuring method.",
   "alt.product": "The ORVIBO Smart Water Leak Sensor",
-  "alt.phone": "The ORVIBO Home app's security screen: safe, with the bathroom's water leak sensor at a normal level."
+  "alt.phone": "The ORVIBO Home app's security screen: safe, with the bathroom's water leak sensor at a normal level.",
+  "m.params": "Parameters"
 }

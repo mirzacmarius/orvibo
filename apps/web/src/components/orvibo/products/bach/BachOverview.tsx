@@ -1,15 +1,17 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import { ProductSlideshow } from "@/components/orvibo/product/ProductSlideshow";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** sec6: one photo per finish; each photo carries the finish's name. */
 const FINISH_PHOTOS = [
-  "/guanwang_second/front/images/products/bach/sec6_1-7fbe28547d.webp",
-  "/guanwang_second/front/images/products/bach/sec6_2-c187432e3e.webp",
-  "/guanwang_second/front/images/products/bach/sec6_3-9210ceb17c.webp",
-  "/guanwang_second/front/images/products/bach/sec6_4-531cf576be.webp",
+  DESKTOP_WORDS.sec6_1,
+  DESKTOP_WORDS.sec6_2,
+  DESKTOP_WORDS.sec6_3,
+  DESKTOP_WORDS.sec6_4,
 ];
 
 /**
@@ -72,47 +74,65 @@ export function BachOverview({ locale, text, common }: ProductViewProps) {
         <div className="pt-[1.97rem] pb-[2.12rem]">
           <div className="mx-auto w-[14rem]">
             <div className="flex">
-              <ProductReveal
-                className="bg-no-repeat bg-cover w-[5.91rem] h-[5.51rem]"
-                style={bg(
-                  "/guanwang_second/front/images/products/bach/sec1_1-e6fb8eed7d.webp",
-                )}
-              />
+              <ProductReveal className="w-[5.91rem] h-[5.51rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_1}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
               <div className="ml-[0.13rem]">
                 <div className="flex">
-                  <ProductReveal
-                    className="mr-[0.14rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[3.33rem] h-[1.94rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/products/bach/sec1_2-ef0db8e60c.webp",
-                    )}
-                  />
-                  <ProductReveal
-                    className="[transition-delay:0.25s] bg-no-repeat bg-cover w-[3.49rem] h-[1.94rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/products/bach/sec1_3-866d0d2499.webp",
-                    )}
-                  />
+                  <ProductReveal className="mr-[0.14rem] [transition-delay:0.15s] w-[3.33rem] h-[1.94rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec1_2}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
+                  <ProductReveal className="[transition-delay:0.25s] w-[3.49rem] h-[1.94rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec1_3}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
                 </div>
                 <div className="mt-[0.15rem] flex">
-                  <ProductReveal
-                    className="bg-no-repeat bg-cover w-[3.88rem] h-[3.42rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/products/bach/sec1_4-e72307b8ec.webp",
-                    )}
-                  />
+                  <ProductReveal className="w-[3.88rem] h-[3.42rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec1_4}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
                   <div className="ml-[0.14rem]">
-                    <ProductReveal
-                      className="[transition-delay:0.15s] bg-no-repeat bg-cover w-[2.94rem] h-[1.65rem]"
-                      style={bg(
-                        "/guanwang_second/front/images/products/bach/sec1_5-c2f1309f13.webp",
-                      )}
-                    />
-                    <ProductReveal
-                      className="mt-[0.12rem] [transition-delay:0.25s] bg-no-repeat bg-cover w-[2.94rem] h-[1.65rem]"
-                      style={bg(
-                        "/guanwang_second/front/images/products/bach/sec1_6-a705562882.webp",
-                      )}
-                    />
+                    <ProductReveal className="[transition-delay:0.15s] w-[2.94rem] h-[1.65rem] relative isolate">
+                      <TextImage
+                        picture={DESKTOP_WORDS.sec1_5}
+                        locale={locale}
+                        text={text}
+                        fit={{ size: "cover", x: 0, y: 0 }}
+                        className="absolute inset-0 -z-10"
+                      />
+                    </ProductReveal>
+                    <ProductReveal className="mt-[0.12rem] [transition-delay:0.25s] w-[2.94rem] h-[1.65rem] relative isolate">
+                      <TextImage
+                        picture={DESKTOP_WORDS.sec1_6}
+                        locale={locale}
+                        text={text}
+                        fit={{ size: "cover", x: 0, y: 0 }}
+                        className="absolute inset-0 -z-10"
+                      />
+                    </ProductReveal>
                   </div>
                 </div>
               </div>
@@ -214,12 +234,15 @@ export function BachOverview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
           <ProductSlideshow
             className="mx-auto mt-[0.99rem] h-[8.41rem] w-[16rem]"
-            slides={FINISH_PHOTOS.map((path) => ({
-              key: path,
+            slides={FINISH_PHOTOS.map((picture) => ({
+              key: picture.src,
               content: (
-                <div
-                  className="h-[7.99rem] w-full bg-cover bg-no-repeat"
-                  style={bg(path)}
+                <TextImage
+                  picture={picture}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="h-[7.99rem] w-full"
                 />
               ),
             }))}
@@ -228,24 +251,33 @@ export function BachOverview({ locale, text, common }: ProductViewProps) {
         {/* sec7 */}
         <div className="pt-[0.69rem] pb-[2.03rem] flex justify-center">
           <div className="flex">
-            <ProductReveal
-              className="mr-[0.51rem] bg-no-repeat bg-cover w-[5rem] h-[6.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/bach/sec7_1-fe69a3f187.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.51rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[5rem] h-[6.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/bach/sec7_2-bef167dea9.webp",
-              )}
-            />
-            <ProductReveal
-              className="[transition-delay:0.25s] bg-no-repeat bg-cover w-[5rem] h-[6.67rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/bach/sec7_3-27de13483b.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.51rem] w-[5rem] h-[6.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.51rem] [transition-delay:0.15s] w-[5rem] h-[6.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="[transition-delay:0.25s] w-[5rem] h-[6.67rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec8 */}

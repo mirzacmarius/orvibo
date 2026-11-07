@@ -1,6 +1,8 @@
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function T1COverview({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -11,12 +13,14 @@ export function T1COverview({ locale, text, common }: ProductViewProps) {
       className="font-orvibo text-[16px] leading-[1.6] text-[#666666]"
     >
       {/* t1c_index_sec1 */}
-      <div
-        className="bg-center w-full h-[970px] bg-no-repeat bg-cover"
-        style={bg(
-          "/guanwang_second/front/images/new/products/t1c/index_bg1-b5743b7f1a.webp",
-        )}
-      >
+      <div className="w-full h-[970px] relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.index_bg1}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* content */}
         <div className="mx-auto w-[1200px] relative">
           <h2 className="pt-[290px] font-normal text-[#d9a893] tracking-[2px] text-[44px] whitespace-nowrap">
@@ -47,12 +51,14 @@ export function T1COverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* t1c_index_sec2 */}
-      <div
-        className="bg-center w-full h-[957px] bg-no-repeat bg-cover"
-        style={bg(
-          "/guanwang_second/front/images/new/products/t1c/index_bg2-57f377c4dd.webp",
-        )}
-      >
+      <div className="w-full h-[957px] relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.index_bg2}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* tis2_content */}
         <div className="mx-auto w-[1200px]">
           <h2 className="pt-[240px] pb-[20px] text-white text-[42px] leading-[60px] font-normal max-w-[7.4rem]">
@@ -64,12 +70,14 @@ export function T1COverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* t1c_index_sec3 */}
-      <div
-        className="bg-center w-full h-[1157px] bg-no-repeat bg-cover"
-        style={bg(
-          "/guanwang_second/front/images/new/products/t1c/index_bg3-8111ed90fe.webp",
-        )}
-      >
+      <div className="w-full h-[1157px] relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.index_bg3}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* tis3_content */}
         <div className="mx-auto w-[1200px]">
           <h2 className="pt-[80px] pb-[20px] text-[42px] leading-[50px] font-normal text-white text-center px-[0.2rem] text-balance">
@@ -127,12 +135,14 @@ export function T1COverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* t1c_index_sec6 */}
-      <div
-        className="bg-center w-full h-[1068px] bg-no-repeat bg-cover"
-        style={bg(
-          "/guanwang_second/front/images/new/products/t1c/index_bg6-03149c5d25.webp",
-        )}
-      >
+      <div className="w-full h-[1068px] relative isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.index_bg6}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* tis6_content */}
         <div className="mx-auto w-[1200px]">
           <h2 className="pt-[140px] pb-[20px] text-white text-[42px] leading-[60px] font-normal max-w-[7.6rem]">

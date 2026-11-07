@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function BodysensorSpec({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -9,11 +11,15 @@ export function BodysensorSpec({ locale, text, common }: ProductViewProps) {
       {/* pd_content */}
       <div
         id="spec"
-        className="relative h-[920px] bg-center bg-no-repeat font-normal text-white"
-        style={bg(
-          "/guanwang_second/front/images/products/bodysensor/11-878a49c393.webp",
-        )}
+        className="relative h-[920px] font-normal text-white isolate"
       >
+        <TextImage
+          picture={DESKTOP_WORDS.pic11}
+          locale={locale}
+          text={text}
+          fit={{ size: "natural" }}
+          className="absolute inset-0 -z-10"
+        />
         <h2 className="absolute top-[236.5px] left-1/2 ml-[115px] text-[44px] leading-[56px]">
           {t("spec.title")}
         </h2>

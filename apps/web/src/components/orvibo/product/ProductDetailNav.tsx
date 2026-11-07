@@ -6,6 +6,18 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
+/** The phone layout's copy of a section has this after the section's id (ProductDefinition.PhoneView). */
+const PHONE_ID = "-phone";
+
+/** A section's node, from whichever layout is shown: the desktop one (`id`) or the phone one (`id-phone`). */
+function findSection(sectionId: string) {
+  return (
+    [sectionId, `${sectionId}${PHONE_ID}`]
+      .map((id) => document.getElementById(id))
+      .find((node) => node !== null && node.getClientRects().length > 0) ?? null
+  );
+}
+
 interface ProductDetailNavProps {
   title: string;
   slug: string;
@@ -37,7 +49,7 @@ export function ProductDetailNav({
     activeSegment ?? (activeSection || rootTab?.id || tabs[0]?.id || "");
 
   const scrollToSection = useCallback((sectionId: string) => {
-    const node = document.getElementById(sectionId);
+    const node = findSection(sectionId);
     if (!node) return;
     const top = node.getBoundingClientRect().top + window.scrollY - 56;
     window.scrollTo({ top, behavior: "smooth" });
@@ -55,8 +67,10 @@ export function ProductDetailNav({
   useEffect(() => {
     if (sectionTabs.length === 0) return;
 
+    // both layouts' copies: the hidden one never intersects
     const elements = sectionTabs
-      .map((tab) => document.getElementById(tab.sectionId!))
+      .flatMap((tab) => [tab.sectionId!, `${tab.sectionId!}${PHONE_ID}`])
+      .map((id) => document.getElementById(id))
       .filter((node): node is HTMLElement => node !== null);
 
     if (elements.length === 0) return;
@@ -66,7 +80,8 @@ export function ProductDetailNav({
         const visible = entries
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        const top = visible[0]?.target.id;
+        const id = visible[0]?.target.id;
+        const top = id?.endsWith(PHONE_ID) ? id.slice(0, -PHONE_ID.length) : id;
         if (top) {
           setActiveSection(top);
           if (window.location.hash !== `#${top}`) {
@@ -85,12 +100,12 @@ export function ProductDetailNav({
     <div
       className={`sticky top-0 z-40 h-[50px] min-h-[50px] w-full bg-[#1a1a1a] shadow-[0_1px_4px_rgba(0,0,0,0.1)] ${stickyClassName === "pZindex" ? "z-50" : ""}`}
     >
-      <div className="mx-auto flex h-full w-full max-w-[min(16rem,1760px)] items-center justify-between gap-[0.24rem] bg-[#1a1a1a] px-[clamp(16px,8vw,144px)] max-[1360px]:px-[24px] max-[767px]:h-auto max-[767px]:min-h-[50px] max-[767px]:flex-col max-[767px]:items-start max-[767px]:gap-[0.12rem] max-[767px]:px-[16px] max-[767px]:py-[0.12rem]">
-        <div className="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-[0.18rem] font-bold leading-[50px] text-[#777] max-[767px]:whitespace-normal max-[767px]:leading-[1.4]">
+      <div className="mx-auto flex h-full w-full max-w-[min(16rem,1760px)] items-center justify-between gap-[0.24rem] bg-[#1a1a1a] max-lg:gap-[18px] px-[clamp(16px,8vw,144px)] max-[1360px]:px-[24px] max-[767px]:h-auto max-[767px]:min-h-[50px] max-[767px]:flex-col max-[767px]:items-start max-[767px]:gap-[9px] max-[767px]:px-[16px] max-[767px]:py-[9px]">
+        <div className="min-w-0 flex-1 overflow-hidden text-ellipsis whitespace-nowrap text-[0.18rem] font-bold leading-[50px] text-[#777] max-lg:text-[13.5px] max-[767px]:whitespace-normal max-[767px]:leading-[1.4]">
           {title}
         </div>
         <Tabs value={activeValue} className="flex shrink-0">
-          <TabsList className="flex h-auto justify-end gap-[0.32rem] overflow-x-auto rounded-none bg-transparent p-0 text-[#777] max-[767px]:w-full max-[767px]:justify-start">
+          <TabsList className="flex h-auto justify-end gap-[0.32rem] overflow-x-auto max-lg:gap-[24px] rounded-none bg-transparent p-0 text-[#777] max-[767px]:w-full max-[767px]:justify-start">
             {tabs.map((tab) => {
               if (tab.segment) {
                 const href = `${base}/product/${slug}/${tab.segment}`;
@@ -99,7 +114,7 @@ export function ProductDetailNav({
                     asChild
                     key={tab.id}
                     value={tab.segment}
-                    className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
+                    className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] max-lg:text-[12px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
                   >
                     <Link href={href}>{tab.label}</Link>
                   </TabsTrigger>
@@ -112,7 +127,7 @@ export function ProductDetailNav({
                     asChild
                     key={tab.id}
                     value={tab.sectionId}
-                    className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
+                    className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] max-lg:text-[12px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
                   >
                     <a
                       href={`#${tab.sectionId}`}
@@ -132,7 +147,7 @@ export function ProductDetailNav({
                   asChild
                   key={tab.id}
                   value={tab.id}
-                  className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
+                  className="h-auto rounded-none bg-transparent p-0 text-[0.16rem] font-medium leading-[50px] max-lg:text-[12px] text-[#777] shadow-none transition-colors hover:text-[#ccc] data-[state=active]:bg-transparent data-[state=active]:font-semibold data-[state=active]:text-[#ccc] data-[state=active]:shadow-none max-[767px]:leading-[1.4]"
                 >
                   <Link href={`${base}/product/${slug}`}>{tab.label}</Link>
                 </TabsTrigger>

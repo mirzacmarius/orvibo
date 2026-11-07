@@ -1,4 +1,8 @@
 import { ProductMoreToggle } from "@/components/orvibo/product/ProductMoreToggle";
+import {
+  TextImage,
+  type TextImagePicture,
+} from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import type { ReactNode } from "react";
@@ -7,7 +11,9 @@ import type { ReactNode } from "react";
 export interface CurtainKitGuidePart {
   /** `guide.<key>` is its title; `guide.<key>_note`, if `note`, a line under it. */
   key: string;
-  image: string;
+  /** The picture (its translated copy, if any), or `words`: a copy without its words and the words in HTML. */
+  image?: string;
+  words?: TextImagePicture;
   className: string;
   note?: boolean;
 }
@@ -159,14 +165,23 @@ export function CurtainKitSpec({
             {guide.map((part) => (
               <div
                 key={part.key}
-                className={`mx-auto w-[1200px] bg-center bg-no-repeat ${part.className}`}
-                style={bg(part.image)}
+                className={`relative isolate mx-auto w-[1200px] bg-center bg-no-repeat ${part.className}`}
+                style={part.image ? bg(part.image) : undefined}
               >
-                <h3 className="text-[36px] font-normal text-[#2f2f2f]">
+                {part.words && (
+                  <TextImage
+                    picture={part.words}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "natural" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                )}
+                <h3 className="relative text-[36px] font-normal text-[#2f2f2f]">
                   {t(`guide.${part.key}`)}
                 </h3>
                 {part.note && (
-                  <p className="mt-[14px] text-[20px] leading-[1.6] text-[#2f2f2f]">
+                  <p className="relative mt-[14px] text-[20px] leading-[1.6] text-[#2f2f2f]">
                     {t(`guide.${part.key}_note`)}
                   </p>
                 )}

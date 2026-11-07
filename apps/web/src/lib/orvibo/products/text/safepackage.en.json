@@ -33,5 +33,14 @@
   "suit_page.sn_item2": "Door & Window Sensor",
   "suit_page.sn_item3": "Motion Sensor",
   "alt.phone1": "A phone's lock screen with an ORVIBO Home notification: the door sensor reports that the door opened",
-  "alt.phone2": "The ORVIBO Home app with a motion sensor alarm: someone passed by"
+  "alt.phone2": "The ORVIBO Home app with a motion sensor alarm: someone passed by",
+  "m.subtitle": "Your home's guardian, for more peace of mind",
+  "m.camera.title": "A linked camera records at once, as evidence",
+  "m.camera.desc": "When a door or window opens, the linked smart camera picks up unusual sounds at once, records the movement and uploads the footage to the cloud in real time. You quickly see what's happening at home and catch an intruder in time, and the footage can later go to the police as evidence.",
+  "m.steps.1": "Door opens",
+  "m.steps.2": "Alert on your phone",
+  "m.steps.3": "Camera starts",
+  "m.steps.4": "Footage goes to the cloud",
+  "m.steps.5": "Evidence for the police",
+  "m.labNote": "All the data above come from ORVIBO's lab; actual results may differ slightly with the measuring method."
 }

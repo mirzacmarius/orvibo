@@ -1,5 +1,7 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function DownlightOverview({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -9,11 +11,15 @@ export function DownlightOverview({ locale, text, common }: ProductViewProps) {
       {/* banner lazy sec1 */}
       <div
         id="overview"
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[8.02rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec1-100da04dd7.webp",
-        )}
+        className="mx-auto min-w-[1280px] overflow-hidden relative h-[8.02rem] isolate"
       >
+        <TextImage
+          picture={DESKTOP_WORDS.sec1}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="ml-[-6.67rem] text-center text-[#111111] text-[0.54rem] font-semibold left-1/2 tracking-[0.02rem] absolute top-[3.13rem] leading-[1em] opacity-[0.9]">
           {t("sec1.title")}
@@ -24,12 +30,14 @@ export function DownlightOverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* banner lazy sec2 */}
-      <div
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[14.8rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec2-327536099a.webp",
-        )}
-      >
+      <div className="mx-auto min-w-[1280px] overflow-hidden relative h-[14.8rem] isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.sec2}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.23rem] tracking-[0.02rem] text-center text-[#111111] text-[0.48rem] font-semibold">
           {t("sec2.title")}
@@ -40,24 +48,28 @@ export function DownlightOverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* banner lazy sec3 */}
-      <div
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[25.88rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec3-8c946a2150.webp",
-        )}
-      >
+      <div className="mx-auto min-w-[1280px] overflow-hidden relative h-[25.88rem] isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.sec3}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.26rem] tracking-[0.02rem] text-center text-[#111111] text-[0.48rem] font-semibold">
           {t("sec3.title")}
         </div>
       </div>
       {/* banner lazy sec10 */}
-      <div
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[13.94rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec10-1af87de76e.webp",
-        )}
-      >
+      <div className="mx-auto min-w-[1280px] overflow-hidden relative h-[13.94rem] isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.sec10}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.26rem] tracking-[0.02rem] text-center text-[#111111] text-[0.48rem] font-semibold">
           {t("sec10.title")}
@@ -100,12 +112,14 @@ export function DownlightOverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* banner lazy sec5 */}
-      <div
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[18.27rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec5-9c1b6dbe45.webp",
-        )}
-      >
+      <div className="mx-auto min-w-[1280px] overflow-hidden relative h-[18.27rem] isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.sec5}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.26rem] tracking-[0.02rem] text-center text-[#111111] text-[0.48rem] font-semibold">
           {t("sec5.title")}
@@ -132,12 +146,14 @@ export function DownlightOverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* banner lazy sec7 */}
-      <div
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[14.33rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec7-f964f6bde1.webp",
-        )}
-      >
+      <div className="mx-auto min-w-[1280px] overflow-hidden relative h-[14.33rem] isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.sec7}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.26rem] tracking-[0.02rem] text-center text-[#111111] text-[0.48rem] font-semibold">
           {t("sec7.title")}
@@ -164,12 +180,14 @@ export function DownlightOverview({ locale, text, common }: ProductViewProps) {
         </div>
       </div>
       {/* banner lazy sec9 */}
-      <div
-        className="bg-center mx-auto min-w-[1280px] overflow-hidden relative bg-cover bg-no-repeat h-[9.78rem]"
-        style={bg(
-          "/guanwang_second/front/images/2019/products/downlight/sec9-0d5134efc1.webp",
-        )}
-      >
+      <div className="mx-auto min-w-[1280px] overflow-hidden relative h-[9.78rem] isolate">
+        <TextImage
+          picture={DESKTOP_WORDS.sec9}
+          locale={locale}
+          text={text}
+          fit={{ size: "cover" }}
+          className="absolute inset-0 -z-10"
+        />
         {/* title */}
         <div className="mt-[1.26rem] tracking-[0.02rem] text-center text-[#111111] text-[0.54rem] font-semibold">
           {t("sec9.title")}

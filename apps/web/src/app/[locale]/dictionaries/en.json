@@ -56,7 +56,13 @@
     }
   },
   "navProducts": {
-    "mixstation": "ORVIBO Integrated HVAC",
+    "mixstation": "ORVIBO Integrated HVAC W1",
+    "w180": "ORVIBO Integrated HVAC W180",
+    "w260": "ORVIBO Integrated HVAC W260",
+    "w300": "ORVIBO Integrated HVAC W300",
+    "v180": "ORVIBO Integrated HVAC V180",
+    "s350l": "ORVIBO Integrated HVAC S350L",
+    "jidacheng": "ORVIBO Jidacheng Series",
     "mixpad7Ultra": "MixPad 10 Smart Panel",
     "mixpad7": "MixPad 7 Smart Panel",
     "mixpadX": "MixPad 12 Smart Panel",
@@ -319,43 +325,11 @@
   },
   "products": {
     "mixstation": {
-      "title": "ORVIBO Integrated HVAC",
+      "title": "ORVIBO Integrated HVAC W1",
       "tabs": {
         "overview": "Overview"
       },
-      "sections": {
-        "value": {
-          "title": "One system, multiple modes — save energy and effort"
-        },
-        "savings": {
-          "title": "Lower running costs"
-        },
-        "comfort": {
-          "title": "Greater comfort"
-        },
-        "compact": {
-          "title": "45% smaller footprint*",
-          "description": "Villa-grade comfort for medium and compact homes"
-        },
-        "power": {
-          "title": "Stronger performance"
-        },
-        "smart": {
-          "title": "Powered by MixPad smart panel"
-        },
-        "design": {
-          "title": "Award-winning design"
-        },
-        "airpro": {
-          "title": "AirPro indoor units — quiet, efficient comfort"
-        },
-        "sustainability": {
-          "title": "Sustainable by design"
-        },
-        "warranty": {
-          "title": "Up to 10-year warranty*"
-        }
-      }
+      "sections": {}
     },
     "mixpad_7": {
       "title": "MixPad 7 Control Panel",
@@ -755,6 +729,95 @@
       "tabs": {
         "overview": "Overview",
         "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "s30c": {
+      "title": "S30c Smart Plug",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "xiaofang": {
+      "title": "Xiaofang Smart Remote",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "artisbox_play": {
+      "title": "ArtisBox Play HiFi Speaker",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "mixpad_mirror": {
+      "title": "MixPad Mirror Smart Bathroom Mirror",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "robot_r2": {
+      "title": "R2 Robot Vacuum & Mop",
+      "tabs": {
+        "overview": "Overview",
+        "spec": "Specifications"
+      },
+      "sections": {}
+    },
+    "mixpad_plus": {
+      "title": "AI Video Intercom System",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "jidacheng": {
+      "title": "ORVIBO Jidacheng Series",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "s350l": {
+      "title": "ORVIBO Integrated HVAC S350L",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "v180": {
+      "title": "ORVIBO Integrated HVAC V180",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "w180": {
+      "title": "ORVIBO Integrated HVAC W180",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "w260": {
+      "title": "ORVIBO Integrated HVAC W260",
+      "tabs": {
+        "overview": "Overview"
+      },
+      "sections": {}
+    },
+    "w300": {
+      "title": "ORVIBO Integrated HVAC W300",
+      "tabs": {
+        "overview": "Overview"
       },
       "sections": {}
     }

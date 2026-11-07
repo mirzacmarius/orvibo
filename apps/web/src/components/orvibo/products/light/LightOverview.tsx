@@ -1,7 +1,9 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function LightOverview({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -59,12 +61,15 @@ export function LightOverview({ locale, text, common }: ProductViewProps) {
                 )}
               />
               <div>
-                <ProductReveal
-                  className="bg-center bg-no-repeat bg-cover w-[6.84rem] h-[2.97rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/light/pic3-fd2bc631b9.webp",
-                  )}
-                />
+                <ProductReveal className="w-[6.84rem] h-[2.97rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.pic3}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
                 <div className="mt-[0.3rem] flex">
                   <ProductReveal
                     className="bg-center mr-[0.28rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[3.28rem] h-[4.37rem]"
@@ -82,18 +87,24 @@ export function LightOverview({ locale, text, common }: ProductViewProps) {
               </div>
             </div>
             <div className="flex justify-center h-[2.97rem]">
-              <ProductReveal
-                className="bg-center mr-[0.28rem] bg-no-repeat bg-cover w-[6.84rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/light/pic6-75cbed5db2.webp",
-                )}
-              />
-              <ProductReveal
-                className="bg-center [transition-delay:0.2s] bg-no-repeat bg-cover w-[6.84rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/light/pic7-b09c425785.webp",
-                )}
-              />
+              <ProductReveal className="mr-[0.28rem] w-[6.84rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic6}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="[transition-delay:0.2s] w-[6.84rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic7}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
@@ -223,24 +234,33 @@ export function LightOverview({ locale, text, common }: ProductViewProps) {
             </ProductReveal>
           </div>
           <div className="mt-[-3.34rem] flex justify-center">
-            <ProductReveal
-              className="bg-center mr-[0.28rem] bg-no-repeat bg-cover w-[4.48rem] h-[7.03rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/light/pic8-1233a1bec6.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center mr-[0.28rem] bg-no-repeat bg-cover w-[4.48rem] h-[7.03rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/light/pic9-3f79c8c731.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center bg-no-repeat bg-cover w-[4.48rem] h-[7.03rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/light/pic10-bad05fae19.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.28rem] w-[4.48rem] h-[7.03rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic8}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.28rem] w-[4.48rem] h-[7.03rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic9}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="w-[4.48rem] h-[7.03rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic10}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec10 s__bg lazy */}
@@ -289,48 +309,66 @@ export function LightOverview({ locale, text, common }: ProductViewProps) {
           </ProductReveal>
           <div className="mx-auto pb-[1.96rem]">
             <div className="mb-[0.19rem] flex justify-center">
-              <ProductReveal
-                className="bg-center mr-[0.19rem] bg-no-repeat bg-cover w-[8.29rem] h-[5.48rem]"
-                style={bg(
-                  "/guanwang_second/front/images/products/light/pic11-46be277573.webp",
-                )}
-              />
-              <div>
-                <ProductReveal
-                  className="bg-center bg-no-repeat bg-cover w-[5.48rem] h-[2.67rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/light/pic12-4f082b4096.webp",
-                  )}
+              <ProductReveal className="mr-[0.19rem] w-[8.29rem] h-[5.48rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic11}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
                 />
-                <div className="mt-[0.15rem] flex">
-                  <ProductReveal
-                    className="bg-center [transition-delay:0.2s] bg-no-repeat bg-cover w-[5.48rem] h-[2.67rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/products/light/pic13-566ebe47c2.webp",
-                    )}
+              </ProductReveal>
+              <div>
+                <ProductReveal className="w-[5.48rem] h-[2.67rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.pic12}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
                   />
+                </ProductReveal>
+                <div className="mt-[0.15rem] flex">
+                  <ProductReveal className="[transition-delay:0.2s] w-[5.48rem] h-[2.67rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.pic13}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover" }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
                 </div>
               </div>
             </div>
             <div className="flex justify-center h-[2.67rem]">
-              <ProductReveal
-                className="bg-center mr-[0.19rem] bg-no-repeat bg-cover w-[4.51rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/light/pic14-fc2232f20e.webp",
-                )}
-              />
-              <ProductReveal
-                className="bg-center mr-[0.19rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[4.51rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/light/pic15-59c302f290.webp",
-                )}
-              />
-              <ProductReveal
-                className="bg-center [transition-delay:0.4s] bg-no-repeat bg-cover w-[4.51rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/light/pic16-fa2c26b063.webp",
-                )}
-              />
+              <ProductReveal className="mr-[0.19rem] w-[4.51rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic14}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="mr-[0.19rem] [transition-delay:0.2s] w-[4.51rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic15}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="[transition-delay:0.4s] w-[4.51rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic16}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>

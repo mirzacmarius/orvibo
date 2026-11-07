@@ -1,10 +1,12 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import { localizedAssetPath } from "@/lib/orvibo/localizedAsset";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { DaofengGroupControl } from "./DaofengGroupControl";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The sec12 product strips, cropped to their photos. */
 const STRIPS = {
@@ -54,12 +56,15 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
         {/* sec1 */}
         <div className="pt-[1.6rem] pb-[1.2rem] flex justify-center">
           <div className="flex">
-            <ProductReveal
-              className="mr-[0.28rem] rounded-[0.2rem] bg-no-repeat bg-cover w-[6.84rem] h-[7.64rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec1_1-a565bea6fc.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.28rem] rounded-[0.2rem] w-[6.84rem] h-[7.64rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec1_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
             <div className="w-[6.84rem] flex flex-wrap">
               <ProductReveal
                 className="mr-[0.26rem] mb-[0.3rem] rounded-[0.2rem] bg-no-repeat bg-cover w-full h-[2.97rem]"
@@ -67,18 +72,24 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
                   "/guanwang_second/front/images/new/products/daofeng/sec1_2-b8dfd9ffe7.webp",
                 )}
               />
-              <ProductReveal
-                className="mr-[0.26rem] mb-[0.3rem] rounded-[0.2rem] bg-no-repeat bg-cover w-[3.28rem] h-[4.37rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/daofeng/sec1_3-2f29ced209.webp",
-                )}
-              />
-              <ProductReveal
-                className="mb-[0.3rem] rounded-[0.2rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[3.3rem] h-[4.37rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/daofeng/sec1_4-762acd7999.webp",
-                )}
-              />
+              <ProductReveal className="mr-[0.26rem] mb-[0.3rem] rounded-[0.2rem] w-[3.28rem] h-[4.37rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_3}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="mb-[0.3rem] rounded-[0.2rem] [transition-delay:0.15s] w-[3.3rem] h-[4.37rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_4}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
@@ -146,12 +157,15 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
                   "/guanwang_second/front/images/new/products/daofeng/sec5_1-621edd204f.webp",
                 )}
               />
-              <ProductReveal
-                className="rounded-[0.2rem] bg-no-repeat bg-cover overflow-hidden w-[5.89rem] h-[7.75rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/daofeng/sec5_2-d46a1b1014.webp",
-                )}
-              />
+              <ProductReveal className="rounded-[0.2rem] overflow-hidden w-[5.89rem] h-[7.75rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec5_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
             <div>
               <ProductReveal
@@ -204,36 +218,51 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
             </div>
           </ProductReveal>
           <div className="mx-auto mt-[0.76rem] w-[16rem] flex flex-wrap">
-            <ProductReveal
-              className="mr-[0.41rem] mb-[0.45rem] bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec7_1-5940e59436.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.41rem] mb-[0.45rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec7_2-91bd92e276.webp",
-              )}
-            />
-            <ProductReveal
-              className="mb-[0.45rem] [transition-delay:0.25s] bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec7_3-a57b588ee0.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.41rem] bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec7_4-b18b76dd39.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.41rem] bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec7_6-0705159a27.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.41rem] mb-[0.45rem] w-[5.06rem] h-[6.4rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.41rem] mb-[0.45rem] [transition-delay:0.15s] w-[5.06rem] h-[6.4rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mb-[0.45rem] [transition-delay:0.25s] w-[5.06rem] h-[6.4rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.41rem] w-[5.06rem] h-[6.4rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.41rem] w-[5.06rem] h-[6.4rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec7_6}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec8 */}
@@ -261,42 +290,60 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
         {/* sec10 */}
         <div className="pt-[0.89rem] pb-[1.68rem] relative">
           <div className="mx-auto w-[15.9rem] flex flex-wrap">
-            <ProductReveal
-              className="mr-[0.3rem] mb-[0.3rem] rounded-[0.4rem] [transition-delay:0.65s] bg-no-repeat bg-cover w-[5.1rem] h-[3rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec10_1-f5c6c131a5.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.3rem] mb-[0.3rem] rounded-[0.4rem] [transition-delay:0.55s] bg-no-repeat bg-cover w-[5.1rem] h-[3rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec10_2-68c9427843.webp",
-              )}
-            />
-            <ProductReveal
-              className="mb-[0.3rem] rounded-[0.4rem] [transition-delay:0.45s] bg-no-repeat bg-cover w-[5.1rem] h-[3rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec10_3-db79f357e2.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.3rem] rounded-[0.4rem] [transition-delay:0.45s] bg-no-repeat bg-cover w-[5.1rem] h-[3rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec10_4-d07a3d1f52.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.3rem] rounded-[0.4rem] [transition-delay:0.55s] bg-no-repeat bg-cover w-[5.1rem] h-[3rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec10_5-03d53943db.webp",
-              )}
-            />
-            <ProductReveal
-              className="rounded-[0.4rem] [transition-delay:0.65s] bg-no-repeat bg-cover w-[5.1rem] h-[3rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec10_6-56e82e0c95.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.3rem] mb-[0.3rem] rounded-[0.4rem] [transition-delay:0.65s] w-[5.1rem] h-[3rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.3rem] mb-[0.3rem] rounded-[0.4rem] [transition-delay:0.55s] w-[5.1rem] h-[3rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mb-[0.3rem] rounded-[0.4rem] [transition-delay:0.45s] w-[5.1rem] h-[3rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.3rem] rounded-[0.4rem] [transition-delay:0.45s] w-[5.1rem] h-[3rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.3rem] rounded-[0.4rem] [transition-delay:0.55s] w-[5.1rem] h-[3rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_5}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="rounded-[0.4rem] [transition-delay:0.65s] w-[5.1rem] h-[3rem] overflow-hidden relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_6}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec11 */}
@@ -361,45 +408,63 @@ export function DaofengOverview({ locale, text, common }: ProductViewProps) {
               )}
             />
             <div>
-              <ProductReveal
-                className="mb-[0.15rem] rounded-[0.2rem] bg-no-repeat bg-cover w-[5.89rem] h-[2.87rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/daofeng/sec13_2-92fb3dd621.webp",
-                )}
-              />
-              <ProductReveal
-                className="rounded-[0.2rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[5.89rem] h-[2.87rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/daofeng/sec13_3-c61549a916.webp",
-                )}
-              />
+              <ProductReveal className="mb-[0.15rem] rounded-[0.2rem] w-[5.89rem] h-[2.87rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec13_2}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="rounded-[0.2rem] [transition-delay:0.15s] w-[5.89rem] h-[2.87rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec13_3}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
           <div className="mx-auto mt-[0.21rem] w-[15rem] h-[2.39rem] flex justify-between">
-            <ProductReveal
-              className="rounded-[0.2rem] bg-no-repeat bg-cover w-[3.58rem] h-full"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec13_4-54099e7969.webp",
-              )}
-            />
-            <ProductReveal
-              className="rounded-[0.2rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[3.58rem] h-full"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec13_5-4114bcdfa5.webp",
-              )}
-            />
-            <ProductReveal
-              className="rounded-[0.2rem] [transition-delay:0.25s] bg-no-repeat bg-cover w-[3.58rem] h-full"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec13_6-9bbe134d93.webp",
-              )}
-            />
-            <ProductReveal
-              className="rounded-[0.2rem] [transition-delay:0.35s] bg-no-repeat bg-cover w-[3.58rem] h-full"
-              style={bg(
-                "/guanwang_second/front/images/new/products/daofeng/sec13_7-b15d191bbb.webp",
-              )}
-            />
+            <ProductReveal className="rounded-[0.2rem] w-[3.58rem] h-full relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec13_4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="rounded-[0.2rem] [transition-delay:0.15s] w-[3.58rem] h-full relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec13_5}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="rounded-[0.2rem] [transition-delay:0.25s] w-[3.58rem] h-full relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec13_6}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="rounded-[0.2rem] [transition-delay:0.35s] w-[3.58rem] h-full relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec13_7}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
       </div>

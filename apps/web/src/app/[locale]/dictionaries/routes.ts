@@ -63,6 +63,18 @@ export const PRODUCT_SLUGS = [
   "water_alarm",
   "camera_4",
   "yuntai",
+  "s30c",
+  "xiaofang",
+  "artisbox_play",
+  "mixpad_mirror",
+  "robot_r2",
+  "mixpad_plus",
+  "jidacheng",
+  "s350l",
+  "v180",
+  "w180",
+  "w260",
+  "w300",
 ] as const;
 
 export type ProductSlug = (typeof PRODUCT_SLUGS)[number];
@@ -342,5 +354,65 @@ export const I18N_SOURCE_ROUTES: I18nSourceRoute[] = [
     scope: "product",
     key: "yuntai",
     cn: "https://www.orvibo.com/cn/product/yuntai.html",
+  },
+  {
+    scope: "product",
+    key: "s30c",
+    cn: "https://www.orvibo.com/cn/product/s30c.html",
+  },
+  {
+    scope: "product",
+    key: "xiaofang",
+    cn: "https://www.orvibo.com/cn/product/xiaofang.html",
+  },
+  {
+    scope: "product",
+    key: "artisbox_play",
+    cn: "https://www.orvibo.com/cn/product/artisbox_play.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_mirror",
+    cn: "https://www.orvibo.com/cn/product/mixpad_mirror.html",
+  },
+  {
+    scope: "product",
+    key: "robot_r2",
+    cn: "https://www.orvibo.com/cn/product/robot_r2.html",
+  },
+  {
+    scope: "product",
+    key: "mixpad_plus",
+    cn: "https://www.orvibo.com/cn/product/mixpad_plus.html",
+  },
+  {
+    scope: "product",
+    key: "jidacheng",
+    cn: "https://www.orvibo.com/cn/product/jidacheng.html",
+  },
+  {
+    scope: "product",
+    key: "s350l",
+    cn: "https://www.orvibo.com/cn/product/s350l.html",
+  },
+  {
+    scope: "product",
+    key: "v180",
+    cn: "https://www.orvibo.com/cn/product/v180.html",
+  },
+  {
+    scope: "product",
+    key: "w180",
+    cn: "https://www.orvibo.com/cn/product/w180.html",
+  },
+  {
+    scope: "product",
+    key: "w260",
+    cn: "https://www.orvibo.com/cn/product/w260.html",
+  },
+  {
+    scope: "product",
+    key: "w300",
+    cn: "https://www.orvibo.com/cn/product/w300.html",
   },
 ];

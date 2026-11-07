@@ -1,7 +1,9 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function DefyOverview({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -47,25 +49,34 @@ export function DefyOverview({ locale, text, common }: ProductViewProps) {
                 )}
               />
               <div className="mt-[0.5rem]">
-                <ProductReveal
-                  className="bg-center bg-no-repeat bg-cover w-[4.44rem] h-[3.08rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/defy/pic2-b6dccad37b.webp",
-                  )}
-                />
+                <ProductReveal className="w-[4.44rem] h-[3.08rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.pic2}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
                 <div className="mt-[0.13rem] flex h-[3.21rem]">
-                  <ProductReveal
-                    className="bg-center mr-[0.13rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[2.17rem] h-full"
-                    style={bg(
-                      "/guanwang_second/front/images/products/defy/pic3-bc461d8742.webp",
-                    )}
-                  />
-                  <ProductReveal
-                    className="bg-center [transition-delay:0.4s] bg-no-repeat bg-cover w-[2.17rem] h-full"
-                    style={bg(
-                      "/guanwang_second/front/images/products/defy/pic4-31afd0cbfb.webp",
-                    )}
-                  />
+                  <ProductReveal className="mr-[0.13rem] [transition-delay:0.2s] w-[2.17rem] h-full relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.pic3}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover" }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
+                  <ProductReveal className="[transition-delay:0.4s] w-[2.17rem] h-full relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.pic4}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover" }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
                 </div>
               </div>
             </div>
@@ -152,12 +163,15 @@ export function DefyOverview({ locale, text, common }: ProductViewProps) {
               {t("sec8.text")}
             </div>
           </ProductReveal>
-          <ProductReveal
-            className="bg-center mx-auto mt-[0.56rem] bg-no-repeat bg-cover w-[16rem] h-[9rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/defy/sec6-1307368a9a.webp",
-            )}
-          />
+          <ProductReveal className="mx-auto mt-[0.56rem] w-[16rem] h-[9rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec6}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </ProductReveal>
         </div>
         {/* sec9 video-box */}
         <div className="mt-[0.85rem] relative">

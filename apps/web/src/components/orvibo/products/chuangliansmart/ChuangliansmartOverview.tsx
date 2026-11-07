@@ -1,7 +1,9 @@
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function ChuangliansmartOverview({
   locale,
@@ -446,15 +448,11 @@ export function ChuangliansmartOverview({
             {t("sec8.desc")}
           </p>
           <div className="mt-[48px] text-center">
-            <Image
-              src={img(
-                "/guanwang_second/front/images/products/chuangliansmart/sec8_logo-d17f00af8a.webp",
-              )}
-              alt=""
-              width={500}
-              height={100}
-              unoptimized
-              className="inline align-middle"
+            <TextImage
+              picture={DESKTOP_WORDS.sec8_logo}
+              locale={locale}
+              text={text}
+              className="inline-block align-middle w-[500px] max-w-full"
             />
           </div>
           <div className="mx-auto mt-[8.48rem] pt-[0.57rem] pb-[0.61rem] w-[12rem] flex bg-[#e2e2e1]">
@@ -477,15 +475,12 @@ export function ChuangliansmartOverview({
               </p>
             </div>
             <div className="w-[50%] text-center">
-              <Image
-                src={img(
-                  "/guanwang_second/front/images/products/chuangliansmart/sec8_2-93a3040167.webp",
-                )}
-                alt=""
-                width={55}
-                height={69}
-                unoptimized
-                className="inline align-middle w-[0.55rem] h-[0.69rem]"
+              <TextImage
+                picture={DESKTOP_WORDS.sec8_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "fill" }}
+                className="inline-block align-middle w-[0.55rem] h-[0.69rem] max-w-full"
               />
               <h2 className="mt-[0.21rem] mb-[0.1rem] text-[0.24rem] leading-[0.33rem] font-extrabold">
                 {t("sec8.content3")}

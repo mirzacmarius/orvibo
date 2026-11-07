@@ -99,8 +99,9 @@ export default async function ProductDetailPage({
 
   const { product, copy } = resolved;
   const base = `/${locale}`;
-  const View = product.View;
+  const { View, PhoneView } = product;
   const text = await loadProductPageText(slug, locale);
+  const viewProps = { locale, base, copy, common: dict.common, text };
 
   return (
     <ProductPageShell
@@ -108,13 +109,19 @@ export default async function ProductDetailPage({
       product={product}
       navClassName={product.navClassName}
     >
-      <View
-        locale={locale}
-        base={base}
-        copy={copy}
-        common={dict.common}
-        text={text}
-      />
+      {PhoneView ? (
+        <>
+          <div className="max-lg:hidden">
+            <View {...viewProps} />
+          </div>
+          {/* orvibo-phone-view sets the phone rem (orvibo.css) */}
+          <div className="orvibo-phone-view lg:hidden">
+            <PhoneView {...viewProps} />
+          </div>
+        </>
+      ) : (
+        <View {...viewProps} />
+      )}
     </ProductPageShell>
   );
 }

@@ -1,7 +1,9 @@
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function GaosiOverview({ locale, text, common }: ProductViewProps) {
   const { t, bg, pseudoBg, lines } = productPageHelpers(locale, text);
@@ -61,18 +63,24 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
               />
             </div>
             <div className="mb-[0.14rem] flex items-center justify-center">
-              <div
-                className="bg-center mr-[0.14rem] bg-no-repeat bg-cover w-[4.74rem] h-[2.24rem]"
-                style={bg(
-                  "/guanwang_second/front/images/products/gaosi/img-44b6bb9495.webp",
-                )}
-              />
-              <div
-                className="bg-center bg-no-repeat bg-cover w-[4.74rem] h-[2.24rem]"
-                style={bg(
-                  "/guanwang_second/front/images/products/gaosi/img-10-1-197344c17f.webp",
-                )}
-              />
+              <div className="mr-[0.14rem] w-[4.74rem] h-[2.24rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.img}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
+              <div className="w-[4.74rem] h-[2.24rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.img_10_1}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
             </div>
             <div className="mb-[0.14rem] flex items-center justify-center">
               <div
@@ -81,12 +89,15 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
                   "/guanwang_second/front/images/products/gaosi/img-40757d9b2a.webp",
                 )}
               />
-              <div
-                className="bg-center bg-no-repeat bg-cover w-[4.7rem] h-[2.3rem]"
-                style={bg(
-                  "/guanwang_second/front/images/products/gaosi/img-4-7f4d9b79fe.webp",
-                )}
-              />
+              <div className="w-[4.7rem] h-[2.3rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.img_4}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
             </div>
           </ProductReveal>
         </div>
@@ -128,18 +139,24 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
         </div>
         {/* sec5 */}
         <div className="mx-auto my-[0.38rem] w-[13.78rem]">
-          <ProductReveal
-            className="bg-center mb-[0.4rem] bg-no-repeat bg-cover w-full h-[7.6rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/gaosi/img-de45a5bf76.webp",
-            )}
-          />
-          <ProductReveal
-            className="bg-center bg-no-repeat bg-cover w-full h-[3.81rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/gaosi/img-11-fa2c1c00b9.webp",
-            )}
-          />
+          <ProductReveal className="mb-[0.4rem] w-full h-[7.6rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.img_2}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </ProductReveal>
+          <ProductReveal className="w-full h-[3.81rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.img_11}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </ProductReveal>
         </div>
         {/* sec6 */}
         <div className="mt-[1.9rem]">
@@ -203,12 +220,15 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
               "/guanwang_second/front/images/products/gaosi/img-1-67648d7b24.webp",
             )}
           />
-          <ProductReveal
-            className="bg-center mx-auto mt-[8.86rem] bg-no-repeat bg-cover w-[9.95rem] h-[6rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/gaosi/img-14-70bc7edf3f.webp",
-            )}
-          />
+          <ProductReveal className="mx-auto mt-[8.86rem] w-[9.95rem] h-[6rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.img_14}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </ProductReveal>
         </div>
         {/* sec8 */}
         <div className="mt-[2.4rem] relative">
@@ -221,18 +241,24 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
               "/guanwang_second/front/images/products/gaosi/img-16-894fc359e8.webp",
             )}
           />
-          <ProductReveal
-            className="bg-center mx-auto mt-[12.1rem] mb-[0.32rem] bg-no-repeat bg-cover w-[11.42rem] h-[6.36rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/gaosi/img-40-cbbb074791.webp",
-            )}
-          />
-          <ProductReveal
-            className="bg-center mx-auto mb-[0.32rem] bg-no-repeat bg-cover w-[11.42rem] h-[6.36rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/gaosi/img-21-843a59381c.webp",
-            )}
-          />
+          <ProductReveal className="mx-auto mt-[12.1rem] mb-[0.32rem] w-[11.42rem] h-[6.36rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.img_40}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </ProductReveal>
+          <ProductReveal className="mx-auto mb-[0.32rem] w-[11.42rem] h-[6.36rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.img_21}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </ProductReveal>
         </div>
         {/* sec9 */}
         <div className="mt-[2.3rem]">
@@ -248,18 +274,24 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
             {t("sec9.desc")}
           </ProductReveal>
           <div className="flex items-center justify-center">
-            <ProductReveal
-              className="bg-center mr-[0.2rem] mb-[0.2rem] bg-no-repeat bg-cover w-[3.8rem] h-[5.06rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/gaosi/1-e8d63d0642.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center mr-[0.2rem] mb-[0.2rem] [transition-delay:0.1s] bg-no-repeat bg-cover w-[3.8rem] h-[5.06rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/gaosi/2-96b2506e53.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.2rem] mb-[0.2rem] w-[3.8rem] h-[5.06rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.2rem] mb-[0.2rem] [transition-delay:0.1s] w-[3.8rem] h-[5.06rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
             <ProductReveal
               className="bg-center mb-[0.2rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[3.8rem] h-[5.06rem]"
               style={bg(
@@ -268,18 +300,24 @@ export function GaosiOverview({ locale, text, common }: ProductViewProps) {
             />
           </div>
           <div className="flex items-center justify-center">
-            <ProductReveal
-              className="bg-center mr-[0.2rem] mb-[0.2rem] [transition-delay:0.1s] bg-no-repeat bg-cover w-[6.9rem] h-[3.16rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/gaosi/4-48e1f95476.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-center mb-[0.2rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[4.7rem] h-[3.16rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/gaosi/5-82629674f0.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.2rem] mb-[0.2rem] [transition-delay:0.1s] w-[6.9rem] h-[3.16rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mb-[0.2rem] [transition-delay:0.2s] w-[4.7rem] h-[3.16rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.pic5}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec10 */}

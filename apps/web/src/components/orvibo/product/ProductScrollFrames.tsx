@@ -16,6 +16,8 @@ interface ProductScrollFramesProps {
   className?: string;
   /** The frame: its height, and a `top` that centres it on the screen. */
   frameClassName?: string;
+  /** The column of dots marking the picture on show (orvibo.com's phone pages have none). */
+  dots?: boolean;
 }
 
 /**
@@ -31,6 +33,7 @@ export function ProductScrollFrames({
   children,
   className,
   frameClassName,
+  dots = true,
 }: ProductScrollFramesProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const frameRef = useRef<HTMLDivElement>(null);
@@ -77,27 +80,29 @@ export function ProductScrollFrames({
           </div>
         ))}
         {children}
-        <ul className="absolute top-1/2 right-[0.7rem] -translate-y-1/2">
-          {frames.map((frame, index) => (
-            <li
-              key={frame.key}
-              className="flex size-[0.23rem] items-center justify-center"
-            >
-              <span
-                className={cn(
-                  "flex items-center justify-center rounded-full",
-                  index === active
-                    ? "size-[23px] bg-white/30"
-                    : "size-[8px] bg-white",
-                )}
+        {dots && (
+          <ul className="absolute top-1/2 right-[0.7rem] -translate-y-1/2">
+            {frames.map((frame, index) => (
+              <li
+                key={frame.key}
+                className="flex size-[0.23rem] items-center justify-center"
               >
-                {index === active && (
-                  <span className="size-[8px] rounded-full bg-white" />
-                )}
-              </span>
-            </li>
-          ))}
-        </ul>
+                <span
+                  className={cn(
+                    "flex items-center justify-center rounded-full",
+                    index === active
+                      ? "size-[23px] bg-white/30"
+                      : "size-[8px] bg-white",
+                  )}
+                >
+                  {index === active && (
+                    <span className="size-[8px] rounded-full bg-white" />
+                  )}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );

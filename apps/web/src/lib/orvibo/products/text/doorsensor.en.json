@@ -1,6 +1,6 @@
 {
   "meta.description": "The ORVIBO Door & Window Sensor works with the Zigbee Mini gateway: it shows in real time whether doors and windows are open, shuts the window when it rains and rings the doorbell when the kids get home.",
-  "meta.spec.description": "ORVIBO CT10 Door & Window Sensor specifications: one CR2032 battery, Zigbee HA, IEEE 802.15.4 at 2.4 GHz, 61 × 30 × 7 mm.",
+  "meta.spec.description": "ORVIBO CT10 Door & Window Sensor specifications: one CR2032 battery, Zigbee HA, IEEE 802.15.4 at 2.4 GHz, 61 × 30 × 7 mm.",
   "ds_page.ds_page": "Door & Window Sensor",
   "ds_page.animate": "It's raining, a window is open and you're away on a trip?",
   "ds_page.animate2": "Cooking in the kitchen and missing the kids coming home from school?",
@@ -58,5 +58,23 @@
   "ds_page.dt_item20": "WEP/TKIP/AES",
   "ds_page.dt_item21": "Operating temperature:",
   "ds_page.dt_item21v": "−20 to 70 °C",
-  "ds_page.data_source_tips": "*Data from ORVIBO's lab; results may vary slightly with the measuring method."
+  "ds_page.data_source_tips": "*Data from ORVIBO's lab; results may vary slightly with the measuring method.",
+  "m.burglar.title": "A burglar breaks in? The whole home sounds the alarm at once",
+  "m.burglar.desc": "Fit the sensor on doors and windows and, in the ORVIBO Home app, link it to cameras and lights. If a burglar breaks in, the camera records and takes photos as evidence, the lights keep flashing, your phone gets an alert and the whole-home alarm sends the burglar running.",
+  "m.fridge.title": "No more worrying: “Your fridge is shut”",
+  "m.fridge.desc": "Fit the sensor on the fridge door and see in real time whether it's open or shut; if it's left open, you get a notification. The power you save pays for another sensor: good for your wallet and the planet.",
+  "m.spec.product": "“Door & Window Sensor”",
+  "m.labNote": "All the data above come from ORVIBO's lab; actual results may differ slightly with the measuring method.",
+  "pic.power": "Power",
+  "pic.time": "Time",
+  "pic.it_rains": "It rains",
+  "pic.opener_starts": "Opener starts",
+  "pic.window_shuts": "Window shuts",
+  "pic.kids_get_home": "Kids get home",
+  "pic.door_opens": "Door opens",
+  "pic.doorbell_rings": "Doorbell rings",
+  "pic.door_opens_2": "Door opens",
+  "pic.camera_records": "Camera records",
+  "pic.home_alarm": "Home alarm",
+  "pic.alert_sent": "Alert sent"
 }

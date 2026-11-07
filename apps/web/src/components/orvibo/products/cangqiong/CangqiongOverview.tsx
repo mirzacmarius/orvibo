@@ -1,7 +1,9 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function CangqiongOverview({ locale, text, common }: ProductViewProps) {
   const { t, bg, lines } = productPageHelpers(locale, text);
@@ -48,12 +50,15 @@ export function CangqiongOverview({ locale, text, common }: ProductViewProps) {
             {t("sec2.title")}
           </ProductReveal>
           <div className="mt-[11.84rem] flex items-center justify-center">
-            <ProductReveal
-              className="bg-center bg-no-repeat bg-cover w-[10rem] h-[4.98rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/cangqiong/block2-9e2a54e568.webp",
-              )}
-            />
+            <ProductReveal className="w-[10rem] h-[4.98rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.block2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover" }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec__video_container s__bg d__sec sec2 */}
@@ -140,12 +145,15 @@ export function CangqiongOverview({ locale, text, common }: ProductViewProps) {
           {t("sec7.title")}
         </ProductReveal>
         {/* sec4 s__bg lazy */}
-        <div
-          className="bg-center bg-no-repeat bg-cover h-[14.82rem]"
-          style={bg(
-            "/guanwang_second/front/images/products/cangqiong/sec2-910622eedb.webp",
-          )}
-        />
+        <div className="h-[14.82rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec2}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* sec__video_container s__bg d__sec sec5 */}
         <div className="bg-center flex bg-no-repeat bg-cover relative flex-col items-center">
           <MarketingVideo

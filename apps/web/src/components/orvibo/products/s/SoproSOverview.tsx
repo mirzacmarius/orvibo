@@ -3,10 +3,12 @@ import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
 import { ProductSceneTabs } from "@/components/orvibo/product/ProductSceneTabs";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { orviboRoutes } from "@/lib/orvibo/routes";
 import Link from "next/link";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The sec11 chip looks: CN's light pills, and coloured ones with a face. */
 const CHIP = {
@@ -178,47 +180,65 @@ export function SoproSOverview({
                 )}
               />
               <div>
-                <ProductReveal
-                  className="bg-no-repeat bg-cover w-[6.84rem] h-[2.97rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/product/s/sec2_2-6ca31786f6.webp",
-                  )}
-                />
+                <ProductReveal className="w-[6.84rem] h-[2.97rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec2_2}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
                 <div className="mt-[0.3rem] flex">
-                  <ProductReveal
-                    className="mr-[0.28rem] bg-no-repeat bg-cover w-[3.28rem] h-[4.37rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/product/s/sec2_3-79f83af709.webp",
-                    )}
-                  />
-                  <ProductReveal
-                    className="[transition-delay:0.2s] bg-no-repeat bg-cover w-[3.28rem] h-[4.37rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/product/s/sec2_4-8525b62dc9.webp",
-                    )}
-                  />
+                  <ProductReveal className="mr-[0.28rem] w-[3.28rem] h-[4.37rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec2_3}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
+                  <ProductReveal className="[transition-delay:0.2s] w-[3.28rem] h-[4.37rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.sec2_4}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover", x: 0, y: 0 }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
                 </div>
               </div>
             </div>
             <div className="flex h-[3.91rem]">
-              <ProductReveal
-                className="mr-[0.28rem] bg-no-repeat bg-cover w-[3.28rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/product/s/sec2_6-d2c3677e61.webp",
-                )}
-              />
-              <ProductReveal
-                className="mr-[0.28rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[3.28rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/product/s/sec2_5-ac59cb5bc5.webp",
-                )}
-              />
-              <ProductReveal
-                className="[transition-delay:0.4s] bg-no-repeat bg-cover w-[6.84rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/product/s/sec2_7-dafea6225c.webp",
-                )}
-              />
+              <ProductReveal className="mr-[0.28rem] w-[3.28rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec2_6}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="mr-[0.28rem] [transition-delay:0.2s] w-[3.28rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec2_5}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="[transition-delay:0.4s] w-[6.84rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec2_7}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
@@ -282,62 +302,74 @@ export function SoproSOverview({
             </div>
           </ProductReveal>
           <div className="mx-auto mt-[1rem] flex flex-wrap w-[16rem]">
-            <ProductReveal
-              className="mr-[0.41rem] mb-[0.45rem] relative rounded-[0.2rem] overflow-hidden bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec5_1-d80d70e70c.webp",
-              )}
-            >
+            <ProductReveal className="mr-[0.41rem] mb-[0.45rem] relative rounded-[0.2rem] overflow-hidden w-[5.06rem] h-[6.4rem] isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec5_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
               <div className="absolute inset-x-0 top-[4.2rem] bottom-0 flex items-center justify-center px-[0.3rem] pb-[0.28rem] bg-[#151515] text-center text-[0.22rem] leading-[0.36rem] font-medium text-white">
                 {t("sec5.card1")}
               </div>
             </ProductReveal>
-            <ProductReveal
-              className="mr-[0.41rem] mb-[0.45rem] [transition-delay:0.2s] relative rounded-[0.2rem] overflow-hidden bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec5_2-0c933d7a0e.webp",
-              )}
-            >
+            <ProductReveal className="mr-[0.41rem] mb-[0.45rem] [transition-delay:0.2s] relative rounded-[0.2rem] overflow-hidden w-[5.06rem] h-[6.4rem] isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec5_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
               <div className="absolute inset-x-0 top-[4.2rem] bottom-0 flex items-center justify-center px-[0.3rem] pb-[0.28rem] bg-[#151515] text-center text-[0.22rem] leading-[0.36rem] font-medium text-white">
                 {t("sec5.card2")}
               </div>
             </ProductReveal>
-            <ProductReveal
-              className="mb-[0.45rem] [transition-delay:0.4s] relative rounded-[0.2rem] overflow-hidden bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec5_3-60b795f2f4.webp",
-              )}
-            >
+            <ProductReveal className="mb-[0.45rem] [transition-delay:0.4s] relative rounded-[0.2rem] overflow-hidden w-[5.06rem] h-[6.4rem] isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec5_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
               <div className="absolute inset-x-0 top-[4.2rem] bottom-0 flex items-center justify-center px-[0.3rem] pb-[0.28rem] bg-[#151515] text-center text-[0.22rem] leading-[0.36rem] font-medium text-white">
                 {t("sec5.card3")}
               </div>
             </ProductReveal>
-            <ProductReveal
-              className="mr-[0.41rem] relative rounded-[0.2rem] overflow-hidden bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec5_4-b4db8f63a4.webp",
-              )}
-            >
+            <ProductReveal className="mr-[0.41rem] relative rounded-[0.2rem] overflow-hidden w-[5.06rem] h-[6.4rem] isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec5_4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
               <div className="absolute inset-x-0 top-[4.2rem] bottom-0 flex items-center justify-center px-[0.3rem] pb-[0.28rem] bg-[#151515] text-center text-[0.22rem] leading-[0.36rem] font-medium text-white">
                 {t("sec5.card4")}
               </div>
             </ProductReveal>
-            <ProductReveal
-              className="mr-[0.41rem] [transition-delay:0.2s] relative rounded-[0.2rem] overflow-hidden bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec5_5-93a890e592.webp",
-              )}
-            >
+            <ProductReveal className="mr-[0.41rem] [transition-delay:0.2s] relative rounded-[0.2rem] overflow-hidden w-[5.06rem] h-[6.4rem] isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec5_5}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
               <div className="absolute inset-x-0 top-[4.2rem] bottom-0 flex items-center justify-center px-[0.3rem] pb-[0.28rem] bg-[#151515] text-center text-[0.22rem] leading-[0.36rem] font-medium text-white">
                 {t("sec5.card5")}
               </div>
             </ProductReveal>
-            <ProductReveal
-              className="[transition-delay:0.4s] relative rounded-[0.2rem] overflow-hidden bg-no-repeat bg-cover w-[5.06rem] h-[6.4rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec5_6-aa4d5ef309.webp",
-              )}
-            >
+            <ProductReveal className="[transition-delay:0.4s] relative rounded-[0.2rem] overflow-hidden w-[5.06rem] h-[6.4rem] isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec5_6}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
               <div className="absolute inset-x-0 top-[4.2rem] bottom-0 flex items-center justify-center px-[0.3rem] pb-[0.28rem] bg-[#151515] text-center text-[0.22rem] leading-[0.36rem] font-medium text-white">
                 {t("sec5.card6")}
               </div>
@@ -533,29 +565,53 @@ export function SoproSOverview({
             slides={[
               {
                 key: "sensor",
-                image: img(
-                  "/guanwang_second/front/images/product/s/sec13_1-a06407767e.webp",
+                overlay: (
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec13_1}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0"
+                  />
                 ),
                 title: t("sec13.slide_info"),
               },
               {
                 key: "still",
-                image: img(
-                  "/guanwang_second/front/images/product/s/sec13_2-29ecc08128.webp",
+                overlay: (
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec13_2}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0"
+                  />
                 ),
                 title: t("sec13.slide_info2"),
               },
               {
                 key: "passing",
-                image: img(
-                  "/guanwang_second/front/images/product/s/sec13_3-ef72b3e026.webp",
+                overlay: (
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec13_3}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0"
+                  />
                 ),
                 title: t("sec13.slide_info3"),
               },
               {
                 key: "night",
-                image: img(
-                  "/guanwang_second/front/images/product/s/sec13_4-3a9e28d8c3.webp",
+                overlay: (
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec13_4}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0"
+                  />
                 ),
                 title: t("sec13.slide_info4"),
               },
@@ -778,42 +834,60 @@ export function SoproSOverview({
             </div>
           </ProductReveal>
           <div className="absolute left-1/2 bottom-[2.06rem] -translate-x-1/2 flex flex-wrap w-[15.9rem]">
-            <ProductReveal
-              className="mr-[0.3rem] mb-[0.3rem] bg-no-repeat bg-cover w-[5.1rem] h-[3rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec16_1-1f881d8a54.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.3rem] mb-[0.3rem] bg-no-repeat bg-cover w-[5.1rem] h-[3rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec16_2-8a4e213116.webp",
-              )}
-            />
-            <ProductReveal
-              className="mb-[0.3rem] bg-no-repeat bg-cover w-[5.1rem] h-[3rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec16_3-dc2d53a961.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.3rem] bg-no-repeat bg-cover w-[5.1rem] h-[3rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec16_4-185f309cf0.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.3rem] bg-no-repeat bg-cover w-[5.1rem] h-[3rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec16_5-3aa6a0c46c.webp",
-              )}
-            />
-            <ProductReveal
-              className="bg-no-repeat bg-cover w-[5.1rem] h-[3rem]"
-              style={bg(
-                "/guanwang_second/front/images/product/s/sec16_6-946699a86a.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.3rem] mb-[0.3rem] w-[5.1rem] h-[3rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec16_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.3rem] mb-[0.3rem] w-[5.1rem] h-[3rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec16_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mb-[0.3rem] w-[5.1rem] h-[3rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec16_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.3rem] w-[5.1rem] h-[3rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec16_4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.3rem] w-[5.1rem] h-[3rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec16_5}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="w-[5.1rem] h-[3rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec16_6}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
         </div>
         {/* sec17 d__sec lazy s__bg */}

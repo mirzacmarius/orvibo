@@ -1,6 +1,6 @@
 {
   "meta.description": "Senzorul ORVIBO pentru uși și ferestre funcționează cu gateway-ul Zigbee Mini: îți arată în timp real dacă ușile și ferestrele sunt deschise, închide geamul când plouă și sună soneria când vin copiii acasă.",
-  "meta.spec.description": "Specificațiile senzorului ORVIBO pentru uși și ferestre CT10: o baterie CR2032, Zigbee HA, IEEE 802.15.4 la 2,4 GHz, 61 × 30 × 7 mm.",
+  "meta.spec.description": "Specificațiile senzorului ORVIBO pentru uși și ferestre CT10: o baterie CR2032, Zigbee HA, IEEE 802.15.4 la 2,4 GHz, 61 × 30 × 7 mm.",
   "ds_page.ds_page": "Senzor pentru uși și ferestre",
   "ds_page.animate": "Plouă, ai lăsat geamul deschis și ești plecat din oraș?",
   "ds_page.animate2": "Gătești în bucătărie și nu auzi când vin copiii de la școală?",
@@ -58,5 +58,23 @@
   "ds_page.dt_item20": "WEP/TKIP/AES",
   "ds_page.dt_item21": "Temperatură de funcționare:",
   "ds_page.dt_item21v": "−20…70 °C",
-  "ds_page.data_source_tips": "*Date din laboratorul ORVIBO; rezultatele pot varia ușor în funcție de metoda de măsurare."
+  "ds_page.data_source_tips": "*Date din laboratorul ORVIBO; rezultatele pot varia ușor în funcție de metoda de măsurare.",
+  "m.burglar.title": "Intră un hoț? Alarma pornește pe loc în toată casa",
+  "m.burglar.desc": "Montezi senzorul pe uși și ferestre și, în aplicația ORVIBO Home, îl legi de camere și lumini. Dacă intră un hoț, camera filmează și face poze ca dovadă, luminile clipesc fără oprire, primești alerta pe telefon, iar alarma din toată casa îl pune pe fugă.",
+  "m.fridge.title": "Fără griji: „Frigiderul e închis”",
+  "m.fridge.desc": "Montezi senzorul pe ușa frigiderului și vezi în timp real dacă e deschisă sau închisă; dacă a rămas deschisă, primești o notificare. Cu banii economisiți la curent îți mai iei un senzor: bine pentru buzunar și pentru mediu.",
+  "m.spec.product": "„Senzor pentru uși și ferestre”",
+  "m.labNote": "Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot diferi puțin în funcție de metoda de măsurare.",
+  "pic.power": "Putere",
+  "pic.time": "Timp",
+  "pic.it_rains": "Plouă",
+  "pic.opener_starts": "Pornește motorul",
+  "pic.window_shuts": "Geam închis",
+  "pic.kids_get_home": "Vin copiii",
+  "pic.door_opens": "Ușa se deschide",
+  "pic.doorbell_rings": "Sună soneria",
+  "pic.door_opens_2": "Ușă deschisă",
+  "pic.camera_records": "Camera filmează",
+  "pic.home_alarm": "Alarmă în casă",
+  "pic.alert_sent": "Primești alerta"
 }

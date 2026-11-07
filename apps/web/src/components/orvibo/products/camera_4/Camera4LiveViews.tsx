@@ -1,14 +1,14 @@
 "use client";
 
 import { cn } from "@v1/ui/utils";
-import { type CSSProperties, useState } from "react";
+import { type ReactNode, useState } from "react";
 
 export interface Camera4LiveView {
   key: string;
   /** The caption drawn on the picture, as the card's name. */
   label: string;
-  /** The picture, as a background style. */
-  photo: CSSProperties;
+  /** The picture: a TextImage that fills the card (absolute inset-0 -z-10). */
+  photo: ReactNode;
 }
 
 interface Camera4LiveViewsProps {
@@ -43,11 +43,12 @@ export function Camera4LiveViews({ views }: Camera4LiveViewsProps) {
                 aria-current={veiled ? undefined : true}
                 onClick={() => setPage(Math.floor(index / 2))}
                 className={cn(
-                  "relative block size-full cursor-pointer overflow-hidden rounded-[0.2rem] bg-cover bg-no-repeat after:absolute after:inset-0 after:bg-white after:opacity-0 after:transition-opacity after:content-[''] after:[transition-duration:360ms]",
+                  "relative isolate block size-full cursor-pointer overflow-hidden rounded-[0.2rem] after:absolute after:inset-0 after:bg-white after:opacity-0 after:transition-opacity after:content-[''] after:[transition-duration:360ms]",
                   veiled && "after:opacity-75",
                 )}
-                style={view.photo}
-              />
+              >
+                {view.photo}
+              </button>
             </li>
           );
         })}

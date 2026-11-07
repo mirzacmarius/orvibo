@@ -45,5 +45,7 @@
   "install.note": "* Toate datele de mai sus provin din laboratorul ORVIBO; rezultatele reale pot varia ușor în funcție de metoda de măsurare.",
   "alt.product": "Butonul de urgență inteligent ORVIBO",
   "alt.phone1": "Ecranul de blocare al unui telefon cu o notificare ORVIBO Home: cineva a apăsat butonul de urgență din living.",
-  "alt.phone2": "Ecranul de securitate din aplicația ORVIBO Home, cu alarma butonului de urgență declanșată."
+  "alt.phone2": "Ecranul de securitate din aplicația ORVIBO Home, cu alarma butonului de urgență declanșată.",
+  "m.hero": "Apel de alarmă cu o apăsare | Alerte pe telefon | Consum ultraredus, baterie de lungă durată",
+  "m.params": "Parametri"
 }

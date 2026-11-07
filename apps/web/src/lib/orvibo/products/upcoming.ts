@@ -8,12 +8,6 @@
  * real page, register it in `registry.ts` and remove it from this list.
  */
 const UPCOMING_PRODUCTS = new Map<string, string>([
-  ["mixpad_plus", "mixpadPlus"],
-  ["mixpad_mirror", "mixpadMirror"],
-  ["robot_r2", "robotR2"],
-  ["artisbox_play", "artisbox"],
-  ["xiaofang", "xiaofang"],
-  ["s30c", "s30c"],
   // Footer "Featured products"
   // Home page product grid
 ]);

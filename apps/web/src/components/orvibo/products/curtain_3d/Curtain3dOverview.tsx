@@ -1,9 +1,11 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function Curtain3dOverview({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, pseudoBg, lines } = productPageHelpers(locale, text);
@@ -77,24 +79,33 @@ export function Curtain3dOverview({ locale, text, common }: ProductViewProps) {
                     {t("tiles.rotate")}
                   </span>
                 </ProductReveal>
-                <ProductReveal
-                  className="[transition-delay:0.15s] bg-no-repeat bg-cover w-[5.48rem] h-[2.4rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/curtain_3d/sec1_03-e983c7fd61.webp",
-                  )}
-                />
-                <ProductReveal
-                  className="mt-[0.3rem] mr-[0.3rem] [transition-delay:0.25s] bg-no-repeat bg-cover w-[5.48rem] h-[2.4rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/curtain_3d/sec1_04-8e3fef229d.webp",
-                  )}
-                />
-                <ProductReveal
-                  className="mt-[0.3rem] [transition-delay:0.35s] bg-no-repeat bg-cover w-[5.48rem] h-[2.4rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/curtain_3d/sec1_05-bf923f471d.webp",
-                  )}
-                />
+                <ProductReveal className="[transition-delay:0.15s] w-[5.48rem] h-[2.4rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_03}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
+                <ProductReveal className="mt-[0.3rem] mr-[0.3rem] [transition-delay:0.25s] w-[5.48rem] h-[2.4rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_04}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
+                <ProductReveal className="mt-[0.3rem] [transition-delay:0.35s] w-[5.48rem] h-[2.4rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_05}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
               </div>
             </div>
             <div className="flex">
@@ -111,24 +122,33 @@ export function Curtain3dOverview({ locale, text, common }: ProductViewProps) {
                 </span>
               </ProductReveal>
               <div className="ml-[0.28rem] w-[11.26rem] flex flex-wrap">
-                <ProductReveal
-                  className="mr-[0.3rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[3.55rem] h-[2.5rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/curtain_3d/sec1_07-78e297bad0.webp",
-                  )}
-                />
-                <ProductReveal
-                  className="mr-[0.31rem] [transition-delay:0.25s] bg-no-repeat bg-cover w-[3.55rem] h-[2.5rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/curtain_3d/sec1_08-d599007ddc.webp",
-                  )}
-                />
-                <ProductReveal
-                  className="[transition-delay:0.35s] bg-no-repeat bg-cover w-[3.55rem] h-[2.5rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/curtain_3d/sec1_09-dd46cd0ab6.webp",
-                  )}
-                />
+                <ProductReveal className="mr-[0.3rem] [transition-delay:0.15s] w-[3.55rem] h-[2.5rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_07}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
+                <ProductReveal className="mr-[0.31rem] [transition-delay:0.25s] w-[3.55rem] h-[2.5rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_08}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
+                <ProductReveal className="[transition-delay:0.35s] w-[3.55rem] h-[2.5rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_09}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
               </div>
             </div>
           </div>
@@ -141,24 +161,33 @@ export function Curtain3dOverview({ locale, text, common }: ProductViewProps) {
             </div>
           </ProductReveal>
           <div className="mt-[0.82rem] flex">
-            <ProductReveal
-              className="mr-[0.4rem] bg-no-repeat bg-cover w-[4.8rem] h-[4.48rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/curtain_3d/sec2_1-b5c140642d.webp",
-              )}
-            />
-            <ProductReveal
-              className="mr-[0.4rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[4.8rem] h-[4.48rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/curtain_3d/sec2_2-18c9d36ebb.webp",
-              )}
-            />
-            <ProductReveal
-              className="[transition-delay:0.25s] bg-no-repeat bg-cover w-[4.8rem] h-[4.48rem]"
-              style={bg(
-                "/guanwang_second/front/images/new/products/curtain_3d/sec2_3-e366444abc.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.4rem] w-[4.8rem] h-[4.48rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec2_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mr-[0.4rem] [transition-delay:0.15s] w-[4.8rem] h-[4.48rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec2_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="[transition-delay:0.25s] w-[4.8rem] h-[4.48rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec2_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
           <ProductReveal className="mt-[1.2rem]">
             <div className="text-center text-[0.48rem] leading-[0.52rem] font-bold bg-[image:linear-gradient(3deg,rgb(240,169,56)_0px,rgb(248,121,74)_46%,rgb(248,121,74)_100%)] bg-clip-text [-webkit-text-fill-color:transparent]">

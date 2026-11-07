@@ -5,10 +5,13 @@ import { type ReactNode, useId, useState } from "react";
 
 interface ProductMoreToggleProps {
   label: string;
-  /** Resolved URLs of orvibo.com's round 30 x 30 icons: a +, then a ×. */
+  /** Resolved URLs of orvibo.com's round icons (30 x 30 on its desktop pages): a +, then a ×. */
   openIcon: string;
   closeIcon: string;
   className?: string;
+  /** Classes merged over the label's and the icon's (the phone pages' sizes). */
+  labelClassName?: string;
+  iconClassName?: string;
   children: ReactNode;
 }
 
@@ -26,6 +29,8 @@ export function ProductMoreToggle({
   openIcon,
   closeIcon,
   className,
+  labelClassName,
+  iconClassName,
   children,
 }: ProductMoreToggleProps) {
   const [open, setOpen] = useState(false);
@@ -43,6 +48,7 @@ export function ProductMoreToggle({
         <span
           className={cn(
             "block text-[16px] leading-[1.6] text-[#2f7cd3] transition-opacity",
+            labelClassName,
             open && "opacity-0",
           )}
         >
@@ -53,7 +59,10 @@ export function ProductMoreToggle({
           alt=""
           width={30}
           height={30}
-          className="mx-auto mt-[16px] block h-[30px] w-[30px]"
+          className={cn(
+            "mx-auto mt-[16px] block h-[30px] w-[30px]",
+            iconClassName,
+          )}
         />
       </button>
       <div
