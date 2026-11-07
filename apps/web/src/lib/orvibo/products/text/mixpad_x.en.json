@@ -78,5 +78,18 @@
   "m.butler": "ORVIBO Butler",
   "m.butler.title": "A whole‑home smart assistant, and much more",
   "m.labNote.1": "* The test data above come from ORVIBO's lab.",
-  "m.labNote.2": "The software keeps updating; the actual interface may differ."
+  "m.labNote.2": "The software keeps updating; the actual interface may differ.",
+  "pic.leisure": "Leisure",
+  "pic.all_lights_on": "All lights on",
+  "pic.all_lights_off": "All lights off",
+  "pic.reading": "Reading",
+  "pic.hall": "Hall",
+  "pic.focus": "Focus",
+  "pic.entertainment": "Entertainment",
+  "pic.away": "Away",
+  "pic.home": "Home",
+  "pic.sleep": "Sleep",
+  "pic.bedroom": "Bedroom",
+  "pic.wake_up": "Wake up",
+  "pic.home_cinema": "Home cinema"
 }

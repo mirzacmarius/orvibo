@@ -2,6 +2,7 @@ import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { PhoneSwiper } from "@/components/orvibo/product/PhoneSwiper";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import {
   productPageHelpers,
   withLineBreaks,
@@ -11,6 +12,7 @@ import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { PHONE_WORDS } from "./pictureWords";
 
 const FILMS = "/orvibo/products/mixpad_elf/phone";
 const AVATARS = "/orvibo/products/mixpad_7";
@@ -205,12 +207,15 @@ export function MixpadElfPhone({ locale, text, common }: ProductViewProps) {
         </div>
         {/* sec1 */}
         <div className="pt-[1rem] pb-[0.63rem]">
-          <div
-            className="bg-center mx-auto bg-no-repeat bg-cover w-[7.2rem] h-[10.81rem]"
-            style={bg(
-              "/guanwang_second/front/mobile/images/new/product/mixpad_elf/sec1-a0fb5cbcf7.webp",
-            )}
-          />
+          <div className="mx-auto w-[7.2rem] h-[10.81rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec1}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec2 s__bg reload__gif reload__gif_reloading */}
         <div
@@ -244,20 +249,25 @@ export function MixpadElfPhone({ locale, text, common }: ProductViewProps) {
           <ProductReveal className="text-[0.384rem] leading-[0.76rem] font-extrabold text-center text-black text-balance px-[5%]">
             {t("sec3.title")}
           </ProductReveal>
-          <div
-            className="bg-center mx-auto mt-[0.78rem] bg-no-repeat bg-cover w-[6.65rem] h-[9.33rem]"
-            style={bg(
-              "/guanwang_second/front/mobile/images/new/product/mixpad_elf/sec3-3ecba57c90.webp",
-            )}
-          />
+          <div className="mx-auto mt-[0.78rem] w-[6.65rem] h-[9.33rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec3}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec4 s__bg lazy */}
-        <div
-          className="bg-center pt-[1.2rem] bg-no-repeat bg-cover relative h-[16rem]"
-          style={bg(
-            "/guanwang_second/front/mobile/images/new/product/mixpad_elf/sec4-f004e10eed.webp",
-          )}
-        >
+        <div className="pt-[1.2rem] relative h-[16rem] isolate">
+          <TextImage
+            picture={PHONE_WORDS.sec4}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="text-[0.384rem] leading-[0.76rem] font-extrabold text-center text-black text-balance px-[5%]">
             {t("sec4.title")}
           </ProductReveal>

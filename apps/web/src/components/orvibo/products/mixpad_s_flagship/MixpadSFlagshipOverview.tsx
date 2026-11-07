@@ -1,8 +1,10 @@
-import Image from "next/image";
-import type { ReactNode } from "react";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import Image from "next/image";
+import type { ReactNode } from "react";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 const ASSETS = "/orvibo/products/mixpad_s_flagship";
 
@@ -198,12 +200,14 @@ export function MixpadSFlagshipOverview({
           </div>
         </div>
         {/* sec7 sec lazy */}
-        <div
-          className="bg-center pt-[1.4rem] pl-[2.48rem] bg-no-repeat bg-cover h-[9.6rem]"
-          style={bg(
-            "/guanwang_second/front/images/products/mixpad_s_flagship/sec7-f287064ef6.webp",
-          )}
-        >
+        <div className="pt-[1.4rem] pl-[2.48rem] h-[9.6rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec7}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <div>
             <ProductReveal className="">
               <div className="mb-[0.3rem] text-[0.48rem] font-extrabold text-white leading-[0.67rem] text-left">

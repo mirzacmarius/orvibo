@@ -1,8 +1,10 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** Text cards drawn as images on orvibo.com, rebuilt so they can be translated. */
 const screenSpecs = [
@@ -29,12 +31,14 @@ export function MixpadXOverview({ locale, text, common }: ProductViewProps) {
             "/guanwang_second/front/images/products/mixpad_x/banner-af45c7cc94.webp",
           )}
         >
-          <div
-            className="relative bg-center bg-no-repeat bg-cover w-[1.17rem] h-[0.99rem]"
-            style={bg(
-              "/guanwang_second/front/images/products/mixpad_x/icon_award-5bf1c197a7.webp",
-            )}
-          >
+          <div className="relative w-[1.17rem] h-[0.99rem] isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.icon_award}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
             <span className="absolute bottom-[0.035rem] left-1/2 -translate-x-1/2 whitespace-nowrap text-[0.15rem] font-medium leading-[0.2rem] text-white/[0.67]">
               {t("x_banner.award")}
             </span>
@@ -201,98 +205,143 @@ export function MixpadXOverview({ locale, text, common }: ProductViewProps) {
           <div className="absolute top-[4.19rem] left-1/2 -translate-x-1/2 w-[16.56rem] h-[8.06rem] z-[5]">
             <div className="absolute left-[2.6rem] top-[1.72rem] w-[13.5rem] h-[4.05rem] flex overflow-hidden">
               <div className="relative w-[5.31rem] h-full">
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] left-0 top-0"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_02-206dadabfc.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] right-0 top-0"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_03-bc3ada3e89.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-[1.35rem] left-0"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_04-414c875ad2.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] right-0 top-[1.35rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_01-d3846cd267.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] left-0 top-[2.7rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_05-b62904d86e.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] right-0 top-[2.7rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_06-7cdaa3119d.webp",
-                  )}
-                />
+                <div className="absolute w-[2.53rem] h-[1.1rem] left-0 top-0 isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_02}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] right-0 top-0 isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_03}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-[1.35rem] left-0 isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_04}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] right-0 top-[1.35rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_01}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] left-0 top-[2.7rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_05}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] right-0 top-[2.7rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_06}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </div>
               <div className="ml-[0.94rem] flex-1 relative h-full">
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-0 left-0"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_08-b555533f05.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-0 left-[2.78rem] z-[5]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_10-1e6842d177.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-0 left-[5.56rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_13-93449a5f17.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] left-0 top-[1.35rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_09-6abf0262b6.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-[1.35rem] left-[2.78rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_05-b62904d86e.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-[1.35rem] left-[5.56rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_15-a10d9fe21f.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] left-0 top-[2.7rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_13-93449a5f17.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-[2.7rem] left-[2.78rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_15-a10d9fe21f.webp",
-                  )}
-                />
-                <div
-                  className="bg-center bg-no-repeat bg-cover absolute w-[2.53rem] h-[1.1rem] top-[2.7rem] left-[5.56rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_x/sec8_13-93449a5f17.webp",
-                  )}
-                />
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-0 left-0 isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_08}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-0 left-[2.78rem] z-[5] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_10}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-0 left-[5.56rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_13}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] left-0 top-[1.35rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_09}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-[1.35rem] left-[2.78rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_05}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-[1.35rem] left-[5.56rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_15}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] left-0 top-[2.7rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_13}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-[2.7rem] left-[2.78rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_15}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
+                <div className="absolute w-[2.53rem] h-[1.1rem] top-[2.7rem] left-[5.56rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec8_13}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -86,5 +86,13 @@
   "m.relay": "Third generation",
   "m.relayDesc": "15-year service life",
   "m.step1": "Step 1",
-  "m.step2": "Step 2"
+  "m.step2": "Step 2",
+  "pic.up_to_1200w_total": "Up to 1200W total load",
+  "pic.far_above_the_industry": "Far above the industry average",
+  "pic.10ms_fast_cut_off": "10ms fast cut-off",
+  "pic.prevents_fire_when_overloaded": "Prevents fire when overloaded",
+  "pic.v0_flame_retardant": "V0 flame retardant",
+  "pic.reduces_fire_risk": "Reduces fire risk",
+  "pic.3rd_gen_relay_pro": "3rd-gen Relay Pro Tech™",
+  "pic.15_year_service_life": "15-year service life"
 }

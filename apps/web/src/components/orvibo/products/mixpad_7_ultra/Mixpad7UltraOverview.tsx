@@ -2,8 +2,10 @@ import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductFocusCarousel } from "@/components/orvibo/product/ProductFocusCarousel";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** Speaker finishes in the sec6 carousel (text keys `sec6.<key>.title|desc`). */
 const finishes = [
@@ -99,72 +101,98 @@ export function Mixpad7UltraOverview({
         <div className="pt-[0.6rem] pb-[1.14rem]">
           <div className="mx-auto">
             <div className="mb-[0.3rem] flex justify-center">
-              <ProductReveal
-                className="bg-center mr-[0.28rem] bg-no-repeat bg-cover w-[6.84rem] h-[7.64rem]"
-                style={bg(
-                  "/guanwang_second/front/images/products/mixpad_7_ultra/pic1-05ba200c99.webp",
-                )}
-              />
-              <div>
-                <ProductReveal
-                  className="bg-center bg-no-repeat bg-cover w-[6.84rem] h-[2.97rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_7_ultra/pic2-882f6563ca.webp",
-                  )}
+              <ProductReveal className="mr-[0.28rem] w-[6.84rem] h-[7.64rem] relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic1}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
                 />
-                <div className="mt-[0.3rem] flex">
-                  <ProductReveal
-                    className="bg-center mr-[0.28rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[3.28rem] h-[4.37rem]"
-                    style={bg(
-                      "/guanwang_second/front/images/products/mixpad_7_ultra/pic3-6cf0e42862.webp",
-                    )}
+              </ProductReveal>
+              <div>
+                <ProductReveal className="w-[6.84rem] h-[2.97rem] relative isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.pic2}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
                   />
+                </ProductReveal>
+                <div className="mt-[0.3rem] flex">
+                  <ProductReveal className="mr-[0.28rem] [transition-delay:0.2s] w-[3.28rem] h-[4.37rem] relative isolate">
+                    <TextImage
+                      picture={DESKTOP_WORDS.pic3}
+                      locale={locale}
+                      text={text}
+                      fit={{ size: "cover" }}
+                      className="absolute inset-0 -z-10"
+                    />
+                  </ProductReveal>
                   <div>
-                    <ProductReveal
-                      className="bg-center mr-[0.28rem] mb-[0.3rem] [transition-delay:0.4s] bg-no-repeat bg-cover w-[3.28rem] h-[2.02rem]"
-                      style={bg(
-                        "/guanwang_second/front/images/products/mixpad_7_ultra/pic4-b413acfe9a.webp",
-                      )}
-                    />
-                    <ProductReveal
-                      className="bg-center [transition-delay:0.6s] bg-no-repeat bg-cover w-[3.28rem] h-[2.02rem]"
-                      style={bg(
-                        "/guanwang_second/front/images/products/mixpad_7_ultra/pic5-e3087224b4.webp",
-                      )}
-                    />
+                    <ProductReveal className="mr-[0.28rem] mb-[0.3rem] [transition-delay:0.4s] w-[3.28rem] h-[2.02rem] relative isolate">
+                      <TextImage
+                        picture={DESKTOP_WORDS.pic4}
+                        locale={locale}
+                        text={text}
+                        fit={{ size: "cover" }}
+                        className="absolute inset-0 -z-10"
+                      />
+                    </ProductReveal>
+                    <ProductReveal className="[transition-delay:0.6s] w-[3.28rem] h-[2.02rem] relative isolate">
+                      <TextImage
+                        picture={DESKTOP_WORDS.pic5}
+                        locale={locale}
+                        text={text}
+                        fit={{ size: "cover" }}
+                        className="absolute inset-0 -z-10"
+                      />
+                    </ProductReveal>
                   </div>
                 </div>
               </div>
             </div>
             <div className="flex justify-center h-[3.91rem]">
-              <ProductReveal
-                className="bg-center mr-[0.28rem] bg-no-repeat bg-cover w-[3.28rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/mixpad_7_ultra/pic6-71548fc4c1.webp",
-                )}
-              />
-              <ProductReveal
-                className="bg-center mr-[0.28rem] [transition-delay:0.2s] bg-no-repeat bg-cover w-[3.28rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/mixpad_7_ultra/pic7-98f22fea5f.webp",
-                )}
-              />
-              <ProductReveal
-                className="bg-center [transition-delay:0.4s] bg-no-repeat bg-cover w-[6.84rem] h-full"
-                style={bg(
-                  "/guanwang_second/front/images/products/mixpad_7_ultra/pic8-78f6af3e91.webp",
-                )}
-              />
+              <ProductReveal className="mr-[0.28rem] w-[3.28rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic6}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="mr-[0.28rem] [transition-delay:0.2s] w-[3.28rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic7}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="[transition-delay:0.4s] w-[6.84rem] h-full relative isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.pic8}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
         {/* sec5 s__bg lazy */}
-        <div
-          className="bg-center bg-no-repeat bg-cover h-[9.88rem]"
-          style={bg(
-            "/guanwang_second/front/images/products/mixpad_7_ultra/sec2-e7cddc3f72.webp",
-          )}
-        >
+        <div className="h-[9.88rem] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec2}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="pt-[1.58rem]">
             <div className="text-[0.72rem] font-extrabold leading-[0.9rem] text-center text-white bg-[image:linear-gradient(298deg,rgb(217,205,188)_0px,rgb(255,255,255)_46%,rgb(148,178,156)_100%)] bg-clip-text [-webkit-text-fill-color:transparent]">
               {t("sec5.title")}

@@ -86,5 +86,13 @@
   "m.relay": "A treia generație",
   "m.relayDesc": "Durată de viață de 15 ani",
   "m.step1": "Pasul 1",
-  "m.step2": "Pasul 2"
+  "m.step2": "Pasul 2",
+  "pic.up_to_1200w_total": "Sarcină totală de până la 1200 W",
+  "pic.far_above_the_industry": "Mult peste media industriei",
+  "pic.10ms_fast_cut_off": "Decuplare în 10 ms",
+  "pic.prevents_fire_when_overloaded": "Previne incendiul la suprasarcină",
+  "pic.v0_flame_retardant": "Ignifug, clasa V0",
+  "pic.reduces_fire_risk": "Reduce riscul de incendiu",
+  "pic.3rd_gen_relay_pro": "Relay Pro Tech™, generația a 3-a",
+  "pic.15_year_service_life": "Durată de viață de 15 ani"
 }

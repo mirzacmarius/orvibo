@@ -78,5 +78,18 @@
   "m.butler": "Majordomul ORVIBO",
   "m.butler.title": "Asistent inteligent pentru toată casa, și mult mai mult",
   "m.labNote.1": "* Datele de test de mai sus provin din laboratorul ORVIBO.",
-  "m.labNote.2": "Software-ul se actualizează continuu; interfața reală poate diferi."
+  "m.labNote.2": "Software-ul se actualizează continuu; interfața reală poate diferi.",
+  "pic.leisure": "Relaxare",
+  "pic.all_lights_on": "Lumini aprinse",
+  "pic.all_lights_off": "Lumini stinse",
+  "pic.reading": "Lectură",
+  "pic.hall": "Hol",
+  "pic.focus": "Concentrare",
+  "pic.entertainment": "Divertisment",
+  "pic.away": "Plecare",
+  "pic.home": "Acasă",
+  "pic.sleep": "Somn",
+  "pic.bedroom": "Dormitor",
+  "pic.wake_up": "Trezire",
+  "pic.home_cinema": "Cinema"
 }

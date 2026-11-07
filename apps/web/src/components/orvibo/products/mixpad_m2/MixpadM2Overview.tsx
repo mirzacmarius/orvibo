@@ -1,10 +1,12 @@
+import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
+import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
+import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
+import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
 import Image from "next/image";
 import type { ReactNode } from "react";
-import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
-import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
-import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
-import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** Pills under the sec2 headline (text keys `sec2.<key>`). */
 const upgrades = ["lights", "infrared", "load"];
@@ -499,30 +501,42 @@ export function MixpadM2Overview({ locale, text, common }: ProductViewProps) {
             </div>
           </ProductReveal>
           <div className="mt-[0.52rem] w-[13.3rem] flex flex-wrap">
-            <ProductReveal
-              className="mr-[0.27rem] bg-no-repeat bg-cover w-[9.01rem] h-[3.51rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/mixpad_m2/sec11_1-800c8536ab.webp",
-              )}
-            />
-            <ProductReveal
-              className="[transition-delay:0.15s] bg-no-repeat bg-cover w-[4.01rem] h-[3.51rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/mixpad_m2/sec11_2-d6d78cbb2d.webp",
-              )}
-            />
-            <ProductReveal
-              className="mt-[0.27rem] mr-[0.27rem] bg-no-repeat bg-cover w-[4.01rem] h-[3.51rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/mixpad_m2/sec11_3-8cd2d1a83a.webp",
-              )}
-            />
-            <ProductReveal
-              className="mt-[0.27rem] [transition-delay:0.15s] bg-no-repeat bg-cover w-[9.01rem] h-[3.51rem]"
-              style={bg(
-                "/guanwang_second/front/images/products/mixpad_m2/sec11_4-5352ca5728.webp",
-              )}
-            />
+            <ProductReveal className="mr-[0.27rem] w-[9.01rem] h-[3.51rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec11_1}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="[transition-delay:0.15s] w-[4.01rem] h-[3.51rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec11_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mt-[0.27rem] mr-[0.27rem] w-[4.01rem] h-[3.51rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec11_3}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
+            <ProductReveal className="mt-[0.27rem] [transition-delay:0.15s] w-[9.01rem] h-[3.51rem] relative isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec11_4}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
           <ProductReveal className="mt-[0.62rem] mx-auto max-w-[14.5rem] text-center text-[0.15rem] font-light text-white leading-[0.28rem]">
             {t("sec11.desc2")}

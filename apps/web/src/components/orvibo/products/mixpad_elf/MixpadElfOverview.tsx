@@ -1,15 +1,17 @@
-import { cn } from "@v1/ui/utils";
-import Image from "next/image";
-import type { ReactNode } from "react";
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import {
   productPageHelpers,
   withLineBreaks,
 } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
+import { cn } from "@v1/ui/utils";
+import Image from "next/image";
+import type { ReactNode } from "react";
 import { ElfBannerIntro } from "./ElfBannerIntro";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 const ASSETS = "/orvibo/products/mixpad_elf";
 const AVATARS = "/orvibo/products/mixpad_7";
@@ -415,12 +417,15 @@ export function MixpadElfOverview({ locale, text, common }: ProductViewProps) {
           <ProductReveal className="text-[0.54rem] font-extrabold leading-[0.76rem] text-center text-[#111111]">
             {t("sec4.title")}
           </ProductReveal>
-          <div
-            className="bg-center mx-auto mt-[0.8rem] mb-[0.6rem] bg-no-repeat bg-cover w-[16rem] h-[8.01rem]"
-            style={bg(
-              "/guanwang_second/front/images/new/products/mixpad_elf/sec4-c657298c1e.webp",
-            )}
-          />
+          <div className="mx-auto mt-[0.8rem] mb-[0.6rem] w-[16rem] h-[8.01rem] relative isolate">
+            <TextImage
+              picture={DESKTOP_WORDS.sec4}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
           <div className="leading-[0.26rem] font-normal text-center text-[0.18rem] text-black">
             {t("sec4.remind")}
           </div>

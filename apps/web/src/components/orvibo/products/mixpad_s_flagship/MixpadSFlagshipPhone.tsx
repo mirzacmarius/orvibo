@@ -1,8 +1,10 @@
 import { ProductScrollFrames } from "@/components/orvibo/product/ProductScrollFrames";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { PHONE_WORDS } from "./pictureWords";
 
 /** The desktop page's laurels and award wall background. */
 const ASSETS = "/orvibo/products/mixpad_s_flagship";
@@ -139,12 +141,15 @@ export function MixpadSFlagshipPhone({
           </ul>
         </div>
         {/* sec3 */}
-        <div
-          className="bg-center h-[15.52rem] bg-cover bg-no-repeat"
-          style={bg(
-            "/guanwang_second/front/mobile/images/new/product/mixpad_s_flagship/sec3-f2f6ec5160.webp",
-          )}
-        />
+        <div className="h-[15.52rem] relative isolate">
+          <TextImage
+            picture={PHONE_WORDS.sec3}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
+        </div>
         {/* sec4 */}
         <ProductScrollFrames
           dots={false}

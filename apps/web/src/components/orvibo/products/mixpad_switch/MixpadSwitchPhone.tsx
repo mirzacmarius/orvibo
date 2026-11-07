@@ -1,6 +1,8 @@
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { PHONE_WORDS } from "./pictureWords";
 
 const PHONE = "/orvibo/products/mixpad_switch/phone";
 /** The Zigbee claims' icons, cut from orvibo.com's picture (phone_clean.py): their sizes in its pixels. */
@@ -93,24 +95,33 @@ export function MixpadSwitchPhone({ locale, text, common }: ProductViewProps) {
           <div className="pb-[0.3rem] pl-[0.77rem] text-[0.224rem] leading-[0.48rem] font-medium text-[#111111] tracking-[0.01rem] text-left max-w-[7.5rem] pr-[0.5rem]">
             {flat(ts("sec3.desc"))}
           </div>
-          <div
-            className="bg-center w-[7.5rem] h-[9.57rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/mobile/images/new/product/mixpad_switch/sec2_1-a35d8c8f79.webp",
-            )}
-          />
-          <div
-            className="bg-center w-[7.5rem] h-[9.66rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/mobile/images/new/product/mixpad_switch/sec2_2-bda4eb9ed0.webp",
-            )}
-          />
-          <div
-            className="bg-center w-[7.5rem] h-[8.58rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/mobile/images/new/product/mixpad_switch/sec2_3-cf2b5e1970.webp",
-            )}
-          />
+          <div className="w-[7.5rem] h-[9.57rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec2_1}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
+          <div className="w-[7.5rem] h-[9.66rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec2_2}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
+          <div className="w-[7.5rem] h-[8.58rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec2_3}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec3 */}
         <div
@@ -140,12 +151,15 @@ export function MixpadSwitchPhone({ locale, text, common }: ProductViewProps) {
               "/guanwang_second/front/mobile/images/new/product/mixpad_switch/sec4_1-a93e5a10eb.webp",
             )}
           />
-          <div
-            className="bg-center w-[7.5rem] h-[7rem] bg-cover bg-no-repeat"
-            style={bg(
-              "/guanwang_second/front/mobile/images/new/product/mixpad_switch/sec4_2-124828c091.webp",
-            )}
-          />
+          <div className="w-[7.5rem] h-[7rem] relative isolate">
+            <TextImage
+              picture={PHONE_WORDS.sec4_2}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </div>
         {/* sec5 */}
         <div className="pt-[1.1rem] bg-white overflow-hidden">

@@ -77,5 +77,20 @@
   "spec.temperature.range": "−20 to 60 °C",
   "spec.humidity": "Operating humidity:",
   "spec.range": "Wireless range:",
-  "m.frame": "Millimeter Frame"
+  "m.frame": "Millimeter Frame",
+  "pic.bedroom": "Bedroom",
+  "pic.sleep": "Sleep",
+  "pic.wake_up": "Wake up",
+  "pic.light_gold": "Light Gold",
+  "pic.an_elegant_aristocrat_born": "An elegant aristocrat, born with grace and dignity",
+  "pic.like_this_touch_of": "Like this touch of gold, it brings warmth and life",
+  "pic.curtains": "Curtains",
+  "pic.away": "Away",
+  "pic.home": "Home",
+  "pic.elegant_gray": "Elegant Gray",
+  "pic.a_gentleman_of_poise": "A gentleman of poise, calm with a free spirit",
+  "pic.firm_as_obsidian_strong": "Firm as obsidian, strong yet graceful",
+  "pic.titanium_white": "Titanium White",
+  "pic.a_romantic_soul_like": "A romantic soul, like a Renaissance sculptor",
+  "pic.drawn_to_pure_white": "Drawn to pure white, savoring life in every detail"
 }

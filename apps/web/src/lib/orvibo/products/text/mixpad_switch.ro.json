@@ -77,5 +77,20 @@
   "spec.temperature.range": "−20…60 °C",
   "spec.humidity": "Umiditate de lucru:",
   "spec.range": "Rază wireless:",
-  "m.frame": "Rama milimetrică"
+  "m.frame": "Rama milimetrică",
+  "pic.bedroom": "Dormitor",
+  "pic.sleep": "Somn",
+  "pic.wake_up": "Trezire",
+  "pic.light_gold": "Auriu deschis",
+  "pic.an_elegant_aristocrat_born": "Un aristocrat elegant, nobil și demn din naștere",
+  "pic.like_this_touch_of": "Ca această tușă de auriu, aduce viață și căldură",
+  "pic.curtains": "Perdele",
+  "pic.away": "Plecare",
+  "pic.home": "Acasă",
+  "pic.elegant_gray": "Gri elegant",
+  "pic.a_gentleman_of_poise": "Un gentleman distins, calm și liber în spirit",
+  "pic.firm_as_obsidian_strong": "Ferm ca obsidianul, puternic și totuși grațios",
+  "pic.titanium_white": "Alb titan",
+  "pic.a_romantic_soul_like": "Un spirit romantic, ca un sculptor al Renașterii",
+  "pic.drawn_to_pure_white": "Visează la albul pur și gustă viața în detaliu"
 }
