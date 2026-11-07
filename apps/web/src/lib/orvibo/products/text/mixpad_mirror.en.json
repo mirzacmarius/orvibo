@@ -85,5 +85,19 @@
   "spec.operating": "Operating conditions: −10 to 50 °C, 10–90% RH",
   "spec.storage": "Storage conditions: −10 to 50 °C, 5–95% RH",
   "spec.box": "In the box: MixPad Mirror, user manual, certificate of conformity, warranty card",
-  "spec.standards": "Standards: GB 4943.1-2011, GB/T 9254-2008, GB 17625.1-2012"
+  "spec.standards": "Standards: GB 4943.1-2011, GB/T 9254-2008, GB 17625.1-2012",
+  "pic.butler_play_some_music": "Butler, play some music.",
+  "pic.ok": "OK.",
+  "pic.high_precision": "High-precision",
+  "pic.motion_sensor": "motion sensor",
+  "pic.makeup_grade_lighting": "Makeup-grade lighting",
+  "pic.3_tones_stepless_dimming": "3 tones, stepless dimming",
+  "pic.fast_smart_defogging": "Fast smart defogging",
+  "pic.a_mirror_that_never": "A mirror that never fogs up",
+  "pic.warm_cozy_light": "Warm, cozy light",
+  "pic.remove_makeup_at_night": "Remove makeup at night, set the mood",
+  "pic.natural_clear_light": "Natural, clear light",
+  "pic.helps_you_get_ready": "Helps you get ready, flatters your skin",
+  "pic.bright_cool_white_light": "Bright, cool white light",
+  "pic.like_daylight_it_wakes": "Like daylight, it wakes you up"
 }

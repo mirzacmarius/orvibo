@@ -85,5 +85,19 @@
   "spec.operating": "Condiții de funcționare: −10…50 °C, 10–90% RH",
   "spec.storage": "Condiții de depozitare: −10…50 °C, 5–95% RH",
   "spec.box": "Conținutul cutiei: MixPad Mirror, manual de utilizare, certificat de conformitate, certificat de garanție",
-  "spec.standards": "Standarde: GB 4943.1-2011, GB/T 9254-2008, GB 17625.1-2012"
+  "spec.standards": "Standarde: GB 4943.1-2011, GB/T 9254-2008, GB 17625.1-2012",
+  "pic.butler_play_some_music": "Majordomule, pune muzică.",
+  "pic.ok": "Bine.",
+  "pic.high_precision": "Senzor de mișcare",
+  "pic.motion_sensor": "de înaltă precizie",
+  "pic.makeup_grade_lighting": "Lumină pentru machiaj",
+  "pic.3_tones_stepless_dimming": "3 tonuri, reglaj continuu",
+  "pic.fast_smart_defogging": "Dezaburire rapidă, inteligentă",
+  "pic.a_mirror_that_never": "Oglinda rămâne mereu clară",
+  "pic.warm_cozy_light": "Lumină caldă, plăcută",
+  "pic.remove_makeup_at_night": "Demachiere seara, atmosferă plăcută",
+  "pic.natural_clear_light": "Lumină naturală, clară",
+  "pic.helps_you_get_ready": "Te ajută la machiaj, pune tenul în valoare",
+  "pic.bright_cool_white_light": "Lumină rece, puternică",
+  "pic.like_daylight_it_wakes": "Ca lumina zilei, te înviorează"
 }

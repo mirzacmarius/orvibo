@@ -1,5 +1,6 @@
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductSlideshow } from "@/components/orvibo/product/ProductSlideshow";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { orviboRoutes } from "@/lib/orvibo/routes";
@@ -7,6 +8,7 @@ import { cn } from "@v1/ui/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The pictures clean.py cuts out of orvibo.com's diagrams: the wheel without its words, the "Open" logos, the project photos. */
 const ASSETS = "/orvibo/products/mixpad_plus";
@@ -48,8 +50,7 @@ const INVESTORS = [
 /** sec1 and sec2: three photos, each with a heading and a paragraph. */
 const SMART = [
   {
-    photo:
-      "/guanwang_second/front/images/products/mixpad_plus/sec1_1-496b23edf7.webp",
+    words: DESKTOP_WORDS.sec1_1,
     alt: "alt.sec1_1",
     title: "sec1.card",
     desc: "sec1.card2",
@@ -752,14 +753,25 @@ export function MixpadPlusOverview({
           <ul className="mx-auto mt-[0.8rem] flex w-[16rem] justify-between text-center">
             {SMART.map((card) => (
               <li key={card.title} className="w-[5.1rem]">
-                <Image
-                  src={img(card.photo)}
-                  alt={card.alt ? ts(card.alt) : ""}
-                  width={510}
-                  height={300}
-                  unoptimized
-                  className="block h-[3rem] w-full"
-                />
+                {"words" in card ? (
+                  <TextImage
+                    picture={card.words}
+                    locale={locale}
+                    text={text}
+                    alt={ts(card.alt)}
+                    fit={{ size: "fill" }}
+                    className="block h-[3rem] w-full"
+                  />
+                ) : (
+                  <Image
+                    src={img(card.photo)}
+                    alt=""
+                    width={510}
+                    height={300}
+                    unoptimized
+                    className="block h-[3rem] w-full"
+                  />
+                )}
                 <h3 className="mt-[0.3rem] mb-[0.21rem] text-[0.24rem] leading-[0.33rem] font-extrabold">
                   {t(card.title)}
                 </h3>
@@ -825,15 +837,14 @@ export function MixpadPlusOverview({
           </ul>
         </section>
         {/* sec4: the panel runs the home (the labels are in the photo) */}
-        <section
-          className={cn(
-            "h-[10.6rem] overflow-hidden pt-[1.1rem] text-[#111111]",
-            PHOTO,
-          )}
-          style={bg(
-            "/guanwang_second/front/images/products/mixpad_plus/sec4-e330bbb827.webp",
-          )}
-        >
+        <section className="h-[10.6rem] overflow-hidden pt-[1.1rem] text-[#111111] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec4}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className={TITLE}>{t("sec4.title")}</h2>
           <p className={cn(DESC, "mt-[0.3rem] max-w-[12.8rem]")}>
             {t("sec4.desc")}
@@ -938,14 +949,16 @@ export function MixpadPlusOverview({
           <div
             role="img"
             aria-label={ts("alt.sec8")}
-            className={cn(
-              "mx-auto mt-[0.97rem] h-[5.61rem] w-[10.95rem]",
-              PHOTO,
-            )}
-            style={bg(
-              "/guanwang_second/front/images/products/mixpad_plus/sec8-d605974337.webp",
-            )}
-          />
+            className="mx-auto mt-[0.97rem] h-[5.61rem] w-[10.95rem] relative isolate"
+          >
+            <TextImage
+              picture={DESKTOP_WORDS.sec8}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
         </section>
         {/* sec9: scenes */}
         <section className="min-h-[17.1rem] bg-white pt-[1.13rem] pb-[0.6rem] text-[#111111]">
@@ -1070,12 +1083,14 @@ export function MixpadPlusOverview({
             {
               key: "villa",
               content: (
-                <div
-                  className={cn("relative h-[10.8rem] overflow-hidden", PHOTO)}
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_plus/sec12_2-d74c9ffc1c.webp",
-                  )}
-                >
+                <div className="relative h-[10.8rem] overflow-hidden isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec12_2}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
                   <div className={FRAME}>
                     <p
                       aria-hidden="true"
@@ -1119,15 +1134,14 @@ export function MixpadPlusOverview({
           />
         </section>
         {/* sec13: security (its labels are in the picture) */}
-        <section
-          className={cn(
-            "h-[12.06rem] overflow-hidden pt-[1.1rem] text-[#111111]",
-            PHOTO,
-          )}
-          style={bg(
-            "/guanwang_second/front/images/products/mixpad_plus/sec13-46144c8ae4.webp",
-          )}
-        >
+        <section className="h-[12.06rem] overflow-hidden pt-[1.1rem] text-[#111111] relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec13}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <h2 className={TITLE}>{t("sec13.title")}</h2>
           <p className={cn(DESC, "mt-[0.3rem] max-w-[11.6rem]")}>
             {t("sec13.desc")}

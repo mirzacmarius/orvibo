@@ -1,11 +1,13 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 const AVATARS = "/orvibo/products/mixpad_7";
 
@@ -155,18 +157,15 @@ function VoiceStrip({
 /** The three colour temperature cards; their words are in the pictures. */
 const CARDS = [
   {
-    photo:
-      "/guanwang_second/front/images/products/mixpad_mirror/sec3_1-e63bb22f1f.webp",
+    photo: DESKTOP_WORDS.sec3_1,
     alt: "alt.warm",
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/mixpad_mirror/sec3_2-ac5e588135.webp",
+    photo: DESKTOP_WORDS.sec3_2,
     alt: "alt.natural",
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/mixpad_mirror/sec3_3-e6d089dcaf.webp",
+    photo: DESKTOP_WORDS.sec3_3,
     alt: "alt.cool",
   },
 ] as const;
@@ -274,12 +273,14 @@ export function MixpadMirrorOverview({
     <div className="bg-white font-orvibo text-[16px] leading-[1.6] text-[#666666]">
       <div id="overview">
         {/* mirror__header: the speech bubbles are in the picture (translated) */}
-        <section
-          className={cn("relative h-[9.56rem] w-full", PHOTO)}
-          style={bg(
-            "/guanwang_second/front/images/products/mixpad_mirror/banner-6b9629c53e.webp",
-          )}
-        >
+        <section className="relative h-[9.56rem] w-full isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.banner}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <div className="absolute top-[3.38rem] left-[2.29rem]">
             <h1>
               <span className="flex items-start">
@@ -317,32 +318,47 @@ export function MixpadMirrorOverview({
               <div
                 role="img"
                 aria-label={ts("alt.sensor")}
-                className={cn("size-full", PHOTO)}
-                style={bg(
-                  "/guanwang_second/front/images/products/mixpad_mirror/sec1_03-f158284f96.webp",
-                )}
-              />
+                className="size-full relative isolate"
+              >
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_03}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover" }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
             </ProductReveal>
             <div className="mt-[0.3rem] flex">
               <ProductReveal className="h-[3.86rem] w-[3.84rem]">
                 <div
                   role="img"
                   aria-label={ts("alt.lighting")}
-                  className={cn("size-full", PHOTO)}
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_mirror/sec1_04-af99b82445.webp",
-                  )}
-                />
+                  className="size-full relative isolate"
+                >
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_04}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </ProductReveal>
               <ProductReveal className="ml-[0.3rem] h-[3.86rem] w-[3.96rem] [transition-delay:0.15s]">
                 <div
                   role="img"
                   aria-label={ts("alt.defog")}
-                  className={cn("size-full", PHOTO)}
-                  style={bg(
-                    "/guanwang_second/front/images/products/mixpad_mirror/sec1_05-bd860e75ca.webp",
-                  )}
-                />
+                  className="size-full relative isolate"
+                >
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_05}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </ProductReveal>
             </div>
           </div>
@@ -387,9 +403,16 @@ export function MixpadMirrorOverview({
                 <div
                   role="img"
                   aria-label={ts(card.alt)}
-                  className={cn("size-full", PHOTO)}
-                  style={bg(card.photo)}
-                />
+                  className="relative isolate size-full"
+                >
+                  <TextImage
+                    picture={card.photo}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </ProductReveal>
             ))}
           </div>

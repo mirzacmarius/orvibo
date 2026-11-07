@@ -90,5 +90,9 @@
   "install_container.params_item16": "Power adapter",
   "spec.input": "20 V DC, 1.5 A (adapter: 100–220 V)",
   "install_container.params_item17": "2: on the frame's bottom edge and in the hidden box at the back",
-  "install_container.params_item18": "adapter cord 0.4 m, extension cord 1.6 m"
+  "install_container.params_item18": "adapter cord 0.4 m, extension cord 1.6 m",
+  "pic.all_aluminum_frame": "All-aluminum frame",
+  "pic.finely_crafted_fabric": "Finely crafted fabric",
+  "pic.engraved_metal_logo": "Engraved metal logo",
+  "pic.brushed_finish": "Brushed finish"
 }

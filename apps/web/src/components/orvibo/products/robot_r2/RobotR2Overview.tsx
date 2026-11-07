@@ -1,8 +1,10 @@
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 const ICONS = "/orvibo/products/robot_r2";
 
@@ -32,23 +34,19 @@ const BATTERY = [
 /** The four cleaning plan cards under the bedroom photo; their words are in the pictures. */
 const PLANS = [
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec10_1-cc81b23506.webp",
+    photo: DESKTOP_WORDS.sec10_1,
     alt: "alt.sec10_1",
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec10_2-186ab26aee.webp",
+    photo: DESKTOP_WORDS.sec10_2,
     alt: "alt.sec10_2",
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec10_3-cd674854fa.webp",
+    photo: DESKTOP_WORDS.sec10_3,
     alt: "alt.sec10_3",
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec10_4-f934114f48.webp",
+    photo: DESKTOP_WORDS.sec10_4,
     alt: "alt.sec10_4",
   },
 ] as const;
@@ -56,22 +54,16 @@ const PLANS = [
 /** The three detail photos at the end, with their words in the pictures. */
 const DETAILS = [
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec14_1-0a1cfcfdbd.webp",
+    photo: DESKTOP_WORDS.sec14_1,
     alt: "alt.sec14_1",
-    width: 448,
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec14_2-026ef7c107.webp",
+    photo: DESKTOP_WORDS.sec14_2,
     alt: "alt.sec14_2",
-    width: 447,
   },
   {
-    photo:
-      "/guanwang_second/front/images/products/robot_r2/sec14_3-d43cfac399.webp",
+    photo: DESKTOP_WORDS.sec14_3,
     alt: "alt.sec14_3",
-    width: 448,
   },
 ] as const;
 
@@ -179,12 +171,14 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
           <p className="sr-only">{t("alt.sec3")}</p>
         </section>
         {/* sec4: the 3 L dust bag */}
-        <section
-          className={cn("relative h-[9.6rem]", PHOTO)}
-          style={bg(
-            "/guanwang_second/front/images/products/robot_r2/sec4-0d69057361.webp",
-          )}
-        >
+        <section className="relative h-[9.6rem] isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec4}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="absolute top-[2.17rem] left-[2.48rem] text-black">
             <h2 className={TITLE}>{t("sec4.title")}</h2>
             <p className={cn("max-w-[6.6rem]", TEXT)}>{t("sec4.desc")}</p>
@@ -192,24 +186,28 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
           <p className="sr-only">{t("alt.sec4")}</p>
         </section>
         {/* sec5: sweep, vacuum, mop; the three words are in the photo */}
-        <section
-          className={cn("h-[9.6rem] pt-[1.2rem] text-center text-white", PHOTO)}
-          style={bg(
-            "/guanwang_second/front/images/products/robot_r2/sec5-8d8e6a5313.webp",
-          )}
-        >
+        <section className="h-[9.6rem] pt-[1.2rem] text-center text-white relative isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec5}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <h2 className={TITLE}>{t("sec5.title")}</h2>
           </ProductReveal>
           <p className="sr-only">{t("alt.sec5")}</p>
         </section>
         {/* sec6: 3000 Pa suction */}
-        <section
-          className={cn("relative h-[14rem]", PHOTO)}
-          style={bg(
-            "/guanwang_second/front/images/products/robot_r2/sec6-0cc11b79ba.webp",
-          )}
-        >
+        <section className="relative h-[14rem] isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec6}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="absolute top-[1.24rem] left-[2.44rem] text-white">
             <h2 className={TITLE}>{t("sec6.title")}</h2>
             <p className={cn("max-w-[9rem]", TEXT)}>{t("sec6.desc")}</p>
@@ -217,15 +215,14 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
           <p className="sr-only">{t("alt.sec6")}</p>
         </section>
         {/* sec7: LDAR laser navigation, three generations along the bottom of the photo */}
-        <section
-          className={cn(
-            "relative h-[11.12rem] pt-[1.2rem] text-center text-white",
-            PHOTO,
-          )}
-          style={bg(
-            "/guanwang_second/front/images/products/robot_r2/sec7-8a252e1c3f.webp",
-          )}
-        >
+        <section className="relative h-[11.12rem] pt-[1.2rem] text-center text-white isolate">
+          <TextImage
+            picture={DESKTOP_WORDS.sec7}
+            locale={locale}
+            text={text}
+            fit={{ size: "cover" }}
+            className="absolute inset-0 -z-10"
+          />
           <ProductReveal className="">
             <h2 className={TITLE}>{t("sec7.title")}</h2>
             <p className={cn("mx-auto max-w-[11.8rem] text-balance", TEXT)}>
@@ -251,14 +248,16 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
           <div
             role="img"
             aria-label={ts("alt.sec9")}
-            className={cn(
-              "absolute top-0 right-[0.78rem] h-[9.65rem] w-[10.21rem]",
-              PHOTO,
-            )}
-            style={bg(
-              "/guanwang_second/front/images/products/robot_r2/sec9-398124992a.webp",
-            )}
-          />
+            className="absolute top-0 right-[0.78rem] h-[9.65rem] w-[10.21rem] isolate"
+          >
+            <TextImage
+              picture={DESKTOP_WORDS.sec9}
+              locale={locale}
+              text={text}
+              fit={{ size: "cover" }}
+              className="absolute inset-0 -z-10"
+            />
+          </div>
           <ProductReveal className="absolute top-[2.46rem] left-[1.67rem] text-white">
             <h2 className={TITLE}>{t("sec9.title")}</h2>
             <p className={cn("max-w-[7.3rem]", TEXT)}>{t("sec9.desc")}</p>
@@ -302,9 +301,16 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
                 <div
                   role="img"
                   aria-label={ts(plan.alt)}
-                  className={cn("h-[3.48rem] w-[3.34rem]", PHOTO)}
-                  style={bg(plan.photo)}
-                />
+                  className="relative isolate h-[3.48rem] w-[3.34rem]"
+                >
+                  <TextImage
+                    picture={plan.photo}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover" }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </li>
             ))}
           </ul>
@@ -334,15 +340,12 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
             <h2 className={TITLE}>{t("sec12.title")}</h2>
             <p className={TEXT}>{t("sec12.desc")}</p>
           </ProductReveal>
-          <Image
-            src={img(
-              "/guanwang_second/front/images/products/robot_r2/sec12-17a198b748.webp",
-            )}
+          <TextImage
+            picture={DESKTOP_WORDS.sec12}
+            locale={locale}
+            text={text}
             alt={ts("alt.sec12")}
-            width={1420}
-            height={920}
-            unoptimized
-            className="mt-[0.52rem] block w-[14.2rem]"
+            className="mt-[0.52rem] block w-[14.2rem] max-w-full"
           />
         </section>
         {/* sec13: voice replies, then the details */}
@@ -366,13 +369,12 @@ export function RobotR2Overview({ locale, text, common }: ProductViewProps) {
           <ul className="mt-[0.58rem] flex w-[14.22rem] justify-between">
             {DETAILS.map((detail) => (
               <li key={detail.alt}>
-                <Image
-                  src={img(detail.photo)}
+                <TextImage
+                  picture={detail.photo}
+                  locale={locale}
+                  text={text}
                   alt={ts(detail.alt)}
-                  width={detail.width}
-                  height={581}
-                  unoptimized
-                  className="block w-[4.48rem]"
+                  className="block w-[4.48rem] max-w-full"
                 />
               </li>
             ))}

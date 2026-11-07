@@ -90,5 +90,9 @@
   "install_container.params_item16": "Adaptor de alimentare",
   "spec.input": "20 V c.c., 1,5 A (adaptor: 100–220 V)",
   "install_container.params_item17": "2: pe latura de jos a ramei și în compartimentul ascuns din spate",
-  "install_container.params_item18": "cablul adaptorului 0,4 m, prelungitor 1,6 m"
+  "install_container.params_item18": "cablul adaptorului 0,4 m, prelungitor 1,6 m",
+  "pic.all_aluminum_frame": "Ramă integral din aluminiu",
+  "pic.finely_crafted_fabric": "Țesătură fin lucrată",
+  "pic.engraved_metal_logo": "Siglă gravată în metal",
+  "pic.brushed_finish": "Finisaj periat"
 }

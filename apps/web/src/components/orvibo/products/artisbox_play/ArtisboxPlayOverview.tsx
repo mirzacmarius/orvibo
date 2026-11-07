@@ -1,9 +1,11 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import { cn } from "@v1/ui/utils";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 /** The six features under the hero, three to a row. */
 const FEATURES = [
@@ -374,42 +376,62 @@ export function ArtisboxPlayOverview({
               <div
                 role="img"
                 aria-label={ts("alt.frame")}
-                className={cn("size-full", PHOTO)}
-                style={bg(
-                  "/guanwang_second/front/images/products/artisbox_play/sec5_01-1cb60ac5c2.webp",
-                )}
-              />
+                className="size-full relative isolate"
+              >
+                <TextImage
+                  picture={DESKTOP_WORDS.sec5_01}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </div>
             </ProductReveal>
             <div className="ml-[0.28rem] flex w-[8.79rem] flex-wrap">
               <ProductReveal className="mr-[0.3rem] h-[3.8rem] w-[4.25rem] [transition-delay:0.15s]">
                 <div
                   role="img"
                   aria-label={ts("alt.fabric")}
-                  className={cn("size-full", PHOTO)}
-                  style={bg(
-                    "/guanwang_second/front/images/products/artisbox_play/sec5_02-e47a8d0cfd.webp",
-                  )}
-                />
+                  className="size-full relative isolate"
+                >
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec5_02}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </ProductReveal>
               <ProductReveal className="h-[3.8rem] w-[4.24rem] [transition-delay:0.25s]">
                 <div
                   role="img"
                   aria-label={ts("alt.logo")}
-                  className={cn("size-full", PHOTO)}
-                  style={bg(
-                    "/guanwang_second/front/images/products/artisbox_play/sec5_03-6505675b6a.webp",
-                  )}
-                />
+                  className="size-full relative isolate"
+                >
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec5_03}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </ProductReveal>
               <ProductReveal className="mt-[0.27rem] h-[3.87rem] w-[8.79rem] [transition-delay:0.25s]">
                 <div
                   role="img"
                   aria-label={ts("alt.brushed")}
-                  className={cn("size-full", PHOTO)}
-                  style={bg(
-                    "/guanwang_second/front/images/products/artisbox_play/sec5_04-5f5871fcdc.webp",
-                  )}
-                />
+                  className="size-full relative isolate"
+                >
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec5_04}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </div>
               </ProductReveal>
             </div>
           </div>
