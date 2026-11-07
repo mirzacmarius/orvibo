@@ -1,9 +1,11 @@
 import { MarketingVideo } from "@/components/orvibo/MarketingVideo";
 import { OrviboWatchTrigger } from "@/components/orvibo/OrviboVideoProvider";
 import { ProductReveal } from "@/components/orvibo/product/ProductReveal";
+import { TextImage } from "@/components/orvibo/product/TextImage";
 import { productPageHelpers } from "@/components/orvibo/product/productPageHelpers";
 import type { ProductViewProps } from "@/lib/orvibo/products/types";
 import Image from "next/image";
+import { DESKTOP_WORDS } from "./pictureWords";
 
 export function MotorDb28Overview({ locale, text, common }: ProductViewProps) {
   const { t, img, bg, pseudoBg, lines } = productPageHelpers(locale, text);
@@ -68,26 +70,35 @@ export function MotorDb28Overview({ locale, text, common }: ProductViewProps) {
                 </ProductReveal>
               </div>
               <div className="mr-[0.18rem] relative">
-                <ProductReveal
-                  className="[transition-delay:0.15s] bg-no-repeat bg-cover relative w-[3.6rem] h-[3.62rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/db28/sec1_03-4895f7f41d.webp",
-                  )}
-                />
-                <ProductReveal
-                  className="mt-[0.23rem] [transition-delay:0.25s] bg-no-repeat bg-cover relative w-[3.6rem] h-[1.53rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/db28/sec1_04-f0a77d2eb4.webp",
-                  )}
-                />
+                <ProductReveal className="[transition-delay:0.15s] relative w-[3.6rem] h-[3.62rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_03}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
+                <ProductReveal className="mt-[0.23rem] [transition-delay:0.25s] relative w-[3.6rem] h-[1.53rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_04}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
               </div>
               <div className="relative">
-                <ProductReveal
-                  className="[transition-delay:0.15s] bg-no-repeat bg-cover relative w-[3.4rem] h-[1.3rem]"
-                  style={bg(
-                    "/guanwang_second/front/images/new/products/db28/sec1_05-fdde3d36b2.webp",
-                  )}
-                />
+                <ProductReveal className="[transition-delay:0.15s] relative w-[3.4rem] h-[1.3rem] isolate">
+                  <TextImage
+                    picture={DESKTOP_WORDS.sec1_05}
+                    locale={locale}
+                    text={text}
+                    fit={{ size: "cover", x: 0, y: 0 }}
+                    className="absolute inset-0 -z-10"
+                  />
+                </ProductReveal>
                 <ProductReveal className="mt-[0.2rem] [transition-delay:0.25s] flex flex-col justify-center gap-[0.5rem] px-[0.4rem] rounded-[0.2rem] bg-[linear-gradient(160deg,#2a2a2e_0%,#161618_100%)] w-[3.4rem] h-[3.9rem]">
                   <div>
                     <div className="text-[0.66rem] font-bold leading-none bg-[linear-gradient(180deg,#f6e3d2_0%,#a27c62_100%)] bg-clip-text [-webkit-text-fill-color:transparent]">
@@ -110,24 +121,33 @@ export function MotorDb28Overview({ locale, text, common }: ProductViewProps) {
               </div>
             </div>
             <div className="relative flex">
-              <ProductReveal
-                className="mt-[0.18rem] mr-[0.18rem] bg-no-repeat bg-cover relative w-[3.76rem] h-[1.94rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/db28/sec1_07-c1c5379413.webp",
-                )}
-              />
-              <ProductReveal
-                className="mt-[0.18rem] mr-[0.18rem] [transition-delay:0.15s] bg-no-repeat bg-cover relative w-[4.83rem] h-[1.94rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/db28/sec1_08-b2565458db.webp",
-                )}
-              />
-              <ProductReveal
-                className="mt-[0.18rem] [transition-delay:0.25s] bg-no-repeat bg-cover relative w-[3.57rem] h-[1.94rem]"
-                style={bg(
-                  "/guanwang_second/front/images/new/products/db28/sec1_09-e7158e892f.webp",
-                )}
-              />
+              <ProductReveal className="mt-[0.18rem] mr-[0.18rem] relative w-[3.76rem] h-[1.94rem] isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_07}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="mt-[0.18rem] mr-[0.18rem] [transition-delay:0.15s] relative w-[4.83rem] h-[1.94rem] isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_08}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
+              <ProductReveal className="mt-[0.18rem] [transition-delay:0.25s] relative w-[3.57rem] h-[1.94rem] isolate">
+                <TextImage
+                  picture={DESKTOP_WORDS.sec1_09}
+                  locale={locale}
+                  text={text}
+                  fit={{ size: "cover", x: 0, y: 0 }}
+                  className="absolute inset-0 -z-10"
+                />
+              </ProductReveal>
             </div>
           </div>
         </div>
@@ -168,14 +188,10 @@ export function MotorDb28Overview({ locale, text, common }: ProductViewProps) {
         </div>
         {/* sec3 */}
         <div className="relative">
-          <Image
-            src={img(
-              "/guanwang_second/front/images/new/products/db28/sec3-1a55512e37.webp",
-            )}
-            alt=""
-            width={1920}
-            height={960}
-            unoptimized
+          <TextImage
+            picture={DESKTOP_WORDS.sec3}
+            locale={locale}
+            text={text}
             className="align-middle relative w-full"
           />
           <div className="absolute left-0 bottom-[0.72rem] w-full text-center text-[0.16rem] font-normal text-white opacity-[0.5]">
@@ -329,12 +345,15 @@ export function MotorDb28Overview({ locale, text, common }: ProductViewProps) {
                 {t("sec10.item_desc2")}
               </div>
             </ProductReveal>
-            <ProductReveal
-              className="rounded-[0.22rem] shrink-0 bg-no-repeat bg-cover relative w-[7.3rem] h-[5.94rem] overflow-hidden"
-              style={bg(
-                "/guanwang_second/front/images/new/products/db28/sec10_2-429e77179f.webp",
-              )}
-            />
+            <ProductReveal className="rounded-[0.22rem] shrink-0 relative w-[7.3rem] h-[5.94rem] overflow-hidden isolate">
+              <TextImage
+                picture={DESKTOP_WORDS.sec10_2}
+                locale={locale}
+                text={text}
+                fit={{ size: "cover", x: 0, y: 0 }}
+                className="absolute inset-0 -z-10"
+              />
+            </ProductReveal>
           </div>
           <div className="mt-[0.99rem] relative w-[13.71rem] flex">
             <ProductReveal
